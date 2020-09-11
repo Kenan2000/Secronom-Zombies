@@ -1,4 +1,5 @@
 # Secronom-Zombies
+**Axema's GREAT and LEGENDARY mod!**
 
 ### How to install the mod:
 1. Extract **Secronom-Zombies-master**.
