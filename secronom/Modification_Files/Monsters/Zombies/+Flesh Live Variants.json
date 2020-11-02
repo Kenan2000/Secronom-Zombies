@@ -69,7 +69,7 @@
     "emit_fields": [ "emit_sflesh_fleshling_maybe" ],
     "material": [ "flesh" ],
     "symbol": "r",
-    "color": "light_red",
+    "color": "dark_gray",
     "aggression": 100,
     "morale": 100,
     "melee_skill": 5,
@@ -256,9 +256,7 @@
     "color": "light_gray",
     "melee_cut": 2,
     "dodge": 14,
-    "special_attacks": [
-      [ "scratch", 10 ]
-    ],
+    "special_attacks": [ [ "scratch", 10 ] ],
     "death_function": [ "NORMAL" ],
     "harvest": "mammal_tiny",
     "flags": [ "SEES", "HEARS", "GOODHEARING", "SMELLS", "ABSORBS", "WARM" ]
@@ -733,12 +731,7 @@
     "vision_day": 0,
     "vision_night": 0,
     "harvest": "mutant_mammal_large_leather",
-    "special_attacks": [
-      [ "SHRIEK_ALERT", 10 ],
-      [ "SHRIEK_STUN", 1 ],
-      { "type": "bite", "cooldown": 6 },
-      [ "impale", 10 ]
-    ],
+    "special_attacks": [ [ "SHRIEK_ALERT", 10 ], [ "SHRIEK_STUN", 1 ], { "type": "bite", "cooldown": 6 }, [ "impale", 10 ] ],
     "death_function": [ "NORMAL" ],
     "regenerates": 10,
     "regen_morale": true,
