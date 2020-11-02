@@ -392,12 +392,9 @@
     "default": "mon_sflesh_taken_zombie",
     "monsters": [
       { "monster": "mon_sflesh_taken_bear", "freq": 10, "cost_multiplier": 0 },
-<<<<<<< Updated upstream
-=======
       { "monster": "mon_sflesh_taken_rat", "freq": 125, "cost_multiplier": 0 },
       { "monster": "mon_sflesh_taken_cougar", "freq": 25, "cost_multiplier": 0 },
       { "monster": "mon_sflesh_taken_moose", "freq": 5, "cost_multiplier": 0 },
->>>>>>> Stashed changes
       { "monster": "mon_sflesh_bear_cub", "freq": 8, "cost_multiplier": 0 },
       { "monster": "mon_sflesh_taken_rat", "freq": 50, "cost_multiplier": 0 },
       { "monster": "mon_sflesh_taken_cougar", "freq": 15, "cost_multiplier": 0 },
