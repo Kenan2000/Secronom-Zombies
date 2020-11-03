@@ -496,7 +496,7 @@
         [ "f_secro_boulder_medium_flesh", 2 ],
         [ "f_boulder_medium", 8 ],
         [ "f_secro_tree_flesh_atk", 25 ],
-        "f_secro_boulder_large_flesh",
+        [ "f_secro_boulder_large_flesh", 4 ],
         [ "f_boulder_large", 4 ]
       ]
     }
