@@ -1,4 +1,5 @@
-{
+[
+  {
     "type": "overmap_land_use_code",
     "id": "secro_flesh_biome",
     "name": "Flesh",
@@ -6,3 +7,4 @@
     "sym": "F",
     "color": "red_red"
   }
+]
