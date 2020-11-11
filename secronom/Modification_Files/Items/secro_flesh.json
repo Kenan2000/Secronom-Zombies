@@ -1,4 +1,5 @@
-{
+[
+  {
     "type": "GENERIC",
     "id": "secro_flesh_core",
     "looks_like": "secro_flesh",
@@ -12,3 +13,4 @@
     "volume": "200 ml",
     "category": "spare_parts"
   }
+]
