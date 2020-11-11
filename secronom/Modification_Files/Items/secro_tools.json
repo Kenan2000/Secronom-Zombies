@@ -1,4 +1,5 @@
-{
+[
+  {
     "bashing": 3,
     "charges_per_use": 50,
     "color": "red",
@@ -33,3 +34,4 @@
     "volume": "550 ml",
     "weight": "275 g"
   }
+]
