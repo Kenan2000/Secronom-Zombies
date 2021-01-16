@@ -111,7 +111,7 @@
     "id": "mon_zombie_tendricles",
     "type": "MONSTER",
     "name": "tendril zombie",
-    "description": "A frail-looking corpse with raging long tentacles covering this corpse's rotten skin. Its tendril pairs are tipped with a sharp bone.",
+    "description": "A frail-looking corpse with raging long tentacles covering its rotten skin. Its tendril pairs are tipped with a sharp bone.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "SECROZED_1", "HUMAN" ],
     "volume": "62500 ml",
