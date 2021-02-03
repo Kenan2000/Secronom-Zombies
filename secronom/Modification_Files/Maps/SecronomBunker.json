@@ -33,7 +33,7 @@
         "        nmmmmmm         ",
         "         mmmmmmn        "
       ],
-      "furniture": { "h": "f_desk", "j": "f_chair", "f": "f_locker" },
+      "furniture": { "h": "f_desk", "j": "f_chair", "f": "f_locker", "g": "f_console", "i": "f_machinery_electronic" },
       "terrain": {
         "a": "t_strconc_floor",
         "b": [ "t_thconc_floor_olight", "t_strconc_floor" ],
@@ -41,9 +41,7 @@
         "d": "t_reinforced_glass",
         "e": "t_door_metal_locked",
         "f": "t_strconc_floor",
-        "g": "t_console",
         "h": "t_strconc_floor",
-        "i": "t_machinery_electronic",
         "j": "t_strconc_floor",
         "k": [ "t_utility_light", "t_strconc_floor" ],
         "l": "t_ladder_up",
