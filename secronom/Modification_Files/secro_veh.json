@@ -92,8 +92,6 @@
   {
     "type": "vehicle_group",
     "id": "secro_veh_ssfieldtest",
-    "vehicles": [
-      [ "secro_veh_sscarrier", 69 ]
-    ]
+    "vehicles": [ [ "secro_veh_sscarrier", 69 ] ]
   }
 ]
