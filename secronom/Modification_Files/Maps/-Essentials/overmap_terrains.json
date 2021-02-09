@@ -776,16 +776,6 @@
     "land_use_code": "secro_flesh_biome"
   },
   {
-    "id": "flesh_biome_extra",
-    "type": "overmap_terrain",
-    "name": "forest",
-    "sym": "F",
-    "color": "green",
-    "spawns": { "group": "GROUP_FF_SURFACE", "population": [ 1, 2 ], "chance": 50 },
-    "see_cost": 10,
-    "land_use_code": "secro_flesh_biome"
-  },
-  {
     "type": "overmap_terrain",
     "id": "secro_flesh_city_core",
     "flags": [ "NO_ROTATE" ],

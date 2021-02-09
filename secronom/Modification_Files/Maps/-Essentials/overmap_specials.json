@@ -484,13 +484,6 @@
     "flags": [ "WILDERNESS" ]
   },
   {
-    "type": "overmap_special",
-    "id": "Extras for Flesh Forest",
-    "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "flesh_biome_extra_north" } ],
-    "locations": [ "flesh_forest_dp" ],
-    "occurrences": [ 0, 5 ]
-  },
-  {
     "id": "Flesh City 1",
     "locations": [ "field" ],
     "occurrences": [ 0, 1 ],
