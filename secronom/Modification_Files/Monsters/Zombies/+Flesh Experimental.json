@@ -1,0 +1,57 @@
+[
+  {
+    "//": "Armored zombie, but can actually hurt you, in many ways.",
+    "id": "mon_szombie_vessel",
+    "type": "MONSTER",
+    "name": { "str": "vessel experimental" },
+    "description": "A human who fell and succumbed to the flesh vessel exoskeleton - an experimental battle suit developed by the Secronom Project. It has completely fused with the body, and seem to have full control over it, along with its arsenal.",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [ "SFLESH", "HUMAN" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 100,
+    "speed": 70,
+    "material": [ "flesh" ],
+    "symbol": "⒵",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 8,
+    "melee_dice": 3,
+    "melee_dice_sides": 2,
+    "melee_cut": 3,
+    "vision_night": 12,
+    "armor_bash": 32,
+    "armor_cut": 32,
+    "armor_stab": 32,
+    "armor_bullet": 32,
+    "armor_acid": 8,
+    "armor_fire": 8,
+    "harvest": "human",
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": { "id": "mon_szombie_vessel_target" },
+        "cooldown": 15,
+        "monster_message": "<color_magenta>%1$s aims at %3$s!</color>"
+      }
+    ],
+    "death_function": [ "NORMAL" ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "PUSH_MON",
+      "FILTHY",
+      "ELECTRIC",
+      "STUN_IMMUNE"
+    ]
+  }
+]
