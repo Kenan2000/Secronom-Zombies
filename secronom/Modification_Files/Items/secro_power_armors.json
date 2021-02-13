@@ -289,7 +289,7 @@
       { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "secro_flesh": 100 } }
     ],
     "warmth": 30,
-    "material_thickness": 28,
+    "material_thickness": 22,
     "environmental_protection": 8,
     "power_armor": true,
     "charges_per_use": 10,
