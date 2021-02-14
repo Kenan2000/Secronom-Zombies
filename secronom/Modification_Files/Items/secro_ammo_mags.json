@@ -144,7 +144,7 @@
     "name": { "str": "SP experimental battery", "str_pl": "SP experimental batteries" },
     "description": "A light, but high-capacity battery cell, for use with certain power armor modules.",
     "weight": "600 g",
-    "volume": "750ml",
+    "volume": "750 ml",
     "price": 17500,
     "price_postapoc": 1000,
     "material": [ "iron", "plastic" ],
