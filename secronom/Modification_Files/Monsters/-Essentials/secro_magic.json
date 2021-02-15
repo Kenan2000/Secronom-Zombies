@@ -1159,9 +1159,7 @@
     "id": "mon_zombie_fake_poly_ichorus_target",
     "name": { "str": "a spell" },
     "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
-    "extra_effects": [
-      { "id": "mon_zombie_fake_poly_ichorus", "hit_self": true }
-    ],
+    "extra_effects": [ { "id": "mon_zombie_fake_poly_ichorus", "hit_self": true } ],
     "flags": [ "SILENT", "NO_PROJECTILE" ],
     "valid_targets": [ "ally", "hostile", "ground" ],
     "effect": "attack",
@@ -2389,7 +2387,11 @@
     "shape": "blast",
     "flags": [ "SILENT" ],
     "valid_targets": [ "self" ],
-    "extra_effects": [ { "id": "mon_zombie_charger_charge" }, { "id": "mon_zombie_charger_charge_push" }, { "id": "mon_zombie_charger_charge_pushy", "hit_self": true } ],
+    "extra_effects": [
+      { "id": "mon_zombie_charger_charge" },
+      { "id": "mon_zombie_charger_charge_push" },
+      { "id": "mon_zombie_charger_charge_pushy", "hit_self": true }
+    ],
     "min_aoe": 13,
     "max_aoe": 13
   },
@@ -2438,7 +2440,11 @@
     "shape": "blast",
     "flags": [ "SILENT" ],
     "valid_targets": [ "self" ],
-    "extra_effects": [ { "id": "mon_zombie_charger_spike_charge" }, { "id": "mon_zombie_charger_charge_push" }, { "id": "mon_zombie_charger_charge_pushy", "hit_self": true } ],
+    "extra_effects": [
+      { "id": "mon_zombie_charger_spike_charge" },
+      { "id": "mon_zombie_charger_charge_push" },
+      { "id": "mon_zombie_charger_charge_pushy", "hit_self": true }
+    ],
     "min_aoe": 15,
     "max_aoe": 15
   },
@@ -2487,7 +2493,11 @@
     "shape": "blast",
     "flags": [ "SILENT" ],
     "valid_targets": [ "self" ],
-    "extra_effects": [ { "id": "mon_zombie_charger_plate_charge" }, { "id": "mon_zombie_charger_charge_push" }, { "id": "mon_zombie_charger_charge_pushy", "hit_self": true } ],
+    "extra_effects": [
+      { "id": "mon_zombie_charger_plate_charge" },
+      { "id": "mon_zombie_charger_charge_push" },
+      { "id": "mon_zombie_charger_charge_pushy", "hit_self": true }
+    ],
     "min_aoe": 8,
     "max_aoe": 8
   },
@@ -2536,7 +2546,11 @@
     "shape": "blast",
     "flags": [ "SILENT" ],
     "valid_targets": [ "self" ],
-    "extra_effects": [ { "id": "mon_zombie_charger_vanguard_charge" }, { "id": "mon_zombie_charger_charge_push" }, { "id": "mon_zombie_charger_charge_pushy", "hit_self": true } ],
+    "extra_effects": [
+      { "id": "mon_zombie_charger_vanguard_charge" },
+      { "id": "mon_zombie_charger_charge_push" },
+      { "id": "mon_zombie_charger_charge_pushy", "hit_self": true }
+    ],
     "min_aoe": 20,
     "max_aoe": 20
   },
