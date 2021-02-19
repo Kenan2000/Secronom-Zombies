@@ -14,10 +14,7 @@
 
 ###### Do this everytime you update. It is done to avoid errors.
 
-### Additional info:
-_Secronom_ mod folder has informational texts that might help you out...
-
-## Discord Links
+### Discord Links
 Discord servers the maintainer/author of this mod actively participates.
 
 #### SomeDeadGuy's Server for Undead Schmucks
