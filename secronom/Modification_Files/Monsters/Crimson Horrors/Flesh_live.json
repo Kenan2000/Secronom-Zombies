@@ -1059,9 +1059,10 @@
     "flags": [ "SEES", "HEARS", "SMELLS", "ABSORBS", "WARM", "KEENNOSE" ]
   },
   {
-    "id": "mon_sflesh_reindeer",
+    "id": "mon_sflesh_taken_reindeer",
     "type": "MONSTER",
-    "copy-from": "mon_reindeer",
+    "bodytype": "horse",
+    "looks_like": "mon_reindeer",
     "name": { "str": "Reindeer" },
     "default_faction": "secro_flesh",
     "species": [ "SFLESH", "ABERRATION" ],
@@ -1079,6 +1080,9 @@
     "melee_damage": [ { "amount": 7, "damage_type": "bash" } ],
     "armor_bash": 5,
     "dodge": 4,
-    "harvest": "mammal_fur"
+    "vision_night": 5,
+    "death_function": [ "NORMAL" ],
+    "harvest": "mammal_large_leather",
+    "flags": [ "SEES", "HEARS", "SMELLS", "ABSORBS", "WARM", "POISON", "NO_BREATHE" ]
   }
 ]
