@@ -77,9 +77,15 @@
       { "monster": "mon_zombie_translucent", "freq": 2, "cost_multiplier": 5 },
       { "monster": "mon_zombie_WALKINGPOTATO", "freq": 1, "cost_multiplier": 12 },
       { "monster": "mon_zombieworm_noxeater", "freq": 1, "cost_multiplier": 13 },
-      { "monster": "mon_zombie_bootlegsmoker", "freq": 1, "cost_multiplier": 15 },
       { "monster": "mon_zombie_skittyweavy_idle", "freq": 1, "cost_multiplier": 15, "pack_size": [ 1, 2 ] },
       { "monster": "mon_zombie_revenant_idle", "freq": 1, "cost_multiplier": 20 },
+      {
+        "monster": "mon_zombie_bootlegsmoker",
+        "freq": 1,
+        "cost_multiplier": 15,
+        "starts": 168,
+        "//": "These appear after a week."
+      },
       {
         "monster": "mon_zombie_lick",
         "freq": 1,
