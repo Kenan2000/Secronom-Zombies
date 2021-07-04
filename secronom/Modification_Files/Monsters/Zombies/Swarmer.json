@@ -132,7 +132,7 @@
       [ "GRAB", 3 ],
       [ "scratch", 32 ],
       [ "swarmerzed_bite_weak", 10 ],
-      [ "GRAB_DRAG", 30 ]
+      [ "GRAB_DRAG", 40 ]
     ],
     "upgrades": { "half_life": 10, "into": "mon_zombie_swarmer_moderate" }
   },
@@ -147,7 +147,7 @@
       [ "GRAB", 3 ],
       [ "scratch", 32 ],
       [ "swarmerzed_bite_weak", 10 ],
-      [ "GRAB_DRAG", 30 ]
+      [ "GRAB_DRAG", 40 ]
     ],
     "upgrades": {
       "half_life": 1,
@@ -172,7 +172,7 @@
       [ "GRAB", 3 ],
       [ "scratch", 30 ],
       [ "swarmerzed_bite_mode", 10 ],
-      [ "GRAB_DRAG", 28 ]
+      [ "GRAB_DRAG", 34 ]
     ],
     "upgrades": { "half_life": 11, "into": "mon_zombie_swarmer_strong" }
   },
@@ -193,7 +193,7 @@
       [ "GRAB", 3 ],
       [ "scratch", 28 ],
       [ "swarmerzed_bite_stro", 10 ],
-      [ "GRAB_DRAG", 25 ]
+      [ "GRAB_DRAG", 30 ]
     ],
     "upgrades": { "half_life": 13, "into": "mon_zombie_swarmer_evo_hungry" }
   },
@@ -216,7 +216,7 @@
       [ "GRAB", 2 ],
       [ "scratch", 26 ],
       [ "swarmerzed_bite_vstro", 10 ],
-      [ "GRAB_DRAG", 22 ]
+      [ "GRAB_DRAG", 26 ]
     ],
     "upgrades": { "half_life": 16, "into": "mon_zombie_swarmer_evo_starving" }
   },
@@ -239,7 +239,7 @@
       [ "GRAB", 2 ],
       [ "scratch", 24 ],
       [ "swarmerzed_bite_vstro", 10 ],
-      [ "GRAB_DRAG", 18 ]
+      [ "GRAB_DRAG", 20 ]
     ],
     "upgrades": { "half_life": 10, "into_group": "GROUP_EZTARVING_UPGRADE" }
   },
