@@ -17,8 +17,5 @@
 ### Discord Links
 Discord servers the maintainer/author of this mod actively participates.
 
-#### SomeDeadGuy's Server for Undead Schmucks
-* https://discord.gg/M7MG7hnV5p
-
 #### CDDA Modding Community
 * https://discord.gg/PuMsXMPwaU
