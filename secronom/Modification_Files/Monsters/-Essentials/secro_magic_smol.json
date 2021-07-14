@@ -950,7 +950,7 @@
     "id": "mon_zombie_revenant_forsaken_target",
     "name": { "str": "a spell" },
     "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
-    "extra_effects": [ { "id": "mon_zombie_revenant_forsaken_dilute" }, { "id": "mon_zombie_revenant_withdraw", "hit_self": true } ],
+    "extra_effects": [ { "id": "mon_zombie_revenant_forsaken_dilute" } ],
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
     "valid_targets": [ "none" ],
     "effect": "attack",
