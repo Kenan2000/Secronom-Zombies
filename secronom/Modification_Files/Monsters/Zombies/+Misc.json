@@ -166,7 +166,7 @@
     "melee_damage": [ { "damage_type": "electric", "amount": 5 } ],
     "vision_night": 2,
     "luminance": 20,
-    "harvest": "CBM_SUBS",
+    "harvest": "zombie",
     "emit_fields": [ "emit_jolt_ing", "emit_jolt_blanket" ],
     "special_when_hit": [ "ZAPBACK", 100 ],
     "death_drops": "default_zombie_death_drops",
