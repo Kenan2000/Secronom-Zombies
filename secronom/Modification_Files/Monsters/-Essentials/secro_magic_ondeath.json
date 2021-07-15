@@ -36,7 +36,7 @@
     "name": { "str": "Explode" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster explodes, dealing bashing damage and applying bloodbath to all affected creatures.'",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_AOE", "RANDOM_DURATION" ],
-    "valid_targets": [ "self", "hostile", "ground" ],
+    "valid_targets": [ "self", "hostile", "ally", "ground" ],
     "effect": "attack",
     "shape": "blast",
     "effect_str": "unity_bloodslow",
@@ -58,7 +58,7 @@
     "name": { "str": "Explode" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster violently explodes, dealing bashing damage and applying bloodbath to all affected creatures.'",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_AOE", "RANDOM_DURATION" ],
-    "valid_targets": [ "self", "hostile", "ground" ],
+    "valid_targets": [ "self", "hostile", "ally", "ground" ],
     "effect": "attack",
     "shape": "blast",
     "effect_str": "unity_bloodslow",
@@ -177,6 +177,19 @@
     "effect": "summon",
     "shape": "blast",
     "effect_str": "mon_insect_saddler_scout"
+  },
+  {
+    "id": "mon_sflesh_veinstalk_spread",
+    "type": "SPELL",
+    "name": { "str": "Spread" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster guides the flesh to spread to nearby tiles.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "IGNORE_WALLS", "NO_PROJECTILE" ],
+    "valid_targets": [ "ground", "self", "ally", "hostile" ],
+    "effect": "ter_transform",
+    "shape": "blast",
+    "effect_str": "flesh_spread",
+    "min_aoe": 3,
+    "max_aoe": 3
   },
   {
     "id": "mon_sflesh_entrance_open",
