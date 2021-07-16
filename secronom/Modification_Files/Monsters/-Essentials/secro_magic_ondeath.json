@@ -75,6 +75,23 @@
     "damage_type": "bash"
   },
   {
+    "id": "mon_zombie_tentawraith_death",
+    "type": "SPELL",
+    "name": { "str": "Wraith Death" },
+    "description": "Spell casted by an item. If you're seeing this, then read this one instead:\n'Caster's death removes their minions in the field.'",
+    "message": "",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "IGNORE_WALLS" ],
+    "valid_targets": [ "ally", "hostile" ],
+    "targeted_monster_ids": [ "mon_zombie_tentawraith_tent" ],
+    "effect": "attack",
+    "shape": "blast",
+    "min_damage": 1000,
+    "max_damage": 1000,
+    "min_aoe": 42,
+    "max_aoe": 42,
+    "damage_type": "pure"
+  },
+  {
     "type": "SPELL",
     "id": "mon_zombie_fake_ichorus_death_spawn",
     "name": { "str": "Mutate" },

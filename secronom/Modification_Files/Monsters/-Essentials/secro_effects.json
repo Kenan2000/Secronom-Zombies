@@ -1095,6 +1095,12 @@
   },
   {
     "type": "effect_type",
+    "id": "mon_zombie_tentawraith_stunmore_YES",
+    "apply_message": "You've been constricted!",
+    "rating": "bad"
+  },
+  {
+    "type": "effect_type",
     "id": "mon_secrodragon_barrier_target_random_YES",
     "apply_message": "After a brief moment, a temporary force field has been generated surrounding the secronom dragon!",
     "rating": "mixed"
