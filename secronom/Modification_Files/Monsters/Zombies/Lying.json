@@ -61,7 +61,6 @@
     "vision_day": 45,
     "vision_night": 4,
     "harvest": "zombie",
-    "upgrades": { "half_life": 16, "into_group": "GROUP_LYING_UPGRADEX" },
     "flags": [
       "SEES",
       "HEARS",
@@ -107,7 +106,6 @@
     "vision_day": 35,
     "vision_night": 20,
     "harvest": "zombie",
-    "upgrades": { "half_life": 16, "into_group": "GROUP_LYING_UPGRADEX" },
     "flags": [
       "SEES",
       "HEARS",
