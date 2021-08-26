@@ -60,6 +60,7 @@
     "armor_bullet": 1,
     "vision_day": 45,
     "vision_night": 4,
+    "upgrades": { "half_life": 16, "into_group": "GROUP_LYING_UPGRADEX" },
     "harvest": "zombie",
     "flags": [
       "SEES",
@@ -105,6 +106,7 @@
     "armor_bullet": 2,
     "vision_day": 35,
     "vision_night": 20,
+    "upgrades": { "half_life": 16, "into_group": "GROUP_LYING_UPGRADEX" },
     "harvest": "zombie",
     "flags": [
       "SEES",
