@@ -295,51 +295,12 @@
       }
     ],
     "immunity_data": { "body_part_env_resistance": [ [ "leg_l", 25 ], [ "leg_r", 25 ] ] },
-    "immune_mtypes": [ "mon_zombie_gorepit", "mon_zombie_gorepit_tent" ],
+    "immune_mtypes": [ "mon_zombie_gorepit", "mon_zombie_gorepit_tent", "mon_zombie_gorepit_tent_massive" ],
     "priority": 1,
     "half_life": "1 seconds",
     "phase": "solid",
     "display_items": false,
     "display_field": true
-  },
-  {
-    "id": "fd_gorepit_normal",
-    "type": "field_type",
-    "intensity_levels": [
-      {
-        "name": "light earthquake",
-        "color": "light_gray",
-        "monster_spawn_chance": 10000,
-        "monster_spawn_count": 1,
-        "monster_spawn_radius": 1,
-        "monster_spawn_group": "GROUP_GORE_TENT"
-      }
-    ],
-    "priority": -1,
-    "half_life": "1 turns",
-    "phase": "gas",
-    "display_items": true,
-    "display_field": false
-  },
-  {
-    "//": "Similar case to uruxis.",
-    "id": "fd_gorepit_combat",
-    "type": "field_type",
-    "intensity_levels": [
-      {
-        "name": "earthquake",
-        "color": "white",
-        "monster_spawn_chance": 2500,
-        "monster_spawn_count": 1,
-        "monster_spawn_radius": 1,
-        "monster_spawn_group": "GROUP_GORE_TENT"
-      }
-    ],
-    "priority": -1,
-    "half_life": "5 turns",
-    "phase": "gas",
-    "display_items": true,
-    "display_field": false
   },
   {
     "id": "fd_cordev_corrupt_acid",
