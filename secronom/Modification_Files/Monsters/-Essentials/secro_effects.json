@@ -1077,6 +1077,14 @@
   },
   {
     "type": "effect_type",
+    "id": "eff_zombie_gorepit_spawnmore_stop"
+  },
+  {
+    "type": "effect_type",
+    "id": "eff_zombie_gorepit_tent_massive_cd"
+  },
+  {
+    "type": "effect_type",
     "id": "eff_snatcher_snatch",
     "name": [ "Snatched", "Snatched" ],
     "desc": [ "A tongue clings and is holding you down!", "A tongue clings and is holding you down!" ],
