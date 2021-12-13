@@ -283,5 +283,37 @@
     "min_aoe": 30,
     "max_aoe": 30,
     "flags": [ "SILENT" ]
+  },
+  {
+    "id": "mon_zombie_gorepit_deathmore",
+    "type": "SPELL",
+    "name": { "str": "Tendril Collapse" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster removes all tendrils.'",
+    "valid_targets": [ "hostile", "ally" ],
+    "effect": "attack",
+    "shape": "blast",
+    "targeted_monster_ids": [ "mon_zombie_gorepit_tent", "mon_zombie_gorepit_tent_massive" ],
+    "damage_type": "pure",
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "min_aoe": 40,
+    "max_aoe": 40,
+    "flags": [ "SILENT", "IGNORE_WALLS" ]
+  },
+  {
+    "id": "mon_zombie_gorepit_death",
+    "type": "SPELL",
+    "name": { "str": "Collapse" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's death removes all of its minions on the fields, and stops further spawning.'",
+    "flags": [ "SILENT", "IGNORE_WALLS" ],
+    "valid_targets": [ "hostile" ],
+    "effect": "attack",
+    "shape": "blast",
+    "effect_str": "eff_zombie_gorepit_spawnmore_stop",
+    "extra_effects": [ { "id": "mon_zombie_gorepit_deathmore", "hit_self": true } ],
+    "min_aoe": 40,
+    "max_aoe": 40,
+    "min_duration": 1500,
+    "max_duration": 1500
   }
 ]

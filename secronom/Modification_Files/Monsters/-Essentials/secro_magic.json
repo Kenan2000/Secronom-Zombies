@@ -1087,10 +1087,38 @@
     "max_range": 3
   },
   {
+    "id": "mon_zombie_gorepit_rage",
+    "type": "SPELL",
+    "name": { "str": "Rage" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster pushes nearby creatures.'",
+    "effect": "area_push",
+    "shape": "blast",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
+    "valid_targets": [ "ally", "hostile", "ground" ],
+    "min_aoe": 4,
+    "max_aoe": 4
+  },
+  {
+    "id": "mon_zombie_gorepit_spawnmore",
+    "type": "SPELL",
+    "name": { "str": "Gorespawn More" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster summons more giant tendrils over time.'",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "SILENT" ],
+    "message": "",
+    "min_damage": 10000,
+    "max_damage": 10000,
+    "min_range": 25,
+    "max_range": 25,
+    "shape": "line",
+    "effect": "effect_on_condition",
+    "effect_str": "eoc_secro_mon_zombie_gorepit_spawnmore"
+  },
+  {
     "type": "SPELL",
     "id": "mon_zombie_gorepit_spawn",
     "name": { "str": "Gorespawn" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels itself to send out giant tendrils more actively, causing the ground to resonate which applies unstable footing to all creatures within its range.'",
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster causes the ground to resonate, applying unstable footing to all creatures within its range.'",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DURATION", "NO_PROJECTILE" ],
     "valid_targets": [ "ground", "ally", "hostile" ],
     "effect": "attack",
@@ -1098,12 +1126,8 @@
     "effect_str": "downed",
     "min_aoe": 13,
     "max_aoe": 13,
-    "field_id": "fd_gorepit_combat",
-    "field_chance": 1,
-    "min_field_intensity": 1,
-    "max_field_intensity": 1,
     "min_duration": 100,
-    "max_duration": 500
+    "max_duration": 300
   },
   {
     "id": "mon_zombie_gorepit_tdestruct",
@@ -1120,31 +1144,10 @@
   },
   {
     "type": "SPELL",
-    "id": "mon_zombie_gorepit_tdisturb",
-    "name": { "str": "Tendril Disturbance" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'From sensing a nearby target, caster sends 1-2 tentacles near them.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "HOSTILE_SUMMON", "RANDOM_DAMAGE", "PERMANENT", "NO_PROJECTILE" ],
-    "valid_targets": [ "ground" ],
-    "min_damage": 1,
-    "max_damage": 2,
-    "min_range": 10,
-    "max_range": 10,
-    "min_aoe": 2,
-    "max_aoe": 2,
-    "effect": "summon",
-    "shape": "blast",
-    "effect_str": "mon_zombie_gorepit_tent"
-  },
-  {
-    "type": "SPELL",
     "id": "mon_zombie_gorepit_spawn_target",
     "name": { "str": "a spell" },
     "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
-    "extra_effects": [
-      { "id": "mon_zombie_gorepit_spawn", "hit_self": true },
-      { "id": "mon_zombie_gorepit_tdisturb" },
-      { "id": "mon_zombie_gorepit_tdestruct", "hit_self": true }
-    ],
+    "extra_effects": [ { "id": "mon_zombie_gorepit_spawn", "hit_self": true }, { "id": "mon_zombie_gorepit_spawnmore" } ],
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
     "valid_targets": [ "none" ],
     "effect": "attack",
