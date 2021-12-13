@@ -720,7 +720,7 @@
     "color": "red",
     "aggression": 100,
     "morale": 100,
-    "emit_fields": [ "emit_down_immunity", "emit_gorepit_edge", "emit_gorepit_passive_summon" ],
+    "emit_fields": [ "emit_down_immunity", "emit_gorepit_edge" ],
     "melee_skill": 0,
     "melee_dice": 0,
     "melee_dice_sides": 0,
@@ -743,9 +743,9 @@
         "effects": [
           {
             "effect": "secro_gorepit_absorb",
-            "duration": [ 8, 10 ],
+            "duration": [ 10, 20 ],
             "damage_required": [ 8, 18 ],
-            "//": "Around 200 damage.",
+            "//": "Around 130 damage. Will trigger another ability if this effect is active.",
             "message": "<color_light_red>The %s unleashes an ear-splitting screech!</color>\n<color_magenta>The %s's orb is absorbing its surrounding flesh, replenishing itself.</color>"
           },
           {
@@ -766,8 +766,12 @@
         "monster_message": "<color_red>You feel the ground shaking as it originates from %1$s!</color>\n<color_yellow>%1$s sends a defeaning screech!</color>"
       }
     ],
-    "death_function": { "message": "The %s collapses!", "corpse_type": "NO_CORPSE" },
-    "flags": [ "SEES", "WARM", "IMMOBILE", "POISON", "NO_BREATHE", "PRIORITIZE_TARGETS", "STUN_IMMUNE", "FLIES" ]
+    "death_function": {
+      "message": "The %s collapses!",
+      "corpse_type": "NO_CORPSE",
+      "effect": { "id": "mon_zombie_gorepit_death", "hit_self": true }
+    },
+    "flags": [ "SEES", "WARM", "IMMOBILE", "POISON", "NO_BREATHE", "PRIORITIZE_TARGETS", "STUN_IMMUNE", "FLIES", "NOHEAD" ]
   },
   {
     "//": "Gorepit's main damage dealer.",
@@ -788,7 +792,7 @@
     "emit_fields": [ "emit_down_immunity" ],
     "aggression": 100,
     "morale": 100,
-    "attack_cost": 575,
+    "attack_cost": 425,
     "melee_skill": 8,
     "melee_dice": 4,
     "melee_dice_sides": 6,
@@ -801,14 +805,44 @@
     "vision_day": 13,
     "vision_night": 13,
     "harvest": "exempt",
-    "special_attacks": [
-      [ "gorepit_tent_hswing", 30 ],
-      [ "gorepit_tent_stab", 22 ],
-      [ "gorepit_tent_slam", 40 ],
-      [ "DISAPPEAR", 250 ]
-    ],
-    "death_function": { "message": "The %s disintegrates!", "corpse_type": "NO_CORPSE" },
-    "flags": [ "SEES", "WARM", "IMMOBILE", "POISON", "NO_BREATHE", "NOHEAD", "STUN_IMMUNE", "PRIORITIZE_TARGETS" ]
+    "special_attacks": [ [ "gorepit_tent_hswing", 30 ], [ "gorepit_tent_stab", 22 ], [ "gorepit_tent_slam", 40 ], [ "DISAPPEAR", 250 ] ],
+    "death_function": { "message": "The %s disappears into the ground.", "corpse_type": "NO_CORPSE" },
+    "flags": [ "SEES", "WARM", "IMMOBILE", "POISON", "NO_BREATHE", "NOHEAD", "STUN_IMMUNE", "PRIORITIZE_TARGETS", "NOHEAD" ]
+  },
+  {
+    "id": "mon_zombie_gorepit_tent_massive",
+    "type": "MONSTER",
+    "name": { "str": "massive tendril" },
+    "description": "A huge tendril, with a darker hue and almost double the size of a regular variant. Unlike others, this one emerged from the depths of the gorepit.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE" ],
+    "volume": "1000 L",
+    "weight": "1000000 g",
+    "hp": 500,
+    "speed": 50,
+    "diff": 100,
+    "material": [ "flesh", "bone" ],
+    "symbol": "?",
+    "color": "white_red",
+    "emit_fields": [ "emit_down_immunity" ],
+    "aggression": 100,
+    "morale": 100,
+    "attack_cost": 600,
+    "melee_skill": 10,
+    "melee_dice": 10,
+    "melee_dice_sides": 10,
+    "melee_cut": 0,
+    "armor_bash": 3,
+    "armor_stab": 3,
+    "armor_cut": 6,
+    "armor_bullet": 6,
+    "bleed_rate": 0,
+    "vision_day": 13,
+    "vision_night": 13,
+    "harvest": "exempt",
+    "special_attacks": [ [ "gorepit_tent_hswing", 30 ], [ "gorepit_tent_stab", 22 ], [ "gorepit_tent_slam", 40 ], [ "DISAPPEAR", 600 ] ],
+    "death_function": { "message": "The %s disappears into the pit.", "corpse_type": "NO_CORPSE" },
+    "flags": [ "SEES", "WARM", "IMMOBILE", "POISON", "NO_BREATHE", "NOHEAD", "STUN_IMMUNE", "PRIORITIZE_TARGETS", "NOHEAD" ]
   },
   {
     "//": "Aggro-type zed, both durable and lethal. Unlike other zed mutants, this one's very dependant on healing for itself whilst dealing damage, in addition to its unique debuff-inflicting acid.",
