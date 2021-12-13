@@ -187,13 +187,6 @@
     "intensity": 1
   },
   {
-    "id": "emit_gorepit_passive_summon",
-    "type": "emit",
-    "field": "fd_gorepit_normal",
-    "qty": 100,
-    "intensity": 1
-  },
-  {
     "id": "emit_equinox_toxic_weak",
     "type": "emit",
     "field": "fd_toxic_gas",
