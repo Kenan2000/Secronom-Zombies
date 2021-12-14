@@ -17,57 +17,46 @@
         "min_radius": 2,
         "max_radius": 3,
         "outdoor_only": true
-      },
-      {
-        "set_queue_effect_on_condition": [
-          {
-            "id": "eoc_secro_mon_zombie_gorepit_spawnmore_now",
-            "condition": {
-              "and": [
-                { "or": [ { "one_in_chance": 2 }, { "npc_has_effect": "secro_gorepit_absorb" } ] },
-                { "not": { "u_has_effect": "eff_zombie_gorepit_spawnmore_stop" } }
-              ]
-            },
-            "effect": [
-              { "u_message": "The ground trembles underneath you!", "type": "bad" },
-              {
-                "u_set_spawn_monster": "mon_zombie_gorepit_tent",
-                "real_count": 1,
-                "min_radius": 2,
-                "max_radius": 4,
-                "outdoor_only": true
-              },
-              {
-                "set_queue_effect_on_condition": [ "eoc_secro_mon_zombie_gorepit_spawnmore_now" ],
-                "time_in_future_min": "5 seconds",
-                "time_in_future_max": "10 seconds"
-              }
-            ]
-          },
-          {
-            "id": "eoc_secro_mon_zombie_gorepit_tent_massive",
-            "condition": {
-              "and": [ { "npc_has_effect": "secro_gorepit_absorb" }, { "not": { "npc_has_effect": "eff_zombie_gorepit_tent_massive_cd" } } ]
-            },
-            "effect": [
-              {
-                "u_message": "A massive tendril emerges from the gorepit, swaying erractically around its vicinity!",
-                "type": "mixed"
-              },
-              { "npc_cast_spell": { "id": "mon_zombie_gorepit_rage", "hit_self": true } },
-              { "npc_cast_spell": { "id": "mon_zombie_gorepit_rage", "hit_self": true } },
-              {
-                "npc_set_spawn_monster": "mon_zombie_gorepit_tent_massive",
-                "real_count": 1,
-                "min_radius": 1,
-                "max_radius": 2,
-                "outdoor_only": false
-              },
-              { "npc_add_effect": "eff_zombie_gorepit_tent_massive_cd", "duration": "3 minutes" }
-            ]
-          }
-        ]
       }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_zombie_gorepit_spawnmorer",
+    "condition": { "or": [ { "one_in_chance": 2 }, { "npc_has_effect": "secro_gorepit_absorb" } ] },
+    "effect": [
+      { "u_message": "The ground trembles underneath you!", "type": "bad" },
+      {
+        "u_set_spawn_monster": "mon_zombie_gorepit_tent",
+        "real_count": 1,
+        "min_radius": 2,
+        "max_radius": 4,
+        "outdoor_only": true
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_zombie_gorepit_tent_massive",
+    "condition": {
+      "and": [ { "npc_has_effect": "secro_gorepit_absorb" }, { "not": { "npc_has_effect": "eff_zombie_gorepit_tent_massive_cd" } } ]
+    },
+    "effect": [
+      {
+        "u_message": "A massive tendril emerges from the gorepit, swaying erractically around its vicinity!",
+        "type": "mixed"
+      },
+      { "npc_cast_spell": { "id": "mon_zombie_gorepit_rage", "hit_self": true, "npc_message": "" } },
+      { "npc_cast_spell": { "id": "mon_zombie_gorepit_rage", "hit_self": true, "npc_message": "" } },
+      {
+        "npc_set_spawn_monster": "mon_zombie_gorepit_tent_massive",
+        "real_count": 1,
+        "min_radius": 1,
+        "max_radius": 2,
+        "outdoor_only": false
+      },
+      { "npc_add_effect": "eff_zombie_gorepit_tent_massive_cd", "duration": "3 minutes" },
+      { "u_add_effect": "eff_zombie_gorepit_spawnmore_rage", "duration": "30 seconds" }
     ]
   }
 ]
