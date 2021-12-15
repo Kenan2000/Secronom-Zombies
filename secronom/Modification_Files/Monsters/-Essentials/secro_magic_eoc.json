@@ -58,5 +58,19 @@
       { "npc_add_effect": "eff_zombie_gorepit_tent_massive_cd", "duration": "3 minutes" },
       { "u_add_effect": "eff_zombie_gorepit_spawnmore_rage", "duration": "30 seconds" }
     ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_zombieworm_destroy_check",
+    "effect": [
+      { "npc_transform_radius": 1, "ter_furn_transform": "secro_wormonger_destroy" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_zombieworm_onger_destroy_check",
+    "effect": [
+      { "npc_transform_radius": 2, "ter_furn_transform": "secro_wormonger_destroy" }
+    ]
   }
 ]
