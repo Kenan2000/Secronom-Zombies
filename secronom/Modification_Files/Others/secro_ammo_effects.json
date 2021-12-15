@@ -58,5 +58,11 @@
     "type": "ammo_effect",
     "aoe": { "field_type": "fd_blood_acid", "intensity_min": 2, "intensity_max": 3, "chance": 50 },
     "trail": { "field_type": "fd_blood_acid", "intensity_min": 1, "intensity_max": 1, "chance": 25 }
+  },
+  {
+    "id": "SECRO_MAWYFLESH",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_mawy_web", "intensity_min": 2, "intensity_max": 3, "chance": 60, "check_passable": true, "radius": 2, "size": 2 },
+    "trail": { "field_type": "fd_mawy_web", "intensity_min": 1, "intensity_max": 1, "chance": 10 }
   }
 ]
