@@ -1,6 +1,38 @@
 [
   {
     "type": "effect_on_condition",
+    "id": "eoc_secro_mon_zombie_tentawraith_summon_check",
+    "condition": { "not": { "one_in_chance": 3 } },
+    "effect": [
+      { "u_message": "A tentacle bursts out of the ground!", "type": "bad" },
+      {
+        "u_set_spawn_monster": "mon_zombie_tentawraith_tent",
+        "real_count": 1,
+        "min_radius": 1,
+        "max_radius": 3,
+        "outdoor_only": true,
+        "lifespan_min": 20,
+        "lifespan_max": 40
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_zombie_tentawraith_tentgrasp_check",
+    "condition": {
+      "and": [
+        { "compare_int": [ { "u_val": "skill_level", "skill": "dodge" }, { "const": 4 } ], "op": ">=" },
+        { "compare_int": [ { "u_val": "dexterity" }, { "const": 8 } ], "op": ">=" }
+      ]
+    },
+    "effect": [ { "u_message": "A barrage of tentacles tried to grasp at you, but you dodge!", "type": "good" } ],
+    "false_effect": [
+      { "u_message": "A barrage of tentacles grasps at you!", "type": "bad" },
+      { "u_add_effect": "stunned", "duration": "3 seconds" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
     "id": "eoc_secro_mon_zombie_gorepit_spawnmore",
     "effect": [
       { "u_message": "The ground trembles underneath you!", "type": "bad" },
@@ -62,15 +94,11 @@
   {
     "type": "effect_on_condition",
     "id": "eoc_secro_mon_zombieworm_destroy_check",
-    "effect": [
-      { "npc_transform_radius": 1, "ter_furn_transform": "secro_wormonger_destroy" }
-    ]
+    "effect": [ { "npc_transform_radius": 1, "ter_furn_transform": "secro_wormonger_destroy" } ]
   },
   {
     "type": "effect_on_condition",
     "id": "eoc_secro_mon_zombieworm_onger_destroy_check",
-    "effect": [
-      { "npc_transform_radius": 2, "ter_furn_transform": "secro_wormonger_destroy" }
-    ]
+    "effect": [ { "npc_transform_radius": 2, "ter_furn_transform": "secro_wormonger_destroy" } ]
   }
 ]

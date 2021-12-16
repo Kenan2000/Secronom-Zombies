@@ -85,11 +85,11 @@
     "targeted_monster_ids": [ "mon_zombie_tentawraith_tent" ],
     "effect": "attack",
     "shape": "blast",
-    "min_damage": 1000,
-    "max_damage": 1000,
+    "effect_str": "secro_sacrifice_effect",
     "min_aoe": 42,
     "max_aoe": 42,
-    "damage_type": "pure"
+    "min_duration": 200,
+    "max_duration": 200
   },
   {
     "type": "SPELL",
@@ -277,9 +277,7 @@
     "effect": "attack",
     "shape": "blast",
     "targeted_monster_ids": [ "mon_zombie_nightwail_shadow" ],
-    "damage_type": "pure",
-    "min_damage": 999999,
-    "max_damage": 999999,
+    "effect_str": "secro_sacrifice_effect",
     "min_aoe": 30,
     "max_aoe": 30,
     "flags": [ "SILENT" ]
@@ -293,12 +291,12 @@
     "effect": "attack",
     "shape": "blast",
     "targeted_monster_ids": [ "mon_zombie_gorepit_tent", "mon_zombie_gorepit_tent_massive" ],
-    "damage_type": "pure",
-    "min_damage": 999999,
-    "max_damage": 999999,
+    "effect_str": "secro_sacrifice_effect",
     "min_aoe": 40,
     "max_aoe": 40,
-    "flags": [ "SILENT", "IGNORE_WALLS" ]
+    "flags": [ "SILENT", "IGNORE_WALLS" ],
+    "min_duration": 200,
+    "max_duration": 200
   },
   {
     "id": "mon_zombie_gorepit_death",
