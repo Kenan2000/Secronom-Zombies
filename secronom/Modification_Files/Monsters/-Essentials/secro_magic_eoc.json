@@ -100,5 +100,42 @@
     "type": "effect_on_condition",
     "id": "eoc_secro_mon_zombieworm_onger_destroy_check",
     "effect": [ { "npc_transform_radius": 2, "ter_furn_transform": "secro_wormonger_destroy" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_sflesh_flesh_taken_check",
+    "condition": { "one_in_chance": 2 },
+    "effect": [
+      { "u_message": "A membranous pod emerges from the flesh underneath!", "type": "bad" },
+      { "u_set_spawn_monster": "mon_sflesh_taken_potent", "real_count": 1, "min_radius": 4, "max_radius": 6 }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_sflesh_flesh_trap_check",
+    "effect": [
+      { "u_transform_radius": 1, "ter_furn_transform": "sflesh_flesh_trap" },
+      { "npc_transform_radius": 60, "ter_furn_transform": "sflesh_flesh_biohazard_remove_tent" },
+      { "npc_transform_radius": 60, "ter_furn_transform": "sflesh_flesh_biohazard_remove_bone" },
+      { "u_transform_radius": 10, "ter_furn_transform": "sflesh_flesh_biohazard" },
+      { "u_transform_radius": 3, "ter_furn_transform": "sflesh_flesh_biohazard_accurate" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_sflesh_flesh_city_wallmore_check",
+    "condition": { "one_in_chance": 2 },
+    "effect": [
+      { "u_message": "The flesh undulates!", "type": "mixed" },
+      { "u_set_spawn_monster": "mon_sflesh_flesh_wall_city", "real_count": 1, "min_radius": 1, "max_radius": 1 }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_sflesh_flesh_city_wall_check",
+    "effect": [
+      { "u_message": "The flesh undulates!", "type": "mixed" },
+      { "u_set_spawn_monster": "mon_sflesh_flesh_wall_city", "real_count": 1, "min_radius": 1, "max_radius": 1 }
+    ]
   }
 ]
