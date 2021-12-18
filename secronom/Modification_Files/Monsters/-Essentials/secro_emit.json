@@ -352,13 +352,6 @@
     "intensity": 1
   },
   {
-    "id": "emit_flesh_sack_hatch",
-    "type": "emit",
-    "field": "fd_sflesh_sack",
-    "qty": 1,
-    "intensity": 1
-  },
-  {
     "id": "emit_flesh_sack_blind",
     "type": "emit",
     "field": "fd_sflesh_sack_maybe",
