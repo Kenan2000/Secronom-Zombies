@@ -318,7 +318,7 @@
     "hit_dmg_npc": "The %1$s lashes <npcname>!",
     "no_dmg_msg_u": "The %1$s tries to lash at you, but fails to penetrate your armor!",
     "no_dmg_msg_npc": "The %1$s tries to lash <npcname>, but fails to penetrate their armor!"
-  }
+  },
   {
     "type": "monster_attack",
     "attack_type": "melee",
