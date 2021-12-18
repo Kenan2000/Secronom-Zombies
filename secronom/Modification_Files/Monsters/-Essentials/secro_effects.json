@@ -781,7 +781,7 @@
   {
     "type": "effect_type",
     "id": "secro_veinstalk_limit",
-    "base_mods": { "hurt_min": [ 4 ], "hurt_max": [ 5 ] }
+    "base_mods": { "hurt_min": [ 1 ], "hurt_max": [ 1 ] }
   },
   {
     "type": "effect_type",

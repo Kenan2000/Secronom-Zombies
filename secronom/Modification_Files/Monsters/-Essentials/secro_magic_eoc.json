@@ -33,7 +33,7 @@
   },
   {
     "type": "effect_on_condition",
-    "id": "eoc_secro_mon_zombie_gorepit_spawnmore",
+    "id": "eoc_secro_mon_zombie_gorepit_spawnmore_check",
     "effect": [
       { "u_message": "The ground trembles underneath you!", "type": "bad" },
       {
@@ -54,7 +54,7 @@
   },
   {
     "type": "effect_on_condition",
-    "id": "eoc_secro_mon_zombie_gorepit_spawnmorer",
+    "id": "eoc_secro_mon_zombie_gorepit_spawnmorer_check",
     "condition": { "or": [ { "one_in_chance": 2 }, { "npc_has_effect": "secro_gorepit_absorb" } ] },
     "effect": [
       { "u_message": "The ground trembles underneath you!", "type": "bad" },
@@ -69,7 +69,7 @@
   },
   {
     "type": "effect_on_condition",
-    "id": "eoc_secro_mon_zombie_gorepit_tent_massive",
+    "id": "eoc_secro_mon_zombie_gorepit_tent_massive_check",
     "condition": {
       "and": [ { "npc_has_effect": "secro_gorepit_absorb" }, { "not": { "npc_has_effect": "eff_zombie_gorepit_tent_massive_cd" } } ]
     },
@@ -100,6 +100,63 @@
     "type": "effect_on_condition",
     "id": "eoc_secro_mon_zombieworm_onger_destroy_check",
     "effect": [ { "npc_transform_radius": 2, "ter_furn_transform": "secro_wormonger_destroy" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_sflesh_sack_birth_check",
+    "effect": [
+      { "u_message": "A parasyte pops out of the flesh sack!", "type": "warning" },
+      {
+        "npc_set_spawn_monster": "mon_sflesh_parasyte",
+        "real_count": 3,
+        "min_radius": 1,
+        "max_radius": 2
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_sflesh_sack_birthmore_check",
+    "condition": { "one_in_chance": 2 },
+    "effect": [
+      { "u_message": "A parasyte pops out of the flesh sack!", "type": "warning" },
+      {
+        "npc_set_spawn_monster": "mon_sflesh_parasyte",
+        "real_count": 1,
+        "min_radius": 1,
+        "max_radius": 2
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_sflesh_surface_spawner_jaw_check",
+    "effect": [
+      { "u_message": "A jaw emerges from the flesh!", "type": "warning" },
+      {
+        "npc_set_spawn_monster": "fd_sflesh_spawn_jaw",
+        "real_count": 1,
+        "min_radius": 2,
+        "max_radius": 4,
+        "lifespan_min": 150,
+        "lifespan_max": 250
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_sflesh_surface_spawner_tent_check",
+    "effect": [
+      { "u_message": "A tendril emerges from the flesh!", "type": "warning" },
+      {
+        "npc_set_spawn_monster": "fd_sflesh_spawn_tent",
+        "real_count": 1,
+        "min_radius": 2,
+        "max_radius": 4,
+        "lifespan_min": 150,
+        "lifespan_max": 250
+      }
+    ]
   },
   {
     "type": "effect_on_condition",
@@ -137,5 +194,10 @@
       { "u_message": "The flesh undulates!", "type": "mixed" },
       { "u_set_spawn_monster": "mon_sflesh_flesh_wall_city", "real_count": 1, "min_radius": 1, "max_radius": 1 }
     ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_sflesh_veinstalk_spread_check",
+    "effect": [ { "npc_transform_radius": 4, "ter_furn_transform": "flesh_spread" } ]
   }
 ]

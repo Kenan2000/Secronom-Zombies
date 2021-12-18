@@ -196,19 +196,6 @@
     "effect_str": "mon_insect_saddler_scout"
   },
   {
-    "id": "mon_sflesh_veinstalk_spread",
-    "type": "SPELL",
-    "name": { "str": "Spread" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster guides the flesh to spread to nearby tiles.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "IGNORE_WALLS", "NO_PROJECTILE" ],
-    "valid_targets": [ "ground", "self", "ally", "hostile" ],
-    "effect": "ter_transform",
-    "shape": "blast",
-    "effect_str": "flesh_spread",
-    "min_aoe": 3,
-    "max_aoe": 3
-  },
-  {
     "id": "mon_sflesh_entrance_open",
     "type": "SPELL",
     "name": { "str": "Veinhole Death" },
@@ -236,22 +223,6 @@
     "min_aoe": 50,
     "max_aoe": 50,
     "base_casting_time": -1
-  },
-  {
-    "id": "mon_sflesh_sack_death",
-    "type": "SPELL",
-    "name": { "str": "Spawn Parasytes" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster creates a lingering field that constantly spawns parasytes.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
-    "valid_targets": [ "ally", "hostile", "ground" ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_aoe": 2,
-    "max_aoe": 2,
-    "field_id": "fd_sflesh_sack_dead",
-    "field_chance": 2,
-    "min_field_intensity": 1,
-    "max_field_intensity": 1
   },
   {
     "type": "SPELL",

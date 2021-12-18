@@ -307,6 +307,21 @@
   {
     "type": "monster_attack",
     "attack_type": "melee",
+    "id": "sflesh_vbeast_wlace",
+    "accuracy": 8,
+    "move_cost": 75,
+    "blockable": true,
+    "dodgeable": true,
+    "range": 4,
+    "damage_max_instance": [ { "damage_type": "cut", "amount": 14 } ],
+    "hit_dmg_u": "The %1$s swings a tendril at your %2$s!",
+    "hit_dmg_npc": "The %1$s lashes <npcname>!",
+    "no_dmg_msg_u": "The %1$s tries to lash at you, but fails to penetrate your armor!",
+    "no_dmg_msg_npc": "The %1$s tries to lash <npcname>, but fails to penetrate their armor!"
+  }
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
     "id": "swarmerzed_bite_weak",
     "accuracy": 2,
     "move_cost": 200,
@@ -520,5 +535,20 @@
     "hit_dmg_npc": "The %1$s thrashes <npcname>!",
     "no_dmg_msg_u": "The %1$s tries to thrash at you, but fails to penetrate your armor!",
     "no_dmg_msg_npc": "The %1$s tries to thrash <npcname>, but fails to penetrate their armor!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "sflesh_tendril_lace",
+    "accuracy": 8,
+    "move_cost": 200,
+    "blockable": true,
+    "dodgeable": true,
+    "range": 4,
+    "damage_max_instance": [ { "damage_type": "cut", "amount": 12 } ],
+    "hit_dmg_u": "The %1$s slashes at your %2$s!",
+    "hit_dmg_npc": "The %1$s slashes <npcname>!",
+    "no_dmg_msg_u": "The %1$s tries to slash you, but fails to penetrate your armor!",
+    "no_dmg_msg_npc": "The %1$s tries to slash <npcname>, but fails to penetrate their armor!"
   }
 ]
