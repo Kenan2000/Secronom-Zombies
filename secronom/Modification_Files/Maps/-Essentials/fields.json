@@ -775,44 +775,6 @@
     "display_field": false
   },
   {
-    "id": "fd_sflesh_sack",
-    "type": "field_type",
-    "intensity_levels": [
-      {
-        "name": "...",
-        "color": "black",
-        "monster_spawn_chance": 250,
-        "monster_spawn_count": 1,
-        "monster_spawn_radius": 1,
-        "monster_spawn_group": "GROUP_FLESH_SACK"
-      }
-    ],
-    "priority": -1,
-    "half_life": "1 turns",
-    "phase": "gas",
-    "display_items": true,
-    "display_field": false
-  },
-  {
-    "id": "fd_sflesh_sack_dead",
-    "type": "field_type",
-    "intensity_levels": [
-      {
-        "name": "...",
-        "color": "black",
-        "monster_spawn_chance": 1,
-        "monster_spawn_count": 1,
-        "monster_spawn_radius": 1,
-        "monster_spawn_group": "GROUP_FLESH_SACK"
-      }
-    ],
-    "priority": -1,
-    "half_life": "2 turns",
-    "phase": "gas",
-    "display_items": true,
-    "display_field": false
-  },
-  {
     "id": "fd_sflesh_tentclus",
     "type": "field_type",
     "intensity_levels": [

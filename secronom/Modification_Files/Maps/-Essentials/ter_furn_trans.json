@@ -74,19 +74,6 @@
   },
   {
     "type": "ter_furn_transform",
-    "id": "sflesh_sack",
-    "fail_message": "Can't place the egg.",
-    "furniture": [
-      {
-        "result": "f_secro_sack_hatch",
-        "valid_flags": [ "TRANSPARENT", "S_FLESH" ],
-        "valid_furniture": [ "f_null" ],
-        "message": "The flesh sack hatches."
-      }
-    ]
-  },
-  {
-    "type": "ter_furn_transform",
     "id": "sflesh_flesh_trap",
     "fail_message": "Can't place traps.",
     "furniture": [ { "result": "f_secro_flesh", "valid_furniture": [ "f_null" ], "message": "The flesh here became a biohazard!" } ]
