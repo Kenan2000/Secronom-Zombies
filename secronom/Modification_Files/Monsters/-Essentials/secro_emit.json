@@ -315,32 +315,10 @@
     "intensity": 4
   },
   {
-    "id": "emit_saddler_biome",
-    "type": "emit",
-    "field": "fd_acid",
-    "qty": 2,
-    "intensity": 1,
-    "chance": 1
-  },
-  {
     "id": "emit_resolute_grow",
     "type": "emit",
     "field": "fd_resolute_growth",
     "qty": 1,
-    "intensity": 1
-  },
-  {
-    "id": "emit_eye_spawn_tendril",
-    "type": "emit",
-    "field": "fd_sflesh_spawn_tendril",
-    "qty": 30,
-    "intensity": 1
-  },
-  {
-    "id": "emit_eye_spawn_jaw",
-    "type": "emit",
-    "field": "fd_sflesh_spawn_jaw",
-    "qty": 30,
     "intensity": 1
   },
   {
@@ -451,14 +429,6 @@
     "field": "fd_secro_power_armor_flesh_link",
     "qty": 1,
     "intensity": 1
-  },
-  {
-    "id": "emit_sflesh_fleshling_maybe",
-    "type": "emit",
-    "field": "fd_sflesh_fleshling",
-    "qty": 1,
-    "intensity": 1,
-    "chance": 100
   },
   {
     "id": "emit_sflesh_fleshling_birth",
