@@ -57,9 +57,7 @@
     "melee_cut": 4,
     "armor_bash": 8,
     "armor_stab": 2,
-    "special_attacks": [
-      [ "sflesh_tendril_lace", 20 ]
-    ],
+    "special_attacks": [ [ "sflesh_tendril_lace", 20 ] ],
     "harvest": "exempt",
     "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s melts away." },
     "flags": [ "SEES", "WARM", "POISON", "NO_BREATHE", "NOHEAD", "STUN_IMMUNE", "IMMOBILE" ]
@@ -182,7 +180,6 @@
         "monster_message": "<color_light_red>%1$s bursts, giving birth to parasytes!</color>"
       }
     ],
-    "death_drops": "mon_sflesh_sack_death_drop",
     "harvest": "exempt",
     "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s melts away." },
     "flags": [ "SEES", "WARM", "POISON", "NO_BREATHE", "STUN_IMMUNE", "NOHEAD", "IMMOBILE", "PACIFIST" ]
