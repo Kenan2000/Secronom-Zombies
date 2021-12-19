@@ -606,64 +606,6 @@
     "display_field": false
   },
   {
-    "//": "We'll detach saddlers using field emission. its the only way to create custom death function, I think....",
-    "id": "fd_saddler_detach",
-    "type": "field_type",
-    "intensity_levels": [
-      {
-        "name": "...",
-        "color": "black",
-        "monster_spawn_chance": 1,
-        "monster_spawn_count": 1,
-        "monster_spawn_radius": 1,
-        "monster_spawn_group": "GROUP_SADDLER_DETACH"
-      }
-    ],
-    "priority": -1,
-    "half_life": "1 turns",
-    "phase": "gas",
-    "display_items": true,
-    "display_field": false
-  },
-  {
-    "id": "fd_saddler_brute_detach",
-    "type": "field_type",
-    "intensity_levels": [
-      {
-        "name": "...",
-        "color": "black",
-        "monster_spawn_chance": 1,
-        "monster_spawn_count": 1,
-        "monster_spawn_radius": 1,
-        "monster_spawn_group": "GROUP_SADDLER_BRUTE_DETACH"
-      }
-    ],
-    "priority": -1,
-    "half_life": "1 turns",
-    "phase": "gas",
-    "display_items": true,
-    "display_field": false
-  },
-  {
-    "id": "fd_saddler_scout_detach",
-    "type": "field_type",
-    "intensity_levels": [
-      {
-        "name": "...",
-        "color": "black",
-        "monster_spawn_chance": 1,
-        "monster_spawn_count": 1,
-        "monster_spawn_radius": 1,
-        "monster_spawn_group": "GROUP_SADDLER_SCOUT_DETACH"
-      }
-    ],
-    "priority": -1,
-    "half_life": "1 turns",
-    "phase": "gas",
-    "display_items": true,
-    "display_field": false
-  },
-  {
     "//": "Similar thing from above...",
     "id": "fd_relinquished_revive",
     "type": "field_type",
@@ -697,44 +639,6 @@
     ],
     "priority": -1,
     "half_life": "1 seconds",
-    "phase": "gas",
-    "display_items": true,
-    "display_field": false
-  },
-  {
-    "id": "fd_sflesh_spawn_tendril",
-    "type": "field_type",
-    "intensity_levels": [
-      {
-        "name": "...",
-        "color": "black",
-        "monster_spawn_chance": 1000,
-        "monster_spawn_count": 1,
-        "monster_spawn_radius": 1,
-        "monster_spawn_group": "GROUP_FLESH_SPAWN_TENDRIL"
-      }
-    ],
-    "priority": -1,
-    "half_life": "1 turns",
-    "phase": "gas",
-    "display_items": true,
-    "display_field": false
-  },
-  {
-    "id": "fd_sflesh_spawn_jaw",
-    "type": "field_type",
-    "intensity_levels": [
-      {
-        "name": "...",
-        "color": "black",
-        "monster_spawn_chance": 1000,
-        "monster_spawn_count": 1,
-        "monster_spawn_radius": 1,
-        "monster_spawn_group": "GROUP_FLESH_SPAWN_JAW"
-      }
-    ],
-    "priority": -1,
-    "half_life": "1 turns",
     "phase": "gas",
     "display_items": true,
     "display_field": false
@@ -1147,25 +1051,6 @@
     ],
     "priority": -1,
     "half_life": "1 seconds",
-    "phase": "gas",
-    "display_items": true,
-    "display_field": false
-  },
-  {
-    "id": "fd_sflesh_fleshling",
-    "type": "field_type",
-    "intensity_levels": [
-      {
-        "name": "...",
-        "color": "black",
-        "monster_spawn_chance": 5000,
-        "monster_spawn_count": 1,
-        "monster_spawn_radius": 1,
-        "monster_spawn_group": "GROUP_FLESHLING"
-      }
-    ],
-    "priority": -1,
-    "half_life": "1 turns",
     "phase": "gas",
     "display_items": true,
     "display_field": false
