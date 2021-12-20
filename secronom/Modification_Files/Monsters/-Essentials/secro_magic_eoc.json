@@ -1,6 +1,55 @@
 [
   {
     "type": "effect_on_condition",
+    "id": "eoc_secro_mon_zombie_unify_bv_check",
+    "effect": [ { "npc_set_spawn_monster": "mon_zombie_bloodvessel", "real_count": 1, "min_radius": 1, "max_radius": 2 } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_zombie_unity_bv_check",
+    "effect": [ { "npc_set_spawn_monster": "mon_zombie_bloodvessel", "real_count": 2, "min_radius": 1, "max_radius": 2 } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_zombie_hemo_bf_check",
+    "effect": [ { "npc_set_spawn_monster": "mon_zombie_bloodfiend", "real_count": 1, "min_radius": 1, "max_radius": 2 } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_zombie_hemo_bcurl_check",
+    "condition": { "compare_int": [ { "distance": [ "u", "npc" ] }, { "const": 4 } ], "op": "<=" },
+    "effect": [
+      { "u_message": "Blood accumulates around you!", "type": "bad" },
+      { "u_add_effect": "unity_bloodslow", "duration": "25 seconds" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_zombie_leptiosa_ngas_check",
+    "effect": [
+      { "npc_add_effect": "controlled", "duration": "8 seconds" },
+      { "npc_location_variable": { "value": "secro_leptiosa", "type": "eoc", "context": "noxiousgas", "global": true } },
+      {
+        "set_queue_effect_on_condition": [
+          {
+            "id": "eoc_secro_mon_zombie_leptiosa_ngas_checked",
+            "effect": [
+              {
+                "u_set_field": "fd_secro_lepotiosa_ngas",
+                "target_var": { "value": "secro_leptiosa", "type": "eoc", "context": "noxiousgas", "global": true },
+                "radius": 3,
+                "intensity": 3
+              }
+            ]
+          }
+        ],
+        "time_in_future_min": "6 seconds",
+        "time_in_future_max": "6 seconds"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
     "id": "eoc_secro_mon_zombie_tentawraith_summon_check",
     "condition": { "not": { "one_in_chance": 3 } },
     "effect": [
@@ -49,6 +98,29 @@
         "min_radius": 2,
         "max_radius": 3,
         "outdoor_only": true
+      },
+      {
+        "u_location_variable": { "value": "secro_gorepit", "type": "eoc", "context": "spawn_target", "global": true }
+      },
+      {
+        "set_queue_effect_on_condition": [
+          {
+            "id": "eoc_secro_mon_zombie_gorepit_spawnfurther_check",
+            "condition": { "not": { "u_has_effect": "eff_zombie_gorepit_spawnmore_stop" } },
+            "effect": [
+              {
+                "u_set_spawn_monster": "mon_zombie_gorepit_tent",
+                "target_var": { "value": "secro_gorepit", "type": "eoc", "context": "spawn_target", "global": true },
+                "real_count": 1,
+                "min_radius": 2,
+                "max_radius": 4,
+                "outdoor_only": true
+              }
+            ]
+          }
+        ],
+        "time_in_future_min": "6 seconds",
+        "time_in_future_max": "12 seconds"
       }
     ]
   },
@@ -64,6 +136,26 @@
         "min_radius": 2,
         "max_radius": 4,
         "outdoor_only": true
+      },
+      {
+        "set_queue_effect_on_condition": [
+          {
+            "id": "eoc_secro_mon_zombie_gorepit_spawnfurthermore_check",
+            "condition": { "not": { "u_has_effect": "eff_zombie_gorepit_spawnmore_stop" } },
+            "effect": [
+              {
+                "u_set_spawn_monster": "mon_zombie_gorepit_tent",
+                "target_var": { "value": "secro_gorepit", "type": "eoc", "context": "spawn_target", "global": true },
+                "real_count": 1,
+                "min_radius": 2,
+                "max_radius": 4,
+                "outdoor_only": true
+              }
+            ]
+          }
+        ],
+        "time_in_future_min": "9 seconds",
+        "time_in_future_max": "12 seconds"
       }
     ]
   },
@@ -106,12 +198,7 @@
     "id": "eoc_secro_mon_sflesh_sack_birth_check",
     "effect": [
       { "u_message": "A parasyte pops out of the flesh sack!", "type": "warning" },
-      {
-        "npc_set_spawn_monster": "mon_sflesh_parasyte",
-        "real_count": 3,
-        "min_radius": 1,
-        "max_radius": 2
-      }
+      { "npc_set_spawn_monster": "mon_sflesh_parasyte", "real_count": 3, "min_radius": 1, "max_radius": 2 }
     ]
   },
   {
@@ -120,12 +207,7 @@
     "condition": { "one_in_chance": 2 },
     "effect": [
       { "u_message": "A parasyte pops out of the flesh sack!", "type": "warning" },
-      {
-        "npc_set_spawn_monster": "mon_sflesh_parasyte",
-        "real_count": 1,
-        "min_radius": 1,
-        "max_radius": 2
-      }
+      { "npc_set_spawn_monster": "mon_sflesh_parasyte", "real_count": 1, "min_radius": 1, "max_radius": 2 }
     ]
   },
   {

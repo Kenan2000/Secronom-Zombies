@@ -214,6 +214,23 @@
   },
   {
     "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "xlicker_pstab",
+    "accuracy": 8,
+    "move_cost": 225,
+    "blockable": false,
+    "dodgeable": true,
+    "range": 6,
+    "damage_max_instance": [ { "damage_type": "stab", "amount": 12, "armor_multiplier": 0.8 } ],
+    "hit_dmg_u": "The %1$s pierces at your %2$s with its tongue!",
+    "hit_dmg_npc": "The %1$s pierces <npcname>!",
+    "no_dmg_msg_u": "The %1$s tries to stab you afar, but fails to penetrate your armor!",
+    "no_dmg_msg_npc": "The %1$s tries to stab <npcname>, but fails to penetrate their armor!",
+    "miss_msg_u": "The %s's tongue reaches at you, but you dodge!",
+    "miss_msg_npc": "The %s pierces <npcname>, but they dodge!"
+  },
+  {
+    "type": "monster_attack",
     "id": "secrodragon_M240atk",
     "attack_type": "gun",
     "cooldown": 5,
