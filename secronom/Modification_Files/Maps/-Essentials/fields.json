@@ -245,6 +245,18 @@
     "looks_like": "fd_toxic_gas"
   },
   {
+    "id": "fd_nautilus_disturbance",
+    "type": "field_type",
+    "intensity_levels": [ { "name": "disturbance", "sym": "~", "color": "dark_gray", "move_cost": 1 }, { "move_cost": 2 }, { "move_cost": 4 } ],
+    "priority": -1,
+    "immune_mtypes": [ "mon_zombie_nautilus" ],
+    "half_life": "5 seconds",
+    "decrease_intensity_on_contact": true,
+    "phase": "liquid",
+    "display_items": true,
+    "display_field": false
+  },
+  {
     "id": "fd_disser_scream",
     "type": "field_type",
     "intensity_levels": [
@@ -416,7 +428,7 @@
         ]
       }
     ],
-    "immunity_data": { "traits": [ "ACIDPROOF", "SECRO_WEARING_FLESH_VESSEL" ] },
+    "immunity_data": { "traits": [ "ACIDPROOF" ] },
     "underwater_age_speedup": "2 minutes",
     "has_acid": true,
     "priority": 2,
@@ -475,19 +487,19 @@
         "name": "gangrenous flesh",
         "sym": "#",
         "color": "pink",
-        "move_cost": 15,
+        "move_cost": 1,
         "monster_spawn_chance": 3000,
         "monster_spawn_count": 1,
         "monster_spawn_radius": 1,
         "monster_spawn_group": "GROUP_EQUINOX_CRAWLIES"
       },
-      { "color": "light_red", "move_cost": 35, "monster_spawn_chance": 1500 },
-      { "color": "red", "move_cost": 50, "monster_spawn_chance": 750 }
+      { "color": "light_red", "move_cost": 2, "monster_spawn_chance": 1500 },
+      { "color": "red", "move_cost": 5, "monster_spawn_chance": 750 }
     ],
     "half_life": "6 minutes",
     "priority": 4,
     "phase": "solid",
-    "display_items": true,
+    "display_items": false,
     "display_field": true
   },
   {
