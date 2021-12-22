@@ -244,9 +244,7 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SEWER",
-    "//": "Break the law and let this appear in sewers!",
-    "is_animal": false,
-    "monsters": [ { "monster": "mon_zombie_nautilus", "weight": 125, "cost_multiplier": 10 } ]
+    "monsters": [ { "monster": "mon_zombie_nautilus", "weight": 5, "cost_multiplier": 5 } ]
   },
   {
     "type": "monstergroup",
