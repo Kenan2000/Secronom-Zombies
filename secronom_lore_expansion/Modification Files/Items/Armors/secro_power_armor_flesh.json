@@ -4,7 +4,7 @@
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": { "str": "flesh vessel" },
-    "description": "It is currently not merged with anything. Activate to permanently merge with it.\n\nA complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind. Certain bionics must be installed to take full control of it.",
+    "description": "It is currently not merged with anything. Activate to permanently merge with it.\n\nA complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
     "weight": "18400 g",
     "volume": "21 L",
     "price": "323000 USD",
@@ -45,7 +45,7 @@
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": { "str": "flesh vessel" },
-    "description": "It is currently not merged with anything. Activate to permanently merge with it.\n\nA complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind. Certain bionics must be installed to take full control of it.",
+    "description": "It is currently not merged with anything. Activate to permanently merge with it.\n\nA complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
     "looks_like": "power_armor_light",
     "color": "light_red",
     "countdown_interval": 1,
@@ -71,7 +71,7 @@
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": { "str": "flesh vessel" },
-    "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind. Certain bionics must be installed to take full control of it.",
+    "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
     "weight": "18400 g",
     "volume": "21 L",
     "price": "323000 USD",
@@ -105,7 +105,8 @@
       "FIX_FARSIGHT",
       "FIX_NEARSIGHT",
       "SUN_GLASSES",
-      "OVERSIZE"
+      "OVERSIZE",
+      "SECRO_FVMERGED"
     ],
     "armor": [
       {
@@ -123,7 +124,7 @@
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": { "str": "flesh vessel" },
-    "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind. Certain bionics must be installed to take full control of it.",
+    "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
     "weight": "18400 g",
     "volume": "21 L",
     "price": "323000 USD",
@@ -159,7 +160,8 @@
       "FIX_NEARSIGHT",
       "SUN_GLASSES",
       "OVERSIZE",
-      "USE_UPS"
+      "USE_UPS",
+      "SECRO_FVMERGED"
     ],
     "armor": [
       {
@@ -178,7 +180,7 @@
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": { "str": "flesh vessel" },
-    "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind. Certain bionics must be installed to take full control of it.",
+    "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
     "weight": "18400 g",
     "volume": "21 L",
     "price": "323000 USD",
@@ -204,7 +206,8 @@
       "FIX_FARSIGHT",
       "FIX_NEARSIGHT",
       "SUN_GLASSES",
-      "OVERSIZE"
+      "OVERSIZE",
+      "SECRO_FVMERGED"
     ],
     "armor": [
       {
@@ -222,7 +225,7 @@
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": { "str": "flesh vessel" },
-    "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind. Certain bionics must be installed to take full control of it.",
+    "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
     "weight": "19200 g",
     "volume": "21 L",
     "price": "323000 USD",
@@ -256,7 +259,8 @@
       "FIX_FARSIGHT",
       "FIX_NEARSIGHT",
       "SUN_GLASSES",
-      "OVERSIZE"
+      "OVERSIZE",
+      "SECRO_FVMERGED"
     ],
     "armor": [
       {
@@ -274,7 +278,7 @@
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": { "str": "flesh vessel" },
-    "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind. Certain bionics must be installed to take full control of it.",
+    "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
     "weight": "19200 g",
     "volume": "21 L",
     "price": "323000 USD",
@@ -310,7 +314,8 @@
       "FIX_NEARSIGHT",
       "SUN_GLASSES",
       "OVERSIZE",
-      "USE_UPS"
+      "USE_UPS",
+      "SECRO_FVMERGED"
     ],
     "armor": [
       {
@@ -328,7 +333,7 @@
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": { "str": "flesh vessel" },
-    "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind. Certain bionics must be installed to take full control of it.",
+    "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
     "weight": "20100 g",
     "volume": "21 L",
     "price": "323000 USD",
@@ -362,7 +367,8 @@
       "FIX_FARSIGHT",
       "FIX_NEARSIGHT",
       "SUN_GLASSES",
-      "OVERSIZE"
+      "OVERSIZE",
+      "SECRO_FVMERGED"
     ],
     "armor": [
       {
@@ -380,7 +386,7 @@
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": { "str": "flesh vessel" },
-    "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind. Certain bionics must be installed to take full control of it.",
+    "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
     "weight": "20100 g",
     "volume": "21 L",
     "price": "323000 USD",
@@ -416,7 +422,8 @@
       "FIX_NEARSIGHT",
       "SUN_GLASSES",
       "OVERSIZE",
-      "USE_UPS"
+      "USE_UPS",
+      "SECRO_FVMERGED"
     ],
     "armor": [
       {
