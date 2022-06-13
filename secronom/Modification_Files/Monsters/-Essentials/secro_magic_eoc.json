@@ -1,6 +1,19 @@
 [
   {
     "type": "effect_on_condition",
+    "id": "eoc_secro_mon_zombie_tendrils_sprint_check",
+    "condition": { "and": [ { "compare_int": [ { "distance": [ "u", "npc" ] }, ">=", { "const": 11 } ] } ] },
+    "effect": [
+      { "npc_add_effect": "secro_tendril_sprint", "duration": "14 seconds" },
+      { "u_message": "The tendril zombie's movement became erratic!", "type": "bad" }
+    ],
+    "false_effect": [
+      { "npc_add_effect": "secro_tendril_sprint", "duration": "5 seconds" },
+      { "u_message": "The tendril zombie's movement became erratic!", "type": "bad" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
     "id": "eoc_secro_mon_zombie_unify_bv_check",
     "effect": [ { "npc_spawn_monster": "mon_zombie_bloodvessel", "real_count": 1, "min_radius": 1, "max_radius": 2 } ]
   },

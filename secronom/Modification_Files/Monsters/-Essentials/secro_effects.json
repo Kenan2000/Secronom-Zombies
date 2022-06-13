@@ -548,6 +548,13 @@
   },
   {
     "type": "effect_type",
+    "id": "secro_tendril_sprint",
+    "name": [ "Sprinting" ],
+    "show_in_info": true,
+    "base_mods": { "speed_mod": [ 90 ] }
+  },
+  {
+    "type": "effect_type",
     "id": "secro_skittyweavy_skit",
     "name": [ "Fleeing" ],
     "desc": [ "Your body felt a sharp warning!" ],

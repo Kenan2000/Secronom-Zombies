@@ -1,5 +1,18 @@
 [
   {
+    "id": "mon_zombie_tendrils_sprint_check",
+    "type": "SPELL",
+    "name": { "str": "Tendril Zombie - Sprint" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster gains massive movement speed temporarily. Duration is increased if the target is further away.'",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "SILENT" ],
+    "min_range": 28,
+    "max_range": 28,
+    "shape": "line",
+    "effect": "effect_on_condition",
+    "effect_str": "eoc_secro_mon_zombie_tendrils_sprint_check"
+  },
+  {
     "id": "mon_zombie_leptiosa_ngas_check",
     "type": "SPELL",
     "name": { "str": "Lepotitsa - Noxious Gas" },
