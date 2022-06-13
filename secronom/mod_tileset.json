@@ -378,7 +378,8 @@
               "explosion_mon_zombie_nautilus_pedo_restraint_check",
               "explosion_mon_zombie_equinox_summon_check",
               "explosion_mon_zombie_equinox_summon_check_target_random",
-              "explosion_mon_secrodragon_woke_check"
+              "explosion_mon_secrodragon_woke_check",
+              "explosion_mon_zombie_tendrils_sprint_check"
             ],
             "fg": 36,
             "rotates": false
