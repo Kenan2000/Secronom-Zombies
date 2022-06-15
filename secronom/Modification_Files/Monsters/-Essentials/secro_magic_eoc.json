@@ -2,7 +2,7 @@
   {
     "type": "effect_on_condition",
     "id": "eoc_secro_mon_zombie_tendrils_sprint_check",
-    "condition": { "and": [ { "compare_int": [ { "distance": [ "u", "npc" ] }, ">=", { "const": 11 } ] } ] },
+    "condition": { "compare_int": [ { "distance": [ "u", "npc" ] }, ">=", { "const": 11 } ] },
     "effect": [
       { "npc_add_effect": "secro_tendril_sprint", "duration": "14 seconds" },
       { "u_message": "The tendril zombie's movement became erratic!", "type": "bad" }
@@ -10,6 +10,17 @@
     "false_effect": [
       { "npc_add_effect": "secro_tendril_sprint", "duration": "5 seconds" },
       { "u_message": "The tendril zombie's movement became erratic!", "type": "bad" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_zombie_bootlegsmoker_snatch_check",
+    "condition": { "compare_int": [ { "u_val": "strength" }, ">=", { "const": 10 } ] },
+    "effect": [ { "u_message": "You resist the snatcher zombie's tongue!", "type": "good" } ],
+    "false_effect": [
+      { "u_add_effect": "stunned", "duration": "2 seconds" },
+      { "u_add_effect": "eff_snatcher_snatch", "duration": "7 seconds" },
+      { "u_message": "The snatcher zombie constricted you!", "type": "bad" }
     ]
   },
   {

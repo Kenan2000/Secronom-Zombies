@@ -1120,7 +1120,7 @@
     "scaling_mods": { "speed_mod": [ -20 ] }
   },
   {
-    "//": "Effects for notifying the player. This method is a bit unstable...",
+    "//": "Effects for notifying the player. These can slow down the game and will use EOC instead for better performance at later updates.",
     "type": "effect_type",
     "id": "mon_zombie_swarmer_evo_savage_tension_target_random_YES",
     "apply_message": "Then its muscles suddenly mutates!",
