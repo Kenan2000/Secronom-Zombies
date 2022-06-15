@@ -379,7 +379,10 @@
               "explosion_mon_zombie_equinox_summon_check",
               "explosion_mon_zombie_equinox_summon_check_target_random",
               "explosion_mon_secrodragon_woke_check",
-              "explosion_mon_zombie_tendrils_sprint_check"
+              "explosion_mon_zombie_tendrils_sprint_check",
+              "explosion_mon_zombie_bootlegsmoker_snatch_check",
+              "explosion_mon_zombie_bootlegsmoker_snatchtrail",
+              "explosion_mon_zombie_bootlegsmoker_snatch_cost"
             ],
             "fg": 36,
             "rotates": false
