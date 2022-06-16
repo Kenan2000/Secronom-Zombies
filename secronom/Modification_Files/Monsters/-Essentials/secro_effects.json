@@ -1120,6 +1120,17 @@
     "scaling_mods": { "speed_mod": [ -20 ] }
   },
   {
+    "type": "effect_type",
+    "id": "eff_fleshweaver_healing",
+    "base_mods": { "pain_min": [ 1 ], "pain_chance": [ 2 ], "pain_tick": [ 8 ] },
+    "rating": "bad",
+    "remove_message": "The flesh weaver finishes its operation."
+  },
+  {
+    "type": "effect_type",
+    "id": "eff_fleshweaver_justhealed"
+  },
+  {
     "//": "Effects for notifying the player. These can slow down the game and will use EOC instead for better performance at later updates.",
     "type": "effect_type",
     "id": "mon_zombie_swarmer_evo_savage_tension_target_random_YES",
@@ -1131,12 +1142,6 @@
     "id": "secro_flesh_transmit_attack",
     "removes_effects": [ "docile" ],
     "blocks_effects": [ "docile" ]
-  },
-  {
-    "type": "effect_type",
-    "id": "mon_zombie_tentawraith_stunmore_YES",
-    "apply_message": "You've been constricted!",
-    "rating": "bad"
   },
   {
     "type": "effect_type",

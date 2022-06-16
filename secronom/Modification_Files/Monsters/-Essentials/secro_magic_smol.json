@@ -1424,14 +1424,15 @@
     "name": { "str": "Snatch Trail" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Visual effect for snatch monsterspell.'",
     "flags": [ "SILENT" ],
-    "valid_targets": [ "hostile", "ground", "self" ],
+    "valid_targets": [ "hostile", "ground" ],
     "effect": "attack",
     "shape": "line",
     "min_range": 12,
     "max_range": 12,
     "field_id": "fd_snatcher_snatch_trail",
     "min_field_intensity": 1,
-    "max_field_intensity": 1
+    "max_field_intensity": 1,
+    "field_chance": 2
   },
   {
     "id": "mon_zombie_bootlegsmoker_snatch_check",

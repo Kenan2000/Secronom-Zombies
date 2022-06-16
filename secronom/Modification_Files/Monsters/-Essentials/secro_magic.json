@@ -2795,5 +2795,30 @@
     "shape": "blast",
     "min_range": 15,
     "max_range": 15
+  },
+  {
+    "id": "mon_fleshweaver_operate",
+    "type": "SPELL",
+    "name": { "str": "Operate" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Both caster and the target become unable to act.'",
+    "valid_targets": [ "self", "ally", "hostile" ],
+    "flags": [ "SILENT" ],
+    "min_damage": -18000,
+    "max_damage": -18000,
+    "shape": "blast",
+    "effect": "mod_moves"
+  },
+  {
+    "id": "mon_fleshweaver_operate_heal",
+    "type": "SPELL",
+    "name": { "str": "Operate Heal" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster heals the target.'",
+    "valid_targets": [ "self", "ally", "hostile" ],
+    "flags": [ "SILENT" ],
+    "min_damage": -25,
+    "max_damage": -25,
+    "shape": "blast",
+    "effect": "attack",
+    "damage_type": "biological"
   }
 ]
