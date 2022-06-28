@@ -1373,6 +1373,7 @@
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "message": "",
+	"extra_effects": [ { "id": "secro_pafv_morphed_cost", "hit_self": true } ],
     "shape": "blast",
     "effect": "effect_on_condition",
     "effect_str": "eoc_secro_pafv_morphed_gun_spit_check"
@@ -1450,7 +1451,7 @@
         "u_cast_spell": { "id": "secro_pafv_morphed_gun_spit_1", "message": "Your spitter armament launches a glob of blood acid!" },
         "targeted": true
       },
-      { "u_assign_activity": "ACT_GENERIC_EOC", "duration": "1 seconds" }
+      { "u_cast_spell": { "id": "secro_pafv_morphed_cost", "message": "" } }
     ]
   },
   {
@@ -1473,7 +1474,7 @@
         "u_cast_spell": { "id": "secro_pafv_morphed_gun_spit_2", "message": "Your spitter armament launches a glob of blood acid!" },
         "targeted": true
       },
-      { "u_assign_activity": "ACT_GENERIC_EOC", "duration": "1 seconds" }
+      { "u_cast_spell": { "id": "secro_pafv_morphed_cost", "message": "" } }
     ]
   },
   {
@@ -1489,7 +1490,7 @@
         "u_cast_spell": { "id": "secro_pafv_morphed_gun_spit_3", "message": "Your spitter armament launches a glob of blood acid!" },
         "targeted": true
       },
-      { "u_assign_activity": "ACT_GENERIC_EOC", "duration": "1 seconds" }
+      { "u_cast_spell": { "id": "secro_pafv_morphed_cost", "message": "" } }
     ]
   },
   {
@@ -1498,7 +1499,9 @@
     "condition": { "u_has_items": { "item": "secro_flesh", "count": 3 } },
     "effect": [
       { "u_consume_item": "secro_flesh", "count": 3 },
-      { "queue_eocs": [ "eoc_secro_pafv_morphed_gun_spit_1", "eoc_secro_pafv_morphed_gun_spit_2", "eoc_secro_pafv_morphed_gun_spit_3" ] }
+      {
+        "queue_eocs": [ "eoc_secro_pafv_morphed_gun_spit_1", "eoc_secro_pafv_morphed_gun_spit_2", "eoc_secro_pafv_morphed_gun_spit_3" ]
+      }
     ],
     "false_effect": [ { "u_message": "You don't have enough flesh to fire your spitter armament.", "type": "bad" } ]
   },
@@ -1525,6 +1528,7 @@
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "message": "",
+	"extra_effects": [ { "id": "secro_pafv_morphed_cost", "hit_self": true } ],
     "shape": "blast",
     "effect": "effect_on_condition",
     "effect_str": "eoc_secro_pafv_morphed_gun_bonelance_shoot_check"
@@ -1581,7 +1585,7 @@
       ]
     },
     "effect": [
-      { "u_assign_activity": "ACT_GENERIC_EOC", "duration": "1 seconds" },
+      { "u_cast_spell": { "id": "secro_pafv_morphed_cost", "message": "" } },
       { "u_consume_item": "secro_flesh", "count": 15 },
       {
         "queue_eocs": [
@@ -1627,7 +1631,7 @@
       }
     ],
     "false_effect": [
-      { "u_assign_activity": "ACT_GENERIC_EOC", "duration": "1 seconds" },
+      { "u_cast_spell": { "id": "secro_pafv_morphed_cost", "message": "" } },
       {
         "queue_eocs": [
           {
@@ -1662,7 +1666,6 @@
             "condition": { "compare_int": [ { "u_val": "power" }, ">=", { "const": 100000 } ] },
             "effect": [
               { "arithmetic": [ { "u_val": "power" }, "-=", { "const": 100000 } ] },
-              { "u_assign_activity": "ACT_GENERIC_EOC", "duration": "1 seconds" },
               {
                 "queue_eocs": [
                   {
@@ -1674,7 +1677,7 @@
                         "u_cast_spell": { "id": "secro_pafv_morphed_gun_bonelance_shot_1", "message": "Your bone lancer armament bursts out bone spikes!" },
                         "targeted": true
                       },
-                      { "u_assign_activity": "ACT_GENERIC_EOC", "duration": "1 seconds" }
+                      { "u_cast_spell": { "id": "secro_pafv_morphed_cost", "message": "" } }
                     ],
                     "false_effect": [
                       { "u_lose_effect": "eff_secro_pafv_morphed_gun_bonelance_shot_prepared_2" },
@@ -1682,7 +1685,7 @@
                         "u_cast_spell": { "id": "secro_pafv_morphed_gun_bonelance_shot_2", "message": "Your bone lancer armament bursts out bone spikes!" },
                         "targeted": true
                       },
-                      { "u_assign_activity": "ACT_GENERIC_EOC", "duration": "1 seconds" }
+                      { "u_cast_spell": { "id": "secro_pafv_morphed_cost", "message": "" } }
                     ]
                   }
                 ]
