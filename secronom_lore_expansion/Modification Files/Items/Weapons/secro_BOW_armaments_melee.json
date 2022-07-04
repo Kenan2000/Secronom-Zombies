@@ -117,8 +117,8 @@
             { "value": "SPEED", "multiply": -0.5 },
             { "value": "ARMOR_BASH", "add": -10 },
             { "value": "ARMOR_CUT", "add": -10 },
-            { "value": "ARMOR_STAB", "add": -10,
-            { "value": "ARMOR_BULLET", "add": -10}
+            { "value": "ARMOR_STAB", "add": -10 },
+            { "value": "ARMOR_BULLET", "add": -10 }
           ]
         }
       ]
