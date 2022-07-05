@@ -256,14 +256,17 @@
       {
         "id": "buff_secro_biomorph_biomass_static",
         "name": "Biomass Protection",
-        "description": "Your suit will always try to minimize the damage dealt to you by increasing the mass to the parts you're about to get hit.\n\nIncoming physical damage decreased by 20% of Strength.",
+        "description": "Your suit will always try to minimize the damage dealt to you by increasing the mass to the parts you're about to get hit.\n\nIncoming physical damage decreased by 2 and an additional 10% of Strength.",
         "forbidden_buffs_all": [ "buff_secro_biomorph_augment_onpause" ],
         "melee_allowed": true,
         "unarmed_allowed": true,
         "flat_bonuses": [
-          { "stat": "armor", "type": "bash", "scaling-stat": "str", "scale": 0.2 },
-          { "stat": "armor", "type": "stab", "scaling-stat": "str", "scale": 0.2 },
-          { "stat": "armor", "type": "cut", "scaling-stat": "str", "scale": 0.2 }
+          { "stat": "armor", "type": "bash", "scaling-stat": "str", "scale": 0.1 },
+          { "stat": "armor", "type": "stab", "scaling-stat": "str", "scale": 0.1 },
+          { "stat": "armor", "type": "cut", "scaling-stat": "str", "scale": 0.1 },
+          { "stat": "armor", "type": "bash", "scale": 2 },
+          { "stat": "armor", "type": "cut", "scale": 2 },
+          { "stat": "armor", "type": "stab", "scale": 2 }
         ]
       }
     ],
@@ -280,7 +283,7 @@
       {
         "id": "buff_secro_biomorph_augment_tent_onhit",
         "name": "Augment: Twisted Vein",
-        "description": "Your twisted veins armament increases in numbers as you land a hit.\n\nBash damage increased by 2 for each stack, up to 12. Physical resistance decreased by 1 every 3 stacks, up to 2. Lasts for 4 turns. Stacks 6 times.",
+        "description": "Your twisted veins armament increases in numbers as you land a hit.\n\nBash damage increased by 2 for each stack. Physical resistance decreases by 1 every 3 stacks. Lasts for 4 turns. Stacks 6 times.",
         "buff_duration": 4,
         "max_stacks": 6,
         "melee_allowed": true,
