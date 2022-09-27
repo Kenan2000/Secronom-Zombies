@@ -214,7 +214,7 @@
       { "name": "noxious gas", "color": "green", "translucency": 0 }
     ],
     "description_affix": "covered_in",
-    "immunity_data": { "traits": [ "ACIDPROOF" ] },
+    "immunity_data": { "flags": [ "ACID_IMMUNE" ] },
     "decay_amount_factor": 5,
     "gas_absorption_factor": 15,
     "percent_spread": 20,
@@ -404,7 +404,7 @@
         ]
       }
     ],
-    "immunity_data": { "flags": [ "ACIDPROOF" ] },
+    "immunity_data": { "flags": [ "ACID_IMMUNE" ] },
     "underwater_age_speedup": "2 minutes",
     "has_acid": true,
     "priority": 2,
@@ -980,7 +980,7 @@
         ]
       }
     ],
-    "immunity_data": { "flags": [ "ACIDPROOF" ] },
+    "immunity_data": { "flags": [ "ACID_IMMUNE" ] },
     "underwater_age_speedup": "2 minutes",
     "has_acid": true,
     "priority": 2,
