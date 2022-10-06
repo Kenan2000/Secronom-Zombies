@@ -58,11 +58,16 @@
       "STURDY",
       "NO_UNLOAD",
       "PARTIAL_DEAF",
-      "CLIMATE_CONTROL",
       "FIX_FARSIGHT",
       "FIX_NEARSIGHT",
       "SUN_GLASSES",
       "OVERSIZE"
+    ],
+    "enchantments": [
+      {
+        "condition": "ACTIVE",
+        "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
+      }
     ]
   },
   {
@@ -100,12 +105,17 @@
       "STURDY",
       "NO_UNLOAD",
       "PARTIAL_DEAF",
-      "CLIMATE_CONTROL",
       "FIX_FARSIGHT",
       "FIX_NEARSIGHT",
       "SUN_GLASSES",
       "OVERSIZE",
       "SECRO_FVMERGED"
+    ],
+    "enchantments": [
+      {
+        "condition": "ACTIVE",
+        "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
+      }
     ],
     "material_thickness": 9,
     "environmental_protection": 6,
@@ -153,13 +163,18 @@
       "STURDY",
       "NO_UNLOAD",
       "PARTIAL_DEAF",
-      "CLIMATE_CONTROL",
       "FIX_FARSIGHT",
       "FIX_NEARSIGHT",
       "SUN_GLASSES",
       "OVERSIZE",
       "USE_UPS",
       "SECRO_FVMERGED"
+    ],
+    "enchantments": [
+      {
+        "condition": "ACTIVE",
+        "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
+      }
     ],
     "material_thickness": 9,
     "environmental_protection": 6,
@@ -199,12 +214,17 @@
       "STURDY",
       "NO_UNLOAD",
       "PARTIAL_DEAF",
-      "CLIMATE_CONTROL",
       "FIX_FARSIGHT",
       "FIX_NEARSIGHT",
       "SUN_GLASSES",
       "OVERSIZE",
       "SECRO_FVMERGED"
+    ],
+    "enchantments": [
+      {
+        "condition": "ACTIVE",
+        "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
+      }
     ],
     "material_thickness": 9,
     "environmental_protection": 16,
@@ -251,12 +271,17 @@
       "STURDY",
       "NO_UNLOAD",
       "PARTIAL_DEAF",
-      "CLIMATE_CONTROL",
       "FIX_FARSIGHT",
       "FIX_NEARSIGHT",
       "SUN_GLASSES",
       "OVERSIZE",
       "SECRO_FVMERGED"
+    ],
+    "enchantments": [
+      {
+        "condition": "ACTIVE",
+        "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
+      }
     ],
     "material_thickness": 10,
     "environmental_protection": 6,
@@ -304,13 +329,18 @@
       "STURDY",
       "NO_UNLOAD",
       "PARTIAL_DEAF",
-      "CLIMATE_CONTROL",
       "FIX_FARSIGHT",
       "FIX_NEARSIGHT",
       "SUN_GLASSES",
       "OVERSIZE",
       "USE_UPS",
       "SECRO_FVMERGED"
+    ],
+    "enchantments": [
+      {
+        "condition": "ACTIVE",
+        "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
+      }
     ],
     "material_thickness": 10,
     "environmental_protection": 6,
@@ -357,12 +387,17 @@
       "STURDY",
       "NO_UNLOAD",
       "PARTIAL_DEAF",
-      "CLIMATE_CONTROL",
       "FIX_FARSIGHT",
       "FIX_NEARSIGHT",
       "SUN_GLASSES",
       "OVERSIZE",
       "SECRO_FVMERGED"
+    ],
+    "enchantments": [
+      {
+        "condition": "ACTIVE",
+        "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
+      }
     ],
     "material_thickness": 11,
     "environmental_protection": 6,
@@ -410,13 +445,18 @@
       "STURDY",
       "NO_UNLOAD",
       "PARTIAL_DEAF",
-      "CLIMATE_CONTROL",
       "FIX_FARSIGHT",
       "FIX_NEARSIGHT",
       "SUN_GLASSES",
       "OVERSIZE",
       "USE_UPS",
       "SECRO_FVMERGED"
+    ],
+    "enchantments": [
+      {
+        "condition": "ACTIVE",
+        "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
+      }
     ],
     "material_thickness": 11,
     "environmental_protection": 6,
