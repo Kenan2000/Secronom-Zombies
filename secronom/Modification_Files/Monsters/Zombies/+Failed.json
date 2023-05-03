@@ -74,7 +74,6 @@
     "dodge": 1,
     "armor": { "bash": 5, "cut": 2, "bullet": 2 },
     "harvest": "zombie",
-    "armor": { "heat": 1 },
     "special_attacks": [
       [ "LUNGE", 20 ],
       {
