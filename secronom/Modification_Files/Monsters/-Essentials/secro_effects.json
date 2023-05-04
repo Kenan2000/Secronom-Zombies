@@ -484,7 +484,7 @@
     "//": "Don't trigger the triggerer.",
     "type": "effect_type",
     "id": "secro_revenant_trigger_immune",
-    "max_duration": 1,
+    "max_duration": 12,
     "removes_effects": [ "secro_revenant_trigger" ],
     "blocks_effects": [ "secro_revenant_trigger" ]
   },

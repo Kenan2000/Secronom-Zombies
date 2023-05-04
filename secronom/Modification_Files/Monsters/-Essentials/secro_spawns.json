@@ -77,8 +77,7 @@
       { "monster": "mon_zombie_translucent", "weight": 2, "cost_multiplier": 5 },
       { "monster": "mon_zombie_WALKINGPOTATO", "weight": 1, "cost_multiplier": 12 },
       { "monster": "mon_zombieworm_noxeater", "weight": 1, "cost_multiplier": 13 },
-      { "monster": "mon_zombie_skittyweavy_idle", "weight": 1, "cost_multiplier": 15, "pack_size": [ 1, 2 ] },
-      { "monster": "mon_zombie_revenant_idle", "weight": 1, "cost_multiplier": 20 },
+      { "monster": "mon_zombie_revenant", "weight": 1, "cost_multiplier": 20 },
       {
         "monster": "mon_zombie_bootlegsmoker",
         "weight": 1,

@@ -24,7 +24,18 @@
     "vision_night": 3,
     "armor": { "bash": 3 },
     "harvest": "zombie",
-    "special_attacks": [ { "type": "bite", "cooldown": 5 }, [ "GRAB", 7 ], [ "scratch", 20 ] ],
+    "special_attacks": [
+      { "type": "bite", "cooldown": 5 },
+      [ "GRAB", 7 ],
+      [ "scratch", 20 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "default_zombie_death_drops",
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "PUSH_MON", "FILTHY" ]
   },
@@ -91,7 +102,18 @@
     "armor": { "bash": 2, "cut": 1, "bullet": 1 },
     "vision_night": 3,
     "harvest": "zombie",
-    "special_attacks": [ { "type": "bite", "cooldown": 5, "min_mul": 0.7 }, [ "GRAB", 7 ], [ "scratch", 20 ] ],
+    "special_attacks": [
+      { "type": "bite", "cooldown": 5, "min_mul": 0.7 },
+      [ "GRAB", 7 ],
+      [ "scratch", 20 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "default_zombie_death_drops",
     "burn_into": "mon_zombie_tough",
     "flags": [
@@ -133,7 +155,17 @@
     "armor": { "bash": 8, "cut": 3, "bullet": 3 },
     "vision_night": 3,
     "harvest": "zombie",
-    "special_attacks": [ { "type": "bite", "cooldown": 5, "min_mul": 0.75 }, [ "scratch", 20 ] ],
+    "special_attacks": [
+      { "type": "bite", "cooldown": 5, "min_mul": 0.75 },
+      [ "scratch", 20 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "default_zombie_death_drops",
     "burn_into": "mon_zombie_fat",
     "flags": [
@@ -177,7 +209,17 @@
     "vision_day": 30,
     "vision_night": 3,
     "harvest": "mr_bones",
-    "special_attacks": [ [ "scratch", 10 ], { "type": "bite", "cooldown": 5 } ],
+    "special_attacks": [
+      [ "scratch", 10 ],
+      { "type": "bite", "cooldown": 5 },
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "default_zombie_clothes",
     "burn_into": "mon_skeleton",
     "flags": [ "SEES", "HEARS", "HARDTOSHOOT", "NO_BREATHE", "POISON", "STUN_IMMUNE", "FILTHY" ]
@@ -258,7 +300,17 @@
     "armor": { "bash": 3 },
     "vision_day": 10,
     "harvest": "zombie",
-    "special_attacks": [ { "type": "bite", "cooldown": 5 }, [ "scratch", 20 ] ],
+    "special_attacks": [
+      { "type": "bite", "cooldown": 5 },
+      [ "scratch", 20 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "default_zombie_death_drops",
     "burn_into": "mon_zombie_crawler",
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GRABS", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ]
@@ -291,7 +343,14 @@
     "harvest": "mr_bones",
     "special_attacks": [
       [ "SMASH", 45 ],
-      { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 15, "armor_multiplier": 0.6 } ] }
+      { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 15, "armor_multiplier": 0.6 } ] },
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
     ],
     "death_drops": "default_zombie_clothes",
     "burn_into": "mon_skeleton_brute",
@@ -327,7 +386,14 @@
       [ "SMASH", 20 ],
       [ "STRETCH_ATTACK", 20 ],
       [ "LONGSWIPE", 20 ],
-      { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] }
+      { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] },
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
     ],
     "death_drops": "mon_zombie_hulk_death_drops",
     "burn_into": "mon_skeleton_hulk",
@@ -379,7 +445,14 @@
       [ "SHRIEK", 20 ],
       { "type": "bite", "cooldown": 5, "min_mul": 1 },
       [ "GRAB", 7 ],
-      { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 16 } ] }
+      { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 16 } ] },
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
     ],
     "death_drops": "mon_zombie_survivor_death_drops",
     "burn_into": "mon_zombie_survivor",
@@ -421,7 +494,14 @@
           { "damage_type": "bash", "amount": 10, "armor_multiplier": 0.3 }
         ]
       },
-      [ "GRAB", 4 ]
+      [ "GRAB", 4 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
     ],
     "death_drops": "default_zombie_death_drops",
     "burn_into": "mon_zombie_biter",
@@ -467,7 +547,17 @@
     "vision_day": 2,
     "vision_night": 0,
     "harvest": "zombie",
-    "special_attacks": [ [ "GRAB", 7 ], [ "scratch", 20 ] ],
+    "special_attacks": [
+      [ "GRAB", 7 ],
+      [ "scratch", 20 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "default_zombie_death_drops",
     "burn_into": "mon_zombie_brainless",
     "flags": [
@@ -509,7 +599,17 @@
     "vision_day": 7,
     "vision_night": 4,
     "harvest": "zombie",
-    "special_attacks": [ [ "GRAB", 6 ], [ "scratch", 20 ] ],
+    "special_attacks": [
+      [ "GRAB", 6 ],
+      [ "scratch", 20 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "default_zombie_death_drops",
     "burn_into": "mon_zombie_ears",
     "flags": [
@@ -554,7 +654,18 @@
     "vision_day": 25,
     "vision_night": 5,
     "harvest": "zombie",
-    "special_attacks": [ { "type": "bite", "cooldown": 5, "min_mul": 0.7 }, [ "GRAB", 6 ], [ "scratch", 15 ] ],
+    "special_attacks": [
+      { "type": "bite", "cooldown": 5, "min_mul": 0.7 },
+      [ "GRAB", 6 ],
+      [ "scratch", 15 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "default_zombie_death_drops",
     "burn_into": "mon_zombie_skull",
     "flags": [
@@ -598,7 +709,17 @@
     "armor": { "bash": 7, "cut": 6, "bullet": 6 },
     "vision_night": 4,
     "harvest": "zombie",
-    "special_attacks": [ [ "SMASH", 30 ], [ "GRAB", 7 ] ],
+    "special_attacks": [
+      [ "SMASH", 30 ],
+      [ "GRAB", 7 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "default_zombie_death_drops",
     "burn_into": "mon_zombie_brute",
     "flags": [
@@ -642,7 +763,19 @@
     "armor": { "bash": 13, "cut": 14, "bullet": 10, "stab": 8 },
     "vision_night": 3,
     "harvest": "zombie",
-    "special_attacks": [ [ "SMASH", 30 ], [ "BIO_OP_TAKEDOWN", 20 ], [ "RANGED_PULL", 20 ], [ "GRAB_DRAG", 10 ] ],
+    "special_attacks": [
+      [ "SMASH", 30 ],
+      [ "BIO_OP_TAKEDOWN", 20 ],
+      [ "RANGED_PULL", 20 ],
+      [ "GRAB_DRAG", 10 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "default_zombie_death_drops",
     "burn_into": "mon_zombie_brute_grappler",
     "flags": [
@@ -688,7 +821,18 @@
     "vision_day": 5,
     "vision_night": 40,
     "harvest": "zombie",
-    "special_attacks": [ [ "SMASH", 40 ], [ "STRETCH_ATTACK", 20 ], [ "LONGSWIPE", 20 ] ],
+    "special_attacks": [
+      [ "SMASH", 40 ],
+      [ "STRETCH_ATTACK", 20 ],
+      [ "LONGSWIPE", 20 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "default_zombie_death_drops",
     "burn_into": "mon_zombie_brute_ninja",
     "flags": [
@@ -734,7 +878,18 @@
     "vision_day": 30,
     "vision_night": 5,
     "harvest": "zombie",
-    "special_attacks": [ [ "RANGED_PULL", 20 ], [ "GRAB_DRAG", 3 ], { "type": "bite", "cooldown": 5 } ],
+    "special_attacks": [
+      [ "RANGED_PULL", 20 ],
+      [ "GRAB_DRAG", 3 ],
+      { "type": "bite", "cooldown": 5 },
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "default_zombie_death_drops",
     "burn_into": "mon_zombie_grappler",
     "flags": [
@@ -778,7 +933,17 @@
     "vision_day": 30,
     "vision_night": 3,
     "harvest": "zombie",
-    "special_attacks": [ [ "STRETCH_BITE", 10 ], [ "STRETCH_ATTACK", 5 ] ],
+    "special_attacks": [
+      [ "STRETCH_BITE", 10 ],
+      [ "STRETCH_ATTACK", 5 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "burn_into": "mon_zombie_hollow",
     "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "FILTHY" ]
   },
@@ -808,7 +973,16 @@
     "vision_day": 50,
     "vision_night": 4,
     "harvest": "zombie",
-    "special_attacks": [ [ "SMASH", 20 ] ],
+    "special_attacks": [
+      [ "SMASH", 20 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "mon_zombie_hulk_death_drops",
     "burn_into": "mon_zombie_hulk",
     "flags": [
@@ -860,6 +1034,13 @@
         "type": "bite",
         "cooldown": 10,
         "damage_max_instance": [ { "damage_type": "stab", "amount": 12, "armor_multiplier": 0.7 } ]
+      },
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
       }
     ],
     "death_drops": "default_zombie_death_drops",
@@ -903,7 +1084,14 @@
         ]
       },
       [ "GRAB", 20 ],
-      [ "GRAB_DRAG", 10 ]
+      [ "GRAB_DRAG", 10 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
     ],
     "death_drops": "mon_zombie_swimmer_death_drops",
     "burn_into": "mon_zombie_mancroc",
@@ -952,7 +1140,16 @@
     "vision_night": 5,
     "harvest": "zombie",
     "path_settings": { "max_dist": 10 },
-    "special_attacks": [ [ "UPGRADE", 10 ] ],
+    "special_attacks": [
+      [ "UPGRADE", 10 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "anger_triggers": [ "HURT", "PLAYER_WEAK" ],
     "death_drops": "default_zombie_death_drops",
     "burn_into": "mon_zombie_master",
@@ -998,7 +1195,16 @@
     "vision_night": 5,
     "harvest": "zombie",
     "path_settings": { "max_dist": 10 },
-    "special_attacks": [ [ "RESURRECT", 0 ] ],
+    "special_attacks": [
+      [ "RESURRECT", 0 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "anger_triggers": [ "HURT", "PLAYER_WEAK" ],
     "death_drops": "default_zombie_death_drops",
     "burn_into": "mon_zombie_necro",
@@ -1051,7 +1257,14 @@
         "cooldown": 10,
         "damage_max_instance": [ { "damage_type": "stab", "amount": 10, "armor_multiplier": 0.2 } ]
       },
-      { "id": "impale" }
+      { "id": "impale" },
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
     ],
     "death_drops": "default_zombie_death_drops",
     "burn_into": "mon_zombie_predator",
@@ -1084,7 +1297,18 @@
     "vision_day": 50,
     "vision_night": 8,
     "harvest": "zombie",
-    "special_attacks": [ [ "SHRIEK_ALERT", 20 ], [ "SHRIEK_STUN", 1 ], [ "scratch", 20 ] ],
+    "special_attacks": [
+      [ "SHRIEK_ALERT", 20 ],
+      [ "SHRIEK_STUN", 1 ],
+      [ "scratch", 20 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "default_zombie_death_drops",
     "burn_into": "mon_zombie_screecher",
     "flags": [ "SEES", "KEENNOSE", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ]
@@ -1114,7 +1338,18 @@
     "vision_night": 5,
     "harvest": "zombie_thorny",
     "attack_effs": [ { "id": "paralyzepoison", "duration": 33 } ],
-    "special_attacks": [ [ "GRAB", 7 ], [ "scratch", 20 ], [ "PARA_STING", 30 ] ],
+    "special_attacks": [
+      [ "GRAB", 7 ],
+      [ "scratch", 20 ],
+      [ "PARA_STING", 30 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "mon_zombie_thorny_death_drops",
     "burn_into": "mon_zombie_thorny",
     "flags": [
@@ -1159,7 +1394,17 @@
     "vision_day": 50,
     "vision_night": 3,
     "harvest": "exempt",
-    "special_attacks": [ { "type": "bite", "cooldown": 5 }, [ "scratch", 15 ] ],
+    "special_attacks": [
+      { "type": "bite", "cooldown": 5 },
+      [ "scratch", 15 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_function": { "message": "The %s disintegrates!", "corpse_type": "NO_CORPSE" },
     "burn_into": "mon_zombie_smoker",
     "flags": [
@@ -1203,7 +1448,16 @@
     "harvest": "zombie",
     "vision_day": 30,
     "vision_night": 3,
-    "special_attacks": [ { "type": "bite", "cooldown": 2 } ],
+    "special_attacks": [
+      { "type": "bite", "cooldown": 2 },
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_clothes", 100 ], [ "child_items", 65 ] ] },
     "burn_into": "mon_zombie_anklebiter",
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ]
@@ -1234,7 +1488,16 @@
     "vision_day": 30,
     "vision_night": 3,
     "harvest": "zombie",
-    "special_attacks": [ [ "scratch", 15 ] ],
+    "special_attacks": [
+      [ "scratch", 15 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_children_clothes", 100 ], [ "child_items", 65 ] ] },
     "burn_into": "mon_zombie_child",
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ]
@@ -1265,7 +1528,16 @@
     "vision_day": 10,
     "vision_night": 10,
     "harvest": "zombie",
-    "special_attacks": [ [ "SHRIEK", 5 ] ],
+    "special_attacks": [
+      [ "SHRIEK", 5 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_clothes", 100 ], [ "child_items", 65 ] ] },
     "burn_into": "mon_zombie_creepy",
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "CLIMBS", "FILTHY" ]
@@ -1297,7 +1569,17 @@
     "vision_day": 30,
     "vision_night": 5,
     "harvest": "zombie",
-    "special_attacks": [ [ "SHRIEK", 5 ], [ "scratch", 15 ] ],
+    "special_attacks": [
+      [ "SHRIEK", 5 ],
+      [ "scratch", 15 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_clothes", 100 ], [ "child_items", 65 ] ] },
     "burn_into": "mon_zombie_shriekling",
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ]
@@ -1328,7 +1610,16 @@
     "vision_day": 30,
     "vision_night": 5,
     "harvest": "zombie",
-    "special_attacks": [ [ "GRAB", 5 ] ],
+    "special_attacks": [
+      [ "GRAB", 5 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_clothes", 100 ], [ "child_items", 65 ] ] },
     "death_function": { "effect": { "id": "death_boomer", "hit_self": true }, "message": "A %s explode!" },
     "burn_into": "mon_zombie_snotgobbler",
@@ -1360,7 +1651,17 @@
     "vision_day": 10,
     "vision_night": 10,
     "harvest": "zombie",
-    "special_attacks": [ [ "scratch", 10 ], { "type": "leap", "cooldown": 10, "max_range": 5 } ],
+    "special_attacks": [
+      [ "scratch", 10 ],
+      { "type": "leap", "cooldown": 10, "max_range": 5 },
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_clothes", 100 ], [ "child_items", 65 ] ] },
     "burn_into": "mon_zombie_sproglodyte",
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "CLIMBS", "FILTHY" ]
@@ -1392,7 +1693,17 @@
     "vision_day": 30,
     "vision_night": 5,
     "harvest": "zombie",
-    "special_attacks": [ [ "SHRIEK", 15 ], [ "scratch", 10 ] ],
+    "special_attacks": [
+      [ "SHRIEK", 15 ],
+      [ "scratch", 10 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_clothes", 100 ], [ "child_items", 65 ] ] },
     "burn_into": "mon_zombie_waif",
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "POISON", "NO_BREATHE", "REVIVES", "HARDTOSHOOT", "FILTHY" ]
@@ -1418,12 +1729,26 @@
     "melee_skill": 3,
     "melee_dice": 3,
     "melee_dice_sides": 4,
-    "melee_damage": [ { "damage_type": "cut", "amount": 2 }, { "damage_type": "electric", "amount": 4 }, { "damage_type": "bash", "amount": 2 } ],
+    "melee_damage": [
+      { "damage_type": "cut", "amount": 2 },
+      { "damage_type": "electric", "amount": 4 },
+      { "damage_type": "bash", "amount": 2 }
+    ],
     "armor": { "bash": 6, "cut": 8, "bullet": 6 },
     "vision_night": 3,
     "luminance": 16,
     "harvest": "zombie",
-    "special_attacks": [ [ "SHOCKSTORM", 15 ], [ "SMASH", 30 ] ],
+    "special_attacks": [
+      [ "SHOCKSTORM", 15 ],
+      [ "SMASH", 30 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "special_when_hit": [ "ZAPBACK", 75 ],
     "death_drops": "default_zombie_death_drops",
     "burn_into": "mon_zombie_brute_shocker",
@@ -1468,7 +1793,16 @@
     "dodge": 2,
     "luminance": 8,
     "harvest": "zombie",
-    "special_attacks": [ [ "SHOCKSTORM", 25 ] ],
+    "special_attacks": [
+      [ "SHOCKSTORM", 25 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "special_when_hit": [ "ZAPBACK", 100 ],
     "death_drops": "default_zombie_death_drops",
     "burn_into": "mon_zombie_electric",
@@ -1591,7 +1925,16 @@
     "vision_night": 3,
     "harvest": "CBM_SCI",
     "path_settings": { "max_dist": 5 },
-    "special_attacks": [ [ "scratch", 20 ] ],
+    "special_attacks": [
+      [ "scratch", 20 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "mon_zombie_scientist_death_drops",
     "burn_into": "mon_zombie_scientist",
     "flags": [
@@ -1637,7 +1980,17 @@
     "armor": { "bash": 3 },
     "vision_night": 3,
     "harvest": "exempt",
-    "special_attacks": [ [ "BOOMER", 20 ], [ "scratch", 20 ] ],
+    "special_attacks": [
+      [ "BOOMER", 20 ],
+      [ "scratch", 20 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "default_zombie_items",
     "death_function": { "effect": { "id": "death_boomer", "hit_self": true }, "message": "A %s explode!" },
     "burn_into": "mon_boomer",
@@ -1683,7 +2036,17 @@
     "armor": { "bash": 8, "cut": 5, "bullet": 5 },
     "vision_night": 3,
     "harvest": "zombie",
-    "special_attacks": [ [ "BOOMER_GLOW", 20 ], [ "scratch", 20 ] ],
+    "special_attacks": [
+      [ "BOOMER_GLOW", 20 ],
+      [ "scratch", 20 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "default_zombie_items",
     "death_function": { "effect": { "id": "death_boomer_glow", "hit_self": true, "min_level": 1 }, "message": "A %s explode!" },
     "burn_into": "mon_boomer_huge",
@@ -1730,7 +2093,16 @@
     "vision_night": 3,
     "luminance": 8,
     "harvest": "exempt",
-    "special_attacks": [ [ "scratch", 20 ] ],
+    "special_attacks": [
+      [ "scratch", 20 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "default_zombie_items",
     "death_function": { "effect": { "id": "death_conflagration", "hit_self": true }, "message": "A %s explodes!", "corpse_type": "NO_CORPSE" },
     "burn_into": "mon_gas_zombie",
@@ -1775,7 +2147,17 @@
     "armor": { "bash": 3 },
     "vision_night": 3,
     "harvest": "exempt",
-    "special_attacks": [ [ "SUICIDE", 20 ], [ "scratch", 15 ] ],
+    "special_attacks": [
+      [ "SUICIDE", 20 ],
+      [ "scratch", 15 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "default_zombie_items",
     "death_function": { "message": "A %s explodes!", "effect": { "id": "death_gas", "hit_self": true }, "corpse_type": "NO_CORPSE" },
     "burn_into": "mon_zombie_gasbag",
@@ -1807,7 +2189,16 @@
     "vision_day": 30,
     "vision_night": 3,
     "harvest": "zombie",
-    "special_attacks": [ { "type": "bite", "cooldown": 5, "min_mul": 0.8 } ],
+    "special_attacks": [
+      { "type": "bite", "cooldown": 5, "min_mul": 0.8 },
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "mon_zombie_soldier_death_drops",
     "burn_into": "mon_zombie_soldier",
     "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "PUSH_MON", "FILTHY" ]
@@ -1843,6 +2234,13 @@
         "type": "bite",
         "cooldown": 8,
         "damage_max_instance": [ { "damage_type": "stab", "amount": 8, "armor_multiplier": 0.8 } ]
+      },
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
       }
     ],
     "death_drops": "mon_zombie_soldier_death_drops",
@@ -1863,7 +2261,14 @@
           "cooldown": 10,
           "damage_max_instance": [ { "damage_type": "bash", "amount": 5, "armor_multiplier": 0.5 } ]
         },
-        { "type": "leap", "cooldown": 10, "max_range": 3 }
+        { "type": "leap", "cooldown": 10, "max_range": 3 },
+        {
+          "type": "spell",
+          "spell_data": { "id": "secro_flesh_infect_target" },
+          "cooldown": 6,
+          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+        }
       ],
       "flags": [ "KEENNOSE" ]
     }
@@ -1890,6 +2295,13 @@
           "require_targeting_player": false,
           "description": "The acid-sniper zombie launches a corrosive dart!",
           "ranges": [ [ 2, 20, "DEFAULT" ] ]
+        },
+        {
+          "type": "spell",
+          "spell_data": { "id": "secro_flesh_infect_target" },
+          "cooldown": 6,
+          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
       "death_function": {
@@ -1923,6 +2335,13 @@
           "require_targeting_player": false,
           "description": "The acid-support zombie launches a hail of corrosive darts!",
           "ranges": [ [ 2, 8, "DEFAULT" ] ]
+        },
+        {
+          "type": "spell",
+          "spell_data": { "id": "secro_flesh_infect_target" },
+          "cooldown": 6,
+          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
       "death_function": {
@@ -1961,7 +2380,14 @@
     "harvest": "zombie_kevlar",
     "special_attacks": [
       { "id": "slam", "cooldown": 10, "damage_max_instance": [ { "damage_type": "bash", "amount": 12 } ] },
-      [ "SMASH", 30 ]
+      [ "SMASH", 30 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
     ],
     "death_drops": "mon_zombie_kevlar_death_drops",
     "burn_into": "mon_zombie_kevlar_1",
@@ -1996,7 +2422,14 @@
     "special_attacks": [
       { "id": "slam", "cooldown": 12, "damage_max_instance": [ { "damage_type": "bash", "amount": 35 } ] },
       [ "LONGSWIPE", 20 ],
-      [ "SMASH", 20 ]
+      [ "SMASH", 20 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
     ],
     "death_drops": "mon_zombie_kevlar_death_drops",
     "burn_into": "mon_zombie_kevlar_2",
@@ -2028,7 +2461,18 @@
     "vision_day": 35,
     "vision_night": 5,
     "harvest": "zombie",
-    "special_attacks": [ { "type": "bite", "cooldown": 5 }, [ "GRAB", 7 ], [ "scratch", 20 ] ],
+    "special_attacks": [
+      { "type": "bite", "cooldown": 5 },
+      [ "GRAB", 7 ],
+      [ "scratch", 20 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "mon_zombie_military_pilot_death_drops",
     "burn_into": "mon_zombie_military_pilot",
     "flags": [
@@ -2074,7 +2518,16 @@
     "vision_night": 3,
     "luminance": 4,
     "harvest": "CBM_OP",
-    "special_attacks": [ [ "BIO_OP_TAKEDOWN", 20 ] ],
+    "special_attacks": [
+      [ "BIO_OP_TAKEDOWN", 20 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "special_when_hit": [ "ZAPBACK", 75 ],
     "death_drops": "mon_zombie_bio_op_death_drops",
     "burn_into": "mon_zombie_bio_op",
@@ -2129,7 +2582,16 @@
     "dodge": 1,
     "vision_night": 3,
     "harvest": "zombie",
-    "special_attacks": [ [ "ACID_BARF", 10 ] ],
+    "special_attacks": [
+      [ "ACID_BARF", 10 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "default_zombie_death_drops",
     "death_function": { "message": "The %s's body leaks acid.", "effect": { "id": "death_acid", "hit_self": true } },
     "burn_into": "mon_zombie_acidic",
@@ -2189,7 +2651,14 @@
         "description": "The corrosive zombie spits a glob of blood acid!",
         "ranges": [ [ 2, 10, "DEFAULT" ] ]
       },
-      [ "ACID_BARF", 5 ]
+      [ "ACID_BARF", 5 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
     ],
     "special_when_hit": [ "ACIDSPLASH", 100 ],
     "death_drops": "default_zombie_death_drops",
@@ -2238,7 +2707,16 @@
     "armor": { "bash": 3 },
     "vision_day": 14,
     "harvest": "zombie",
-    "special_attacks": [ [ "ACID_BARF", 22 ] ],
+    "special_attacks": [
+      [ "ACID_BARF", 22 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": "default_zombie_death_drops",
     "death_function": { "message": "The %s's body leaks acid.", "effect": { "id": "death_acid", "hit_self": true } },
     "burn_into": "mon_zombie_wretched",
@@ -2284,7 +2762,16 @@
     "vision_night": 4,
     "armor": { "bash": 6 },
     "harvest": "zombie",
-    "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
+    "special_attacks": [
+      { "type": "bite", "cooldown": 5 },
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "burn_into": "mon_zombie_dog",
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "FILTHY" ]
   },
@@ -2313,7 +2800,16 @@
     "armor": { "bash": 3, "cut": 15, "bullet": 10, "stab": 30, "acid": 3 },
     "vision_night": 3,
     "harvest": "mr_bones",
-    "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
+    "special_attacks": [
+      { "type": "bite", "cooldown": 5 },
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "burn_into": "mon_dog_skeleton",
     "flags": [ "SEES", "HEARS", "NO_BREATHE", "HARDTOSHOOT", "REVIVES", "POISON", "FILTHY" ]
   },
@@ -2343,7 +2839,16 @@
     "vision_day": 50,
     "vision_night": 4,
     "harvest": "zombie",
-    "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
+    "special_attacks": [
+      { "type": "bite", "cooldown": 5 },
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "death_drops": { "subtype": "collection", "groups": [ [ "dog_cop", 40 ] ] },
     "burn_into": "mon_dog_zombie_cop",
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "PUSH_MON", "FILTHY" ]
@@ -2374,7 +2879,16 @@
     "vision_day": 30,
     "vision_night": 4,
     "harvest": "zombie",
-    "special_attacks": [ { "type": "bite", "cooldown": 2, "accuracy": 4, "infection_chance": 8 } ],
+    "special_attacks": [
+      { "type": "bite", "cooldown": 2, "accuracy": 4, "infection_chance": 8 },
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "burn_into": "mon_dog_zombie_rot",
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "PUSH_MON", "FILTHY" ]
   },
@@ -2403,7 +2917,16 @@
     "dodge": 2,
     "vision_night": 5,
     "harvest": "zombie_fur",
-    "special_attacks": [ [ "HOWL", 10 ] ],
+    "special_attacks": [
+      [ "HOWL", 10 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "anger_triggers": [ "HURT" ],
     "fear_triggers": [ "FIRE" ],
     "burn_into": "mon_zolf",
@@ -2466,7 +2989,16 @@
     "vision_day": 50,
     "harvest": "zombie_leather",
     "path_settings": { "max_dist": 10 },
-    "special_attacks": [ { "type": "bite", "cooldown": 2 } ],
+    "special_attacks": [
+      { "type": "bite", "cooldown": 2 },
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "anger_triggers": [ "PLAYER_WEAK", "PLAYER_CLOSE" ],
     "fear_triggers": [ "FIRE" ],
     "burn_into": "mon_zombie_pig",
@@ -2559,7 +3091,16 @@
     "vision_day": 30,
     "vision_night": 10,
     "harvest": "zombie_fur",
-    "special_attacks": [ { "type": "leap", "cooldown": 10, "max_range": 5 } ],
+    "special_attacks": [
+      { "type": "leap", "cooldown": 10, "max_range": 5 },
+      {
+        "type": "spell",
+        "spell_data": { "id": "secro_flesh_infect_target" },
+        "cooldown": 6,
+        "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+        "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
+      }
+    ],
     "anger_triggers": [ "HURT" ],
     "fear_triggers": [ "FIRE" ],
     "burn_into": "mon_zougar",

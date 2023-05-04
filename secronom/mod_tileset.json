@@ -417,7 +417,8 @@
               "explosion_mon_sflesh_fleshling_med_evo_target",
               "explosion_mon_sflesh_fleshling_med_evo_target_random",
               "explosion_mon_sflesh_fleshling_big_evo",
-              "explosion_mon_fleshweaver_operate_heal"
+              "explosion_mon_fleshweaver_operate_heal",
+			  "explosion_mon_secro_flesh_infect_target"
             ],
             "fg": 113
           },
