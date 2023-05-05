@@ -13,6 +13,29 @@
     "max_range": 1
   },
   {
+    "id": "secro_flesh_infect_success_heal",
+    "type": "SPELL",
+    "name": { "str": "Infect" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Infected target heals a moderate amount.",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "effect": "attack",
+    "shape": "blast",
+    "min_damage": -999,
+    "max_damage": -999
+  },
+  {
+    "id": "secro_flesh_infect_success_bleed",
+    "type": "SPELL",
+    "name": { "str": "Infect" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Infected target has its bleeding effect removed.",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "effect": "remove_effect",
+	"effect_str": "bleed",
+    "shape": "blast"
+  },
+  {
     "type": "SPELL",
     "id": "secro_flesh_infect_zombie",
     "name": { "str": "Morph" },
@@ -23,7 +46,7 @@
     "max_damage": 999999,
     "effect": "targeted_polymorph",
     "shape": "blast",
-    "effect_str": "mon_sflesh_taken_zombie"
+    "effect_str": "mon_sflesh_zombie"
   },
   {
     "type": "SPELL",
@@ -351,21 +374,6 @@
     "effect_str": "mon_sflesh_zombie_smoker"
   },
   {
-    "id": "mon_flesh_infect_zombie_anklebiter_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_anklebiter" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_anklebiter_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_zombie_anklebiter",
     "name": { "str": "Morph" },
@@ -377,21 +385,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_anklebiter"
-  },
-  {
-    "id": "mon_flesh_infect_zombie_child_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_child" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_child_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -407,21 +400,6 @@
     "effect_str": "mon_sflesh_zombie_child"
   },
   {
-    "id": "mon_flesh_infect_zombie_creepy_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_creepy" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_creepy_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_zombie_creepy",
     "name": { "str": "Morph" },
@@ -433,21 +411,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_creepy"
-  },
-  {
-    "id": "mon_flesh_infect_zombie_shriekling_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_shriekling" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_shriekling_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -463,21 +426,6 @@
     "effect_str": "mon_sflesh_zombie_shriekling"
   },
   {
-    "id": "mon_flesh_infect_zombie_snotgobbler_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_snotgobbler" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_snotgobbler_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_zombie_snotgobbler",
     "name": { "str": "Morph" },
@@ -489,21 +437,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_snotgobbler"
-  },
-  {
-    "id": "mon_flesh_infect_zombie_sproglodyte_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_sproglodyte" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_sproglodyte_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -519,21 +452,6 @@
     "effect_str": "mon_sflesh_zombie_sproglodyte"
   },
   {
-    "id": "mon_flesh_infect_zombie_waif_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_waif" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_waif_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_zombie_waif",
     "name": { "str": "Morph" },
@@ -545,21 +463,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_waif"
-  },
-  {
-    "id": "mon_flesh_infect_zombie_brute_shocker_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_brute_shocker" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_brute_shocker_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -575,21 +478,6 @@
     "effect_str": "mon_sflesh_zombie_brute_shocker"
   },
   {
-    "id": "mon_flesh_infect_zombie_electric_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_electric" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_electric_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_zombie_electric",
     "name": { "str": "Morph" },
@@ -601,21 +489,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_electric"
-  },
-  {
-    "id": "mon_flesh_infect_zombie_nullfield_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_nullfield" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_nullfield_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -631,21 +504,6 @@
     "effect_str": "mon_sflesh_zombie_nullfield"
   },
   {
-    "id": "mon_flesh_infect_zombie_static_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_static" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_static_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_zombie_static",
     "name": { "str": "Morph" },
@@ -657,21 +515,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_static"
-  },
-  {
-    "id": "mon_flesh_infect_zombie_scientist_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_scientist" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_scientist_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -687,21 +530,6 @@
     "effect_str": "mon_sflesh_zombie_scientist"
   },
   {
-    "id": "mon_flesh_infect_zombie_dog_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_dog" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_dog_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_zombie_dog",
     "name": { "str": "Morph" },
@@ -713,21 +541,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_dog"
-  },
-  {
-    "id": "mon_flesh_infect_dog_skeleton_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_dog_skeleton" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_dog_skeleton_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -743,21 +556,6 @@
     "effect_str": "mon_sflesh_dog_skeleton"
   },
   {
-    "id": "mon_flesh_infect_dog_zombie_cop_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_dog_zombie_cop" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_dog_zombie_cop_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_dog_zombie_cop",
     "name": { "str": "Morph" },
@@ -769,21 +567,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_dog_zombie_cop"
-  },
-  {
-    "id": "mon_flesh_infect_dog_zombie_rot_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_dog_zombie_rot" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_dog_zombie_rot_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -799,21 +582,6 @@
     "effect_str": "mon_sflesh_dog_zombie_rot"
   },
   {
-    "id": "mon_flesh_infect_zolf_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zolf" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zolf_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_zolf",
     "name": { "str": "Morph" },
@@ -825,21 +593,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zolf"
-  },
-  {
-    "id": "mon_flesh_infect_zombear_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombear" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombear_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -855,21 +608,6 @@
     "effect_str": "mon_sflesh_zombear"
   },
   {
-    "id": "mon_flesh_infect_zombie_pig_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_pig" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_pig_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_zombie_pig",
     "name": { "str": "Morph" },
@@ -881,21 +619,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_pig"
-  },
-  {
-    "id": "mon_flesh_infect_zombeaver_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombeaver" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombeaver_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -911,21 +634,6 @@
     "effect_str": "mon_sflesh_zombeaver"
   },
   {
-    "id": "mon_flesh_infect_zoose_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zoose" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zoose_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_zoose",
     "name": { "str": "Morph" },
@@ -937,21 +645,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zoose"
-  },
-  {
-    "id": "mon_flesh_infect_zougar_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zougar" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zougar_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -967,21 +660,6 @@
     "effect_str": "mon_sflesh_zougar"
   },
   {
-    "id": "mon_flesh_infect_bear_cub_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_bear_cub" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_bear_cub_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_bear_cub",
     "name": { "str": "Morph" },
@@ -995,23 +673,8 @@
     "effect_str": "mon_sflesh_bear_cub"
   },
   {
-    "id": "mon_flesh_infect_taken_bear_old",
     "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_taken_bear" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_taken_bear_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
-    "type": "SPELL",
-    "id": "secro_flesh_infect_taken_bear",
+    "id": "secro_flesh_infect_bear",
     "name": { "str": "Morph" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
@@ -1020,26 +683,11 @@
     "max_damage": 999999,
     "effect": "targeted_polymorph",
     "shape": "blast",
-    "effect_str": "mon_sflesh_taken_bear"
-  },
-  {
-    "id": "mon_flesh_infect_taken_rat_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_sewer_rat", "mon_black_rat" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_taken_rat_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
+    "effect_str": "mon_sflesh_bear"
   },
   {
     "type": "SPELL",
-    "id": "secro_flesh_infect_taken_rat",
+    "id": "secro_flesh_infect_rat",
     "name": { "str": "Morph" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
@@ -1048,26 +696,11 @@
     "max_damage": 999999,
     "effect": "targeted_polymorph",
     "shape": "blast",
-    "effect_str": "mon_sflesh_taken_rat"
-  },
-  {
-    "id": "mon_flesh_infect_taken_cougar_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_taken_cougar" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_taken_cougar_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
+    "effect_str": "mon_sflesh_rat"
   },
   {
     "type": "SPELL",
-    "id": "secro_flesh_infect_taken_cougar",
+    "id": "secro_flesh_infect_cougar",
     "name": { "str": "Morph" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
@@ -1076,26 +709,11 @@
     "max_damage": 999999,
     "effect": "targeted_polymorph",
     "shape": "blast",
-    "effect_str": "mon_sflesh_taken_cougar"
-  },
-  {
-    "id": "mon_flesh_infect_taken_moose_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_taken_moose" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_taken_moose_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
+    "effect_str": "mon_sflesh_cougar"
   },
   {
     "type": "SPELL",
-    "id": "secro_flesh_infect_taken_moose",
+    "id": "secro_flesh_infect_moose",
     "name": { "str": "Morph" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
@@ -1104,22 +722,7 @@
     "max_damage": 999999,
     "effect": "targeted_polymorph",
     "shape": "blast",
-    "effect_str": "mon_sflesh_taken_moose"
-  },
-  {
-    "id": "mon_flesh_infect_beaver_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_beaver" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_beaver_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
+    "effect_str": "mon_sflesh_moose"
   },
   {
     "type": "SPELL",
@@ -1135,21 +738,6 @@
     "effect_str": "mon_sflesh_beaver"
   },
   {
-    "id": "mon_flesh_infect_boar_wild_piglet_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_boar_wild_piglet" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_boar_wild_piglet_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_boar_wild_piglet",
     "name": { "str": "Morph" },
@@ -1161,21 +749,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_boar_wild_piglet"
-  },
-  {
-    "id": "mon_flesh_infect_boar_wild_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_boar_wild" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_boar_wild_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -1191,34 +764,6 @@
     "effect_str": "mon_sflesh_boar_wild"
   },
   {
-    "id": "mon_flesh_infect_cat_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [
-      "mon_bobcat",
-      "mon_cat",
-      "mon_cat_longhair",
-      "mon_cat_maine_coon",
-      "mon_cat_siamese",
-      "mon_cat_persian",
-      "mon_cat_bengal",
-      "mon_cat_devon_rex",
-      "mon_cat_sphynx",
-      "mon_cat_tabby",
-      "mon_cat_calico",
-      "mon_cat_chonker"
-    ],
-    "extra_effects": [ { "id": "mon_flesh_infect_cat_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_cat",
     "name": { "str": "Morph" },
@@ -1230,33 +775,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_cat"
-  },
-  {
-    "id": "mon_flesh_infect_cat_kitten_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [
-      "mon_cat_kitten",
-      "mon_cat_longhair_kitten",
-      "mon_cat_maine_coon_kitten",
-      "mon_cat_siamese_kitten",
-      "mon_cat_persian_kitten",
-      "mon_cat_bengal_kitten",
-      "mon_cat_devon_rex_kitten",
-      "mon_cat_sphynx_kitten",
-      "mon_cat_tabby_kitten",
-      "mon_cat_calico_kitten",
-      "mon_cat_chonker_kitten"
-    ],
-    "extra_effects": [ { "id": "mon_flesh_infect_cat_kitten_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -1272,21 +790,6 @@
     "effect_str": "mon_sflesh_cat_kitten"
   },
   {
-    "id": "mon_flesh_infect_chipmunk_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_chipmunk" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_chipmunk_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_chipmunk",
     "name": { "str": "Morph" },
@@ -1298,21 +801,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_chipmunk"
-  },
-  {
-    "id": "mon_flesh_infect_cow_calf_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_cow_calf" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_cow_calf_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -1328,21 +816,6 @@
     "effect_str": "mon_sflesh_cow_calf"
   },
   {
-    "id": "mon_flesh_infect_cow_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_cow" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_cow_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_cow",
     "name": { "str": "Morph" },
@@ -1354,21 +827,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_cow"
-  },
-  {
-    "id": "mon_flesh_infect_coyote_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_coyote", "mon_coyote_wolf" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_coyote_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -1384,21 +842,6 @@
     "effect_str": "mon_sflesh_coyote"
   },
   {
-    "id": "mon_flesh_infect_deer_fawn_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_deer_fawn" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_deer_fawn_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_deer_fawn",
     "name": { "str": "Morph" },
@@ -1410,21 +853,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_deer_fawn"
-  },
-  {
-    "id": "mon_flesh_infect_deer_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_deer" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_deer_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -1440,34 +868,6 @@
     "effect_str": "mon_sflesh_deer"
   },
   {
-    "id": "mon_flesh_infect_dog_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [
-      "mon_dog",
-      "mon_dog_bull",
-      "mon_dog_pitbullmix",
-      "mon_dog_beagle",
-      "mon_dog_bcollie",
-      "mon_dog_boxer",
-      "mon_dog_chihuahua",
-      "mon_dog_dachshund",
-      "mon_dog_gshepherd",
-      "mon_dog_gpyrenees",
-      "mon_dog_rottweiler",
-      "mon_dog_auscattle"
-    ],
-    "extra_effects": [ { "id": "mon_flesh_infect_dog_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_dog",
     "name": { "str": "Morph" },
@@ -1479,34 +879,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_dog"
-  },
-  {
-    "id": "mon_flesh_infect_dog_pup_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [
-      "mon_dog_pup",
-      "mon_dog_bull_pup",
-      "mon_dog_pitbullmix_pup",
-      "mon_dog_beagle_pup",
-      "mon_dog_bcollie_pup",
-      "mon_dog_boxer_pup",
-      "mon_dog_chihuahua_pup",
-      "mon_dog_dachshund_pup",
-      "mon_dog_gshepherd_pup",
-      "mon_dog_gpyrenees_pup",
-      "mon_dog_rottweiler_pup",
-      "mon_dog_auscattle_pup"
-    ],
-    "extra_effects": [ { "id": "mon_flesh_infect_dog_pup_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -1522,21 +894,6 @@
     "effect_str": "mon_sflesh_dog_pup"
   },
   {
-    "id": "mon_flesh_infect_fox_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_fox_red", "mon_fox_gray" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_fox_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_fox",
     "name": { "str": "Morph" },
@@ -1548,21 +905,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_fox"
-  },
-  {
-    "id": "mon_flesh_infect_groundhog_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_groundhog" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_groundhog_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -1578,21 +920,6 @@
     "effect_str": "mon_sflesh_groundhog"
   },
   {
-    "id": "mon_flesh_infect_horse_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_horse" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_horse_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_horse",
     "name": { "str": "Morph" },
@@ -1604,21 +931,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_horse"
-  },
-  {
-    "id": "mon_flesh_infect_lemming_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_lemming" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_lemming_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -1634,21 +946,6 @@
     "effect_str": "mon_sflesh_lemming"
   },
   {
-    "id": "mon_flesh_infect_mink_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_mink" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_mink_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_mink",
     "name": { "str": "Morph" },
@@ -1660,21 +957,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_mink"
-  },
-  {
-    "id": "mon_flesh_infect_muskrat_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_muskrat" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_muskrat_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -1690,49 +972,6 @@
     "effect_str": "mon_sflesh_muskrat"
   },
   {
-    "id": "mon_flesh_infect_nakedmolerat_giant_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_nakedmolerat_giant" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_nakedmolerat_giant_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
-    "type": "SPELL",
-    "id": "secro_flesh_infect_nakedmolerat_giant",
-    "name": { "str": "Morph" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
-    "valid_targets": [ "self" ],
-    "min_damage": 999999,
-    "max_damage": 999999,
-    "effect": "targeted_polymorph",
-    "shape": "blast",
-    "effect_str": "mon_sflesh_nakedmolerat_giant"
-  },
-  {
-    "id": "mon_flesh_infect_opossum_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_opossum" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_opossum_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_opossum",
     "name": { "str": "Morph" },
@@ -1744,21 +983,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_opossum"
-  },
-  {
-    "id": "mon_flesh_infect_otter_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_otter" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_otter_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -1774,21 +998,6 @@
     "effect_str": "mon_sflesh_otter"
   },
   {
-    "id": "mon_flesh_infect_pig_piglet_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_pig_piglet" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_pig_piglet_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_pig_piglet",
     "name": { "str": "Morph" },
@@ -1800,21 +1009,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_pig_piglet"
-  },
-  {
-    "id": "mon_flesh_infect_pig_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_pig" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_pig_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -1830,21 +1024,6 @@
     "effect_str": "mon_sflesh_pig"
   },
   {
-    "id": "mon_flesh_infect_rabbit_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_rabbit", "mon_hare" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_rabbit_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_rabbit",
     "name": { "str": "Morph" },
@@ -1856,21 +1035,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_rabbit"
-  },
-  {
-    "id": "mon_flesh_infect_raccoon_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_raccoon" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_raccoon_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -1886,21 +1050,6 @@
     "effect_str": "mon_sflesh_raccoon"
   },
   {
-    "id": "mon_flesh_infect_sheep_lamb_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_sheep_lamb" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_sheep_lamb_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_sheep_lamb",
     "name": { "str": "Morph" },
@@ -1912,21 +1061,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_sheep_lamb"
-  },
-  {
-    "id": "mon_flesh_infect_sheep_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_sheep" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_sheep_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -1942,21 +1076,6 @@
     "effect_str": "mon_sflesh_sheep"
   },
   {
-    "id": "mon_flesh_infect_squirrel_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_squirrel", "mon_squirrel_red" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_squirrel_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_squirrel",
     "name": { "str": "Morph" },
@@ -1968,21 +1087,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_squirrel"
-  },
-  {
-    "id": "mon_flesh_infect_weasel_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_weasel" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_weasel_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -1998,21 +1102,6 @@
     "effect_str": "mon_sflesh_weasel"
   },
   {
-    "id": "mon_flesh_infect_wolf_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_wolf" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_wolf_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_wolf",
     "name": { "str": "Morph" },
@@ -2024,21 +1113,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_wolf"
-  },
-  {
-    "id": "mon_flesh_infect_zombie_soldier_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_soldier" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_soldier_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -2054,21 +1128,6 @@
     "effect_str": "mon_sflesh_zombie_soldier"
   },
   {
-    "id": "mon_flesh_infect_zombie_soldier_blackops_1_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_soldier_blackops_1" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_soldier_blackops_1_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_zombie_soldier_blackops_1",
     "name": { "str": "Morph" },
@@ -2080,21 +1139,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_soldier_blackops_1"
-  },
-  {
-    "id": "mon_flesh_infect_zombie_soldier_blackops_2_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_soldier_blackops_2" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_soldier_blackops_2_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -2110,21 +1154,6 @@
     "effect_str": "mon_sflesh_zombie_soldier_blackops_2"
   },
   {
-    "id": "mon_flesh_infect_zombie_soldier_acid_1_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_soldier_acid_1" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_soldier_acid_1_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_zombie_soldier_acid_1",
     "name": { "str": "Morph" },
@@ -2136,21 +1165,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_soldier_acid_1"
-  },
-  {
-    "id": "mon_flesh_infect_zombie_soldier_acid_2_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_soldier_acid_2" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_soldier_acid_2_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -2166,21 +1180,6 @@
     "effect_str": "mon_sflesh_zombie_soldier_acid_2"
   },
   {
-    "id": "mon_flesh_infect_zombie_kevlar_1_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_kevlar_1" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_kevlar_1_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_zombie_kevlar_1",
     "name": { "str": "Morph" },
@@ -2192,21 +1191,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_kevlar_1"
-  },
-  {
-    "id": "mon_flesh_infect_zombie_kevlar_2_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_kevlar_2" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_kevlar_2_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -2222,21 +1206,6 @@
     "effect_str": "mon_sflesh_zombie_kevlar_2"
   },
   {
-    "id": "mon_flesh_infect_zombie_military_pilot_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_military_pilot" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_military_pilot_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_zombie_military_pilot",
     "name": { "str": "Morph" },
@@ -2248,21 +1217,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_military_pilot"
-  },
-  {
-    "id": "mon_flesh_infect_zombie_bio_op_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_bio_op" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_bio_op_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -2278,21 +1232,6 @@
     "effect_str": "mon_sflesh_zombie_bio_op"
   },
   {
-    "id": "mon_flesh_infect_zombie_survivor_elite_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_survivor_elite" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_survivor_elite_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_zombie_survivor_elite",
     "name": { "str": "Morph" },
@@ -2304,21 +1243,6 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_survivor_elite"
-  },
-  {
-    "id": "mon_flesh_infect_zombie_acidic_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_acidic" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_acidic_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
   },
   {
     "type": "SPELL",
@@ -2334,21 +1258,6 @@
     "effect_str": "mon_sflesh_zombie_acidic"
   },
   {
-    "id": "mon_flesh_infect_zombie_corrosive_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_corrosive" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_corrosive_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_zombie_corrosive",
     "name": { "str": "Morph" },
@@ -2362,21 +1271,6 @@
     "effect_str": "mon_sflesh_zombie_corrosive"
   },
   {
-    "id": "mon_flesh_infect_zombie_wretched_old",
-    "type": "SPELL",
-    "name": { "str": "Infect" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
-    "valid_targets": [ "hostile", "ground" ],
-    "targeted_monster_ids": [ "mon_zombie_wretched" ],
-    "extra_effects": [ { "id": "mon_flesh_infect_zombie_wretched_yes" } ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 25,
-    "damage_type": "biological"
-  },
-  {
     "type": "SPELL",
     "id": "secro_flesh_infect_zombie_wretched",
     "name": { "str": "Morph" },
@@ -2388,5 +1282,343 @@
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_wretched"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_zhark",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_zhark"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_zombie_horse",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_zombie_horse"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_ziger",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_ziger"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_zow",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_zow"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_zombull",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_zombull"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_zllama",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_zllama"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_zeer",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_zeer"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_zpider_mass",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_zpider_mass"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_zeindeer",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_zeindeer"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_gastro_bufo",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_gastro_bufo"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_beekeeper",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_beekeeper"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_zombie_cop",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_zombie_cop"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_zombie_fireman",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_zombie_fireman"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_zombie_hazmat",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_zombie_hazmat"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_zombie_rot",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_zombie_rot"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_zombie_swat",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_zombie_swat"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_zombie_crawler_pupa_decoy",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_zombie_crawler_pupa_decoy"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_zombie_crawler_pupa",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_zombie_crawler_pupa"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_zombie_pupa_decoy",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_zombie_pupa_decoy"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_zombie_pupa",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_zombie_pupa"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_brute_pupa_decoy",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_brute_pupa_decoy"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_brute_pupa",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_brute_pupa"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_hulk_pupa_decoy",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_hulk_pupa_decoy"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_hulk_pupa",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_hulk_pupa"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_zombie_pupa_decoy_shady",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_zombie_pupa_decoy_shady"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_zombie_pupa_shady",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_zombie_pupa_shady"
   }
 ]

@@ -543,7 +543,7 @@
   },
   {
     "type": "SPELL",
-    "id": "mon_sflesh_taken_target",
+    "id": "mon_sflesh_target",
     "name": { "str": "a spell" },
     "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
     "extra_effects": [ { "id": "sacrifice_spell", "hit_self": true } ],

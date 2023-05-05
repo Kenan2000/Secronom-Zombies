@@ -324,7 +324,7 @@
     "chance": 50
   },
   {
-    "id": "emit_flesh_taken_blind",
+    "id": "emit_flesh_blind",
     "type": "emit",
     "field": "fd_sflesh_sack_maybe",
     "qty": 1,
@@ -353,7 +353,7 @@
     "intensity": 1
   },
   {
-    "id": "emit_flesh_taken_potent_blind",
+    "id": "emit_flesh_potent_blind",
     "type": "emit",
     "field": "fd_sflesh_sack_maybe",
     "qty": 1,

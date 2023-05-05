@@ -588,7 +588,7 @@
     "effect_str": "eoc_secro_mon_sflesh_flesh_trap_check"
   },
   {
-    "id": "mon_sflesh_flesh_taken_check",
+    "id": "mon_sflesh_flesh_check",
     "type": "SPELL",
     "name": { "str": "Flesh - Taken" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'1/2 chance to spawn a potent taken near the target.'",
@@ -601,14 +601,14 @@
     "max_range": 30,
     "shape": "line",
     "effect": "effect_on_condition",
-    "effect_str": "eoc_secro_mon_sflesh_flesh_taken_check"
+    "effect_str": "eoc_secro_mon_sflesh_flesh_check"
   },
   {
     "type": "SPELL",
     "id": "mon_sflesh_flesh_target",
     "name": { "str": "a spell" },
     "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
-    "extra_effects": [ { "id": "mon_sflesh_flesh_trap_check" }, { "id": "mon_sflesh_flesh_taken_check" } ],
+    "extra_effects": [ { "id": "mon_sflesh_flesh_trap_check" }, { "id": "mon_sflesh_flesh_check" } ],
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "effect": "attack",

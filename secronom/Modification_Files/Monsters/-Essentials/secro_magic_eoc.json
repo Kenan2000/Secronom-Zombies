@@ -562,11 +562,11 @@
   },
   {
     "type": "effect_on_condition",
-    "id": "eoc_secro_mon_sflesh_flesh_taken_check",
+    "id": "eoc_secro_mon_sflesh_flesh_check",
     "condition": { "one_in_chance": 2 },
     "effect": [
       { "u_message": "A membranous pod emerges from the flesh underneath!", "type": "bad" },
-      { "u_spawn_monster": "mon_sflesh_taken_potent", "real_count": 1, "min_radius": 4, "max_radius": 6 }
+      { "u_spawn_monster": "mon_sflesh_potent", "real_count": 1, "min_radius": 4, "max_radius": 6 }
     ]
   },
   {
