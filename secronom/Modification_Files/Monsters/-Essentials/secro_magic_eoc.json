@@ -92,7 +92,7 @@
     "id": "eoc_secro_mon_zombie_tentawraith_tentgrasp_check",
     "condition": {
       "and": [
-        { "compare_num": [ { "u_val": "skill_level", "skill": "dodge" }, ">=", { "const": 4 } ] },
+        { "math": [ "u_skill('dodge')", ">=", "4" ] },
         { "compare_num": [ { "u_val": "dexterity" }, ">=", { "const": 8 } ] }
       ]
     },
