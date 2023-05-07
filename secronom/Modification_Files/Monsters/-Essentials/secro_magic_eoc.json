@@ -680,5 +680,12 @@
     "condition": { "compare_num": [ { "distance": [ "u", "npc" ] }, "<=", { "const": 2 } ] },
     "effect": [ { "queue_eocs": [ "eoc_secro_mon_secrodragon_woke_barrier_check" ] } ],
     "false_effect": [ { "queue_eocs": [ "eoc_secro_mon_secrodragon_woke_ranged_check" ] } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "mon_sflesh_flesh_convert_terrain_check",
+    "effect": [
+      { "npc_add_effect": "mon_sflesh_flesh_initial", "duration": "PERMANENT" }
+    ]
   }
 ]

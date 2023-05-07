@@ -738,6 +738,10 @@
   },
   {
     "type": "effect_type",
+    "id": "mon_sflesh_flesh_initial"
+  },
+  {
+    "type": "effect_type",
     "id": "secro_flesh_bio_limb",
     "name": [ "Mending" ],
     "desc": [ "Your broken limbs are mending!" ],

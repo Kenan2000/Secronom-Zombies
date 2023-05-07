@@ -5,15 +5,15 @@
     "burn_into": "mon_zombie_dog",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -26,15 +26,15 @@
     "burn_into": "mon_dog_skeleton",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -47,15 +47,15 @@
     "burn_into": "mon_dog_zombie_cop",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -68,15 +68,15 @@
     "burn_into": "mon_dog_zombie_rot",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -89,15 +89,15 @@
     "burn_into": "mon_zolf",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -110,15 +110,15 @@
     "burn_into": "mon_zombear",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -131,15 +131,15 @@
     "burn_into": "mon_zombie_pig",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -152,15 +152,15 @@
     "burn_into": "mon_zombeaver",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -173,15 +173,15 @@
     "burn_into": "mon_zoose",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -194,15 +194,15 @@
     "burn_into": "mon_zougar",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -215,15 +215,15 @@
     "burn_into": "mon_zhark",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -236,15 +236,15 @@
     "burn_into": "mon_zombie_horse",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -257,15 +257,15 @@
     "burn_into": "mon_ziger",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -278,15 +278,15 @@
     "burn_into": "mon_zow",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -299,15 +299,15 @@
     "burn_into": "mon_zombull",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -320,15 +320,15 @@
     "burn_into": "mon_zllama",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -341,15 +341,15 @@
     "burn_into": "mon_zeer",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -362,15 +362,15 @@
     "burn_into": "mon_zpider_mass",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -383,15 +383,15 @@
     "burn_into": "mon_zeindeer",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -404,15 +404,15 @@
     "burn_into": "mon_gastro_bufo",
     "type": "MONSTER",
     "default_faction": "secro_flesh",
-    "relative": { "hp": 10, "speed": -5, "melee_skill": 1, "armor": { "bash": 3 } },
-    "bleed_rate": 25,
+    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
+    "proportional": { "hp": 1.25, "speed": 0.9 },
     "extend": {
       "special_attacks": [
         {
           "type": "spell",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
+		  "condition": { "math": [ "u_val('hp') / 2", ">=", "n_val('hp')" ] },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],

@@ -19,27 +19,6 @@
                 "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_prisoner", "radius": 0 }, "==", { "const": 1 } ]
               },
               {
-                "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_grabber", "radius": 0 }, "==", { "const": 1 } ]
-              },
-              {
-                "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_runner", "radius": 0 }, "==", { "const": 1 } ]
-              },
-              {
-                "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_shady", "radius": 0 }, "==", { "const": 1 } ]
-              },
-              {
-                "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_shrieker", "radius": 0 }, "==", { "const": 1 } ]
-              },
-              {
-                "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_swimmer", "radius": 0 }, "==", { "const": 1 } ]
-              },
-              {
-                "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_technician", "radius": 0 }, "==", { "const": 1 } ]
-              },
-              {
-                "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_labsecurity", "radius": 0 }, "==", { "const": 1 } ]
-              },
-              {
                 "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_medical", "radius": 0 }, "==", { "const": 1 } ]
               }
             ]
@@ -52,7 +31,14 @@
         },
         {
           "id": "eoc_secro_mon_flesh_infect_zombie_fat",
-          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_fat", "radius": 0 }, "==", { "const": 1 } ] },
+          "condition": {
+            "or": [
+              { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_fat", "radius": 0 }, "==", { "const": 1 } ] },
+              {
+                "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_prisoner_fat", "radius": 0 }, "==", { "const": 1 } ]
+              }
+            ]
+          },
           "effect": [
             { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
             { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
@@ -66,6 +52,9 @@
               { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_tough", "radius": 0 }, "==", { "const": 1 } ] },
               {
                 "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_resort_bouncer", "radius": 0 }, "==", { "const": 1 } ]
+              },
+              {
+                "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_prisoner_tough", "radius": 0 }, "==", { "const": 1 } ]
               }
             ]
           },
@@ -86,7 +75,7 @@
         },
         {
           "id": "eoc_secro_mon_flesh_infect_skeleton",
-		  "condition": {
+          "condition": {
             "or": [
               { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_skeleton", "radius": 0 }, "==", { "const": 1 } ] },
               {
@@ -165,11 +154,14 @@
         },
         {
           "id": "eoc_secro_mon_flesh_infect_zombie_brute",
-		  "condition": {
+          "condition": {
             "or": [
               { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_brute", "radius": 0 }, "==", { "const": 1 } ] },
               {
                 "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_medical_brute", "radius": 0 }, "==", { "const": 1 } ]
+              },
+              {
+                "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_prisoner_brute", "radius": 0 }, "==", { "const": 1 } ]
               }
             ]
           },
@@ -1100,7 +1092,7 @@
         },
         {
           "id": "eoc_secro_mon_flesh_infect_zombie_acidic",
-		  "condition": {
+          "condition": {
             "or": [
               { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_acidic", "radius": 0 }, "==", { "const": 1 } ] },
               {
@@ -1269,7 +1261,9 @@
         },
         {
           "id": "eoc_secro_mon_flesh_infect_zombie_crawler_pupa_decoy",
-          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_crawler_pupa_decoy", "radius": 0 }, "==", { "const": 1 } ] },
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_crawler_pupa_decoy", "radius": 0 }, "==", { "const": 1 } ]
+          },
           "effect": [
             { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
             { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
@@ -1278,7 +1272,9 @@
         },
         {
           "id": "eoc_secro_mon_flesh_infect_zombie_crawler_pupa",
-          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_crawler_pupa", "radius": 0 }, "==", { "const": 1 } ] },
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_crawler_pupa", "radius": 0 }, "==", { "const": 1 } ]
+          },
           "effect": [
             { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
             { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
@@ -1341,7 +1337,9 @@
         },
         {
           "id": "eoc_secro_mon_flesh_infect_zombie_pupa_decoy_shady",
-          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_pupa_decoy_shady", "radius": 0 }, "==", { "const": 1 } ] },
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_pupa_decoy_shady", "radius": 0 }, "==", { "const": 1 } ]
+          },
           "effect": [
             { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
             { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
@@ -1355,6 +1353,891 @@
             { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
             { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
             { "u_cast_spell": { "id": "secro_flesh_infect_zombie_pupa_shady", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_winged",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_winged", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_winged", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_brute_winged",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_brute_winged", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_brute_winged", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_spawn_raptor",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_spawn_raptor", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_spawn_raptor", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_spawn_raptor_shady",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_spawn_raptor_shady", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_spawn_raptor_shady", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_spawn_raptor_unstable",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_spawn_raptor_unstable", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_spawn_raptor_unstable", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_spawn_raptor_electric",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_spawn_raptor_electric", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_spawn_raptor_electric", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_dog_acidic",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_dog_acidic", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_dog_acidic", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_dog_brute_acidic",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_dog_brute_acidic", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_dog_brute_acidic", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_child_scorched",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_child_scorched", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_child_scorched", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_fiend",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_fiend", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_fiend", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_scorched",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_scorched", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_scorched", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_wretch",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_wretch", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_wretch", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_skeleton_master",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_skeleton_master", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_skeleton_master", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_relax_gasbag",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_relax_gasbag", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_relax_gasbag", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_tear_gasbag",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_tear_gasbag", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_tear_gasbag", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_boomer_glutton",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_boomer_glutton", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_boomer_glutton", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_boomer_claymore",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_boomer_claymore", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_boomer_claymore", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_milbase_personnel",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_milbase_personnel", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_milbase_personnel", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_sailor",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_sailor", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_sailor", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_officer",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_officer", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_officer", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_marine",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_marine", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_marine", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_marine_upgrade",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_marine_upgrade", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_marine_upgrade", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_bestial_stalker",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_bestial_stalker", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_bestial_stalker", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_armored",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_armored", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_armored", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_bio_op2",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_bio_op2", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_bio_op2", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_skeleton_electric",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_skeleton_electric", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_skeleton_electric", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_paramilitary",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_paramilitary", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_paramilitary", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_charred_nightmare",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_charred_nightmare", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_charred_nightmare", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_irradiated_wanderer_1",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_irradiated_wanderer_1", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_irradiated_wanderer_1", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_irradiated_wanderer_2",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_irradiated_wanderer_2", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_irradiated_wanderer_2", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_irradiated_wanderer_3",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_irradiated_wanderer_3", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_irradiated_wanderer_3", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_irradiated_wanderer_4",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_irradiated_wanderer_4", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_irradiated_wanderer_4", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_frog_mother",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_frog_mother", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_frog_mother", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_tadpole_grabber",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_tadpole_grabber", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_tadpole_grabber", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombullfrog",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombullfrog", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombullfrog", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_afs_headless_horror",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_afs_headless_horror", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_afs_headless_horror", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_nemesis",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_nemesis", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_nemesis", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_necro_boomer",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_necro_boomer", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_necro_boomer", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_skeleton_necro",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_skeleton_necro", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_skeleton_necro", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_runner",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_runner", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_runner", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_regenerating",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_regenerating", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_regenerating", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_shady",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_shady", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_shady", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_shrieker",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_shrieker", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_shrieker", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_smoker_brute",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_smoker_brute", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_smoker_brute", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_swimmer_base",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_swimmer_base", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_swimmer_base", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_swimmer",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_swimmer", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_swimmer", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_technician",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_technician", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_technician", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_miner",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_miner", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_miner", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_reenactor",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_reenactor", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_reenactor", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_fursuit",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_fursuit", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_fursuit", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_grabber",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_grabber", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_grabber", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_labsecurity",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_labsecurity", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_labsecurity", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_phase_skulker",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_phase_skulker", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_phase_skulker", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_phase_shrike",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_phase_shrike", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_phase_shrike", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_rust",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_rust", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_rust", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_shell",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_shell", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_shell", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_plated",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_plated", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_plated", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_urchin",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_urchin", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_urchin", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_zombie_hammer_hands",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_zombie_hammer_hands", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_zombie_hammer_hands", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_human_pipe",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_human_pipe", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_human_pipe", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_sapien_spear",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_sapien_spear", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_sapien_spear", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_chud",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_chud", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_chud", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_human_crowbar",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_human_crowbar", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_human_crowbar", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_human_axe",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_human_axe", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_human_axe", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_human_tool",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_human_tool", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_human_tool", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_scientist_scalpel",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_scientist_scalpel", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_scientist_scalpel", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_labsecurity_9mm",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_labsecurity_9mm", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_labsecurity_9mm", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_labsecurity_flashlight",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_labsecurity_flashlight", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_labsecurity_flashlight", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_maid_broom",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_maid_broom", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_maid_broom", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_maid_candlestick",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_maid_candlestick", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_maid_candlestick", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_maid_knife",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_maid_knife", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_maid_knife", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_fancy_rapier",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_fancy_rapier", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_fancy_rapier", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_fancy_rapier_fake",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_fancy_rapier_fake", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_fancy_rapier_fake", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_fancy_crossbow",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_fancy_crossbow", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_fancy_crossbow", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_armored_mace",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_armored_mace", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_armored_mace", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_armored_battleaxe",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_armored_battleaxe", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_armored_battleaxe", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_prepper",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_prepper", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_prepper", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_survivalist",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_survivalist", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_survivalist", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_militia",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_militia", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_militia", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_soldier",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_soldier", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_soldier", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_jackboot",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_jackboot", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_jackboot", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_swimmer_kickboard",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_swimmer_kickboard", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_swimmer_kickboard", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_diver_knife",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_diver_knife", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_diver_knife", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_sailor_wrench",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_sailor_wrench", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_sailor_wrench", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_sailor_axe",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_sailor_axe", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_sailor_axe", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_sailor_mop",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_sailor_mop", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_sailor_mop", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_sailor_lug_wrench",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_sailor_lug_wrench", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_sailor_lug_wrench", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_marine_bayonet",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_marine_bayonet", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_marine_bayonet", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_officer",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_officer", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_officer", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_cop",
+          "condition": { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_cop", "radius": 0 }, "==", { "const": 1 } ] },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_cop", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_feral_human_archaeologist",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_feral_human_archaeologist", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_feral_human_archaeologist", "hit_self": true } }
           ]
         }
       ]
