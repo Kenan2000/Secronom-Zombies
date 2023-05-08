@@ -709,23 +709,6 @@
     "display_field": false
   },
   {
-    "//": "Make hatching a chance using blindness effect.",
-    "id": "fd_sflesh_sack_maybe",
-    "type": "field_type",
-    "intensity_levels": [
-      {
-        "name": "...",
-        "color": "black",
-        "effects": [ { "effect_id": "blind", "body_part": "torso", "min_duration": "1 seconds", "max_duration": "1 seconds" } ]
-      }
-    ],
-    "priority": -1,
-    "half_life": "1 seconds",
-    "phase": "gas",
-    "display_items": true,
-    "display_field": false
-  },
-  {
     "id": "fd_sflesh_tentclus",
     "type": "field_type",
     "intensity_levels": [

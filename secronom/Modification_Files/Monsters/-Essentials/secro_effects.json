@@ -738,7 +738,11 @@
   },
   {
     "type": "effect_type",
-    "id": "mon_sflesh_flesh_initial"
+    "id": "mon_sflesh_flesh_swing_recently"
+  },
+  {
+    "type": "effect_type",
+    "id": "mon_sflesh_flesh_slam_recently"
   },
   {
     "type": "effect_type",

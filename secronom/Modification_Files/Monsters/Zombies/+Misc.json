@@ -118,19 +118,7 @@
       }
     ],
     "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s melts away." },
-    "flags": [
-      "HEARS",
-      "SEES",
-      "SMELLS",
-      "WARM",
-      "AQUATIC",
-      "GRABS",
-      "BASHES",
-      "NOHEAD",
-      "SWIMS",
-      "PACIFIST",
-      "HARDTOSHOOT"
-    ]
+    "flags": [ "HEARS", "SEES", "SMELLS", "WARM", "AQUATIC", "GRABS", "BASHES", "NOHEAD", "SWIMS", "PACIFIST", "HARDTOSHOOT" ]
   },
   {
     "//": "Support-type zed that uses an aura to inflict debuffs.",
@@ -289,12 +277,19 @@
     "vision_day": 4,
     "vision_night": 4,
     "harvest": "zombie",
-    "special_attacks": [ { "type": "bite", "cooldown": 5 }, [ "GRAB", 7 ], [ "scratch", 20 ] ],
-    "death_function": {
-      "corpse_type": "NO_CORPSE",
-      "message": "<color_light_red>%s mutates into an ichorus!</color>",
-      "effect": { "id": "mon_zombie_fake_ichorus_death", "hit_self": true }
-    },
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": { "id": "mon_zombie_fake_ichorus_poly" },
+        "cooldown": 1,
+        "condition": { "math": [ "u_val('hp')", "<=", "50" ] },
+        "allow_no_target": true,
+        "monster_message": "<color_light_red>%1$s trembles!</color>"
+      },
+      { "type": "bite", "cooldown": 5 },
+      [ "GRAB", 7 ],
+      [ "scratch", 20 ]
+    ],
     "flags": [
       "SEES",
       "HEARS",
@@ -378,12 +373,19 @@
     "vision_day": 4,
     "vision_night": 4,
     "harvest": "zombie",
-    "special_attacks": [ { "type": "bite", "cooldown": 5 }, [ "GRAB", 7 ], [ "scratch", 20 ] ],
-    "death_function": {
-      "corpse_type": "NO_CORPSE",
-      "message": "<color_light_red>%s mutates into a psyrus!</color>",
-      "effect": { "id": "mon_zombie_fake_psyrus_death", "hit_self": true }
-    },
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": { "id": "mon_zombie_fake_psyrus_poly" },
+        "cooldown": 1,
+        "condition": { "math": [ "u_val('hp')", "<=", "50" ] },
+        "allow_no_target": true,
+        "monster_message": "<color_light_red>%1$s trembles!</color>"
+      },
+      { "type": "bite", "cooldown": 5 },
+      [ "GRAB", 7 ],
+      [ "scratch", 20 ]
+    ],
     "flags": [
       "SEES",
       "HEARS",
