@@ -684,5 +684,20 @@
     "condition": { "compare_num": [ { "distance": [ "u", "npc" ] }, "<=", { "const": 2 } ] },
     "effect": [ { "queue_eocs": [ "eoc_secro_mon_secrodragon_woke_barrier_check" ] } ],
     "false_effect": [ { "queue_eocs": [ "eoc_secro_mon_secrodragon_woke_ranged_check" ] } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_zombie_uruxis_passive",
+    "effect": [
+      {
+        "u_spawn_monster": "GROUP_ZOMBIE",
+        "group": true,
+        "real_count": 1,
+        "min_radius": 2,
+        "max_radius": 4,
+        "spawn_message": "A zombie rose up from the ground!"
+      },
+	  { "u_add_effect": "secro_veinstalk_limit", "duration": "10 seconds" }
+    ]
   }
 ]

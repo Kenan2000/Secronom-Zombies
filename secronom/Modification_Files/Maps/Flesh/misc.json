@@ -171,7 +171,7 @@
             "     qssssq.qsssqq      ",
             "    qssqqs..ksqq        ",
             "     qq  q....q         ",
-            "         q.k..q         ",
+            "         q.ka.q         ",
             "        qqs.k.q         ",
             "      qqsssqqssqq       ",
             "     qsssqq  qsssq      ",
@@ -187,9 +187,10 @@
         "s": [ [ "t_secro_flesh_wall", 90 ], [ "t_secro_flesh", 10 ] ],
         "q": [ [ "t_null", 25 ], [ "t_secro_flesh", 75 ] ],
         ".": "t_secro_flesh",
-        "k": "t_secro_flesh"
+        "k": "t_secro_flesh",
+        "a": "t_secro_flesh"
       },
-      "monster": { ".": { "monster": "mon_sflesh_zombie", "chance": 5 }, "k": { "monster": "mon_sflesh_zombie" } },
+      "monster": { ".": { "monster": "mon_sflesh_zombie", "chance": 5 }, "k": { "monster": "mon_sflesh_zombie" }, "a": { "monster": "mon_sflesh_veinstalk_initial" } },
 	  "ter_furn_transforms": { " ": { "transform": "flesh_spread" }, "q": { "transform": "flesh_spread" } },
       "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ]
     },
@@ -216,7 +217,7 @@
             "            qsssq       ",
             "          qq.kqq        ",
             "         q....q         ",
-            "         q.k..q         ",
+            "         q.ka.q         ",
             "        qq...q          ",
             "        qssqq           ",
             "        qsq             ",
@@ -232,9 +233,10 @@
         "s": [ [ "t_secro_flesh_wall", 90 ], [ "t_secro_flesh", 10 ] ],
         "q": [ [ "t_null", 25 ], [ "t_secro_flesh", 75 ] ],
         ".": "t_secro_flesh",
-        "k": "t_secro_flesh"
+        "k": "t_secro_flesh",
+        "a": "t_secro_flesh"
       },
-      "monster": { ".": { "monster": "mon_sflesh_zombie", "chance": 5 }, "k": { "monster": "mon_sflesh_zombie" } },
+      "monster": { ".": { "monster": "mon_sflesh_zombie", "chance": 5 }, "k": { "monster": "mon_sflesh_zombie" }, "a": { "monster": "mon_sflesh_veinstalk_initial" } },
 	  "ter_furn_transforms": { " ": { "transform": "flesh_spread" }, "q": { "transform": "flesh_spread" } },
       "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ]
     },

@@ -165,14 +165,6 @@
     "intensity": 3
   },
   {
-    "id": "emit_urixis_aura",
-    "type": "emit",
-    "field": "fd_uruxis_normal",
-    "qty": 10,
-    "chance": 10,
-    "intensity": 1
-  },
-  {
     "id": "emit_nix_pressence",
     "type": "emit",
     "field": "fd_nix_fear",
