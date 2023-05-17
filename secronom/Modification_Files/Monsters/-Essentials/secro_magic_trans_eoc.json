@@ -515,6 +515,9 @@
               { "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_sewer_rat", "radius": 0 }, "==", { "const": 1 } ] },
               {
                 "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_black_rat", "radius": 0 }, "==", { "const": 1 } ]
+              },
+              {
+                "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_lab_rat", "radius": 0 }, "==", { "const": 1 } ]
               }
             ]
           },
@@ -606,6 +609,12 @@
               },
               {
                 "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_cat_chonker", "radius": 0 }, "==", { "const": 1 } ]
+              },
+              {
+                "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_cat_isherwood", "radius": 0 }, "==", { "const": 1 } ]
+              },
+              {
+                "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_cat_black", "radius": 0 }, "==", { "const": 1 } ]
               }
             ]
           },
@@ -652,6 +661,9 @@
               },
               {
                 "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_cat_chonker_kitten", "radius": 0 }, "==", { "const": 1 } ]
+              },
+              {
+                "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_cat_black_kitten", "radius": 0 }, "==", { "const": 1 } ]
               }
             ]
           },
@@ -759,6 +771,9 @@
               },
               {
                 "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_dog_auscattle", "radius": 0 }, "==", { "const": 1 } ]
+              },
+              {
+                "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_dog_samoyed", "radius": 0 }, "==", { "const": 1 } ]
               }
             ]
           },
@@ -805,6 +820,9 @@
               },
               {
                 "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_dog_auscattle_pup", "radius": 0 }, "==", { "const": 1 } ]
+              },
+              {
+                "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_dog_samoyed_pup", "radius": 0 }, "==", { "const": 1 } ]
               }
             ]
           },
@@ -2238,6 +2256,182 @@
             { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
             { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
             { "u_cast_spell": { "id": "secro_flesh_infect_feral_human_archaeologist", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_bat",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_bat", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_bat", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_tiger",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_tiger", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_tiger", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_moose_calf",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_moose_calf", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_moose_calf", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_tusked_moose",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_tusked_moose", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_tusked_moose", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_tusked_moose_calf",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_tusked_moose_calf", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_tusked_moose_calf", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_goat_kid",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_goat_kid", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_goat_kid", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_goat",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_goat", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_goat", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_wolf_pup",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_wolf_pup", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_wolf_pup", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_reindeer",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_reindeer", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_reindeer", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_reindeer_fawn",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_reindeer_fawn", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_reindeer_fawn", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_llama_calf",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_llama_calf", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_llama_calf", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_llama",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_llama", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_llama", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_ferret",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_ferret", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_ferret", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_ferret_kit",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_ferret_kit", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_ferret_kit", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_horse_police",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_horse_police", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_horse_police", "hit_self": true } }
+          ]
+        },
+        {
+          "id": "eoc_secro_mon_flesh_infect_horse_foal",
+          "condition": {
+            "compare_num": [ { "u_val": "monsters_nearby", "id": "mon_horse_foal", "radius": 0 }, "==", { "const": 1 } ]
+          },
+          "effect": [
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_success_bleed", "hit_self": true } },
+            { "u_cast_spell": { "id": "secro_flesh_infect_horse_foal", "hit_self": true } }
           ]
         }
       ]
