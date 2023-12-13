@@ -765,19 +765,35 @@
     "max_damage": 12
   },
   {
-    "id": "mon_secrodragon_woke_check",
+    "id": "mon_secrodragon_woke_barrier_check",
     "type": "SPELL",
-    "name": { "str": "Secronom Dragon" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's initial attack.'",
+    "name": { "str": "Secronom Dragon - Barrier" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster generates a forcefield that pushes nearby creatures.'",
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT" ],
     "message": "",
     "min_damage": 10000,
     "max_damage": 10000,
-    "min_range": 5,
-    "max_range": 5,
+    "min_range": 2,
+    "max_range": 2,
     "shape": "line",
     "effect": "effect_on_condition",
-    "effect_str": "eoc_secro_mon_secrodragon_woke_check"
+    "effect_str": "eoc_secro_mon_secrodragon_woke_barrier_check"
+  },
+  {
+    "id": "mon_secrodragon_woke_elec_check",
+    "type": "SPELL",
+    "name": { "str": "Secronom Dragon - Electricity" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster discharges arcs of electricity.'",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "SILENT" ],
+    "message": "",
+    "min_damage": 10000,
+    "max_damage": 10000,
+    "min_range": 6,
+    "max_range": 6,
+    "shape": "line",
+    "effect": "effect_on_condition",
+    "effect_str": "eoc_secro_mon_secrodragon_woke_elec_check"
   }
 ]
