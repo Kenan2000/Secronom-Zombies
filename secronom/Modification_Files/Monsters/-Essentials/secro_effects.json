@@ -214,12 +214,25 @@
   },
   {
     "type": "effect_type",
+    "id": "secro_fleshmonger_abs",
+    "name": [ "Absorption" ],
+    "show_in_info": true,
+	"base_mods": { "hurt_min": [ -10 ] }
+  },
+  {
+    "type": "effect_type",
     "id": "secro_fleshmonger_fleshed",
     "name": [ "Reflesh" ],
     "rating": "good",
     "show_in_info": true,
     "removes_effects": [ "bleed" ],
     "blocks_effects": [ "bleed" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_fleshmonger_fleshed_penalty",
+    "max_intensity": 40,
+	"scaling_mods": { "hurt_min": [ 1.33 ] }
   },
   {
     "type": "effect_type",
