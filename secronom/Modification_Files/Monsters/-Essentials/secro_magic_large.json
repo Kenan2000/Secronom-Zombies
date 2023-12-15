@@ -186,6 +186,48 @@
     "max_range": 10
   },
   {
+    "id": "mon_zombie_charger_initialcheck",
+    "type": "SPELL",
+    "name": { "str": "Charge Check" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'An applied effect alongside the caster's charge.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "effect": "attack",
+    "shape": "blast",
+    "effect_str": "charge_momentum_initialcheck",
+    "min_duration": 600,
+    "max_duration": 600
+  },
+  {
+    "id": "mon_zombie_charger_initial",
+    "type": "SPELL",
+    "name": { "str": "Charge." },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster prepares for a charge, applying slowness that decays over 3-4 seconds.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX", "RANDOM_DURATION" ],
+    "valid_targets": [ "self" ],
+    "effect": "attack",
+    "shape": "blast",
+    "effect_str": "charge_momentum_initial",
+    "min_duration": 300,
+    "max_duration": 400
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_zombie_charger_initial_target",
+    "name": { "str": "a spell" },
+    "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "extra_effects": [
+      { "id": "mon_zombie_charger_initial", "hit_self": true },
+      { "id": "mon_zombie_charger_initialcheck", "hit_self": true }
+    ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "none" ],
+    "effect": "attack",
+    "shape": "blast",
+    "min_range": 13,
+    "max_range": 13
+  },
+  {
     "id": "mon_zombie_charger_charge",
     "type": "SPELL",
     "name": { "str": "Charge!" },
@@ -225,6 +267,18 @@
     "valid_targets": [ "ally", "hostile", "ground" ],
     "min_aoe": 2,
     "max_aoe": 2
+  },
+  {
+    "id": "mon_zombie_charger_vanguard_charge_pushy",
+    "type": "SPELL",
+    "name": { "str": "Push" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster pushes its path.'",
+    "effect": "area_push",
+    "shape": "blast",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "ally", "hostile", "ground" ],
+    "min_aoe": 3,
+    "max_aoe": 3
   },
   {
     "id": "mon_zombie_charger_charge_pull",
@@ -379,7 +433,7 @@
     "extra_effects": [
       { "id": "mon_zombie_charger_vanguard_charge" },
       { "id": "mon_zombie_charger_charge_push" },
-      { "id": "mon_zombie_charger_charge_pushy", "hit_self": true }
+      { "id": "mon_zombie_charger_vanguard_charge_pushy", "hit_self": true }
     ],
     "min_aoe": 20,
     "max_aoe": 20
@@ -437,8 +491,8 @@
     "effect": "attack",
     "effect_str": "secro_fleshmonger_fleshed",
     "shape": "blast",
-    "min_damage": -50,
-    "max_damage": -50,
+    "min_dot": -5,
+    "max_dot": -5,
     "min_aoe": 7,
     "max_aoe": 7,
     "min_duration": 1000,
@@ -541,13 +595,28 @@
     "shape": "blast"
   },
   {
+    "id": "mon_zombie_gorepit_abs",
+    "type": "SPELL",
+    "name": { "str": "Gorepit - Absorption" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster gains massive health regeneration.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "effect": "attack",
+    "effect_str": "secro_gorepit_absorption",
+    "shape": "blast",
+    "min_dot": -10,
+    "max_dot": -10,
+    "min_duration": 2500,
+    "damage_type": "biological"
+  },
+  {
     "id": "mon_zombie_gorepit_rage",
     "type": "SPELL",
-    "name": { "str": "Rage" },
+    "name": { "str": "Gorepit - Rage" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster pushes nearby creatures.'",
     "effect": "area_push",
     "shape": "blast",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ally", "hostile", "ground" ],
     "min_aoe": 4,
     "max_aoe": 4

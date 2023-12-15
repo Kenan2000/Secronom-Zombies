@@ -155,7 +155,11 @@
       { "npc_cast_spell": { "id": "mon_zombie_fleshmonger_reflesh", "hit_self": true } },
       { "npc_cast_spell": { "id": "mon_zombie_fleshmonger_reflesh_bleed", "hit_self": true } },
       { "npc_add_effect": "secro_fleshmonger_fleshed_immune", "duration": "10 seconds" },
-	  { "npc_add_effect": "secro_fleshmonger_fleshed_penalty", "duration": "PERMANENT", "intensity": { "math": [ "n_effect_intensity('secro_fleshmonger_fleshed_penalty') + 1" ] } },
+      {
+        "npc_add_effect": "secro_fleshmonger_fleshed_penalty",
+        "duration": "PERMANENT",
+        "intensity": { "math": [ "n_effect_intensity('secro_fleshmonger_fleshed_penalty') + 1" ] }
+      },
       { "npc_cast_spell": { "id": "mon_zombie_fleshmonger_fchunk", "hit_self": true } }
     ]
   },
