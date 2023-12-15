@@ -31,8 +31,7 @@
         "spell_data": { "id": "mon_zombie_charger_initial_target" },
         "cooldown": 120,
         "condition": { "compare_num": [ { "distance": [ "u", "npc" ] }, ">=", { "const": 9 } ] },
-        "monster_message": "<color_yellow>%1$s is gaining momentum!</color>",
-        "target_self": true
+        "monster_message": "<color_yellow>%1$s is gaining momentum!</color>"
       },
       {
         "type": "spell",
@@ -94,8 +93,7 @@
         "spell_data": { "id": "mon_zombie_charger_initial_target" },
         "cooldown": 120,
         "condition": { "compare_num": [ { "distance": [ "u", "npc" ] }, ">=", { "const": 10 } ] },
-        "monster_message": "<color_yellow>%1$s is gaining momentum!</color>",
-        "target_self": true
+        "monster_message": "<color_yellow>%1$s is gaining momentum!</color>"
       },
       {
         "type": "spell",
@@ -157,8 +155,7 @@
         "spell_data": { "id": "mon_zombie_charger_initial_target" },
         "cooldown": 180,
         "condition": { "compare_num": [ { "distance": [ "u", "npc" ] }, ">=", { "const": 5 } ] },
-        "monster_message": "<color_yellow>%1$s is gaining momentum!</color>",
-        "target_self": true
+        "monster_message": "<color_yellow>%1$s is gaining momentum!</color>"
       },
       {
         "type": "spell",
@@ -220,8 +217,7 @@
         "spell_data": { "id": "mon_zombie_charger_initial_target" },
         "cooldown": 120,
         "condition": { "compare_num": [ { "distance": [ "u", "npc" ] }, ">=", { "const": 13 } ] },
-        "monster_message": "<color_yellow>%1$s is gaining momentum!</color>",
-        "target_self": true
+        "monster_message": "<color_yellow>%1$s is gaining momentum!</color>"
       },
       {
         "type": "spell",
