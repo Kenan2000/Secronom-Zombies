@@ -395,7 +395,8 @@
     "max_duration": 6,
     "rating": "good",
     "show_in_info": true,
-    "scaling_mods": { "speed_mod": [ 10 ] }
+    "scaling_mods": { "speed_mod": [ 10 ] },
+    "enchantments": [ { "values": [ { "value": "ARMOR_BASH", "multiply": -0.33 }, { "value": "ARMOR_CUT", "multiply": -0.33 }, { "value": "ARMOR_STAB", "multiply": -0.33 } ] } ]
   },
   {
     "type": "effect_type",
@@ -409,7 +410,8 @@
     "max_duration": 4,
     "rating": "bad",
     "show_in_info": true,
-    "scaling_mods": { "speed_mod": [ -15 ] }
+    "scaling_mods": { "speed_mod": [ -15 ] },
+    "enchantments": [ { "values": [ { "value": "ARMOR_BASH", "multiply": -0.1 }, { "value": "ARMOR_CUT", "multiply": -0.1 }, { "value": "ARMOR_STAB", "multiply": -0.1 } ] } ]
   },
   {
     "type": "effect_type",
