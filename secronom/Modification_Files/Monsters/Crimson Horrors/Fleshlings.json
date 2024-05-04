@@ -29,7 +29,7 @@
         "cooldown": 1,
         "condition": {
           "and": [
-            { "math": [ "u_hp('ALL') / 4", ">=", "n_hp('ALL')" ] },
+            { "math": [ "u_hp('ALL') * 2", ">=", "n_hp('ALL')" ] },
             { "not": { "npc_has_effect": "sflesh_infect_checked" } },
             {
               "math": [
@@ -66,8 +66,8 @@
         "monster_message": "",
         "condition": {
           "and": [
-            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING_EX', 'radius': 12)", "==", "0" ] },
-            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING', 'radius': 12)", ">=", "2" ] }
+            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING_EX', 'radius': 32)", "==", "0" ] },
+            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING', 'radius': 32)", ">=", "2" ] }
           ]
         },
         "allow_no_target": true
@@ -118,7 +118,7 @@
         "cooldown": 1,
         "condition": {
           "and": [
-            { "math": [ "u_hp('ALL') / 4", ">=", "n_hp('ALL')" ] },
+            { "math": [ "u_hp('ALL') * 2", ">=", "n_hp('ALL')" ] },
             { "not": { "npc_has_effect": "sflesh_infect_checked" } },
             {
               "math": [
@@ -155,8 +155,8 @@
         "monster_message": "",
         "condition": {
           "and": [
-            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING_EX', 'radius': 12)", "==", "0" ] },
-            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING', 'radius': 12)", ">=", "2" ] }
+            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING_EX', 'radius': 32)", "==", "0" ] },
+            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING', 'radius': 32)", ">=", "2" ] }
           ]
         },
         "allow_no_target": true
@@ -216,7 +216,7 @@
         "cooldown": 1,
         "condition": {
           "and": [
-            { "math": [ "u_hp('ALL') / 4", ">=", "n_hp('ALL')" ] },
+            { "math": [ "u_hp('ALL') * 2", ">=", "n_hp('ALL')" ] },
             { "not": { "npc_has_effect": "sflesh_infect_checked" } },
             {
               "math": [
@@ -253,8 +253,8 @@
         "monster_message": "",
         "condition": {
           "and": [
-            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING_EX', 'radius': 12)", "==", "0" ] },
-            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING', 'radius': 12)", ">=", "2" ] }
+            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING_EX', 'radius': 32)", "==", "0" ] },
+            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING', 'radius': 32)", ">=", "2" ] }
           ]
         },
         "allow_no_target": true
@@ -314,7 +314,7 @@
         "cooldown": 1,
         "condition": {
           "and": [
-            { "math": [ "u_hp('ALL') / 4", ">=", "n_hp('ALL')" ] },
+            { "math": [ "u_hp('ALL') * 2", ">=", "n_hp('ALL')" ] },
             { "not": { "npc_has_effect": "sflesh_infect_checked" } },
             {
               "math": [
@@ -351,8 +351,8 @@
         "monster_message": "",
         "condition": {
           "and": [
-            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING_EX', 'radius': 12)", "==", "0" ] },
-            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING', 'radius': 12)", ">=", "2" ] }
+            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING_EX', 'radius': 32)", "==", "0" ] },
+            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING', 'radius': 32)", ">=", "2" ] }
           ]
         },
         "allow_no_target": true
@@ -386,7 +386,7 @@
     "type": "MONSTER",
     "name": { "str": "flesh mound" },
     "description": "A humongous conglomeration of rotten flesh, as large as a moose. Its body has swollen and stretched out, and seem to slowly deteriorate, but its endless hunger still is apparent to its motion.",
-    "default_faction": "secro_flesh2",
+    "default_faction": "secro_flesh3",
     "bodytype": "blob",
     "species": [ "SFLESH", "ABERRATION" ],
     "volume": "386000 ml",
@@ -412,7 +412,7 @@
         "cooldown": 1,
         "condition": {
           "and": [
-            { "math": [ "u_hp('ALL') / 4", ">=", "n_hp('ALL')" ] },
+            { "math": [ "u_hp('ALL') * 2", ">=", "n_hp('ALL')" ] },
             { "not": { "npc_has_effect": "sflesh_infect_checked" } },
             {
               "math": [

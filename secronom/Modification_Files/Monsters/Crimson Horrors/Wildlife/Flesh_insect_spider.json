@@ -3,26 +3,11 @@
     "id": "mon_sflesh_dark_wyrm",
     "copy-from": "mon_dark_wyrm",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "MUTANT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -31,26 +16,11 @@
     "id": "mon_sflesh_graboid",
     "copy-from": "mon_graboid",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "WORM" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -59,26 +29,11 @@
     "id": "mon_sflesh_halfworm",
     "copy-from": "mon_halfworm",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "WORM" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -88,26 +43,11 @@
     "id": "mon_sflesh_worm",
     "copy-from": "mon_worm",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "WORM" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -117,26 +57,11 @@
     "id": "mon_sflesh_worm_small",
     "copy-from": "mon_worm_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "WORM" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -146,26 +71,11 @@
     "id": "mon_sflesh_worm_larva",
     "copy-from": "mon_worm_larva",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "WORM" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -175,26 +85,11 @@
     "id": "mon_sflesh_large_cockroach",
     "copy-from": "mon_large_cockroach",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -204,26 +99,11 @@
     "id": "mon_sflesh_skittering_plague",
     "copy-from": "mon_skittering_plague",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -233,26 +113,11 @@
     "id": "mon_sflesh_plague_nymph",
     "copy-from": "mon_plague_nymph",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -262,26 +127,11 @@
     "id": "mon_sflesh_plague_vector",
     "copy-from": "mon_plague_vector",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -290,26 +140,11 @@
     "id": "mon_sflesh_giant_cockroach",
     "copy-from": "mon_giant_cockroach",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -319,26 +154,11 @@
     "id": "mon_sflesh_giant_cockroach_nymph",
     "copy-from": "mon_giant_cockroach_nymph",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -348,26 +168,11 @@
     "id": "mon_sflesh_pregnant_giant_cockroach",
     "copy-from": "mon_pregnant_giant_cockroach",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -377,26 +182,11 @@
     "id": "mon_sflesh_bee_small",
     "copy-from": "mon_bee_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -406,26 +196,11 @@
     "id": "mon_sflesh_bee",
     "copy-from": "mon_bee",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -435,26 +210,11 @@
     "id": "mon_sflesh_bee_mega",
     "copy-from": "mon_bee_mega",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -464,26 +224,11 @@
     "id": "mon_sflesh_centipede_small",
     "copy-from": "mon_centipede_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "CENTIPEDE" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -493,26 +238,11 @@
     "id": "mon_sflesh_centipede_giant",
     "copy-from": "mon_centipede_giant",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "CENTIPEDE" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -522,26 +252,11 @@
     "id": "mon_sflesh_centipede_larva",
     "copy-from": "mon_centipede_larva",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "CENTIPEDE" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -551,26 +266,11 @@
     "id": "mon_sflesh_centipede_mom",
     "copy-from": "mon_centipede_mom",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "CENTIPEDE" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -580,26 +280,11 @@
     "id": "mon_sflesh_centipede_mega",
     "copy-from": "mon_centipede_mega",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "CENTIPEDE" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -608,26 +293,11 @@
     "id": "mon_sflesh_dragonfly_naiad",
     "copy-from": "mon_dragonfly_naiad",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -637,26 +307,11 @@
     "id": "mon_sflesh_dragonfly_giant",
     "copy-from": "mon_dragonfly_giant",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -666,26 +321,11 @@
     "id": "mon_sflesh_dragonfly_mega",
     "copy-from": "mon_dragonfly_mega",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -694,26 +334,11 @@
     "id": "mon_sflesh_firefly",
     "copy-from": "mon_firefly",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -722,26 +347,11 @@
     "id": "mon_sflesh_firefly_larva",
     "copy-from": "mon_firefly_larva",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -751,26 +361,11 @@
     "id": "mon_sflesh_fly_small",
     "copy-from": "mon_fly_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -780,26 +375,11 @@
     "id": "mon_sflesh_fly",
     "copy-from": "mon_fly",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -809,26 +389,11 @@
     "id": "mon_sflesh_fly_larva",
     "copy-from": "mon_fly_larva",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -838,26 +403,11 @@
     "id": "mon_sflesh_fly_mega",
     "copy-from": "mon_fly_mega",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -867,26 +417,11 @@
     "id": "mon_sflesh_mosquito_small",
     "copy-from": "mon_mosquito_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -896,26 +431,11 @@
     "id": "mon_sflesh_mosquito_giant",
     "copy-from": "mon_mosquito_giant",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -925,26 +445,11 @@
     "id": "mon_sflesh_mosquito_larva",
     "copy-from": "mon_mosquito_larva",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -954,26 +459,11 @@
     "id": "mon_sflesh_mosquito_mega",
     "copy-from": "mon_mosquito_mega",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -983,26 +473,11 @@
     "id": "mon_sflesh_spider_cellar_small",
     "copy-from": "mon_spider_cellar_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1012,26 +487,11 @@
     "id": "mon_sflesh_spider_cellar_giant",
     "copy-from": "mon_spider_cellar_giant",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1041,26 +501,11 @@
     "id": "mon_sflesh_spider_cellar_giant_s",
     "copy-from": "mon_spider_cellar_giant_s",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1070,26 +515,11 @@
     "id": "mon_sflesh_spider_cellar_mom",
     "copy-from": "mon_spider_cellar_mom",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1099,26 +529,11 @@
     "id": "mon_sflesh_spider_cellar_mega",
     "copy-from": "mon_spider_cellar_mega",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -1127,26 +542,11 @@
     "id": "mon_sflesh_spider_cellar_leg",
     "copy-from": "mon_spider_cellar_leg",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -1155,26 +555,11 @@
     "id": "mon_sflesh_spider_jumping_small",
     "copy-from": "mon_spider_jumping_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1184,26 +569,11 @@
     "id": "mon_sflesh_spider_jumping_giant",
     "copy-from": "mon_spider_jumping_giant",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1213,26 +583,11 @@
     "id": "mon_sflesh_spider_jumping_giant_s",
     "copy-from": "mon_spider_jumping_giant_s",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1242,26 +597,11 @@
     "id": "mon_sflesh_spider_jumping_mega",
     "copy-from": "mon_spider_jumping_mega",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1271,26 +611,11 @@
     "id": "mon_sflesh_spider_trapdoor_small",
     "copy-from": "mon_spider_trapdoor_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1300,26 +625,11 @@
     "id": "mon_sflesh_spider_trapdoor_giant",
     "copy-from": "mon_spider_trapdoor_giant",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1329,26 +639,11 @@
     "id": "mon_sflesh_spider_trapdoor_s",
     "copy-from": "mon_spider_trapdoor_s",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1358,26 +653,11 @@
     "id": "mon_sflesh_spider_trapdoor_mega",
     "copy-from": "mon_spider_trapdoor_mega",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1387,26 +667,11 @@
     "id": "mon_sflesh_spider_web_small",
     "copy-from": "mon_spider_web_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1416,26 +681,11 @@
     "id": "mon_sflesh_spider_web",
     "copy-from": "mon_spider_web",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1445,26 +695,11 @@
     "id": "mon_sflesh_spider_web_mega",
     "copy-from": "mon_spider_web_mega",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1474,26 +709,11 @@
     "id": "mon_sflesh_spider_web_s",
     "copy-from": "mon_spider_web_s",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1503,26 +723,11 @@
     "id": "mon_sflesh_spider_widow_small",
     "copy-from": "mon_spider_widow_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1532,26 +737,11 @@
     "id": "mon_sflesh_spider_widow_giant",
     "copy-from": "mon_spider_widow_giant",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1561,26 +751,11 @@
     "id": "mon_sflesh_spider_widow_mega",
     "copy-from": "mon_spider_widow_mega",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1590,26 +765,11 @@
     "id": "mon_sflesh_spider_widow_giant_s",
     "copy-from": "mon_spider_widow_giant_s",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1619,26 +779,11 @@
     "id": "mon_sflesh_spider_wolf_small",
     "copy-from": "mon_spider_wolf_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1648,26 +793,11 @@
     "id": "mon_sflesh_spider_wolf_giant",
     "copy-from": "mon_spider_wolf_giant",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1677,26 +807,11 @@
     "id": "mon_sflesh_spider_wolf_giant_s",
     "copy-from": "mon_spider_wolf_giant_s",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1706,26 +821,11 @@
     "id": "mon_sflesh_spider_wolf_mega",
     "copy-from": "mon_spider_wolf_mega",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "SPIDER" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1735,26 +835,11 @@
     "id": "mon_sflesh_wasp_larva",
     "copy-from": "mon_wasp_larva",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1764,26 +849,11 @@
     "id": "mon_sflesh_wasp_pupa",
     "copy-from": "mon_wasp_pupa",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1793,26 +863,11 @@
     "id": "mon_sflesh_wasp_small",
     "copy-from": "mon_wasp_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1822,26 +877,11 @@
     "id": "mon_sflesh_wasp_small_guard",
     "copy-from": "mon_wasp_small_guard",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1851,26 +891,11 @@
     "id": "mon_sflesh_wasp_queen",
     "copy-from": "mon_wasp_queen",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1880,26 +905,11 @@
     "id": "mon_sflesh_wasp",
     "copy-from": "mon_wasp",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -1908,26 +918,11 @@
     "id": "mon_sflesh_wasp_guard",
     "copy-from": "mon_wasp_guard",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -1936,26 +931,11 @@
     "id": "mon_sflesh_wasp_mega",
     "copy-from": "mon_wasp_mega",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -1964,26 +944,11 @@
     "id": "mon_sflesh_dermatik_larva",
     "copy-from": "mon_dermatik_larva",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -1993,26 +958,11 @@
     "id": "mon_sflesh_dermatik",
     "copy-from": "mon_dermatik",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -2021,26 +971,11 @@
     "id": "mon_sflesh_dermatik_midwife",
     "copy-from": "mon_dermatik_midwife",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -2049,26 +984,11 @@
     "id": "mon_sflesh_ant_small",
     "copy-from": "mon_ant_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2078,26 +998,11 @@
     "id": "mon_sflesh_ant",
     "copy-from": "mon_ant",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2107,26 +1012,11 @@
     "id": "mon_sflesh_ant_acid_small",
     "copy-from": "mon_ant_acid_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2136,26 +1026,11 @@
     "id": "mon_sflesh_ant_acid",
     "copy-from": "mon_ant_acid",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2165,26 +1040,11 @@
     "id": "mon_sflesh_ant_acid_larva",
     "copy-from": "mon_ant_acid_larva",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2194,26 +1054,11 @@
     "id": "mon_sflesh_ant_acid_queen",
     "copy-from": "mon_ant_acid_queen",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -2222,26 +1067,11 @@
     "id": "mon_sflesh_ant_acid_soldier",
     "copy-from": "mon_ant_acid_soldier",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2251,26 +1081,11 @@
     "id": "mon_sflesh_ant_acid_soldier_mega",
     "copy-from": "mon_ant_acid_soldier_mega",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2280,26 +1095,11 @@
     "id": "mon_sflesh_ant_larva",
     "copy-from": "mon_ant_larva",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2309,26 +1109,11 @@
     "id": "mon_sflesh_ant_queen",
     "copy-from": "mon_ant_queen",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -2337,26 +1122,11 @@
     "id": "mon_sflesh_ant_soldier",
     "copy-from": "mon_ant_soldier",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2366,26 +1136,11 @@
     "id": "mon_sflesh_ant_soldier_mega",
     "copy-from": "mon_ant_soldier_mega",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2395,26 +1150,11 @@
     "id": "mon_sflesh_locust_small",
     "copy-from": "mon_locust_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2424,26 +1164,11 @@
     "id": "mon_sflesh_locust",
     "copy-from": "mon_locust",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2453,26 +1178,11 @@
     "id": "mon_sflesh_locust_mega",
     "copy-from": "mon_locust_mega",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2482,26 +1192,11 @@
     "id": "mon_sflesh_locust_nymph",
     "copy-from": "mon_locust_nymph",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2511,26 +1206,11 @@
     "id": "mon_sflesh_aphid_small",
     "copy-from": "mon_aphid_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2540,26 +1220,11 @@
     "id": "mon_sflesh_aphid",
     "copy-from": "mon_aphid",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -2568,26 +1233,11 @@
     "id": "mon_sflesh_mantis_small",
     "copy-from": "mon_mantis_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2597,26 +1247,11 @@
     "id": "mon_sflesh_mantis_giant",
     "copy-from": "mon_mantis_giant",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2626,26 +1261,11 @@
     "id": "mon_sflesh_mantis_nymph",
     "copy-from": "mon_mantis_nymph",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2655,26 +1275,11 @@
     "id": "mon_sflesh_mantis_mega",
     "copy-from": "mon_mantis_mega",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2684,26 +1289,11 @@
     "id": "mon_sflesh_mole_cricket",
     "copy-from": "mon_mole_cricket",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -2712,26 +1302,11 @@
     "id": "mon_sflesh_mole_cricket_nymph",
     "copy-from": "mon_mole_cricket_nymph",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2741,26 +1316,11 @@
     "id": "mon_sflesh_lady_bug",
     "copy-from": "mon_lady_bug",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2770,26 +1330,11 @@
     "id": "mon_sflesh_lady_bug_giant",
     "copy-from": "mon_lady_bug_giant",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -2798,26 +1343,11 @@
     "id": "mon_sflesh_lady_bug_larva",
     "copy-from": "mon_lady_bug_larva",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2827,26 +1357,11 @@
     "id": "mon_sflesh_grasshopper_small",
     "copy-from": "mon_grasshopper_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2856,26 +1371,11 @@
     "id": "mon_sflesh_grasshopper_giant",
     "copy-from": "mon_grasshopper_giant",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -2884,26 +1384,11 @@
     "id": "mon_sflesh_grasshopper_nymph",
     "copy-from": "mon_grasshopper_nymph",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2913,26 +1398,11 @@
     "id": "mon_sflesh_stag_beetle_larva",
     "copy-from": "mon_stag_beetle_larva",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2942,26 +1412,11 @@
     "id": "mon_sflesh_stag_beetle_small",
     "copy-from": "mon_stag_beetle_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -2971,26 +1426,11 @@
     "id": "mon_sflesh_stag_beetle_giant",
     "copy-from": "mon_stag_beetle_giant",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -3000,26 +1440,11 @@
     "id": "mon_sflesh_stag_beetle_mega",
     "copy-from": "mon_stag_beetle_mega",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -3028,26 +1453,11 @@
     "id": "mon_sflesh_antlion_larva",
     "copy-from": "mon_antlion_larva",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -3057,26 +1467,11 @@
     "id": "mon_sflesh_antlion_giant",
     "copy-from": "mon_antlion_giant",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -3085,26 +1480,11 @@
     "id": "mon_sflesh_strider_small",
     "copy-from": "mon_strider_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -3114,26 +1494,11 @@
     "id": "mon_sflesh_strider_giant",
     "copy-from": "mon_strider_giant",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -3142,26 +1507,11 @@
     "id": "mon_sflesh_strider_nymph",
     "copy-from": "mon_strider_nymph",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -3171,26 +1521,11 @@
     "id": "mon_sflesh_butterfly",
     "copy-from": "mon_butterfly",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -3200,26 +1535,11 @@
     "id": "mon_sflesh_butterfly_giant",
     "copy-from": "mon_butterfly_giant",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -3228,26 +1548,11 @@
     "id": "mon_sflesh_butterfly_titan",
     "copy-from": "mon_butterfly_titan",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -3256,26 +1561,11 @@
     "id": "mon_sflesh_moth",
     "copy-from": "mon_moth",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -3285,26 +1575,11 @@
     "id": "mon_sflesh_moth_giant",
     "copy-from": "mon_moth_giant",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -3313,26 +1588,11 @@
     "id": "mon_sflesh_moth_titan",
     "copy-from": "mon_moth_titan",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT_FLYING" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -3341,26 +1601,11 @@
     "id": "mon_sflesh_caterpillar_butterfly",
     "copy-from": "mon_caterpillar_butterfly",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -3370,26 +1615,11 @@
     "id": "mon_sflesh_butterfly_cocoon",
     "copy-from": "mon_butterfly_cocoon",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -3399,26 +1629,11 @@
     "id": "mon_sflesh_caterpillar_moth",
     "copy-from": "mon_caterpillar_moth",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -3428,26 +1643,11 @@
     "id": "mon_sflesh_moth_cocoon",
     "copy-from": "mon_moth_cocoon",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -3457,26 +1657,11 @@
     "id": "mon_sflesh_cicada_nymph",
     "copy-from": "mon_cicada_nymph",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -3486,26 +1671,11 @@
     "id": "mon_sflesh_cicada",
     "copy-from": "mon_cicada",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -3514,26 +1684,11 @@
     "id": "mon_sflesh_woodlouse",
     "copy-from": "mon_woodlouse",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -3542,26 +1697,11 @@
     "id": "mon_sflesh_woodlouse_manca",
     "copy-from": "mon_woodlouse_manca",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -3571,26 +1711,11 @@
     "id": "mon_sflesh_diving_larva",
     "copy-from": "mon_diving_larva",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
@@ -3600,26 +1725,11 @@
     "id": "mon_sflesh_diving_beetle_small",
     "copy-from": "mon_diving_beetle_small",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -3628,26 +1738,11 @@
     "id": "mon_sflesh_water_scorpion",
     "copy-from": "mon_water_scorpion",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],
     "placate_triggers": [  ]
@@ -3656,26 +1751,11 @@
     "id": "mon_sflesh_water_scorpion_larva",
     "copy-from": "mon_water_scorpion_larva",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "regen_morale": true,
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ],
-      "flags": [ "NO_BREED" ]
-    },
+    "extend": { "species": [ "SFLESH" ], "flags": [ "NO_BREED" ] },
     "upgrades": false,
     "delete": { "species": [ "INSECT" ], "flags": [ "ANIMAL" ] },
     "fear_triggers": [  ],

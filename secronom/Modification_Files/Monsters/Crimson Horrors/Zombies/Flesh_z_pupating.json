@@ -4,24 +4,10 @@
     "copy-from": "mon_zombie_crawler_pupa_decoy",
     "burn_into": "mon_zombie_crawler_pupa_decoy",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ]
-    },
+    "extend": { "species": [ "SFLESH" ] },
     "upgrades": false
   },
   {
@@ -29,24 +15,10 @@
     "copy-from": "mon_zombie_crawler_pupa",
     "burn_into": "mon_zombie_crawler_pupa",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ]
-    },
+    "extend": { "species": [ "SFLESH" ] },
     "upgrades": false
   },
   {
@@ -54,24 +26,10 @@
     "copy-from": "mon_zombie_pupa_decoy",
     "burn_into": "mon_zombie_pupa_decoy",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ]
-    },
+    "extend": { "species": [ "SFLESH" ] },
     "upgrades": false
   },
   {
@@ -79,24 +37,10 @@
     "copy-from": "mon_zombie_pupa",
     "burn_into": "mon_zombie_pupa",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ]
-    },
+    "extend": { "species": [ "SFLESH" ] },
     "upgrades": false
   },
   {
@@ -104,24 +48,10 @@
     "copy-from": "mon_brute_pupa_decoy",
     "burn_into": "mon_brute_pupa_decoy",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ]
-    },
+    "extend": { "species": [ "SFLESH" ] },
     "upgrades": false
   },
   {
@@ -129,24 +59,10 @@
     "copy-from": "mon_brute_pupa",
     "burn_into": "mon_brute_pupa",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ]
-    },
+    "extend": { "species": [ "SFLESH" ] },
     "upgrades": false
   },
   {
@@ -154,72 +70,30 @@
     "copy-from": "mon_hulk_pupa_decoy",
     "burn_into": "mon_hulk_pupa_decoy",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ]
-    }
+    "extend": { "species": [ "SFLESH" ] }
   },
   {
     "id": "mon_sflesh_hulk_pupa",
     "copy-from": "mon_hulk_pupa",
     "burn_into": "mon_hulk_pupa",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ]
-    }
+    "extend": { "species": [ "SFLESH" ] }
   },
   {
     "id": "mon_sflesh_zombie_pupa_decoy_shady",
     "copy-from": "mon_zombie_pupa_decoy_shady",
     "burn_into": "mon_zombie_pupa_decoy_shady",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ]
-    },
+    "extend": { "species": [ "SFLESH" ] },
     "upgrades": false
   },
   {
@@ -227,24 +101,10 @@
     "copy-from": "mon_zombie_pupa_shady",
     "burn_into": "mon_zombie_pupa_shady",
     "type": "MONSTER",
-    "default_faction": "secro_flesh",
+    "default_faction": "secro_flesh3",
     "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
-    "extend": {
-      "special_attacks": [
-        {
-          "type": "spell",
-          "id": "monspell_secro_flesh_infect_target",
-          "spell_data": { "id": "secro_flesh_infect_target" },
-          "cooldown": 30,
-          "condition": {
-            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
-          },
-          "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
-        }
-      ],
-      "species": [ "SFLESH" ]
-    },
+    "extend": { "species": [ "SFLESH" ] },
     "upgrades": false
   }
 ]
