@@ -57,7 +57,7 @@
   {
     "type": "effect_type",
     "id": "parasiteworm_pain",
-	"apply_message": "You feel a burning sensation from your wound!",
+    "apply_message": "You feel a burning sensation from your wound!",
     "miss_messages": [ [ "You feel bad inside.", 2 ] ],
     "blood_analysis_description": "Unknown Parasites",
     "int_add_val": 1,
@@ -75,7 +75,7 @@
   {
     "type": "effect_type",
     "id": "parasiteworm_move",
-	"apply_message": "Your movement suddenly felt stiff!",
+    "apply_message": "Your movement suddenly felt stiff!",
     "miss_messages": [ [ "You feel bad inside.", 2 ] ],
     "blood_analysis_description": "Unknown Parasites",
     "int_add_val": 1,
@@ -121,7 +121,7 @@
   {
     "type": "effect_type",
     "id": "parasiteworm_weaken",
-	"apply_message": "You feel weakened.",
+    "apply_message": "You feel weakened.",
     "miss_messages": [ [ "You feel bad inside.", 2 ] ],
     "blood_analysis_description": "Unknown Parasites",
     "int_add_val": 1,
@@ -217,7 +217,7 @@
     "id": "secro_fleshmonger_abs",
     "name": [ "Absorption" ],
     "show_in_info": true,
-	"base_mods": { "hurt_min": [ -10 ] }
+    "base_mods": { "hurt_min": [ -10 ] }
   },
   {
     "type": "effect_type",
@@ -232,7 +232,7 @@
     "type": "effect_type",
     "id": "secro_fleshmonger_fleshed_penalty",
     "max_intensity": 40,
-	"scaling_mods": { "hurt_min": [ 1.33 ] }
+    "scaling_mods": { "hurt_min": [ 1.33 ] }
   },
   {
     "type": "effect_type",
@@ -396,7 +396,15 @@
     "rating": "good",
     "show_in_info": true,
     "scaling_mods": { "speed_mod": [ 10 ] },
-    "enchantments": [ { "values": [ { "value": "ARMOR_BASH", "multiply": -0.33 }, { "value": "ARMOR_CUT", "multiply": -0.33 }, { "value": "ARMOR_STAB", "multiply": -0.33 } ] } ]
+    "enchantments": [
+      {
+        "values": [
+          { "value": "ARMOR_BASH", "multiply": -0.33 },
+          { "value": "ARMOR_CUT", "multiply": -0.33 },
+          { "value": "ARMOR_STAB", "multiply": -0.33 }
+        ]
+      }
+    ]
   },
   {
     "type": "effect_type",
@@ -411,7 +419,15 @@
     "rating": "bad",
     "show_in_info": true,
     "scaling_mods": { "speed_mod": [ -15 ] },
-    "enchantments": [ { "values": [ { "value": "ARMOR_BASH", "multiply": -0.1 }, { "value": "ARMOR_CUT", "multiply": -0.1 }, { "value": "ARMOR_STAB", "multiply": -0.1 } ] } ]
+    "enchantments": [
+      {
+        "values": [
+          { "value": "ARMOR_BASH", "multiply": -0.1 },
+          { "value": "ARMOR_CUT", "multiply": -0.1 },
+          { "value": "ARMOR_STAB", "multiply": -0.1 }
+        ]
+      }
+    ]
   },
   {
     "type": "effect_type",
@@ -945,6 +961,53 @@
     "base_mods": { "pain_min": [ 1 ], "pain_chance": [ 2 ], "pain_tick": [ 8 ] },
     "rating": "bad",
     "remove_message": "The flesh weaver finishes its operation."
+  },
+  {
+    "type": "effect_type",
+    "id": "sflesh_infect_checked"
+  },
+  {
+    "type": "effect_type",
+    "id": "sflesh_fleshling_meld",
+    "name": [ "Melding Flesh" ],
+    "desc": [ "The flesh seeps and burn under your skin!" ],
+    "remove_message": "The flesh melts away.",
+    "rating": "bad",
+    "max_duration": "1000 s",
+    "max_intensity": 50,
+    "int_dur_factor": "10 s",
+    "int_add_val": 1,
+    "int_decay_step": -20,
+    "int_decay_tick": 3,
+    "base_mods": { "speed_mod": [ -3 ], "hurt_min": [ 1 ], "hurt_tick": [ 30 ], "pain_min": [ 1 ], "pain_chance": [ 30 ], "pain_tick": [ 10 ] },
+    "scaling_mods": { "speed_mod": [ -1 ], "hurt_min": [ 0.05 ], "hurt_tick": [ -0.5 ], "pain_chance": [ -0.2 ] },
+    "show_in_info": true
+  },
+  {
+    "type": "effect_type",
+    "id": "sflesh_fleshling_growth",
+    "max_intensity": 999
+  },
+  {
+    "type": "effect_type",
+    "id": "sflesh_fleshling_huge_limit",
+    "max_intensity": 999
+  },
+  {
+    "type": "effect_type",
+    "id": "sflesh_fleshling_huge_curlimit",
+    "max_intensity": 999
+  },
+  {
+    "type": "effect_type",
+    "id": "sflesh_fleshling_huge_spawned",
+    "enchantments": [
+      {
+        "values": [
+          { "value": "SPEED", "multiply": -0.25 }
+        ]
+      }
+    ]
   },
   {
     "type": "effect_type",

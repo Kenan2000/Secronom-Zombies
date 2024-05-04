@@ -9,7 +9,7 @@
       "road": { "extras": { "mx_secro_ssf_carrier": 25, "mx_secro_ssb_carrier": 15 } },
       "field": { "extras": { "mx_secro_saddler_victims_spawn": 10, "mx_secro_flesh_random": 40 } },
       "road_nesw_manhole": { "extras": { "mx_secro_flesh_core": 30 } },
-      "sewer": { "extras": { "mx_secro_flesh_random": 200 } },
+      "sewer": { "extras": { "mx_secro_flesh_random": 250 } },
       "secro_fleshable_house": {
         "//": "Available structures are houses and basements. Do note the boss here is a zombie, not a crimson horror.",
         "chance": 33,

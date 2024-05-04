@@ -46,6 +46,20 @@
   },
   {
     "type": "SPECIES",
+    "id": "SFLESH_FLESHLING",
+    "anger_triggers": [ "HURT", "FRIEND_ATTACKED", "FRIEND_DIED", "HOSTILE_SEEN", "PLAYER_CLOSE" ],
+    "description": "a crimson horror",
+    "footsteps": "plop."
+  },
+  {
+    "type": "SPECIES",
+    "id": "SFLESH_FLESHLING_EX",
+    "anger_triggers": [ "HURT", "FRIEND_ATTACKED", "FRIEND_DIED", "HOSTILE_SEEN", "PLAYER_CLOSE" ],
+    "description": "a crimson horror",
+    "footsteps": "plop."
+  },
+  {
+    "type": "SPECIES",
     "id": "SSADDLER",
     "description": "a insectoid"
   }

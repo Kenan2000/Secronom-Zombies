@@ -47,9 +47,6 @@
           { "id": "bg_t_floor", "fg": 35, "rotates": false },
           {
             "id": [
-              "fd_sflesh_fleshling_birth",
-              "fd_sflesh_fleshling_scavengy_forms",
-              "fd_sflesh_fleshling_scavengy_forms_limit",
               "fd_carrion_alpha_stop",
               "fd_grubbyzed_worm_limit",
               "fd_carrion_alpha_stop",
@@ -626,7 +623,6 @@
             ],
             "animated": true
           },
-          { "id": "fd_sflesh_heap_death", "fg": 36 },
           { "id": "fd_sflesh_sack", "fg": 36 },
           { "id": "fd_sflesh_sack_dead", "fg": 36 },
           { "id": "fd_sflesh_spawn_jaw", "fg": 36 },
@@ -635,10 +631,8 @@
           { "id": "fd_sflesh_tendrils", "fg": 36 },
           { "id": "fd_sflesh_tentclus", "fg": 36 },
           { "id": "fd_sflesh_veinstalk_crawler", "fg": 36 },
-          { "id": "fd_sflesh_veinstalk_limiter", "fg": 36 },
           { "id": "fd_sflesh_veinstalk_popup", "fg": 36 },
           { "id": "fd_sflesh_wall", "fg": 36 },
-          { "id": "fd_sflesh_wall_limit", "fg": 36 },
           {
             "id": [ "fd_shifter_fog", "fd_shifter_fog_trail" ],
             "fg": 265,
@@ -2742,7 +2736,6 @@
             "animated": true
           },
           { "id": "mon_sflesh_vrumbler", "fg": 1842, "bg": 1733 },
-          { "id": "flesh_heap_death", "fg": 1843, "bg": 1729 },
           { "id": "mon_sflesh_zombie_turret", "fg": 1844, "bg": 1729 },
           { "id": "mon_sflesh_cow", "fg": 1845, "bg": 1733, "rotates": false },
           { "id": "corpse_mon_sflesh_cow", "fg": 1846, "rotates": false },

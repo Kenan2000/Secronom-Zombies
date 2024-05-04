@@ -4,9 +4,10 @@
     "id": "secro_flesh_infect_target",
     "name": { "str": "a spell" },
     "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
-    "flags": [ "SILENT", "NO_PROJECTILE" ],
+    "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ally", "hostile" ],
     "shape": "blast",
+	"message": "",
     "effect": "effect_on_condition",
     "effect_str": "eoc_secro_mon_flesh_infect",
     "min_range": 1,
@@ -20,6 +21,7 @@
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "IGNORE_WALLS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ally", "hostile" ],
     "shape": "blast",
+	"message": "",
     "effect": "effect_on_condition",
     "effect_str": "eoc_secro_mon_flesh_infect",
     "min_range": 1,
@@ -35,6 +37,7 @@
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "IGNORE_WALLS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ally", "hostile" ],
     "shape": "blast",
+	"message": "",
     "effect": "effect_on_condition",
     "effect_str": "eoc_secro_mon_flesh_infect",
     "min_range": 1,
@@ -49,6 +52,7 @@
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Infected target heals a moderate amount.",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
+	"message": "",
     "effect": "attack",
     "shape": "blast",
     "min_damage": -999999,
@@ -61,9 +65,179 @@
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Infected target has its bleeding effect removed.",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
+	"message": "",
     "effect": "remove_effect",
     "effect_str": "bleed",
     "shape": "blast"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_fleshling1",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Target is converted into a flesh blob.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+	"message": "",
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_fleshling_tiny"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_fleshling2",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Target is converted into a flesh blob.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+	"message": "",
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_fleshling_smol"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_fleshling3",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Target is converted into a flesh blob.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+	"message": "",
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_fleshling_med"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_fleshling4",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Target is converted into a flesh blob.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+	"message": "",
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_fleshling_big"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_fleshling5",
+    "name": { "str": "Morph" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Target is converted into a flesh blob.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+	"message": "",
+    "effect": "targeted_polymorph",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_fleshling_huge"
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_sflesh_fleshling_ex_initial",
+    "name": { "str": "a spell" },
+    "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "ally", "hostile", "self" ],
+    "shape": "blast",
+	"message": "",
+    "effect": "effect_on_condition",
+    "effect_str": "eoc_secro_mon_sflesh_fleshling_ex_initial",
+    "min_range": 1,
+    "max_range": 1
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_fleshling_splitcheck",
+    "name": { "str": "Split" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will not split.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_EXPLOSION_SFX", "PERMANENT" ],
+    "valid_targets": [ "self" ],
+	"message": "",
+    "effect": "attack",
+    "effect_str": "eff_fleshling_splitcheck",
+    "shape": "blast"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_fleshling_remove",
+    "name": { "str": "Expiry" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster is gone.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_EXPLOSION_SFX" ],
+    "valid_targets": [ "self" ],
+    "min_damage": 999999,
+    "max_damage": 999999,
+	"message": "",
+    "effect": "banishment",
+    "shape": "blast"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_fleshling1_ex",
+    "name": { "str": "Expiry" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster expires and becomes slower.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "PERMANENT", "NO_EXPLOSION_SFX", "EXTRA_EFFECTS_FIRST", "HOSTILE_SUMMON" ],
+    "extra_effects": [ { "id": "secro_flesh_infect_fleshling_remove", "hit_self": true } ],
+    "valid_targets": [ "self" ],
+    "min_damage": 1,
+    "max_damage": 1,
+	"message": "",
+    "effect": "summon",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_fleshling_tiny_ex"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_fleshling2_ex",
+    "name": { "str": "Expiry" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster expires and becomes slower.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "PERMANENT", "NO_EXPLOSION_SFX", "EXTRA_EFFECTS_FIRST", "HOSTILE_SUMMON" ],
+    "extra_effects": [ { "id": "secro_flesh_infect_fleshling_splitcheck", "hit_self": true }, { "id": "secro_flesh_infect_fleshling_remove", "hit_self": true } ],
+    "valid_targets": [ "self" ],
+    "min_damage": 1,
+    "max_damage": 1,
+	"message": "",
+    "effect": "summon",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_fleshling_smol_ex"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_fleshling3_ex",
+    "name": { "str": "Expiry" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster expires and becomes slower.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "PERMANENT", "NO_EXPLOSION_SFX", "EXTRA_EFFECTS_FIRST", "HOSTILE_SUMMON" ],
+    "extra_effects": [ { "id": "secro_flesh_infect_fleshling_splitcheck", "hit_self": true }, { "id": "secro_flesh_infect_fleshling_remove", "hit_self": true } ],
+    "valid_targets": [ "self" ],
+    "min_damage": 1,
+    "max_damage": 1,
+	"message": "",
+    "effect": "summon",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_fleshling_med_ex"
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_flesh_infect_fleshling4_ex",
+    "name": { "str": "Expiry" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster expires and becomes slower.'",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "PERMANENT", "NO_EXPLOSION_SFX", "EXTRA_EFFECTS_FIRST", "HOSTILE_SUMMON" ],
+    "extra_effects": [ { "id": "secro_flesh_infect_fleshling_splitcheck", "hit_self": true }, { "id": "secro_flesh_infect_fleshling_remove", "hit_self": true } ],
+    "valid_targets": [ "self" ],
+    "min_damage": 1,
+    "max_damage": 1,
+	"message": "",
+    "effect": "summon",
+    "shape": "blast",
+    "effect_str": "mon_sflesh_fleshling_big_ex"
   },
   {
     "type": "SPELL",
@@ -74,6 +248,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie"
@@ -87,6 +262,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_fat"
@@ -100,6 +276,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_tough"
@@ -113,6 +290,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_crawler"
@@ -126,6 +304,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_skeleton"
@@ -139,6 +318,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_skeleton_brute"
@@ -152,6 +332,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_skeleton_hulk"
@@ -165,6 +346,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_survivor"
@@ -178,6 +360,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_biter"
@@ -191,6 +374,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_brainless"
@@ -204,6 +388,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_ears"
@@ -217,6 +402,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_skull"
@@ -230,6 +416,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_brute"
@@ -243,6 +430,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_brute_grappler"
@@ -256,6 +444,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_brute_ninja"
@@ -269,6 +458,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_grappler"
@@ -282,6 +472,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_hollow"
@@ -295,6 +486,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_hulk"
@@ -308,6 +500,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_hunter"
@@ -321,6 +514,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_mancroc"
@@ -334,6 +528,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_master"
@@ -347,6 +542,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_necro"
@@ -360,6 +556,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_predator"
@@ -373,6 +570,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_screecher"
@@ -386,6 +584,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_thorny"
@@ -399,6 +598,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_smoker"
@@ -412,6 +612,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_anklebiter"
@@ -425,6 +626,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_child"
@@ -438,6 +640,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_creepy"
@@ -451,6 +654,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_shriekling"
@@ -464,6 +668,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_snotgobbler"
@@ -477,6 +682,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_sproglodyte"
@@ -490,6 +696,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_waif"
@@ -503,6 +710,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_runner"
@@ -516,6 +724,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_brute_shocker"
@@ -529,6 +738,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_electric"
@@ -542,6 +752,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_nullfield"
@@ -555,6 +766,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_static"
@@ -568,6 +780,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_scientist"
@@ -581,6 +794,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_dog"
@@ -594,6 +808,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_dog_skeleton"
@@ -607,6 +822,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_dog_zombie_cop"
@@ -620,6 +836,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_dog_zombie_rot"
@@ -633,6 +850,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zolf"
@@ -646,6 +864,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombear"
@@ -659,6 +878,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_pig"
@@ -672,6 +892,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombeaver"
@@ -685,6 +906,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zoose"
@@ -698,6 +920,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zougar"
@@ -711,6 +934,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_bear_cub"
@@ -724,6 +948,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_bear"
@@ -737,6 +962,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_rat"
@@ -750,6 +976,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_cougar"
@@ -763,6 +990,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_moose"
@@ -776,6 +1004,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_beaver"
@@ -789,6 +1018,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_boar_wild_piglet"
@@ -802,6 +1032,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_boar_wild"
@@ -815,6 +1046,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_cat"
@@ -828,6 +1060,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_cat_kitten"
@@ -841,6 +1074,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_chipmunk"
@@ -854,6 +1088,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_cow_calf"
@@ -867,6 +1102,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_cow"
@@ -880,6 +1116,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_coyote"
@@ -893,6 +1130,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_deer_fawn"
@@ -906,6 +1144,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_deer"
@@ -919,6 +1158,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_dog"
@@ -932,6 +1172,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_dog_pup"
@@ -945,6 +1186,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_fox"
@@ -958,6 +1200,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_groundhog"
@@ -971,6 +1214,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_horse"
@@ -984,6 +1228,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_lemming"
@@ -997,6 +1242,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_mink"
@@ -1010,6 +1256,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_muskrat"
@@ -1023,6 +1270,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_opossum"
@@ -1036,6 +1284,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_otter"
@@ -1049,6 +1298,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_pig_piglet"
@@ -1062,6 +1312,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_pig"
@@ -1075,6 +1326,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_rabbit"
@@ -1088,6 +1340,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_raccoon"
@@ -1101,6 +1354,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_sheep_lamb"
@@ -1114,6 +1368,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_sheep"
@@ -1127,6 +1382,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_squirrel"
@@ -1140,6 +1396,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_weasel"
@@ -1153,6 +1410,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_wolf"
@@ -1166,6 +1424,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_soldier"
@@ -1179,6 +1438,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_soldier_blackops_1"
@@ -1192,6 +1452,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_soldier_blackops_2"
@@ -1205,6 +1466,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_soldier_acid_1"
@@ -1218,6 +1480,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_soldier_acid_2"
@@ -1231,6 +1494,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_kevlar_1"
@@ -1244,6 +1508,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_kevlar_2"
@@ -1257,6 +1522,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_military_pilot"
@@ -1270,6 +1536,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_bio_op"
@@ -1283,6 +1550,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_survivor_elite"
@@ -1296,6 +1564,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_acidic"
@@ -1309,6 +1578,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_corrosive"
@@ -1322,6 +1592,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_wretched"
@@ -1335,6 +1606,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zhark"
@@ -1348,6 +1620,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_horse"
@@ -1361,6 +1634,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_ziger"
@@ -1374,6 +1648,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zow"
@@ -1387,6 +1662,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombull"
@@ -1400,6 +1676,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zllama"
@@ -1413,6 +1690,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zeer"
@@ -1426,6 +1704,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zpider_mass"
@@ -1439,6 +1718,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zeindeer"
@@ -1452,6 +1732,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_gastro_bufo"
@@ -1465,6 +1746,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_beekeeper"
@@ -1478,6 +1760,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_cop"
@@ -1491,6 +1774,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_fireman"
@@ -1504,6 +1788,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_hazmat"
@@ -1517,6 +1802,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_rot"
@@ -1530,6 +1816,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_swat"
@@ -1543,6 +1830,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_crawler_pupa_decoy"
@@ -1556,6 +1844,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_crawler_pupa"
@@ -1569,6 +1858,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_pupa_decoy"
@@ -1582,6 +1872,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_pupa"
@@ -1595,6 +1886,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_brute_pupa_decoy"
@@ -1608,6 +1900,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_brute_pupa"
@@ -1621,6 +1914,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_hulk_pupa_decoy"
@@ -1634,6 +1928,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_hulk_pupa"
@@ -1647,6 +1942,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_pupa_decoy_shady"
@@ -1660,6 +1956,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_pupa_shady"
@@ -1673,6 +1970,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_winged"
@@ -1686,6 +1984,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_brute_winged"
@@ -1699,6 +1998,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spawn_raptor"
@@ -1712,6 +2012,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spawn_raptor_unstable"
@@ -1725,6 +2026,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spawn_raptor_electric"
@@ -1738,6 +2040,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spawn_raptor_shady"
@@ -1751,6 +2054,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_dog_acidic"
@@ -1764,6 +2068,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_dog_brute_acidic"
@@ -1777,6 +2082,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_child_scorched"
@@ -1790,6 +2096,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_fiend"
@@ -1803,6 +2110,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_scorched"
@@ -1816,6 +2124,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_wretch"
@@ -1829,6 +2138,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_relax_gasbag"
@@ -1842,6 +2152,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_tear_gasbag"
@@ -1855,6 +2166,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_boomer_glutton"
@@ -1868,6 +2180,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_boomer_claymore"
@@ -1881,6 +2194,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_milbase_personnel"
@@ -1894,6 +2208,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_sailor"
@@ -1907,6 +2222,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_officer"
@@ -1920,6 +2236,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_marine"
@@ -1933,6 +2250,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_marine_upgrade"
@@ -1946,6 +2264,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_bestial_stalker"
@@ -1959,6 +2278,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_armored"
@@ -1972,6 +2292,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_skeleton_electric"
@@ -1985,6 +2306,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_paramilitary"
@@ -1998,6 +2320,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_frog_mother"
@@ -2011,6 +2334,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_tadpole_grabber"
@@ -2024,6 +2348,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombullfrog"
@@ -2037,6 +2362,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_afs_headless_horror"
@@ -2050,6 +2376,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_nemesis"
@@ -2063,35 +2390,10 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_necro_boomer"
-  },
-  {
-    "type": "SPELL",
-    "id": "secro_flesh_infect_skeleton_master",
-    "name": { "str": "Morph" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Target is converted into its flesh variant.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
-    "valid_targets": [ "self" ],
-    "min_damage": 999999,
-    "max_damage": 999999,
-    "effect": "targeted_polymorph",
-    "shape": "blast",
-    "effect_str": "mon_sflesh_skeleton_master"
-  },
-  {
-    "type": "SPELL",
-    "id": "secro_flesh_infect_skeleton_necro",
-    "name": { "str": "Morph" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Target is converted into its flesh variant.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
-    "valid_targets": [ "self" ],
-    "min_damage": 999999,
-    "max_damage": 999999,
-    "effect": "targeted_polymorph",
-    "shape": "blast",
-    "effect_str": "mon_sflesh_skeleton_necro"
   },
   {
     "type": "SPELL",
@@ -2102,6 +2404,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_regenerating"
@@ -2115,6 +2418,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_shady"
@@ -2128,6 +2432,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_shrieker"
@@ -2141,6 +2446,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_smoker_brute"
@@ -2154,6 +2460,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_swimmer_base"
@@ -2167,6 +2474,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_swimmer"
@@ -2180,6 +2488,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_technician"
@@ -2193,6 +2502,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_miner"
@@ -2206,6 +2516,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_reenactor"
@@ -2219,6 +2530,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_fursuit"
@@ -2232,6 +2544,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_grabber"
@@ -2245,6 +2558,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_labsecurity"
@@ -2258,6 +2572,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_phase_skulker"
@@ -2271,6 +2586,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_phase_shrike"
@@ -2284,6 +2600,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_rust"
@@ -2297,6 +2614,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_shell"
@@ -2310,6 +2628,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_plated"
@@ -2323,6 +2642,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_urchin"
@@ -2336,6 +2656,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_zombie_hammer_hands"
@@ -2349,6 +2670,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_human_pipe"
@@ -2362,6 +2684,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_sapien_spear"
@@ -2375,6 +2698,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_chud"
@@ -2388,6 +2712,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_human_crowbar"
@@ -2401,6 +2726,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_human_axe"
@@ -2414,6 +2740,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_human_tool"
@@ -2427,6 +2754,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_scientist_scalpel"
@@ -2440,6 +2768,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_labsecurity_9mm"
@@ -2453,6 +2782,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_labsecurity_flashlight"
@@ -2466,6 +2796,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_maid_broom"
@@ -2479,6 +2810,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_maid_candlestick"
@@ -2492,6 +2824,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_maid_knife"
@@ -2505,6 +2838,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_fancy_rapier"
@@ -2518,6 +2852,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_fancy_rapier_fake"
@@ -2531,6 +2866,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_fancy_crossbow"
@@ -2544,6 +2880,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_armored_mace"
@@ -2557,6 +2894,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_armored_battleaxe"
@@ -2570,6 +2908,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_prepper"
@@ -2583,6 +2922,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_survivalist"
@@ -2596,6 +2936,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_militia"
@@ -2609,6 +2950,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_soldier"
@@ -2622,6 +2964,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_jackboot"
@@ -2635,6 +2978,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_diver_knife"
@@ -2648,6 +2992,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_swimmer_kickboard"
@@ -2661,6 +3006,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_sailor_wrench"
@@ -2674,6 +3020,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_sailor_axe"
@@ -2687,6 +3034,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_sailor_mop"
@@ -2700,6 +3048,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_sailor_lug_wrench"
@@ -2713,6 +3062,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_marine_bayonet"
@@ -2726,6 +3076,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_officer"
@@ -2739,6 +3090,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_cop"
@@ -2752,6 +3104,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_feral_human_archaeologist"
@@ -2765,6 +3118,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_bat"
@@ -2778,6 +3132,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_tiger"
@@ -2791,6 +3146,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_moose_calf"
@@ -2804,6 +3160,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_tusked_moose"
@@ -2817,6 +3174,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_tusked_moose_calf"
@@ -2830,6 +3188,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_goat_kid"
@@ -2843,6 +3202,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_goat"
@@ -2856,6 +3216,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_wolf_pup"
@@ -2869,6 +3230,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_reindeer"
@@ -2882,6 +3244,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_reindeer_fawn"
@@ -2895,6 +3258,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_llama_calf"
@@ -2908,6 +3272,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_llama"
@@ -2921,6 +3286,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_ferret"
@@ -2934,6 +3300,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_ferret_kit"
@@ -2947,6 +3314,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_horse_police"
@@ -2960,6 +3328,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_horse_foal"
@@ -2973,6 +3342,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_chicken"
@@ -2986,6 +3356,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_grouse"
@@ -2999,6 +3370,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_crow"
@@ -3012,6 +3384,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_raven"
@@ -3025,6 +3398,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_bluejay"
@@ -3038,6 +3412,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_cardinal"
@@ -3051,6 +3426,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_robin"
@@ -3064,6 +3440,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_sparrow"
@@ -3077,6 +3454,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_duck"
@@ -3090,6 +3468,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_goose_canadian"
@@ -3103,6 +3482,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_turkey"
@@ -3116,6 +3496,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_pheasant"
@@ -3129,6 +3510,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_generic_chick"
@@ -3142,6 +3524,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_grouse_chick"
@@ -3155,6 +3538,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_crow_chick"
@@ -3168,6 +3552,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_raven_chick"
@@ -3181,6 +3566,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_bluejay_chick"
@@ -3194,6 +3580,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_cardinal_chick"
@@ -3207,6 +3594,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_robin_chick"
@@ -3220,6 +3608,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_sparrow_chick"
@@ -3233,6 +3622,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_duck_chick"
@@ -3246,6 +3636,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_goose_canadian_chick"
@@ -3259,6 +3650,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_turkey_chick"
@@ -3272,6 +3664,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_pheasant_chick"
@@ -3285,6 +3678,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_crow_mutant_small"
@@ -3298,6 +3692,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_crow_mutant"
@@ -3311,6 +3706,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_pigeon"
@@ -3324,6 +3720,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_goose"
@@ -3337,6 +3734,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_goose_golden"
@@ -3350,6 +3748,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_goose_chick"
@@ -3363,6 +3762,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_goose_golden_chick"
@@ -3376,6 +3776,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_hummingbird"
@@ -3389,6 +3790,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_woodpecker"
@@ -3402,6 +3804,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_hummingbird_chick"
@@ -3415,6 +3818,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_woodpecker_chick"
@@ -3428,6 +3832,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_coot"
@@ -3441,6 +3846,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_cormorant"
@@ -3454,6 +3860,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_moorhen"
@@ -3467,6 +3874,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_grebe"
@@ -3480,6 +3888,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_coot_chick"
@@ -3493,6 +3902,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_cormorant_chick"
@@ -3506,6 +3916,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_moorhen_chick"
@@ -3519,6 +3930,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_grebe_chick"
@@ -3532,6 +3944,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_graboid"
@@ -3545,6 +3958,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_halfworm"
@@ -3558,6 +3972,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_worm"
@@ -3571,6 +3986,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_worm_small"
@@ -3584,6 +4000,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_worm_larva"
@@ -3597,6 +4014,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_large_cockroach"
@@ -3610,6 +4028,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_skittering_plague"
@@ -3623,6 +4042,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_plague_nymph"
@@ -3636,6 +4056,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_plague_vector"
@@ -3649,6 +4070,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_giant_cockroach"
@@ -3662,6 +4084,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_giant_cockroach_nymph"
@@ -3675,6 +4098,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_pregnant_giant_cockroach"
@@ -3688,6 +4112,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_bee_small"
@@ -3701,6 +4126,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_bee"
@@ -3714,6 +4140,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_bee_mega"
@@ -3727,6 +4154,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_centipede_small"
@@ -3740,6 +4168,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_centipede_giant"
@@ -3753,6 +4182,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_centipede_larva"
@@ -3766,6 +4196,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_centipede_mom"
@@ -3779,6 +4210,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_centipede_mega"
@@ -3792,6 +4224,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_dragonfly_naiad"
@@ -3805,6 +4238,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_dragonfly_giant"
@@ -3818,6 +4252,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_dragonfly_mega"
@@ -3831,6 +4266,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_firefly"
@@ -3844,6 +4280,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_firefly_larva"
@@ -3857,6 +4294,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_fly_small"
@@ -3870,6 +4308,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_fly"
@@ -3883,6 +4322,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_fly_larva"
@@ -3896,6 +4336,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_fly_mega"
@@ -3909,6 +4350,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_mosquito_small"
@@ -3922,6 +4364,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_mosquito_giant"
@@ -3935,6 +4378,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_mosquito_larva"
@@ -3948,6 +4392,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_mosquito_mega"
@@ -3961,6 +4406,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_cellar_small"
@@ -3974,6 +4420,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_cellar_giant"
@@ -3987,6 +4434,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_cellar_giant_s"
@@ -4000,6 +4448,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_cellar_mom"
@@ -4013,6 +4462,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_cellar_mega"
@@ -4026,6 +4476,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_cellar_leg"
@@ -4039,6 +4490,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_jumping_small"
@@ -4052,6 +4504,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_jumping_giant"
@@ -4065,6 +4518,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_jumping_giant_s"
@@ -4078,6 +4532,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_jumping_mega"
@@ -4091,6 +4546,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_trapdoor_small"
@@ -4104,6 +4560,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_trapdoor_giant"
@@ -4117,6 +4574,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_trapdoor_s"
@@ -4130,6 +4588,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_trapdoor_mega"
@@ -4143,6 +4602,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_web_small"
@@ -4156,6 +4616,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_web"
@@ -4169,6 +4630,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_web_mega"
@@ -4182,6 +4644,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_web_s"
@@ -4195,6 +4658,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_widow_small"
@@ -4208,6 +4672,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_widow_giant"
@@ -4221,6 +4686,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_widow_mega"
@@ -4234,6 +4700,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_widow_giant_s"
@@ -4247,6 +4714,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_wolf_small"
@@ -4260,6 +4728,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_wolf_giant"
@@ -4273,6 +4742,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_wolf_giant_s"
@@ -4286,6 +4756,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_spider_wolf_mega"
@@ -4299,6 +4770,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_wasp_larva"
@@ -4312,6 +4784,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_wasp_pupa"
@@ -4325,6 +4798,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_wasp_small"
@@ -4338,6 +4812,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_wasp_small_guard"
@@ -4351,6 +4826,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_wasp_queen"
@@ -4364,6 +4840,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_wasp"
@@ -4377,6 +4854,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_wasp_guard"
@@ -4390,6 +4868,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_wasp_mega"
@@ -4403,6 +4882,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_dermatik_larva"
@@ -4416,6 +4896,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_dermatik"
@@ -4429,6 +4910,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_dermatik_midwife"
@@ -4442,6 +4924,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_ant_small"
@@ -4455,6 +4938,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_ant"
@@ -4468,6 +4952,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_ant_acid_small"
@@ -4481,6 +4966,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_ant_acid"
@@ -4494,6 +4980,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_ant_acid_larva"
@@ -4507,6 +4994,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_ant_acid_queen"
@@ -4520,6 +5008,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_ant_acid_soldier"
@@ -4533,6 +5022,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_ant_acid_soldier_mega"
@@ -4546,6 +5036,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_ant_larva"
@@ -4559,6 +5050,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_ant_queen"
@@ -4572,6 +5064,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_ant_soldier"
@@ -4585,6 +5078,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_ant_soldier_mega"
@@ -4598,6 +5092,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_locust_small"
@@ -4611,6 +5106,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_locust"
@@ -4624,6 +5120,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_locust_mega"
@@ -4637,6 +5134,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_locust_nymph"
@@ -4650,6 +5148,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_aphid_small"
@@ -4663,6 +5162,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_aphid"
@@ -4676,6 +5176,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_mantis_small"
@@ -4689,6 +5190,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_mantis_giant"
@@ -4702,6 +5204,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_mantis_nymph"
@@ -4715,6 +5218,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_mantis_mega"
@@ -4728,6 +5232,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_mole_cricket"
@@ -4741,6 +5246,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_mole_cricket_nymph"
@@ -4754,6 +5260,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_lady_bug"
@@ -4767,6 +5274,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_lady_bug_giant"
@@ -4780,6 +5288,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_lady_bug_larva"
@@ -4793,6 +5302,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_grasshopper_small"
@@ -4806,6 +5316,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_grasshopper_giant"
@@ -4819,6 +5330,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_grasshopper_nymph"
@@ -4832,6 +5344,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_stag_beetle_larva"
@@ -4845,6 +5358,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_stag_beetle_small"
@@ -4858,6 +5372,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_stag_beetle_giant"
@@ -4871,6 +5386,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_stag_beetle_mega"
@@ -4884,6 +5400,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_antlion_larva"
@@ -4897,6 +5414,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_antlion_giant"
@@ -4910,6 +5428,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_strider_small"
@@ -4923,6 +5442,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_strider_giant"
@@ -4936,6 +5456,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_strider_nymph"
@@ -4949,6 +5470,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_butterfly"
@@ -4962,6 +5484,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_butterfly_giant"
@@ -4975,6 +5498,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_butterfly_titan"
@@ -4988,6 +5512,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_moth"
@@ -5001,6 +5526,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_moth_giant"
@@ -5014,6 +5540,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_moth_titan"
@@ -5027,6 +5554,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_caterpillar_butterfly"
@@ -5040,6 +5568,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_butterfly_cocoon"
@@ -5053,6 +5582,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_caterpillar_moth"
@@ -5066,6 +5596,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_moth_cocoon"
@@ -5079,6 +5610,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_cicada_nymph"
@@ -5092,6 +5624,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_cicada"
@@ -5105,6 +5638,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_woodlouse"
@@ -5118,6 +5652,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_woodlouse_manca"
@@ -5131,6 +5666,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_diving_larva"
@@ -5144,6 +5680,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_diving_beetle_small"
@@ -5157,6 +5694,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_water_scorpion"
@@ -5170,8 +5708,9 @@
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
+	"message": "",
     "effect": "targeted_polymorph",
     "shape": "blast",
-    "effect_str": "mon_sflesh_scorpion_larva"
+    "effect_str": "mon_sflesh_water_scorpion_larva"
   }
 ]

@@ -11,9 +11,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -33,9 +36,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -55,9 +61,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -77,9 +86,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -99,9 +111,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -121,9 +136,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -143,9 +161,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -165,9 +186,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -187,9 +211,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -209,9 +236,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -231,9 +261,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -253,9 +286,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -275,9 +311,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -297,9 +336,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -319,9 +361,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -341,9 +386,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -363,9 +411,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -385,9 +436,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-          "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -407,9 +461,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -429,9 +486,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -451,9 +511,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -473,9 +536,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -495,9 +561,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -517,9 +586,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -539,9 +611,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -561,9 +636,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -583,9 +661,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -605,9 +686,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -627,9 +711,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -649,9 +736,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],
@@ -671,9 +761,12 @@
       "special_attacks": [
         {
           "type": "spell",
+          "id": "monspell_secro_flesh_infect_target",
           "spell_data": { "id": "secro_flesh_infect_target" },
           "cooldown": 30,
-		  "condition": { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] },
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL') / 2", ">=", "n_hp('ALL')" ] }, { "not": { "npc_has_effect": "sflesh_infect_checked" } } ]
+          },
           "monster_message": "<color_yellow>%1$s spreads its flesh at %3$s!</color>"
         }
       ],

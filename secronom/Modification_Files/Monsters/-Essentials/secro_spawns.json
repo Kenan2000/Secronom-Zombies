@@ -566,6 +566,15 @@
   },
   {
     "type": "monstergroup",
+    "name": "GROUP_FLESHHEAP_DEATH",
+    "monsters": [
+      { "monster": "mon_sflesh_fleshling_med", "weight": 50, "cost_multiplier": 0 },
+      { "monster": "mon_sflesh_fleshling_smol", "weight": 250, "cost_multiplier": 0 },
+      { "monster": "mon_sflesh_fleshling_tiny", "weight": 700 }
+    ]
+  },
+  {
+    "type": "monstergroup",
     "name": "GROUP_GRUBBYWORMZ",
     "monsters": [
       { "monster": "mon_insect_parasiteworm_int", "weight": 250, "cost_multiplier": 0 },

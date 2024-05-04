@@ -33,5 +33,9 @@
     "max_duration": 100,
     "removes_effects": [ "controlled" ],
     "blocks_effects": [ "controlled" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "eff_fleshling_splitcheck"
   }
 ]
