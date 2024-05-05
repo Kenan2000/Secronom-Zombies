@@ -473,5 +473,11 @@
     "field": "fd_secrozombie_rot",
     "intensity": 1,
     "qty": 7
+  },
+  {
+    "id": "secro_uruxis_fog",
+    "type": "emit",
+    "field": "fd_shadow",
+    "qty": 5
   }
 ]

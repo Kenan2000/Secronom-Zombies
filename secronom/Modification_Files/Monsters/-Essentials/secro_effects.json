@@ -180,7 +180,7 @@
     "base_mods": { "speed_mod": [ -75 ] }
   },
   {
-    "//": "Unlike fungal infection, this will deal damage you instead of instant death if left alone...",
+    "//": "Unlike fungal infection, this will deal damage you instead of instant death if left alone…",
     "type": "effect_type",
     "show_in_info": true,
     "id": "vector_infect",
@@ -300,7 +300,7 @@
     "desc": [ "The visceral tendril's influence renders you weakened!" ],
     "show_in_info": true,
     "rating": "bad",
-    "miss_messages": [ [ "You feel dizzy...", 2 ] ],
+    "miss_messages": [ [ "You feel dizzy…", 2 ] ],
     "remove_message": "The siphoning tendril falls off.",
     "int_add_val": 1,
     "int_dur_factor": "20 seconds",
@@ -368,8 +368,8 @@
     ],
     "desc": [ "You're suffering from a neurotoxin!" ],
     "show_in_info": true,
-    "apply_message": "Your skin felt numb all of a sudden...",
-    "miss_messages": [ [ "You feel very stiff...", 3 ] ],
+    "apply_message": "Your skin felt numb all of a sudden…",
+    "miss_messages": [ [ "You feel very stiff…", 3 ] ],
     "remove_message": "The effect of the paralysing toxin leaves your body.",
     "removes_effects": [ "paralyzepoison" ],
     "blocks_effects": [ "paralyzepoison" ],
@@ -440,7 +440,7 @@
     "desc": [ "The flesh webs sticks firmly on you!" ],
     "show_in_info": true,
     "apply_message": "You've been covered in flesh webs!",
-    "miss_messages": [ [ "You can't move well with this sticky webs...", 1 ] ],
+    "miss_messages": [ [ "You can't move well with this sticky webs…", 1 ] ],
     "remove_message": "You've got rid of the webs!",
     "rating": "bad",
     "int_add_val": 1,
@@ -954,6 +954,10 @@
     "base_mods": { "speed_mod": [ -150 ], "dex_mod": [ -2.5 ] },
     "scaling_mods": { "speed_mod": [ -150 ], "dex_mod": [ -2.5 ] },
     "show_in_info": true
+  },
+  {
+    "type": "effect_type",
+    "id": "eff_snatcher_snatch_ing"
   },
   {
     "type": "effect_type",

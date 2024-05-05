@@ -26,7 +26,7 @@
         "type": "spell",
         "spell_data": { "id": "mon_sflesh_camp_turret_target" },
         "cooldown": 8,
-        "monster_message": "<color_light_red>%1$s pulsates...</color>"
+        "monster_message": "<color_light_red>%1$s pulsates…</color>"
       }
     ],
     "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s melts away." },
@@ -125,7 +125,7 @@
         "type": "spell",
         "spell_data": { "id": "mon_sflesh_camp_turret_mouth_target" },
         "cooldown": 30,
-        "monster_message": "<color_light_red>%1$s shakes erratically...</color>"
+        "monster_message": "<color_light_red>%1$s shakes erratically…</color>"
       }
     ],
     "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s melts away." },

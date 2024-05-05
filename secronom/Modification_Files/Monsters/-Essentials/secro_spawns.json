@@ -3,12 +3,13 @@
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE",
     "monsters": [
-      { "monster": "mon_secrozombie_potent", "weight": 30, "cost_multiplier": 2 },
-      { "group": "GROUP_SECROZEDS", "weight": 50, "ends": "3 days" },
-      { "group": "GROUP_SECROZEDS", "weight": 75, "starts": "3 days", "ends": "7 days" },
-      { "group": "GROUP_SECROZEDS", "weight": 100, "starts": "7 days", "ends": "14 days" },
-      { "group": "GROUP_SECROZEDS", "weight": 125, "starts": "14 days", "ends": "30 days" },
-      { "group": "GROUP_SECROZEDS", "weight": 150, "pack_size": [ 1, 2 ], "starts": "30 days" }
+      { "monster": "mon_secrozombie_potent", "weight": 100, "pack_size": [ 2, 4 ], "ends": "30 days" },
+      { "monster": "mon_secrozombie_potent", "weight": 1000, "pack_size": [ 2, 4 ], "starts": "30 days" },
+      { "group": "GROUP_SECROZEDS", "weight": 500, "ends": "3 days" },
+      { "group": "GROUP_SECROZEDS", "weight": 750, "starts": "3 days", "ends": "7 days" },
+      { "group": "GROUP_SECROZEDS", "weight": 1000, "starts": "7 days", "ends": "14 days" },
+      { "group": "GROUP_SECROZEDS", "weight": 1250, "starts": "14 days", "ends": "30 days" },
+      { "group": "GROUP_SECROZEDS", "weight": 1500, "pack_size": [ 1, 2 ], "starts": "30 days" }
     ]
   },
   {
@@ -22,12 +23,13 @@
       { "monster": "mon_zombie_scourge", "weight": 175 },
       { "monster": "mon_zombie_charger", "weight": 90, "cost_multiplier": 7 },
       { "monster": "mon_zombie_grubby", "weight": 120, "cost_multiplier": 5 },
-      { "monster": "mon_zombie_revenant", "weight": 60, "cost_multiplier": 5, "ends": "14 days" },
-      { "monster": "mon_zombie_revenant", "weight": 120, "cost_multiplier": 5, "starts": "14 days" },
       { "monster": "mon_zombie_WALKINGPOTATO", "weight": 5, "cost_multiplier": 3 },
       { "monster": "mon_zombieworm_noxeater", "weight": 4, "cost_multiplier": 10 },
+      { "monster": "mon_zombie_revenant", "weight": 60, "cost_multiplier": 5, "ends": "14 days" },
       { "monster": "mon_zombie_bootlegsmoker", "weight": 10, "cost_multiplier": 7, "starts": "7 days" },
+      { "monster": "mon_zombie_revenant", "weight": 120, "cost_multiplier": 5, "starts": "14 days" },
       { "monster": "mon_zombie_lick", "weight": 10, "cost_multiplier": 6, "starts": "14 days" },
+      { "monster": "mon_zombie_bone", "weight": 1, "cost_multiplier": 22, "starts": "14 days" },
       {
         "monster": "mon_zombie_nocturne",
         "weight": 1,

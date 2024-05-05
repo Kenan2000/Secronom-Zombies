@@ -143,7 +143,7 @@
     "id": "mon_sflesh_sack",
     "type": "MONSTER",
     "name": { "str": "flesh sack" },
-    "description": "A large, bulbous pus sticking firmly to nearby terrains. Distinct to its vented mouth, it throbs at a constant rate as if it's about to hatch...",
+    "description": "A large, bulbous pus sticking firmly to nearby terrains. Distinct to its vented mouth, it throbs at a constant rate as if it's about to hatch…",
     "default_faction": "secro_flesh",
     "bodytype": "blob",
     "species": [ "SFLESH", "ABERRATION" ],

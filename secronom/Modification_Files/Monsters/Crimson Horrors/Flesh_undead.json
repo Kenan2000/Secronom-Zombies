@@ -29,7 +29,7 @@
         "type": "spell",
         "spell_data": { "id": "mon_sflesh_zombie_turret_target" },
         "cooldown": 12,
-        "monster_message": "<color_light_red>%1$s pulsates...</color>"
+        "monster_message": "<color_light_red>%1$s pulsates…</color>"
       }
     ],
     "death_function": {

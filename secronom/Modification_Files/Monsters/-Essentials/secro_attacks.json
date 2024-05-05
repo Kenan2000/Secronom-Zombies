@@ -443,7 +443,7 @@
     "max_ammo": 1000,
     "ranges": [ [ 1, 1, "DEFAULT" ] ],
     "targeting_cost": 0,
-    "targeting_sound": "...",
+    "targeting_sound": "…",
     "targeting_volume": 0,
     "description": "The secronom dragon sends an electric current!",
     "no_ammo_sound": "The perimeter shield shuts down."
