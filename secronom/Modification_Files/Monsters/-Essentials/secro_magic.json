@@ -29,6 +29,18 @@
     "shape": "blast"
   },
   {
+    "id": "mon_secro_eoc_spell_base",
+    "type": "SPELL",
+    "name": { "str": "EOC base" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Base spell for EOCs.'",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
+    "shape": "blast",
+    "message": "",
+    "effect": "effect_on_condition",
+    "effect_str": ""
+  },
+  {
     "id": "mon_fleshweaver_vexpl",
     "type": "SPELL",
     "name": { "str": "Vein Explosion" },

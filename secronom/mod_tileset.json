@@ -46,12 +46,7 @@
           { "id": "bg_t_dirt9", "fg": 34, "rotates": true },
           { "id": "bg_t_floor", "fg": 35, "rotates": false },
           {
-            "id": [
-              "fd_carrion_alpha_stop",
-              "fd_grubbyzed_worm_limit",
-              "fd_carrion_alpha_stop",
-              "fd_grubbyzed_worm_limit"
-            ],
+            "id": [ "fd_carrion_alpha_stop", "fd_grubbyzed_worm_limit", "fd_carrion_alpha_stop", "fd_grubbyzed_worm_limit" ],
             "fg": 36,
             "rotates": false
           },
@@ -415,12 +410,14 @@
               "explosion_mon_sflesh_fleshling_med_evo_target_random",
               "explosion_mon_sflesh_fleshling_big_evo",
               "explosion_mon_fleshweaver_operate_heal",
-			  "explosion_mon_secro_flesh_infect_target"
+              "explosion_mon_secro_flesh_infect_target"
             ],
             "fg": 113
           },
           {
             "id": [
+              "explosion_mon_maneater_bloodspray",
+              "explosion_mon_maneater_bloodexp",
               "explosion_mon_zombie_skittyweavy_idle_support",
               "explosion_mon_zombie_skittyweavy_idle_target",
               "explosion_mon_zombie_skittyweavy_repleshy_idle_support",

@@ -169,6 +169,16 @@
     "monsters": [ { "monster": "mon_zombie_fleshmonger", "weight": 1, "cost_multiplier": 30, "starts": 1460 } ]
   },
   {
+    "type": "monstergroup",
+    "name": "GROUP_SUBWAY",
+    "monsters": [
+      { "monster": "mon_sflesh_fleshling_tiny", "weight": 166, "pack_size": [ 4, 8 ], "ends": "3 days" },
+      { "monster": "mon_sflesh_fleshling_smol", "weight": 166, "pack_size": [ 2, 4 ], "starts": "3 days", "ends": "9 days" },
+      { "monster": "mon_sflesh_fleshling_med", "weight": 166, "pack_size": [ 1, 2 ], "starts": "9 days" },
+      { "monster": "mon_sflesh_fleshling_big", "weight": 66, "starts": "9 days" }
+    ]
+  },
+  {
     "//": "Spawn random secrolab and vanilla creatures. Scientist are common here, followed by failed specimens.",
     "type": "monstergroup",
     "name": "GROUP_SECROLAB_ALL",
@@ -587,14 +597,9 @@
   },
   {
     "type": "monstergroup",
-    "name": "GROUP_SNATCHERZED_ROOF",
+    "name": "GROUP_ROOF_ZOMBIE",
     "monsters": [
-      { "monster": "mon_zombie_bootlegsmoker", "weight": 250, "cost_multiplier": 0 },
-      { "monster": "mon_zombie_bootlegsmoker", "weight": 250, "cost_multiplier": 0, "starts": 42 },
-      { "monster": "mon_zombie_bootlegsmoker", "weight": 250, "cost_multiplier": 0, "starts": 126 },
-      { "monster": "mon_zombie_bootlegsmoker", "weight": 250, "cost_multiplier": 0, "starts": 378 },
-      { "monster": "mon_zombie_bootlegsmoker", "weight": 250, "cost_multiplier": 0, "starts": 1134 },
-      { "monster": "mon_null", "weight": 250 }
+      { "monster": "mon_zombie_bootlegsmoker", "weight": 65, "cost_multiplier": 3, "starts": "3 days" }
     ]
   }
 ]

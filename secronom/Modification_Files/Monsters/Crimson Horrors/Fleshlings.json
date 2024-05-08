@@ -20,6 +20,7 @@
     "melee_skill": 2,
     "melee_dice": 1,
     "melee_dice_sides": 2,
+    "bleed_rate": 50,
     "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
     "special_attacks": [
       {
@@ -66,8 +67,8 @@
         "monster_message": "",
         "condition": {
           "and": [
-            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING_EX', 'radius': 32)", "==", "0" ] },
-            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING', 'radius': 32)", ">=", "2" ] }
+            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING_EX', 'radius': 64)", "==", "0" ] },
+            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING', 'radius': 64)", ">=", "2" ] }
           ]
         },
         "allow_no_target": true
@@ -107,6 +108,7 @@
     "melee_skill": 3,
     "melee_dice": 2,
     "melee_dice_sides": 3,
+    "bleed_rate": 50,
     "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
     "harvest": "exempt",
     "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s melts away.", "eoc": "eoc_secro_mon_sflesh_fleshling_smol_split" },
@@ -155,8 +157,8 @@
         "monster_message": "",
         "condition": {
           "and": [
-            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING_EX', 'radius': 32)", "==", "0" ] },
-            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING', 'radius': 32)", ">=", "2" ] }
+            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING_EX', 'radius': 64)", "==", "0" ] },
+            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING', 'radius': 64)", ">=", "2" ] }
           ]
         },
         "allow_no_target": true
@@ -205,6 +207,7 @@
     "melee_skill": 4,
     "melee_dice": 3,
     "melee_dice_sides": 4,
+    "bleed_rate": 50,
     "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
     "harvest": "exempt",
     "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s melts away.", "eoc": "eoc_secro_mon_sflesh_fleshling_med_split" },
@@ -253,8 +256,8 @@
         "monster_message": "",
         "condition": {
           "and": [
-            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING_EX', 'radius': 32)", "==", "0" ] },
-            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING', 'radius': 32)", ">=", "2" ] }
+            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING_EX', 'radius': 64)", "==", "0" ] },
+            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING', 'radius': 64)", ">=", "2" ] }
           ]
         },
         "allow_no_target": true
@@ -303,6 +306,7 @@
     "melee_skill": 5,
     "melee_dice": 4,
     "melee_dice_sides": 5,
+    "bleed_rate": 50,
     "melee_damage": [ { "damage_type": "cut", "amount": 5 } ],
     "harvest": "exempt",
     "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s melts away.", "eoc": "eoc_secro_mon_sflesh_fleshling_big_split" },
@@ -351,8 +355,8 @@
         "monster_message": "",
         "condition": {
           "and": [
-            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING_EX', 'radius': 32)", "==", "0" ] },
-            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING', 'radius': 32)", ">=", "2" ] }
+            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING_EX', 'radius': 64)", "==", "0" ] },
+            { "math": [ "u_mon_species_nearby('SFLESH_FLESHLING', 'radius': 64)", ">=", "2" ] }
           ]
         },
         "allow_no_target": true
@@ -401,6 +405,7 @@
     "melee_skill": 8,
     "melee_dice": 7,
     "melee_dice_sides": 8,
+    "bleed_rate": 50,
     "melee_damage": [ { "damage_type": "cut", "amount": 8 } ],
     "harvest": "exempt",
     "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s melts away." },

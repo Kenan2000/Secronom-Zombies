@@ -5,6 +5,11 @@
   },
   {
     "type": "effect_type",
+    "id": "secro_maneater_stack",
+    "max_intensity": 300
+  },
+  {
+    "type": "effect_type",
     "id": "mon_sflesh_flesh_swing_recently"
   },
   {
@@ -36,6 +41,36 @@
   },
   {
     "type": "effect_type",
+    "id": "sflesh_infect_checked"
+  },
+  {
+    "type": "effect_type",
     "id": "eff_fleshling_splitcheck"
+  },
+  {
+    "type": "effect_type",
+    "id": "eff_fleshling_growthreset",
+    "removes_effects": [ "controlled" ],
+    "blocks_effects": [ "controlled" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "sflesh_fleshling_growth",
+    "max_intensity": 999
+  },
+  {
+    "type": "effect_type",
+    "id": "sflesh_fleshling_huge_limit",
+    "max_intensity": 999
+  },
+  {
+    "type": "effect_type",
+    "id": "sflesh_fleshling_huge_curlimit",
+    "max_intensity": 999
+  },
+  {
+    "type": "effect_type",
+    "id": "sflesh_fleshling_huge_spawned",
+    "enchantments": [ { "values": [ { "value": "SPEED", "multiply": -0.25 } ] } ]
   }
 ]

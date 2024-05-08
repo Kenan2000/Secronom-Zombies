@@ -243,7 +243,6 @@
     "max_duration": 600
   },
   {
-    "//": "Let's push the charger back from the player. This does work SOMETIMES, and this'll prevent the glitch to occur.",
     "id": "mon_zombie_charger_charge_push",
     "type": "SPELL",
     "name": { "str": "Stop" },

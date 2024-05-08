@@ -10,9 +10,8 @@
     "rating": "bad",
     "name": [ "Bloodcoated" ],
     "desc": [ "Blood splattered.", "Drastically slowed.", "Moderately slowed.", "Severely slowed.", "Extremely slowed." ],
-    "reduced_desc": [ "Your blood coat dries a bit." ],
     "apply_message": "You've been blood coated!",
-    "remove_message": "Bloodcoat leaves your body!",
+    "remove_message": "The sticky blood leaves your body.",
     "scaling_mods": { "speed_mod": [ -3.2 ], "dex_mod": [ -0.3 ] }
   },
   {
@@ -47,9 +46,8 @@
       "Extremely slowed.",
       "Extremely slowed."
     ],
-    "reduced_desc": [ "Your thick blood coat dries a bit." ],
     "apply_message": "You've been blood coated!",
-    "remove_message": "Thick bloodcoat leaves your body!",
+    "remove_message": "The sticky blood leaves your body!",
     "removes_effects": [ "unify_bloodslow" ],
     "blocks_effects": [ "unify_bloodslow" ],
     "scaling_mods": { "speed_mod": [ -2.2 ], "dex_mod": [ -0.3 ] }
@@ -957,18 +955,10 @@
   },
   {
     "type": "effect_type",
-    "id": "eff_snatcher_snatch_ing"
-  },
-  {
-    "type": "effect_type",
     "id": "eff_fleshweaver_healing",
     "base_mods": { "pain_min": [ 1 ], "pain_chance": [ 2 ], "pain_tick": [ 8 ] },
     "rating": "bad",
     "remove_message": "The flesh weaver finishes its operation."
-  },
-  {
-    "type": "effect_type",
-    "id": "sflesh_infect_checked"
   },
   {
     "type": "effect_type",
@@ -986,32 +976,6 @@
     "base_mods": { "speed_mod": [ -3 ], "hurt_min": [ 1 ], "hurt_tick": [ 30 ], "pain_min": [ 1 ], "pain_chance": [ 30 ], "pain_tick": [ 10 ] },
     "scaling_mods": { "speed_mod": [ -1 ], "hurt_min": [ 0.05 ], "hurt_tick": [ -0.5 ], "pain_chance": [ -0.2 ] },
     "show_in_info": true
-  },
-  {
-    "type": "effect_type",
-    "id": "sflesh_fleshling_growth",
-    "max_intensity": 999
-  },
-  {
-    "type": "effect_type",
-    "id": "sflesh_fleshling_huge_limit",
-    "max_intensity": 999
-  },
-  {
-    "type": "effect_type",
-    "id": "sflesh_fleshling_huge_curlimit",
-    "max_intensity": 999
-  },
-  {
-    "type": "effect_type",
-    "id": "sflesh_fleshling_huge_spawned",
-    "enchantments": [
-      {
-        "values": [
-          { "value": "SPEED", "multiply": -0.25 }
-        ]
-      }
-    ]
   },
   {
     "type": "effect_type",
