@@ -359,7 +359,7 @@
     "type": "monster_attack",
     "attack_type": "bite",
     "id": "secro_maneater_floralbite",
-    "accuracy": 8,
+    "accuracy": 3,
     "move_cost": 250,
     "blockable": false,
     "dodgeable": true,

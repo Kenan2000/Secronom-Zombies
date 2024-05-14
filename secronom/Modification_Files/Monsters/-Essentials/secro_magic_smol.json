@@ -1145,6 +1145,15 @@
   },
   {
     "type": "SPELL",
+    "id": "mon_maneater_evo_healcheck",
+    "copy-from": "mon_secro_eoc_spell_base",
+    "name": { "str": "Heal Check EVO" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster heals by an amount based on their current health.'",
+    "effect_str": "eoc_secro_mon_maneater_evo_heal",
+    "base_casting_time": 0
+  },
+  {
+    "type": "SPELL",
     "id": "mon_maneater_bloodcheck",
     "copy-from": "mon_secro_eoc_spell_base",
     "name": { "str": "Blood Check" },
@@ -1198,6 +1207,20 @@
     "damage_type": "bash"
   },
   {
+    "id": "mon_maneater_evo_bloodspray",
+    "copy-from": "mon_maneater_bloodspray",
+    "type": "SPELL",
+    "name": { "str": "Blood Spray EVO" },
+    "min_damage": 10,
+    "max_damage": 15,
+    "min_range": 13,
+    "max_range": 13,
+    "min_duration": 2000,
+    "max_duration": 3000,
+    "min_aoe": 35,
+    "max_aoe": 35
+  },
+  {
     "type": "SPELL",
     "id": "mon_maneater_bloodspray_target",
     "name": { "str": "a spell" },
@@ -1210,6 +1233,14 @@
     "shape": "blast",
     "min_range": 6,
     "max_range": 6
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_maneater_evo_bloodspray_target",
+    "copy-from": "mon_maneater_bloodspray_target",
+    "extra_effects": [ { "id": "mon_maneater_evo_bloodspray" }, { "id": "mon_maneater_bloodspray_cost", "hit_self": true } ],
+    "min_range": 8,
+    "max_range": 8
   },
   {
     "type": "SPELL",
@@ -1247,6 +1278,13 @@
     "effect": "mod_moves"
   },
   {
+    "id": "mon_maneater_evo_bloodexp_stun",
+    "copy-from": "mon_maneater_bloodexp_stun",
+    "type": "SPELL",
+    "min_damage": -500,
+    "max_damage": -500
+  },
+  {
     "type": "SPELL",
     "id": "mon_maneater_bloodexp_target",
     "name": { "str": "a spell" },
@@ -1263,6 +1301,16 @@
     "shape": "blast",
     "min_range": 3,
     "max_range": 3
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_maneater_evo_bloodexp_target",
+    "copy-from": "mon_maneater_bloodexp_target",
+    "extra_effects": [
+      { "id": "mon_maneater_evo_bloodexp_stun", "hit_self": true },
+      { "id": "mon_maneater_bloodexp_effcheck", "hit_self": true },
+      { "id": "mon_maneater_bloodexp_cost", "hit_self": true }
+    ]
   },
   {
     "type": "SPELL",
@@ -1296,6 +1344,18 @@
     "max_field_intensity": 1,
     "field_chance": 12,
     "damage_type": "bash"
+  },
+  {
+    "id": "mon_maneater_evo_bloodexp",
+    "copy-from": "mon_maneater_bloodexp",
+    "type": "SPELL",
+    "name": { "str": "Blood Explosion EVO" },
+    "min_damage": 22,
+    "max_damage": 30,
+    "min_duration": 3250,
+    "max_duration": 4500,
+    "min_aoe": 8,
+    "max_aoe": 8
   },
   {
     "id": "mon_sflesh_surface_spawner_tent_check",

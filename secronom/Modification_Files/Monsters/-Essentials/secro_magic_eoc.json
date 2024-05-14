@@ -511,7 +511,6 @@
   {
     "type": "effect_on_condition",
     "id": "eoc_secro_mon_ayenel_lockon_check",
-    "condition": { "math": [ "distance('u', 'npc')", ">=", "5" ] },
     "effect": [ { "u_add_effect": "blind", "duration": "6 seconds" }, { "u_add_effect": "glowing", "duration": "60 seconds" } ]
   },
   {
@@ -930,6 +929,41 @@
         "intensity": { "math": [ "u_effect_intensity('secro_maneater_stack') - 15" ] }
       },
       { "u_add_effect": "secro_maneater_healing", "duration": "3 seconds" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_maneater_evo_heal",
+    "condition": {
+      "and": [
+        { "math": [ "u_hp('torso')", "<", "u_hp_max('torso') * 0.33" ] },
+        { "math": [ "u_effect_intensity('secro_maneater_stack')", ">=", "100" ] }
+      ]
+    },
+    "effect": [
+      {
+        "u_add_effect": "secro_maneater_stack",
+        "duration": "PERMANENT",
+        "intensity": { "math": [ "u_effect_intensity('secro_maneater_stack') - 100" ] }
+      },
+      { "u_add_effect": "secro_maneater_evo_healing_more", "duration": "3 seconds" },
+      {
+        "run_eocs": [
+          {
+            "id": "eoc_secro_mon_maneater_evo_heal_more_msg",
+            "condition": "player_see_u",
+            "effect": [ { "message": "The colossal maneater is rapidly regenerating!" } ]
+          }
+        ]
+      }
+    ],
+    "false_effect": [
+      {
+        "u_add_effect": "secro_maneater_stack",
+        "duration": "PERMANENT",
+        "intensity": { "math": [ "u_effect_intensity('secro_maneater_stack') - 15" ] }
+      },
+      { "u_add_effect": "secro_maneater_evo_healing", "duration": "3 seconds" }
     ]
   }
 ]
