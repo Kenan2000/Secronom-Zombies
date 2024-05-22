@@ -1,6 +1,27 @@
 [
   {
     "type": "effect_on_condition",
+    "id": "eoc_secro_mon_zombie_swarmer_alphaform_check",
+    "effect": [
+      { "u_cast_spell": { "id": "mon_zombie_swarmer_alphaform", "hit_self": true } }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_zombie_swarmer_alphaform_moderate_check",
+    "effect": [
+      { "u_cast_spell": { "id": "mon_zombie_swarmer_alphaform_moderate", "hit_self": true } }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_zombie_swarmer_alphaform_strong_check",
+    "effect": [
+      { "u_cast_spell": { "id": "mon_zombie_swarmer_alphaform_strong", "hit_self": true } }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
     "id": "eoc_secro_mon_zombie_tendrils_sprint_check",
     "effect": [ { "npc_add_effect": "secro_tendril_sprint", "duration": "22 seconds" } ]
   },

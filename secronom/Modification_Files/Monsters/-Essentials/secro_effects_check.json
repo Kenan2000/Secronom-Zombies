@@ -1,6 +1,16 @@
 [
   {
     "type": "effect_type",
+    "id": "secro_zombie_swarmer_alpha_death"
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_zombie_swarmer_alpha_passive",
+    "max_duration": "11 seconds",
+    "enchantments": [ { "values": [ { "value": "SPEED", "add": 10 } ] } ]
+  },
+  {
+    "type": "effect_type",
     "id": "secro_zombie_uruxis_passive"
   },
   {
