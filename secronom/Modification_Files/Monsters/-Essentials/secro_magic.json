@@ -41,6 +41,23 @@
     "effect_str": ""
   },
   {
+    "id": "mon_zombie_disser_shrieks",
+    "type": "SPELL",
+    "name": { "str": "Disser Shriek Sound" },
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shrieks.'",
+    "valid_targets": [ "self" ],
+    "flags": [ "NO_EXPLOSION_SFX" ],
+    "effect": "noise",
+    "min_damage": 256,
+    "max_damage": 256,
+    "sound_id": "shout",
+    "sound_description": "an ear-splitting shriek!",
+    "sound_type": "combat",
+    "sound_variant": "scream",
+    "shape": "blast",
+    "message": ""
+  },
+  {
     "id": "mon_fleshweaver_vexpl",
     "type": "SPELL",
     "name": { "str": "Vein Explosion" },

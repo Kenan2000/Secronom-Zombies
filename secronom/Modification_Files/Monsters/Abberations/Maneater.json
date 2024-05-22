@@ -119,7 +119,20 @@
     ],
     "upgrades": { "half_life": 42, "into": "mon_maneater_evo" },
     "looks_like": "mon_triffid",
-    "flags": [ "HEARS", "SEES", "SMELLS", "GRABS", "CLIMBS", "DESTROYS", "PUSH_MON", "PUSH_VEH", "PATH_AVOID_FIRE", "POISON", "NO_BREATHE", "REVIVES" ]
+    "flags": [
+      "HEARS",
+      "SEES",
+      "SMELLS",
+      "GRABS",
+      "CLIMBS",
+      "DESTROYS",
+      "PUSH_MON",
+      "PUSH_VEH",
+      "PATH_AVOID_FIRE",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES"
+    ]
   },
   {
     "id": "mon_maneater_evo",
@@ -239,6 +252,6 @@
         "allow_no_target": true
       }
     ],
-	"upgrades": false
+    "upgrades": false
   }
 ]

@@ -27,7 +27,7 @@
     "flags": [
       "SEES",
       "HEARS",
-	  "GOODHEARING",
+      "GOODHEARING",
       "SMELLS",
       "WARM",
       "BASHES",
@@ -48,7 +48,7 @@
     "name": { "str": "swarmer alpha" },
     "description": "A stout humanoid body, almost in its decaying state.",
     "species": [ "ZOMBIE", "SECROSWARMER_ALPHA", "HUMAN" ],
-	"hp": 100,
+    "hp": 100,
     "speed": 85,
     "symbol": "⩙",
     "color": "light_green_magenta",
@@ -70,14 +70,14 @@
       {
         "id": "monspell_zombie_swarmer_alphasive",
         "type": "spell",
-		"condition": { "math": [ "u_mon_species_nearby('SECROSWARMER', 'radius': 16)", ">", "0" ] },
+        "condition": { "math": [ "u_mon_species_nearby('SECROSWARMER', 'radius': 16)", ">", "0" ] },
         "spell_data": { "id": "mon_zombie_swarmer_alphasive", "hit_self": true },
         "cooldown": 10,
         "monster_message": "",
         "allow_no_target": true
       }
     ],
-	"death_function": { "effect": { "id": "mon_zombie_swarmer_alphadeath", "hit_self": true } },
+    "death_function": { "effect": { "id": "mon_zombie_swarmer_alphadeath", "hit_self": true } },
     "upgrades": { "half_life": 10, "into": "mon_zombie_swarmer_alpha_moderate" }
   },
   {
@@ -93,8 +93,15 @@
     "copy-from": "mon_zombie_swarmer_alpha",
     "type": "MONSTER",
     "proportional": { "hp": 2 },
-    "relative": { "speed": 25, "melee_skill": 2, "melee_dice": 4, "melee_dice_sides": 3, "dodge": 1, "armor": { "bash": 2, "cut": 1, "bullet": 2, "stab": 2 } },
-	"upgrades": false
+    "relative": {
+      "speed": 25,
+      "melee_skill": 2,
+      "melee_dice": 4,
+      "melee_dice_sides": 3,
+      "dodge": 1,
+      "armor": { "bash": 2, "cut": 1, "bullet": 2, "stab": 2 }
+    },
+    "upgrades": false
   },
   {
     "id": "mon_zombie_swarmer_weak",
@@ -112,9 +119,9 @@
       {
         "id": "monspell_zombie_swarmer_alphaform_check",
         "type": "spell",
-		"condition": {
+        "condition": {
           "and": [
-		    { "not": { "u_has_effect": "secro_zombie_swarmer_alpha_death" } },
+            { "not": { "u_has_effect": "secro_zombie_swarmer_alpha_death" } },
             { "math": [ "u_mon_species_nearby('SECROSWARMER_ALPHA', 'radius': 128)", "==", "0" ] },
             { "math": [ "u_mon_species_nearby('SECROSWARMER', 'radius': 128)", ">", "15" ] }
           ]
@@ -150,9 +157,9 @@
       {
         "id": "monspell_zombie_swarmer_alphaform_check",
         "type": "spell",
-		"condition": {
+        "condition": {
           "and": [
-		    { "not": { "u_has_effect": "secro_zombie_swarmer_alpha_death" } },
+            { "not": { "u_has_effect": "secro_zombie_swarmer_alpha_death" } },
             { "math": [ "u_mon_species_nearby('SECROSWARMER_ALPHA', 'radius': 128)", "==", "0" ] },
             { "math": [ "u_mon_species_nearby('SECROSWARMER', 'radius': 128)", ">", "15" ] }
           ]
@@ -188,9 +195,9 @@
       {
         "id": "monspell_zombie_swarmer_alphaform_check",
         "type": "spell",
-		"condition": {
+        "condition": {
           "and": [
-		    { "not": { "u_has_effect": "secro_zombie_swarmer_alpha_death" } },
+            { "not": { "u_has_effect": "secro_zombie_swarmer_alpha_death" } },
             { "math": [ "u_mon_species_nearby('SECROSWARMER_ALPHA', 'radius': 128)", "==", "0" ] },
             { "math": [ "u_mon_species_nearby('SECROSWARMER', 'radius': 128)", ">", "15" ] }
           ]
@@ -224,9 +231,9 @@
       {
         "id": "monspell_zombie_swarmer_alphaform_moderate_check",
         "type": "spell",
-		"condition": {
+        "condition": {
           "and": [
-		    { "not": { "u_has_effect": "secro_zombie_swarmer_alpha_death" } },
+            { "not": { "u_has_effect": "secro_zombie_swarmer_alpha_death" } },
             { "math": [ "u_mon_species_nearby('SECROSWARMER_ALPHA', 'radius': 128)", "==", "0" ] },
             { "math": [ "u_mon_species_nearby('SECROSWARMER', 'radius': 128)", ">", "15" ] }
           ]
@@ -260,9 +267,9 @@
       {
         "id": "monspell_zombie_swarmer_alphaform_moderate_check",
         "type": "spell",
-		"condition": {
+        "condition": {
           "and": [
-		    { "not": { "u_has_effect": "secro_zombie_swarmer_alpha_death" } },
+            { "not": { "u_has_effect": "secro_zombie_swarmer_alpha_death" } },
             { "math": [ "u_mon_species_nearby('SECROSWARMER_ALPHA', 'radius': 128)", "==", "0" ] },
             { "math": [ "u_mon_species_nearby('SECROSWARMER', 'radius': 128)", ">", "15" ] }
           ]
@@ -282,7 +289,13 @@
     "name": { "str": "savage swarmer" },
     "description": "Gray-ish visage in misunderstandable expression, this zombie has gone feral. Although possesses a regular body, there's something wrong with it.",
     "proportional": { "hp": 3.33 },
-    "relative": { "speed": 10, "melee_skill": 4, "melee_dice": 4, "melee_dice_sides": 5, "armor": { "bash": 1, "bullet": 1, "stab": 1 } },
+    "relative": {
+      "speed": 10,
+      "melee_skill": 4,
+      "melee_dice": 4,
+      "melee_dice_sides": 5,
+      "armor": { "bash": 1, "bullet": 1, "stab": 1 }
+    },
     "symbol": "⩝",
     "color": "black_yellow",
     "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
@@ -294,9 +307,9 @@
       {
         "id": "monspell_zombie_swarmer_alphaform_strong_check",
         "type": "spell",
-		"condition": {
+        "condition": {
           "and": [
-		    { "not": { "u_has_effect": "secro_zombie_swarmer_alpha_death" } },
+            { "not": { "u_has_effect": "secro_zombie_swarmer_alpha_death" } },
             { "math": [ "u_mon_species_nearby('SECROSWARMER_ALPHA', 'radius': 128)", "==", "0" ] },
             { "math": [ "u_mon_species_nearby('SECROSWARMER', 'radius': 128)", ">", "15" ] }
           ]
@@ -307,7 +320,7 @@
         "allow_no_target": true
       }
     ],
-	"upgrades": false
+    "upgrades": false
   },
   {
     "id": "mon_zombie_swarmer_evo_virulent",
@@ -320,15 +333,17 @@
     "symbol": "⩛",
     "color": "magenta_green",
     "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
-    "special_attacks": [ { "type": "bite", "cooldown": 10 }, [ "scratch", 8 ], 
+    "special_attacks": [
+      { "type": "bite", "cooldown": 10 },
+      [ "scratch", 8 ],
       { "id": "grab_drag", "cooldown": 3, "grab_data": { "drag_distance": 1 } },
       { "id": "drag_followup", "grab_data": { "drag_distance": 1 } },
       {
         "id": "monspell_zombie_swarmer_alphaform_strong_check",
         "type": "spell",
-		"condition": {
+        "condition": {
           "and": [
-		    { "not": { "u_has_effect": "secro_zombie_swarmer_alpha_death" } },
+            { "not": { "u_has_effect": "secro_zombie_swarmer_alpha_death" } },
             { "math": [ "u_mon_species_nearby('SECROSWARMER_ALPHA', 'radius': 128)", "==", "0" ] },
             { "math": [ "u_mon_species_nearby('SECROSWARMER', 'radius': 128)", ">", "15" ] }
           ]
@@ -337,7 +352,8 @@
         "cooldown": 333,
         "monster_message": "",
         "allow_no_target": true
-      } ],
-	"upgrades": false
+      }
+    ],
+    "upgrades": false
   }
 ]

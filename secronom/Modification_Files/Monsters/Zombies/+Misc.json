@@ -121,44 +121,29 @@
     "flags": [ "HEARS", "SEES", "SMELLS", "WARM", "AQUATIC", "GRABS", "BASHES", "NOHEAD", "SWIMS", "PACIFIST", "HARDTOSHOOT" ]
   },
   {
-    "//": "Support-type zed that uses an aura to inflict debuffs.",
     "id": "mon_zombie_disser",
     "type": "MONSTER",
     "looks_like": "mon_zombie_shrieker",
+    "copy-from": "mon_zombie_shrieker",
     "name": { "str": "dissonant screamer" },
-    "description": "A skinny tall zombie with swollen mouth and elongated jaws, seeping with black ooze. Its harsh, high-pitched voice makes it suprisingly dangerous.",
-    "default_faction": "zombie",
+    "description": "A skinny tall zombie with a swollen mouth and elongated jaws, seeping with black ooze.",
     "species": [ "ZOMBIE", "SECROZED_1" ],
-    "volume": "62500 ml",
-    "weight": "81500 g",
-    "harvest": "zombie",
     "hp": 70,
-    "speed": 60,
-    "material": [ "flesh" ],
-    "emit_fields": [ "secro_shout", "secro_scream" ],
+    "speed": 80,
     "symbol": "♭",
     "color": "magenta_red",
-    "aggression": 100,
-    "morale": 100,
-    "melee_skill": 2,
-    "melee_dice": 2,
-    "melee_dice_sides": 2,
+    "melee_skill": 4,
     "armor": { "bash": 1 },
-    "special_attacks": [ [ "SHRIEK_ALERT", 8 ] ],
-    "death_drops": "default_zombie_death_drops",
-    "flags": [
-      "SEES",
-      "SMELLS",
-      "STUMBLES",
-      "WARM",
-      "BASHES",
-      "GROUP_BASH",
-      "POISON",
-      "NO_BREATHE",
-      "REVIVES",
-      "PUSH_MON",
-      "FILTHY"
-    ]
+    "special_attacks": [
+      {
+        "id": "monspell_zombie_disser_shrieks",
+        "type": "spell",
+        "spell_data": { "id": "mon_zombie_disser_shrieks", "hit_self": true },
+        "cooldown": 128,
+        "monster_message": ""
+      }
+    ],
+    "upgrades": false
   },
   {
     "//": "Summoner-type electric zed. Uses an aura to spawn minions.",
@@ -254,7 +239,7 @@
         "monster_message": "<color_light_red>%1$s trembles!</color>"
       }
     ],
-	"upgrades": false
+    "upgrades": false
   },
   {
     "id": "mon_zombie_ichorus",
@@ -299,7 +284,7 @@
       "REVIVES",
       "PUSH_MON",
       "FILTHY",
-	  "NOHEAD"
+      "NOHEAD"
     ]
   },
   {
@@ -319,7 +304,7 @@
         "monster_message": "<color_light_red>%1$s trembles!</color>"
       }
     ],
-	"upgrades": false
+    "upgrades": false
   },
   {
     "id": "mon_zombie_psyrus",
@@ -417,7 +402,7 @@
       "PATH_AVOID_DANGER_2",
       "PRIORITIZE_TARGETS",
       "FILTHY",
-	  "KEEP_DISTANCE"
+      "KEEP_DISTANCE"
     ]
   },
   {
@@ -568,7 +553,7 @@
     "armor": { "bash": 30, "cut": 2, "bullet": 2 },
     "vision_day": 22,
     "vision_night": 12,
-    "harvest": "zombie",
+    "harvest": "zombie",
     "special_attacks": [
       {
         "type": "spell",
@@ -724,7 +709,7 @@
     "diff": 100,
     "material": [ "flesh", "bone" ],
     "symbol": "?",
-    "color": "red",
+    "color": "red",
     "aggression": 100,
     "morale": 100,
     "attack_cost": 425,
@@ -759,7 +744,7 @@
     "diff": 100,
     "material": [ "flesh", "bone" ],
     "symbol": "?",
-    "color": "white_red",
+    "color": "white_red",
     "aggression": 100,
     "morale": 100,
     "attack_cost": 600,
@@ -862,7 +847,7 @@
     "speed": 40,
     "diff": 100,
     "material": [ "flesh", "bone" ],
-    "symbol": "⚶",
+    "symbol": "⚶",
     "color": "magenta",
     "aggression": 100,
     "morale": 100,

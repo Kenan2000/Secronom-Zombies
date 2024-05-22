@@ -52,47 +52,12 @@
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_zombie_swarmer_weak", "weight": 100, "pack_size": [ 6, 15 ], "ends": 24 },
-      {
-        "monster": "mon_zombie_swarmer_weak",
-        "weight": 100,
-        "pack_size": [ 10, 20 ],
-        "starts": 24,
-        "ends": 48
-      },
-      {
-        "monster": "mon_zombie_swarmer_weak",
-        "weight": 100,
-        "pack_size": [ 14, 25 ],
-        "starts": 48,
-        "ends": 96
-      },
-      {
-        "monster": "mon_zombie_swarmer_weak",
-        "weight": 100,
-        "pack_size": [ 18, 30 ],
-        "starts": 96,
-        "ends": 192
-      },
-      {
-        "monster": "mon_zombie_swarmer_weak",
-        "weight": 100,
-        "pack_size": [ 22, 35 ],
-        "starts": 192,
-        "ends": 384
-      },
-      {
-        "monster": "mon_zombie_swarmer_weak",
-        "weight": 100,
-        "pack_size": [ 26, 40 ],
-        "starts": 384,
-        "ends": 768
-      },
-      {
-        "monster": "mon_zombie_swarmer_weak",
-        "weight": 100,
-        "pack_size": [ 30, 50 ],
-        "starts": 768
-      }
+      { "monster": "mon_zombie_swarmer_weak", "weight": 100, "pack_size": [ 10, 20 ], "starts": 24, "ends": 48 },
+      { "monster": "mon_zombie_swarmer_weak", "weight": 100, "pack_size": [ 14, 25 ], "starts": 48, "ends": 96 },
+      { "monster": "mon_zombie_swarmer_weak", "weight": 100, "pack_size": [ 18, 30 ], "starts": 96, "ends": 192 },
+      { "monster": "mon_zombie_swarmer_weak", "weight": 100, "pack_size": [ 22, 35 ], "starts": 192, "ends": 384 },
+      { "monster": "mon_zombie_swarmer_weak", "weight": 100, "pack_size": [ 26, 40 ], "starts": 384, "ends": 768 },
+      { "monster": "mon_zombie_swarmer_weak", "weight": 100, "pack_size": [ 30, 50 ], "starts": 768 }
     ]
   },
   {
@@ -159,7 +124,13 @@
     "name": "GROUP_SUBWAY",
     "monsters": [
       { "monster": "mon_sflesh_fleshling_tiny", "weight": 166, "pack_size": [ 4, 8 ], "ends": "3 days" },
-      { "monster": "mon_sflesh_fleshling_smol", "weight": 166, "pack_size": [ 2, 4 ], "starts": "3 days", "ends": "9 days" },
+      {
+        "monster": "mon_sflesh_fleshling_smol",
+        "weight": 166,
+        "pack_size": [ 2, 4 ],
+        "starts": "3 days",
+        "ends": "9 days"
+      },
       { "monster": "mon_sflesh_fleshling_med", "weight": 166, "pack_size": [ 1, 2 ], "starts": "9 days" },
       { "monster": "mon_sflesh_fleshling_big", "weight": 66, "starts": "9 days" }
     ]
@@ -584,8 +555,6 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ROOF_ZOMBIE",
-    "monsters": [
-      { "monster": "mon_zombie_bootlegsmoker", "weight": 65, "cost_multiplier": 3, "starts": "3 days" }
-    ]
+    "monsters": [ { "monster": "mon_zombie_bootlegsmoker", "weight": 65, "cost_multiplier": 3, "starts": "3 days" } ]
   }
 ]
