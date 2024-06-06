@@ -34,7 +34,7 @@
     ],
     "death_drops": { "groups": [ [ "robots", 1 ] ] },
     "death_function": { "corpse_type": "BROKEN" },
-    "flags": [ "SEES", "FLIES", "ELECTRONIC", "COLDPROOF", "NO_BREATHE", "PRIORITIZE_TARGETS", "PATH_AVOID_DANGER_2", "LOUDMOVES" ]
+    "flags": [ "SEES", "FLIES", "ELECTRONIC", "COLDPROOF", "NO_BREATHE", "PRIORITIZE_TARGETS", "PATH_AVOID_DANGER", "LOUDMOVES" ]
   },
   {
     "id": "mon_bot_secroshocker",
@@ -112,7 +112,7 @@
     ],
     "death_drops": { "groups": [ [ "robots", 1 ] ] },
     "death_function": { "corpse_type": "BROKEN" },
-    "flags": [ "SEES", "ELECTRONIC", "COLDPROOF", "NO_BREATHE", "POISON", "PRIORITIZE_TARGETS", "PATH_AVOID_DANGER_2" ]
+    "flags": [ "SEES", "ELECTRONIC", "COLDPROOF", "NO_BREATHE", "POISON", "PRIORITIZE_TARGETS", "PATH_AVOID_DANGER" ]
   },
   {
     "id": "mon_bot_secrolauncher",
@@ -146,7 +146,7 @@
     ],
     "death_drops": { "groups": [ [ "robots", 1 ] ] },
     "death_function": { "corpse_type": "BROKEN" },
-    "flags": [ "SEES", "FLIES", "ELECTRONIC", "COLDPROOF", "NO_BREATHE", "POISON", "PRIORITIZE_TARGETS", "PATH_AVOID_DANGER_2" ]
+    "flags": [ "SEES", "FLIES", "ELECTRONIC", "COLDPROOF", "NO_BREATHE", "POISON", "PRIORITIZE_TARGETS", "PATH_AVOID_DANGER" ]
   },
   {
     "id": "mon_bot_secromissile",
