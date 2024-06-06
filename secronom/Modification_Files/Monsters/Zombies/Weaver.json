@@ -42,7 +42,7 @@
       "NO_BREATHE",
       "ATTACKMON",
       "HARDTOSHOOT",
-      "PATH_AVOID_DANGER"
+      "PATH_AVOID_DANGER_2"
     ]
   },
   {
@@ -102,7 +102,7 @@
       "NO_BREATHE",
       "ATTACKMON",
       "HARDTOSHOOT",
-      "PATH_AVOID_DANGER"
+      "PATH_AVOID_DANGER_2"
     ]
   },
   {
@@ -162,7 +162,7 @@
       "NO_BREATHE",
       "ATTACKMON",
       "HARDTOSHOOT",
-      "PATH_AVOID_DANGER"
+      "PATH_AVOID_DANGER_2"
     ]
   },
   {
