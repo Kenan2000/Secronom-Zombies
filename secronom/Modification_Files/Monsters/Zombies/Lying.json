@@ -24,8 +24,8 @@
     "armor": { "bash": 15, "cut": 15, "bullet": 15, "heat": 2 },
     "vision_day": 0,
     "vision_night": 0,
-    "harvest": "zombie",
-    "upgrades": { "half_life": 12, "into_group": "GROUP_LYING_UPGRADE" },
+    "harvest": "zombie_humanoid",
+    "upgrades": { "half_life": 48, "into_group": "GROUP_LYING_UPGRADE" },
     "flags": [ "STUMBLES", "WARM", "POISON", "NO_BREATHE", "FILTHY", "REVIVES" ]
   },
   {
@@ -54,8 +54,8 @@
     "armor": { "bash": 2, "cut": 1, "bullet": 1 },
     "vision_day": 45,
     "vision_night": 4,
-    "upgrades": { "half_life": 16, "into_group": "GROUP_LYING_UPGRADEX" },
-    "harvest": "zombie",
+    "upgrades": { "half_life": 64, "into_group": "GROUP_LYING_UPGRADEX" },
+    "harvest": "zombie_humanoid",
     "flags": [
       "SEES",
       "HEARS",
@@ -98,8 +98,8 @@
     "armor": { "bash": 3, "cut": 2, "bullet": 2 },
     "vision_day": 35,
     "vision_night": 20,
-    "upgrades": { "half_life": 16, "into_group": "GROUP_LYING_UPGRADEX" },
-    "harvest": "zombie",
+    "upgrades": { "half_life": 64, "into_group": "GROUP_LYING_UPGRADEX" },
+    "harvest": "zombie_humanoid",
     "flags": [
       "SEES",
       "HEARS",

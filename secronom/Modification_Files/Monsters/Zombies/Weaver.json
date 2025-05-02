@@ -31,7 +31,7 @@
         "monster_message": "<color_yellow>%1$s injects %3$s!</color>"
       }
     ],
-    "upgrades": { "half_life": 12, "into_group": "GROUP_SKITTYWEAVY_UPGRADE" },
+    "upgrades": { "half_life": 48, "into_group": "GROUP_SKITTYWEAVY_UPGRADE" },
     "flags": [
       "SEES",
       "HEARS",

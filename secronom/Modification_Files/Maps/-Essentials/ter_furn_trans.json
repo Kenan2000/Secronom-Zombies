@@ -210,7 +210,6 @@
         "result": [ [ "t_gates_control_concrete", 5 ], "t_secro_gates_control_concrete_flesh" ],
         "valid_terrain": [ "t_gates_control_concrete" ]
       },
-      { "result": [ [ "t_atm", 5 ], "t_secro_atm_flesh" ], "valid_terrain": [ "t_atm" ] },
       {
         "result": [ [ "t_window_stained_green", 5 ], "t_secro_window_stained_green_flesh" ],
         "valid_terrain": [ "t_window_stained_green" ]
@@ -240,6 +239,7 @@
       { "result": [ [ "t_brick_wall", 5 ], "t_secro_brick_wall_flesh" ], "valid_terrain": [ "t_brick_wall" ] }
     ],
     "furniture": [
+	  { "result": "f_secro_atm_flesh", "valid_furniture": [ "f_atm_off" ] },
       { "result": "f_secro_flower_flesh", "valid_flags": [ "FLOWER" ] },
       { "result": "f_secro_console_broken_flesh", "valid_furniture": [ "f_console_broken" ] },
       { "result": "f_secro_console_flesh", "valid_furniture": [ "f_console" ] },
@@ -320,7 +320,6 @@
         "result": [ "t_gates_control_concrete", "t_secro_gates_control_concrete_flesh" ],
         "valid_terrain": [ "t_gates_control_concrete" ]
       },
-      { "result": [ "t_atm", "t_secro_atm_flesh" ], "valid_terrain": [ "t_atm" ] },
       {
         "result": [ "t_window_stained_green", "t_secro_window_stained_green_flesh" ],
         "valid_terrain": [ "t_window_stained_green" ]
@@ -356,6 +355,7 @@
       { "result": [ "t_wall_metal", "t_secro_wall_metal_flesh" ], "valid_terrain": [ "t_wall_metal" ] }
     ],
     "furniture": [
+	  { "result": "f_secro_atm_flesh", "valid_furniture": [ "f_atm_off" ] },
       { "result": "f_secro_flower_flesh", "valid_flags": [ "FLOWER" ] },
       { "result": "f_secro_console_broken_flesh", "valid_furniture": [ "f_console_broken" ] },
       { "result": "f_secro_console_flesh", "valid_furniture": [ "f_console" ] },
@@ -462,7 +462,6 @@
         "result": [ [ "t_gates_control_concrete", 5 ], "t_secro_gates_control_concrete_flesh" ],
         "valid_terrain": [ "t_gates_control_concrete" ]
       },
-      { "result": [ [ "t_atm", 5 ], "t_secro_atm_flesh" ], "valid_terrain": [ "t_atm" ] },
       {
         "result": [ [ "t_window_stained_green", 5 ], "t_secro_window_stained_green_flesh" ],
         "valid_terrain": [ "t_window_stained_green" ]
@@ -500,6 +499,7 @@
       }
     ],
     "furniture": [
+	  { "result": "f_secro_atm_flesh", "valid_furniture": [ "f_atm_off" ] },
       { "result": "f_secro_flower_flesh", "valid_flags": [ "FLOWER" ] },
       { "result": "f_secro_console_broken_flesh", "valid_furniture": [ "f_console_broken" ] },
       { "result": "f_secro_console_flesh", "valid_furniture": [ "f_console" ] },

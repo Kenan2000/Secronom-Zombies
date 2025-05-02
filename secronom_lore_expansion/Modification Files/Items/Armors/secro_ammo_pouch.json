@@ -32,7 +32,6 @@
           "10mm": 60,
           "44": 60,
           "45": 60,
-          "460": 60,
           "454": 60,
           "45colt": 60,
           "500": 60,
@@ -42,11 +41,16 @@
           "545x39": 60,
           "223": 60,
           "3006": 60,
+          "123ln": 60,
+          "50beowulf": 60,
+          "450": 60,
+          "338lapua": 60,
+          "303": 60,
+          "77mm_arisaka": 60,
           "270win": 60,
           "308": 60,
           "12mm": 60,
           "8x40mm": 60,
-          "20x66mm": 60,
           "stimpack_ammo": 60,
           "ampoule": 60,
           "300": 60,
@@ -58,13 +62,14 @@
           "762R": 60,
           "paintball": 60
         },
-        "moves": 35
+        "moves": 35,
+        "volume_encumber_modifier": 0.1
       }
     ],
     "flags": [ "BELTED", "OVERSIZE", "WATER_FRIENDLY" ],
     "armor": [
       {
-        "encumbrance": 5,
+        "encumbrance": 2,
         "coverage": 10,
         "covers": [ "torso" ],
         "specifically_covers": [ "torso_waist" ],

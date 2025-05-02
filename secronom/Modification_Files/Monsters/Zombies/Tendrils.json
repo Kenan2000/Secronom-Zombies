@@ -17,7 +17,7 @@
     "morale": 100,
     "melee_skill": 4,
     "melee_dice": 2,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "melee_dice_sides": 4,
     "grab_strength": 2,
     "dodge": 1,
@@ -40,7 +40,7 @@
       [ "secro_tendril_pull", 40 ]
     ],
     "death_drops": "default_zombie_death_drops",
-    "upgrades": { "half_life": 12, "into_group": "GROUP_TENDRILS_UPGRADE" },
+    "upgrades": { "half_life": 48, "into_group": "GROUP_TENDRILS_UPGRADE" },
     "flags": [
       "SEES",
       "HEARS",
@@ -96,7 +96,7 @@
       [ "secro_tendrilslam", 29 ],
       [ "secro_tendril_pull", 55 ]
     ],
-    "upgrades": { "half_life": 16, "into_group": "GROUP_TENDRILS_UPGRADEX" }
+    "upgrades": { "half_life": 64, "into_group": "GROUP_TENDRILS_UPGRADEX" }
   },
   {
     "id": "mon_zombie_tendricles",
@@ -128,7 +128,7 @@
       { "id": "drag_followup" },
       [ "secro_tendril_pull", 20 ]
     ],
-    "upgrades": { "half_life": 16, "into_group": "GROUP_TENDRILS_UPGRADEX" }
+    "upgrades": { "half_life": 64, "into_group": "GROUP_TENDRILS_UPGRADEX" }
   },
   {
     "id": "mon_zombie_tentawraith",
@@ -209,7 +209,7 @@
     "morale": 100,
     "melee_skill": 4,
     "melee_dice": 0,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "melee_dice_sides": 4,
     "dodge": 1,
     "melee_damage": [

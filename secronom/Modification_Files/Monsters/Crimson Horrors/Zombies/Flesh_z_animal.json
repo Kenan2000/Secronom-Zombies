@@ -170,16 +170,6 @@
     "extend": { "species": [ "SFLESH" ] }
   },
   {
-    "id": "mon_sflesh_zpider_mass",
-    "copy-from": "mon_zpider_mass",
-    "burn_into": "mon_zpider_mass",
-    "type": "MONSTER",
-    "default_faction": "secro_flesh3",
-    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
-    "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
-    "extend": { "species": [ "SFLESH" ] }
-  },
-  {
     "id": "mon_sflesh_zeindeer",
     "copy-from": "mon_zeindeer",
     "burn_into": "mon_zeindeer",

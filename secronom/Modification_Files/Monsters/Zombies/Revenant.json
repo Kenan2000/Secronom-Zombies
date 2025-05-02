@@ -9,7 +9,7 @@
     "species": [ "ZOMBIE", "SECROZED_2", "HUMAN" ],
     "volume": "62500 ml",
     "weight": "81500 g",
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "hp": 65,
     "diff": 1,
     "speed": 60,
@@ -31,7 +31,7 @@
         "monster_message": "<color_magenta>%1$s shrieks!</color>"
       }
     ],
-    "upgrades": { "half_life": 12, "into_group": "GROUP_REVENANT_UPGRADE" },
+    "upgrades": { "half_life": 48, "into_group": "GROUP_REVENANT_UPGRADE" },
     "death_drops": "default_zombie_death_drops",
     "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "KEEP_DISTANCE" ]
   },
@@ -44,7 +44,7 @@
     "species": [ "ZOMBIE", "SECROZED_2", "HUMAN" ],
     "volume": "62500 ml",
     "weight": "81500 g",
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "diff": 15,
     "hp": 75,
     "speed": 45,
@@ -77,7 +77,7 @@
     "species": [ "ZOMBIE", "SECROZED_2", "HUMAN" ],
     "volume": "62500 ml",
     "weight": "81500 g",
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "hp": 70,
     "diff": 15,
     "speed": 50,
@@ -100,17 +100,6 @@
       }
     ],
     "death_drops": "default_zombie_death_drops",
-    "flags": [
-      "SEES",
-      "HEARS",
-      "SMELLS",
-      "WARM",
-      "POISON",
-      "NO_BREATHE",
-      "REVIVES",
-      "FILTHY",
-      "HARDTOSHOOT",
-      "KEEP_DISTANCE"
-    ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "HARDTOSHOOT", "KEEP_DISTANCE" ]
   }
 ]

@@ -22,7 +22,7 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 6 } ],
     "dodge": 3,
     "armor": { "bash": 2, "cut": 4, "bullet": 2, "heat": 2 },
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "special_attacks": [
       [ "LUNGE", 15 ],
       {
@@ -38,7 +38,7 @@
       }
     ],
     "death_drops": "SSmutant_drop",
-    "upgrades": { "half_life": 10, "into_group": "GROUP_BOW_KAXIX" },
+    "upgrades": { "half_life": 40, "into_group": "GROUP_BOW_KAXIX" },
     "flags": [ "HEARS", "SMELLS", "STUMBLES", "WARM", "FILTHY", "BASHES", "POISON", "NO_BREATHE", "REVIVES" ]
   },
   {
@@ -72,7 +72,7 @@
     "dodge": 3,
     "armor": { "bash": 2, "cut": 4, "bullet": 2, "heat": 2 },
     "vision_day": 20,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "special_attacks": [
       {
         "type": "bite",
@@ -84,7 +84,7 @@
       }
     ],
     "death_drops": "SSmutant_drop",
-    "upgrades": { "half_life": 10, "into_group": "GROUP_BOW_AXXUROS" },
+    "upgrades": { "half_life": 40, "into_group": "GROUP_BOW_AXXUROS" },
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "FILTHY", "BASHES", "POISON", "NO_BREATHE", "REVIVES" ]
   },
   {
@@ -118,7 +118,7 @@
     "dodge": 2,
     "armor": { "bash": 2, "cut": 4, "bullet": 2, "heat": 2 },
     "vision_day": 30,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "special_attacks": [
       { "id": "stretch_attack", "cooldown": 10 },
       {
@@ -131,7 +131,7 @@
       }
     ],
     "death_drops": "SSmutant_drop",
-    "upgrades": { "half_life": 10, "into_group": "GROUP_BOW_EXIOS" },
+    "upgrades": { "half_life": 40, "into_group": "GROUP_BOW_EXIOS" },
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "FILTHY", "BASHES", "POISON", "NO_BREATHE", "REVIVES" ]
   },
   {
@@ -162,10 +162,10 @@
     "melee_dice": 6,
     "melee_dice_sides": 8,
     "vision_day": 20,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "special_attacks": [ [ "SMASH", 30 ] ],
     "death_drops": "SSmutant_drop",
-    "upgrades": { "half_life": 10, "into_group": "GROUP_BOW_DREXX" },
+    "upgrades": { "half_life": 40, "into_group": "GROUP_BOW_DREXX" },
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "FILTHY", "BASHES", "POISON", "NO_BREATHE", "REVIVES" ]
   },
   {
@@ -198,7 +198,7 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 6 } ],
     "dodge": 3,
     "armor": { "bash": 2, "cut": 4, "bullet": 2, "heat": 2 },
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "special_attacks": [
       [ "LUNGE", 15 ],
       {
@@ -214,7 +214,7 @@
       }
     ],
     "death_drops": "SSmutant_drop",
-    "upgrades": { "half_life": 10, "into_group": "GROUP_BOW_EPIXO" },
+    "upgrades": { "half_life": 40, "into_group": "GROUP_BOW_EPIXO" },
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "FILTHY", "BASHES", "POISON", "NO_BREATHE", "REVIVES" ]
   },
   {

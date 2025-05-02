@@ -24,7 +24,7 @@
     "material": [ "steel", "plastic" ],
     "symbol": ":",
     "color": "white",
-    "ammo": [ "battery" ],
+    "tool_ammo": [ "battery" ],
     "charges_per_use": 50,
     "use_action": { "type": "cast_spell", "spell_id": "secro_missionkey_sampler_enigma_target", "no_fail": true, "level": 0 },
     "flags": [ "NONCONDUCTIVE" ],
@@ -35,15 +35,8 @@
         "holster": true,
         "max_contains_volume": "20 L",
         "max_contains_weight": "20 kg",
-        "item_restriction": [
-          "light_minus_disposable_cell",
-          "light_disposable_cell",
-          "light_minus_battery_cell",
-          "light_battery_cell",
-          "light_plus_battery_cell",
-          "light_atomic_battery_cell",
-          "light_minus_atomic_battery_cell"
-        ]
+        "flag_restriction": [ "BATTERY_LIGHT" ],
+        "default_magazine": "light_battery_cell"
       }
     ]
   },

@@ -29,12 +29,12 @@
         {
           "has": "WIELD",
           "condition": "ALWAYS",
-          "values": [
-            { "value": "ARMOR_BASH", "add": -33 },
-            { "value": "ARMOR_CUT", "add": -22 },
-            { "value": "ARMOR_STAB", "add": -24 },
-            { "value": "ARMOR_BULLET", "add": -24 },
-            { "value": "ARMOR_ACID", "add": -8 }
+          "incoming_damage_mod": [
+            { "type": "bash", "add": -33 },
+            { "type": "cut", "add": -22 },
+            { "type": "stab", "add": -24 },
+            { "type": "bullet", "add": -24 },
+            { "type": "acid", "add": -8 }
           ],
           "ench_effects": [ { "effect": "controlled", "intensity": 1 } ]
         }

@@ -8,7 +8,7 @@
     "species": [ "ZOMBIE", "SECROZED_2" ],
     "volume": "62500 ml",
     "weight": "81500 g",
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "hp": 155,
     "speed": 85,
     "material": [ "flesh" ],
@@ -43,7 +43,7 @@
     ],
     "death_drops": "default_zombie_death_drops",
     "anger_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED" ],
-    "upgrades": { "half_life": 14, "into": "mon_zombie_unity" },
+    "upgrades": { "half_life": 56, "into": "mon_zombie_unity" },
     "flags": [
       "SEES",
       "HEARS",
@@ -64,7 +64,7 @@
     "name": { "str": "unity zombie" },
     "description": "From head down to its feet, this corpse's blood veins rapidly excretes thick blood that forms an external layer. An amalgous object around its torso resonates, in every beat, drips an oozing dark liquid.",
     "default_faction": "zombie",
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "species": [ "ZOMBIE", "SECROZED_2" ],
     "volume": "62500 ml",
     "weight": "81500 g",
@@ -105,7 +105,7 @@
         "monster_message": "<color_yellow>Blood vessels emerge from %1$s's core!</color>"
       }
     ],
-    "upgrades": { "half_life": 20, "into_group": "GROUP_UNIFIER_UPGRADEX" },
+    "upgrades": { "half_life": 80, "into_group": "GROUP_UNIFIER_UPGRADEX" },
     "flags": [
       "SEES",
       "HEARS",
@@ -128,7 +128,7 @@
     "looks_like": "mon_zombie_unity",
     "description": "Overgrown veins illuminated in eerie crimson filthen blood. A big, dreadful corpse, merely a nightmare to its countenance and its manipulation over blood.",
     "default_faction": "zombie",
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "species": [ "ZOMBIE", "SECROZED_3" ],
     "volume": "92500 ml",
     "weight": "120000 g",
@@ -198,13 +198,13 @@
     "armor": { "bash": 20 },
     "special_attacks": [
       {
-		"id": "monspell_secro_veinstalk_initial",
+        "id": "monspell_secro_veinstalk_initial",
         "type": "spell",
         "spell_data": { "id": "secro_veinstalk_initial" },
         "cooldown": 1,
         "monster_message": "",
-		"condition": { "not": { "u_has_effect": "secro_veinstalk_limit" } },
-		"allow_no_target": true
+        "condition": { "not": { "u_has_effect": "secro_veinstalk_limit" } },
+        "allow_no_target": true
       }
     ],
     "death_function": {
@@ -253,13 +253,13 @@
     "armor": { "bash": 24 },
     "special_attacks": [
       {
-		"id": "monspell_secro_veinstalk_initial",
+        "id": "monspell_secro_veinstalk_initial",
         "type": "spell",
         "spell_data": { "id": "secro_veinstalk_initial" },
         "cooldown": 1,
         "monster_message": "",
-		"condition": { "not": { "u_has_effect": "secro_veinstalk_limit" } },
-		"allow_no_target": true
+        "condition": { "not": { "u_has_effect": "secro_veinstalk_limit" } },
+        "allow_no_target": true
       }
     ],
     "death_function": {

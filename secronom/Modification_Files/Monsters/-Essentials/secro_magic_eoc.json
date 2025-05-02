@@ -61,7 +61,7 @@
       { "npc_add_effect": "controlled", "duration": "8 seconds" },
       { "npc_location_variable": { "global_val": "secro_leptiosa_noxiousgas" } },
       {
-        "queue_eocs": [
+        "run_eocs": [
           {
             "id": "eoc_secro_mon_zombie_leptiosa_ngas_checked",
             "effect": [
@@ -212,7 +212,7 @@
       },
       { "u_location_variable": { "global_val": "secro_gorepit_spawn" } },
       {
-        "queue_eocs": [
+        "run_eocs": [
           {
             "id": "eoc_secro_mon_zombie_gorepit_spawnfurther_check",
             "condition": { "not": { "u_has_effect": "eff_zombie_gorepit_spawnmore_stop" } },
@@ -246,7 +246,7 @@
         "outdoor_only": true
       },
       {
-        "queue_eocs": [
+        "run_eocs": [
           {
             "id": "eoc_secro_mon_zombie_gorepit_spawnfurthermore_check",
             "condition": { "not": { "u_has_effect": "eff_zombie_gorepit_spawnmore_stop" } },
@@ -381,7 +381,7 @@
       { "npc_add_effect": "controlled", "duration": "4 seconds" },
       { "npc_location_variable": { "global_val": "secro_nautilus_discent" } },
       {
-        "queue_eocs": [
+        "run_eocs": [
           {
             "id": "eoc_secro_mon_zombie_nautilus_disturbance_checked",
             "effect": [
@@ -495,7 +495,7 @@
     "false_effect": [
       { "npc_location_variable": { "global_val": "secro_nautilus_discent" } },
       {
-        "queue_eocs": [
+        "run_eocs": [
           "eoc_secro_mon_zombie_nautilus_pedo1_check",
           "eoc_secro_mon_zombie_nautilus_pedo2_check",
           "eoc_secro_mon_zombie_nautilus_pedo3_check",
@@ -656,7 +656,7 @@
       { "npc_add_effect": "controlled", "duration": "7 seconds" },
       { "u_location_variable": { "global_val": "secro_cyberdragon_dirsho" } },
       {
-        "queue_eocs": [
+        "run_eocs": [
           {
             "id": "eoc_secro_mon_secrodragon_woke_directshock_check",
             "effect": [

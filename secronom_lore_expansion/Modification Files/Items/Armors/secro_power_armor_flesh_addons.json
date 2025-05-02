@@ -12,7 +12,8 @@
     "material": [ "secro_flesh_reinforced" ],
     "symbol": "%",
     "color": "white",
-    "flags": [ "PERSONAL", "TRADER_KEEP", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "NO_TAKEOFF" ],
+    "flags": [ "PERSONAL", "TRADER_KEEP", "SEMITANGIBLE", "OVERSIZE", "TRADER_AVOID", "NO_TAKEOFF" ],
+    "max_worn": 1,
     "armor": [ { "covers": [ "torso" ], "encumbrance": 0, "coverage": 0, "material": [ "secro_flesh_reinforced" ], "material_thickness": 1 } ]
   },
   {
@@ -48,7 +49,8 @@
       }
     ],
     "material_thickness": 0.02,
-    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "NO_TAKEOFF" ],
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "TRADER_AVOID", "NO_TAKEOFF" ],
+    "max_worn": 1,
     "qualities": [ [ "SECRO_FLESH_WEAVING", 1 ], [ "SECRO_FLESH_RECONSTRUCTION", 1 ] ],
     "armor": [ { "covers": [ "torso" ], "encumbrance": 0, "coverage": 0, "material": [ "secro_flesh_reinforced" ] } ]
   }

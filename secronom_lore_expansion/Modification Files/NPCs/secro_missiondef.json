@@ -95,7 +95,7 @@
     "value": 200000,
     "start": {
       "effect": [ { "duration": "PERMANENT", "u_add_effect": "secro_guard_mission1_progress" }, "follow_only" ],
-      "assign_mission_target": { "om_terrain": "SecronomSSLab_enigmaspecs", "reveal_radius": 1, "search_range": 10, "z": -2 },
+      "assign_mission_target": { "om_terrain": "SecronomSSLab_enigmaspecs", "reveal_radius": 1, "z": -2 },
       "update_mapgen": {
         "place_monster": [
           { "monster": "mon_ayenel", "x": 16, "y": 10, "target": true },
@@ -166,7 +166,7 @@
     "value": 200000,
     "start": {
       "effect": [ { "duration": "PERMANENT", "u_add_effect": "secro_guard_mission2_progress" }, "follow_only" ],
-      "assign_mission_target": { "om_terrain": "forest", "reveal_radius": 1, "search_range": 15, "z": 0 },
+      "assign_mission_target": { "om_terrain": "forest", "reveal_radius": 1, "z": 0 },
       "update_mapgen": { "place_monster": [ { "monster": "mon_shifter_zombie", "x": 11, "y": 11, "target": true } ] }
     },
     "end": { "effect": { "duration": "PERMANENT", "u_add_effect": "secro_guard_partake_mission2" } },

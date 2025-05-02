@@ -4,7 +4,6 @@
     "id": "secro_flesh_reinforced",
     "name": "Bio-organic Flesh",
     "copy-from": "flesh",
-    "edible": false,
     "rotting": false,
     "soft": true,
     "breathability": "SECOND_SKIN",
@@ -22,7 +21,6 @@
     "id": "secro_flesh_artificial",
     "name": "Artificial Flesh",
     "copy-from": "flesh",
-    "edible": false,
     "rotting": false,
     "chip_resist": 4,
     "resist": { "bash": 3, "cut": 1, "bullet": 1, "acid": 2, "heat": 1, "electric": 0 },
@@ -36,7 +34,6 @@
     "id": "secro_flesh_fuel",
     "name": "Artificial Flesh",
     "copy-from": "flesh",
-    "edible": false,
     "rotting": false,
     "fuel_data": { "energy": "200 kJ" }
   }

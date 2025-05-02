@@ -9,7 +9,7 @@
     "species": [ "ZOMBIE", "SECROZED_2" ],
     "volume": "62500 ml",
     "weight": "81500 g",
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "hp": 100,
     "speed": 70,
     "material": [ "flesh" ],
@@ -47,7 +47,7 @@
         "monster_message": "<color_yellow>The snatcher zombie launches its tongue at %3$s!</color>"
       }
     ],
-    "upgrades": { "half_life": 14, "into": "mon_zombie_bootlegsmoker_mode" },
+    "upgrades": { "half_life": 56, "into": "mon_zombie_bootlegsmoker_mode" },
     "death_drops": "default_zombie_clothes",
     "flags": [
       "SEES",

@@ -12,7 +12,7 @@
     "volume": "62500 ml",
     "weight": "81500 g",
     "hp": 40,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "speed": 70,
     "material": [ "flesh" ],
     "symbol": "⩔",
@@ -78,7 +78,7 @@
       }
     ],
     "death_function": { "effect": { "id": "mon_zombie_swarmer_alphadeath", "hit_self": true } },
-    "upgrades": { "half_life": 10, "into": "mon_zombie_swarmer_alpha_moderate" }
+    "upgrades": { "half_life": 40, "into": "mon_zombie_swarmer_alpha_moderate" }
   },
   {
     "id": "mon_zombie_swarmer_alpha_moderate",
@@ -86,7 +86,7 @@
     "type": "MONSTER",
     "proportional": { "hp": 1.4 },
     "relative": { "speed": 10, "melee_dice": 2, "melee_dice_sides": 2, "armor": { "bash": 1, "bullet": 1, "stab": 1 } },
-    "upgrades": { "half_life": 13, "into": "mon_zombie_swarmer_alpha_strong" }
+    "upgrades": { "half_life": 52, "into": "mon_zombie_swarmer_alpha_strong" }
   },
   {
     "id": "mon_zombie_swarmer_alpha_strong",
@@ -132,7 +132,7 @@
         "allow_no_target": true
       }
     ],
-    "upgrades": { "half_life": 10, "into": "mon_zombie_swarmer_moderate" }
+    "upgrades": { "half_life": 40, "into": "mon_zombie_swarmer_moderate" }
   },
   {
     "id": "mon_zombie_swarmer_moderate",
@@ -170,7 +170,7 @@
         "allow_no_target": true
       }
     ],
-    "upgrades": { "half_life": 11, "into": "mon_zombie_swarmer_strong" }
+    "upgrades": { "half_life": 44, "into": "mon_zombie_swarmer_strong" }
   },
   {
     "id": "mon_zombie_swarmer_strong",
@@ -208,7 +208,7 @@
         "allow_no_target": true
       }
     ],
-    "upgrades": { "half_life": 13, "into": "mon_zombie_swarmer_evo_hungry" }
+    "upgrades": { "half_life": 52, "into": "mon_zombie_swarmer_evo_hungry" }
   },
   {
     "id": "mon_zombie_swarmer_evo_hungry",
@@ -244,7 +244,7 @@
         "allow_no_target": true
       }
     ],
-    "upgrades": { "half_life": 16, "into": "mon_zombie_swarmer_evo_starving" }
+    "upgrades": { "half_life": 64, "into": "mon_zombie_swarmer_evo_starving" }
   },
   {
     "id": "mon_zombie_swarmer_evo_starving",
@@ -280,7 +280,7 @@
         "allow_no_target": true
       }
     ],
-    "upgrades": { "half_life": 10, "into_group": "GROUP_EZTARVING_UPGRADE" }
+    "upgrades": { "half_life": 40, "into_group": "GROUP_EZTARVING_UPGRADE" }
   },
   {
     "id": "mon_zombie_swarmer_evo_savage",

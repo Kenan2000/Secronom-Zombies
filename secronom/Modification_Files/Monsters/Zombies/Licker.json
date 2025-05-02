@@ -8,7 +8,7 @@
     "species": [ "ZOMBIE", "SECROZED_2" ],
     "volume": "30000 ml",
     "weight": "40750 g",
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "hp": 70,
     "speed": 125,
     "diff": 1,
@@ -31,7 +31,7 @@
       { "type": "leap", "allow_no_target": false, "cooldown": 10, "max_range": 5 }
     ],
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_clothes", 100 ], [ "child_items", 65 ] ] },
-    "upgrades": { "half_life": 14, "into": "mon_zombie_mlick" },
+    "upgrades": { "half_life": 56, "into": "mon_zombie_mlick" },
     "flags": [
       "SEES",
       "HEARS",
@@ -56,7 +56,7 @@
     "species": [ "ZOMBIE", "SECROZED_2", "HUMAN" ],
     "volume": "30000 ml",
     "weight": "40750 g",
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "hp": 90,
     "speed": 130,
     "diff": 5,
@@ -79,7 +79,7 @@
       { "type": "leap", "allow_no_target": false, "cooldown": 10, "max_range": 7 }
     ],
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_clothes", 100 ], [ "child_items", 65 ] ] },
-    "upgrades": { "half_life": 20, "into": "mon_zombie_xlick" },
+    "upgrades": { "half_life": 80, "into": "mon_zombie_xlick" },
     "flags": [
       "SEES",
       "HEARS",
@@ -105,7 +105,7 @@
     "species": [ "ZOMBIE", "SECROZED_3", "HUMAN" ],
     "volume": "95000 ml",
     "weight": "100000 g",
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "hp": 125,
     "speed": 135,
     "diff": 15,

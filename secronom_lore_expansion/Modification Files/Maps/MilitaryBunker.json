@@ -49,7 +49,7 @@
         "*": [ "t_door_c", "t_secro_door_flesh" ],
         "+": [ "t_chaingate_l", "t_secro_chaingate_l_flesh" ],
         ",": [ "t_floor", "t_secro_floor_flesh" ],
-        "-": [ "t_chainfence_h", "t_secro_chainfence_flesh" ],
+        "-": [ "t_chainfence", "t_secro_chainfence_flesh" ],
         "/": [ "t_concrete_wall", "t_secro_concrete_wall_flesh" ],
         "0": [ "t_window", "t_secro_window_flesh" ],
         "6": "t_card_military",
@@ -57,7 +57,7 @@
         "D": "t_door_metal_locked",
         "I": [ "t_ballistic_glass", "t_secro_ballistic_glass_flesh" ],
         "M": [ "t_wall_metal", "t_secro_wall_metal_flesh" ],
-        "|": [ "t_chainfence_v", "t_secro_chainfence_flesh" ]
+        "|": [ "t_chainfence", "t_secro_chainfence_flesh" ]
       },
       "furniture": { "#": "f_table" },
       "place_monster": [
@@ -126,14 +126,14 @@
         "g": "f_glass_fridge",
         "{": "f_bookcase",
         "}": "f_pinball_machine",
-        "%": "f_floor_canvas",
+        "%": "f_punching_bag",
         "2": "f_air_conditioner",
         "3": "f_speaker_cabinet"
       },
       "items": {
         "b": { "item": "bed", "chance": 60 },
         "{": { "item": "bunker_basement_books", "chance": 70 },
-        "T": { "item": "trash_cart", "chance": 50 },
+        "T": { "item": "SUS_trash_floor_light", "chance": 50 },
         "l": { "item": "bunker_basement_clothing", "chance": 50 },
         "t": { "item": "dining", "chance": 45 }
       },
@@ -223,14 +223,14 @@
         "g": "f_glass_fridge",
         "{": "f_bookcase",
         "}": "f_pinball_machine",
-        "%": "f_floor_canvas",
+        "%": "f_punching_bag",
         "2": "f_air_conditioner",
         "3": "f_speaker_cabinet"
       },
       "items": {
         "b": { "item": "bed", "chance": 60 },
         "{": { "item": "bunker_basement_books", "chance": 80 },
-        "T": { "item": "trash_cart", "chance": 50 },
+        "T": { "item": "SUS_trash_floor_light", "chance": 50 },
         "l": { "item": "bunker_basement_clothing", "chance": 50 },
         "t": { "item": "dining", "chance": 45 }
       },

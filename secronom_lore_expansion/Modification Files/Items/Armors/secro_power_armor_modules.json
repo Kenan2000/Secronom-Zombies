@@ -25,7 +25,7 @@
       "need_charges": 1,
       "need_charges_msg": "\"Core\" module - <color_yellow>LOW POWER"
     },
-    "ammo": [ "battery" ],
+    "tool_ammo": [ "battery" ],
     "pocket_data": [
       {
         "pocket_type": "MAGAZINE_WELL",
@@ -81,7 +81,7 @@
       "active": true,
       "menu_text": "Activate \"Vessel\" module"
     },
-    "ammo": "battery",
+    "tool_ammo": "battery",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 500 } } ],
     "flags": [ "WATERPROOF", "OUTER", "STURDY", "ELECTRIC_IMMUNE", "POWERARMOR_COMPATIBLE" ],
     "armor": [ { "covers": [ "torso" ], "encumbrance": 10, "coverage": 10, "material": [ "superalloy" ], "material_thickness": 1 } ]
@@ -122,7 +122,7 @@
         }
       ]
     },
-    "ammo": "battery",
+    "tool_ammo": "battery",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 500 } } ],
     "flags": [ "WATERPROOF", "OUTER", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "NO_TAKEOFF", "RECHARGE", "POWERARMOR_COMPATIBLE" ],
     "armor": [ { "covers": [ "torso" ], "encumbrance": 10, "coverage": 10, "material": [ "superalloy" ], "material_thickness": 1 } ]
@@ -151,7 +151,7 @@
       "active": true,
       "menu_text": "Activate \"Shock\" module"
     },
-    "ammo": "battery",
+    "tool_ammo": "battery",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 500 } } ],
     "flags": [ "WATERPROOF", "OUTER", "STURDY", "ELECTRIC_IMMUNE", "POWERARMOR_COMPATIBLE" ],
     "armor": [ { "covers": [ "torso" ], "encumbrance": 10, "coverage": 10, "material": [ "superalloy" ], "material_thickness": 1 } ]
@@ -205,7 +205,7 @@
         }
       ]
     },
-    "ammo": "battery",
+    "tool_ammo": "battery",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 500 } } ],
     "flags": [ "WATERPROOF", "OUTER", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "NO_TAKEOFF", "RECHARGE", "POWERARMOR_COMPATIBLE" ],
     "armor": [ { "covers": [ "torso" ], "encumbrance": 10, "coverage": 10, "material": [ "superalloy" ], "material_thickness": 1 } ]
@@ -234,7 +234,7 @@
       "active": true,
       "menu_text": "Activate \"Pulsar\" module"
     },
-    "ammo": "battery",
+    "tool_ammo": "battery",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 500 } } ],
     "flags": [ "WATERPROOF", "OUTER", "STURDY", "ELECTRIC_IMMUNE", "POWERARMOR_COMPATIBLE" ],
     "armor": [ { "covers": [ "torso" ], "encumbrance": 10, "coverage": 10, "material": [ "superalloy" ], "material_thickness": 1 } ]
@@ -281,7 +281,7 @@
         }
       ]
     },
-    "ammo": "battery",
+    "tool_ammo": "battery",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 500 } } ],
     "flags": [ "WATERPROOF", "OUTER", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "NO_TAKEOFF", "RECHARGE", "POWERARMOR_COMPATIBLE" ],
     "armor": [ { "covers": [ "torso" ], "encumbrance": 10, "coverage": 10, "material": [ "superalloy" ], "material_thickness": 1 } ]
@@ -310,7 +310,7 @@
       "active": true,
       "menu_text": "Activate \"Optics\" module"
     },
-    "ammo": "battery",
+    "tool_ammo": "battery",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 500 } } ],
     "flags": [ "WATERPROOF", "OUTER", "STURDY", "ELECTRIC_IMMUNE", "POWERARMOR_COMPATIBLE" ],
     "armor": [ { "covers": [ "torso" ], "encumbrance": 10, "coverage": 10, "material": [ "superalloy" ], "material_thickness": 1 } ]
@@ -349,7 +349,7 @@
         }
       ]
     },
-    "ammo": "battery",
+    "tool_ammo": "battery",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 500 } } ],
     "flags": [ "WATERPROOF", "OUTER", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "NO_TAKEOFF", "RECHARGE", "POWERARMOR_COMPATIBLE" ],
     "armor": [ { "covers": [ "torso" ], "encumbrance": 10, "coverage": 10, "material": [ "superalloy" ], "material_thickness": 1 } ]

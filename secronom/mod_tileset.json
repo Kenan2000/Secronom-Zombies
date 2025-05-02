@@ -1090,7 +1090,7 @@
               }
             ]
           },
-          { "id": "t_secro_atm_flesh", "fg": 526 },
+          { "id": "f_secro_atm_flesh", "fg": 526 },
           { "id": "t_secro_bars_flesh", "fg": 527 },
           {
             "id": "t_secro_brick_wall_flesh",

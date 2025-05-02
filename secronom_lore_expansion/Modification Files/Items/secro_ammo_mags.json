@@ -130,15 +130,8 @@
         "rigid": true,
         "max_contains_volume": "20 L",
         "max_contains_weight": "20 kg",
-        "item_restriction": [
-          "light_battery_cell",
-          "light_plus_battery_cell",
-          "light_minus_battery_cell",
-          "light_atomic_battery_cell",
-          "light_minus_atomic_battery_cell",
-          "light_minus_disposable_cell",
-          "light_disposable_cell"
-        ]
+        "flag_restriction": [ "BATTERY_LIGHT" ],
+        "default_magazine": "secro_power_armor_battery_cell"
       }
     ],
     "looks_like": "battery",
@@ -147,7 +140,7 @@
   {
     "id": "secro_power_armor_battery_cell",
     "type": "MAGAZINE",
-    "category": "spare_parts",
+    "category": "tool_magazine",
     "name": { "str": "SP experimental battery", "str_pl": "SP experimental batteries" },
     "description": "A light, but high-capacity battery cell, for use with certain power armor modules.",
     "weight": "600 g",
@@ -160,13 +153,13 @@
     "ammo_type": [ "battery" ],
     "capacity": 1000,
     "looks_like": "battery",
-    "flags": [ "NO_SALVAGE", "NO_UNLOAD", "RECHARGE" ],
+    "flags": [ "NO_SALVAGE", "NO_UNLOAD", "RECHARGE", "BATTERY_LIGHT" ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 1000 } } ]
   },
   {
     "id": "secro_fleshmech_battery",
     "type": "MAGAZINE",
-    "category": "spare_parts",
+    "category": "tool_magazine",
     "name": { "str": "overcharged lump of flesh" },
     "description": "This large lump of organic material stores incredibly high amount of energy produced by an artificial flesh core. Mainly used to power up a certain mech suit.",
     "weight": "42000 g",

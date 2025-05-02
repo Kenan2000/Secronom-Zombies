@@ -28,7 +28,7 @@
       "active": true,
       "menu_text": "Activate \"Vessel\" module"
     },
-    "ammo": "battery",
+    "tool_ammo": "battery",
     "relic_data": {
       "passive_effects": [
         {
@@ -82,7 +82,7 @@
       "type": "transform",
       "menu_text": "Deactivate \"Vessel\" module"
     },
-    "ammo": "battery",
+    "tool_ammo": "battery",
     "relic_data": {
       "passive_effects": [
         {
@@ -345,10 +345,10 @@
           "has": "WORN",
           "condition": "ALWAYS",
           "values": [
-            { "value": "ARMOR_BIO", "add": -1 },
             { "value": "MAX_HP", "multiply": 0.05 },
             { "value": "METABOLISM", "multiply": -0.2 }
           ],
+          "incoming_damage_mod": [ { "type": "bio", "add": -1 } ],
           "hit_you_effect": [
             {
               "id": "mon_flesh_infect_target",

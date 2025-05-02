@@ -21,7 +21,7 @@
     "melee_dice": 4,
     "melee_dice_sides": 8,
     "attack_cost": 325,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "armor": { "bash": 14, "cut": 4, "bullet": 4, "stab": 4 },
     "vision_day": 10,
     "vision_night": 18,
@@ -50,7 +50,7 @@
         "difficulty": { "melee": 3, "cut": 3 },
         "damage_mult": { "all": 1.2 },
         "coverage": 20,
-        "required_effects": [ "stunned" ],
+        "condition": { "u_has_any_effect": [ "stunned" ] },
         "effects": [
           {
             "effect": "bleed",
@@ -67,7 +67,7 @@
         "type": "spell",
         "spell_data": { "id": "mon_zombie_nautilus_disturbance_check" },
         "cooldown": 33,
-        "monster_message": "<color_dark_gray>%1$s submerges\u2026</color>"
+        "monster_message": "<color_dark_gray>%1$s submerges…</color>"
       }
     ],
     "flags": [
@@ -258,7 +258,7 @@
     "dodge": 1,
     "attack_cost": 220,
     "melee_damage": [ { "damage_type": "acid", "amount": 6 } ],
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "special_attacks": [ [ "ACID", 20 ] ],
     "death_drops": "default_zombie_death_drops",
     "death_function": { "effect": { "id": "death_acid", "hit_self": true }, "message": "The %s's body leaks acid." },
@@ -321,7 +321,7 @@
     "armor": { "bash": 8, "cut": 4, "bullet": 4, "stab": 4 },
     "dodge": 2,
     "attack_cost": 180,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "special_attacks": [ { "type": "bite", "cooldown": 4 }, { "id": "grab", "cooldown": 4 }, [ "scratch", 4 ] ],
     "death_drops": "default_zombie_death_drops",
     "flags": [
@@ -367,7 +367,7 @@
     "armor": { "bash": 6, "cut": 2, "bullet": 2 },
     "vision_day": 24,
     "vision_night": 12,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "path_settings": { "max_dist": 10, "avoid_traps": true, "avoid_dangerous_fields": true },
     "tracking_distance": 10,
     "special_attacks": [
@@ -422,7 +422,7 @@
     "armor": { "bash": 3, "cut": 5, "bullet": 3, "stab": 8 },
     "vision_day": 6,
     "vision_night": 26,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "special_attacks": [
       [ "secro_nocturne_nsweep", 24 ],
       [ "secro_nocturne_sstrike", 38 ],
@@ -506,14 +506,14 @@
     "armor": { "bash": 30, "cut": 2, "bullet": 2 },
     "vision_day": 22,
     "vision_night": 12,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "special_attacks": [
       {
         "type": "spell",
         "id": "zombie_fleshmonger_reflesh_check",
         "spell_data": { "id": "mon_zombie_fleshmonger_reflesh_check" },
         "cooldown": 22,
-        "monster_message": "<color_magenta>%1$s is trembling\u2026</color>",
+        "monster_message": "<color_magenta>%1$s is trembling…</color>",
         "condition": { "math": [ "u_monsters_nearby('radius': 5)", ">=", "2" ] }
       },
       {
@@ -744,7 +744,7 @@
     "armor": { "bash": 20, "cut": 13, "bullet": 10, "stab": 15 },
     "vision_day": 15,
     "vision_night": 5,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "special_attacks": [
       {
         "type": "gun",
@@ -810,7 +810,7 @@
     "armor": { "bash": 50, "cut": 25, "bullet": 33, "stab": 33 },
     "vision_day": 46,
     "vision_night": 6,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "weakpoints": [
       {
         "name": "the head",
@@ -919,7 +919,7 @@
     "armor": { "bash": 3, "cut": 1, "bullet": 1 },
     "vision_day": 25,
     "vision_night": 5,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "path_settings": { "max_dist": 9 },
     "tracking_distance": 9,
     "special_attacks": [
@@ -999,7 +999,7 @@
         "monster_message": "<color_yellow>Twisted abominations crawl out of %1$s!</color>"
       }
     ],
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "flags": [ "SEES", "WARM", "IMMOBILE", "NOHEAD", "POISON", "STUN_IMMUNE", "NO_BREATHE" ]
   },
   {
@@ -1187,7 +1187,7 @@
     "melee_dice": 4,
     "melee_dice_sides": 4,
     "armor": { "bash": 14, "cut": 4, "bullet": 4, "stab": 14 },
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "flags": [
       "SEES",
       "SMELLS",
@@ -1213,7 +1213,7 @@
     "species": [ "ZOMBIE", "SECROZED_1" ],
     "volume": "62500 ml",
     "weight": "81500 g",
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "hp": 80,
     "speed": 75,
     "material": [ "flesh" ],
@@ -1227,7 +1227,7 @@
     "vision_night": 3,
     "special_attacks": [ { "type": "bite", "cooldown": 5 }, { "id": "grab", "cooldown": 7 }, [ "scratch", 20 ] ],
     "death_drops": "default_zombie_death_drops",
-    "upgrades": { "half_life": 30, "into_group": "GROUP_STRAY_ELEMENT" },
+    "upgrades": { "half_life": 120, "into_group": "GROUP_STRAY_ELEMENT" },
     "flags": [
       "SEES",
       "HEARS",
@@ -1254,7 +1254,7 @@
     "species": [ "ZOMBIE", "SECROZED_1" ],
     "volume": "62500 ml",
     "weight": "81500 g",
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "hp": 90,
     "speed": 75,
     "material": [ "flesh" ],
@@ -1268,7 +1268,7 @@
     "vision_night": 3,
     "special_attacks": [ { "type": "bite", "cooldown": 5 }, { "id": "grab", "cooldown": 7 }, [ "scratch", 20 ] ],
     "death_drops": "default_zombie_death_drops",
-    "upgrades": { "half_life": 26, "into": "mon_zombie_stray_w_leaf_mode" },
+    "upgrades": { "half_life": 104, "into": "mon_zombie_stray_w_leaf_mode" },
     "flags": [
       "SEES",
       "HEARS",
@@ -1294,7 +1294,7 @@
     "species": [ "ZOMBIE", "SECROZED_1" ],
     "volume": "62500 ml",
     "weight": "81500 g",
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "hp": 155,
     "speed": 25,
     "material": [ "flesh" ],
@@ -1308,7 +1308,7 @@
     "armor": { "bash": 14, "cut": 4, "bullet": 6, "stab": 6 },
     "special_attacks": [ { "type": "bite", "cooldown": 5 }, { "id": "grab", "cooldown": 7 }, [ "scratch", 20 ] ],
     "death_drops": "default_zombie_death_drops",
-    "upgrades": { "half_life": 22, "into": "mon_zombie_stray_w_leaf_stro1" },
+    "upgrades": { "half_life": 88, "into": "mon_zombie_stray_w_leaf_stro1" },
     "flags": [
       "SEES",
       "HEARS",
@@ -1358,7 +1358,7 @@
         "monster_message": "%1$s slashes %3$s with its razor sharp leaves!"
       }
     ],
-    "upgrades": { "half_life": 18, "into": "mon_zombie_stray_w_leaf_stro2" },
+    "upgrades": { "half_life": 72, "into": "mon_zombie_stray_w_leaf_stro2" },
     "flags": [
       "SEES",
       "HEARS",
@@ -1409,7 +1409,7 @@
         "monster_message": "%1$s strikes the ground, then a wild outgrowth of vines and branches erupts under %3$s!"
       }
     ],
-    "upgrades": { "half_life": 14, "into": "mon_zombie_stray_w_leaf_stro3" },
+    "upgrades": { "half_life": 56, "into": "mon_zombie_stray_w_leaf_stro3" },
     "flags": [
       "SEES",
       "HEARS",
@@ -1515,7 +1515,7 @@
     "species": [ "ZOMBIE", "SECROZED_1" ],
     "volume": "62500 ml",
     "weight": "81500 g",
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "hp": 75,
     "speed": 75,
     "material": [ "flesh" ],
@@ -1529,7 +1529,7 @@
     "vision_night": 3,
     "special_attacks": [ { "type": "bite", "cooldown": 5 }, { "id": "grab", "cooldown": 7 }, [ "scratch", 20 ] ],
     "death_drops": "default_zombie_death_drops",
-    "upgrades": { "half_life": 26, "into": "mon_zombie_stray_w_acid_mode" },
+    "upgrades": { "half_life": 104, "into": "mon_zombie_stray_w_acid_mode" },
     "flags": [
       "SEES",
       "HEARS",
@@ -1555,7 +1555,7 @@
     "species": [ "ZOMBIE", "SECROZED_1" ],
     "volume": "62500 ml",
     "weight": "81500 g",
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "hp": 80,
     "speed": 50,
     "material": [ "flesh" ],
@@ -1569,7 +1569,7 @@
     "melee_damage": [ { "damage_type": "acid", "amount": 2 } ],
     "special_attacks": [ { "type": "bite", "cooldown": 5 }, { "id": "grab", "cooldown": 7 }, [ "scratch", 20 ] ],
     "death_drops": "default_zombie_death_drops",
-    "upgrades": { "half_life": 22, "into": "mon_zombie_stray_w_acid_stro1" },
+    "upgrades": { "half_life": 88, "into": "mon_zombie_stray_w_acid_stro1" },
     "flags": [
       "SEES",
       "HEARS",
@@ -1595,7 +1595,7 @@
     "species": [ "ZOMBIE", "SECROZED_1" ],
     "volume": "62500 ml",
     "weight": "81500 g",
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "hp": 145,
     "speed": 60,
     "material": [ "flesh" ],
@@ -1610,7 +1610,7 @@
     "armor": { "bash": 2, "cut": 2, "bullet": 2, "stab": 2 },
     "special_attacks": [ { "type": "bite", "cooldown": 5 }, { "id": "grab", "cooldown": 7 }, [ "scratch", 20 ], [ "ACID_BARF", 30 ] ],
     "death_drops": "default_zombie_death_drops",
-    "upgrades": { "half_life": 18, "into": "mon_zombie_stray_w_acid_stro2" },
+    "upgrades": { "half_life": 72, "into": "mon_zombie_stray_w_acid_stro2" },
     "flags": [
       "SEES",
       "HEARS",
@@ -1638,7 +1638,7 @@
     "species": [ "ZOMBIE", "SECROZED_1" ],
     "volume": "62500 ml",
     "weight": "81500 g",
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "hp": 170,
     "speed": 80,
     "material": [ "flesh" ],
@@ -1664,7 +1664,7 @@
       }
     ],
     "death_drops": "default_zombie_death_drops",
-    "upgrades": { "half_life": 14, "into": "mon_zombie_stray_w_acid_stro3" },
+    "upgrades": { "half_life": 56, "into": "mon_zombie_stray_w_acid_stro3" },
     "flags": [
       "SEES",
       "HEARS",
@@ -1692,7 +1692,7 @@
     "species": [ "ZOMBIE", "SECROZED_3" ],
     "volume": "62500 ml",
     "weight": "81500 g",
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "hp": 225,
     "speed": 90,
     "material": [ "flesh" ],
@@ -1759,7 +1759,7 @@
     "melee_dice_sides": 7,
     "vision_day": 30,
     "vision_night": 30,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "special_attacks": [
       [ "FLESH_TENDRIL", 1 ],
       { "id": "grab" },
@@ -1791,7 +1791,7 @@
         "require_targeting_monster": false
       }
     ],
-    "upgrades": { "half_life": 10, "into": "mon_zombie_fleshknot_mode" },
+    "upgrades": { "half_life": 40, "into": "mon_zombie_fleshknot_mode" },
     "flags": [ "SEES", "HEARS", "SMELLS", "IMMOBILE", "WARM", "POISON", "IMMOBILE", "NOHEAD", "NO_BREATHE" ]
   },
   {
@@ -1817,7 +1817,7 @@
     "melee_dice_sides": 8,
     "vision_day": 30,
     "vision_night": 30,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "special_attacks": [
       [ "FLESH_TENDRIL", 1 ],
       { "id": "grab" },
@@ -1849,7 +1849,7 @@
         "require_targeting_monster": false
       }
     ],
-    "upgrades": { "half_life": 15, "into": "mon_zombie_fleshknot_stro" },
+    "upgrades": { "half_life": 60, "into": "mon_zombie_fleshknot_stro" },
     "flags": [ "SEES", "HEARS", "SMELLS", "IMMOBILE", "WARM", "POISON", "IMMOBILE", "NOHEAD", "NO_BREATHE" ]
   },
   {
@@ -1875,7 +1875,7 @@
     "melee_dice_sides": 9,
     "vision_day": 30,
     "vision_night": 30,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "special_attacks": [
       [ "FLESH_TENDRIL", 1 ],
       { "id": "grab" },
@@ -1907,7 +1907,7 @@
         "require_targeting_monster": false
       }
     ],
-    "upgrades": { "half_life": 20, "into": "mon_zombie_fleshknot_vstro" },
+    "upgrades": { "half_life": 80, "into": "mon_zombie_fleshknot_vstro" },
     "flags": [ "SEES", "HEARS", "SMELLS", "IMMOBILE", "WARM", "POISON", "IMMOBILE", "NOHEAD", "NO_BREATHE" ]
   },
   {
@@ -1933,7 +1933,7 @@
     "melee_dice_sides": 10,
     "vision_day": 30,
     "vision_night": 30,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "weakpoints": [
       {
         "name": "the core",

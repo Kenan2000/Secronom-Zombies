@@ -4072,7 +4072,7 @@
                     "0"
                   ]
                 },
-                { "not": { "u_has_var": "sflesh_infected", "value": "yes" } }
+                { "not": { "compare_string": [ "yes", { "u_val": "sflesh_infected" } ] } }
               ]
             },
             "effect": [ { "u_add_var": "sflesh_infect_able", "value": "true" } ],
@@ -4081,7 +4081,7 @@
           {
             "id": "eoc_secro_mon_flesh_infect_fleshling1",
             "condition": {
-              "and": [ { "u_has_var": "sflesh_infect_able", "value": "true" }, { "u_has_var": "sflesh_infected_size", "value": "tiny" } ]
+              "and": [ { "compare_string": [ "true", { "u_val": "sflesh_infect_able" } ] }, { "compare_string": [ "tiny", { "u_val": "sflesh_infected_size" } ] } ]
             },
             "effect": [
               { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
@@ -4092,7 +4092,7 @@
           {
             "id": "eoc_secro_mon_flesh_infect_fleshling2",
             "condition": {
-              "and": [ { "u_has_var": "sflesh_infect_able", "value": "true" }, { "u_has_var": "sflesh_infected_size", "value": "small" } ]
+              "and": [ { "compare_string": [ "true", { "u_val": "sflesh_infect_able" } ] }, { "compare_string": [ "small", { "u_val": "sflesh_infected_size" } ] } ]
             },
             "effect": [
               { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
@@ -4103,7 +4103,7 @@
           {
             "id": "eoc_secro_mon_flesh_infect_fleshling3",
             "condition": {
-              "and": [ { "u_has_var": "sflesh_infect_able", "value": "true" }, { "u_has_var": "sflesh_infected_size", "value": "medium" } ]
+              "and": [ { "compare_string": [ "true", { "u_val": "sflesh_infect_able" } ] }, { "compare_string": [ "medium", { "u_val": "sflesh_infected_size" } ] } ]
             },
             "effect": [
               { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
@@ -4114,7 +4114,7 @@
           {
             "id": "eoc_secro_mon_flesh_infect_fleshling4",
             "condition": {
-              "and": [ { "u_has_var": "sflesh_infect_able", "value": "true" }, { "u_has_var": "sflesh_infected_size", "value": "large" } ]
+              "and": [ { "compare_string": [ "true", { "u_val": "sflesh_infect_able" } ] }, { "compare_string": [ "large", { "u_val": "sflesh_infected_size" } ] } ]
             },
             "effect": [
               { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
@@ -4125,7 +4125,7 @@
           {
             "id": "eoc_secro_mon_flesh_infect_fleshling5",
             "condition": {
-              "and": [ { "u_has_var": "sflesh_infect_able", "value": "true" }, { "u_has_var": "sflesh_infected_size", "value": "huge" } ]
+              "and": [ { "compare_string": [ "true", { "u_val": "sflesh_infect_able" } ] }, { "compare_string": [ "huge", { "u_val": "sflesh_infected_size" } ] } ]
             },
             "effect": [
               { "u_cast_spell": { "id": "secro_flesh_infect_success_heal", "hit_self": true } },
