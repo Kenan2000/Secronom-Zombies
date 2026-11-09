@@ -20,7 +20,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SECRO_FWEAVER_heal",
-    "dynamic_line": "*readies its appendages and weavers. Are you sure about this?",
+    "dynamic_line": "*readies its appendages and weavers.  Are you sure about this?",
     "responses": [
       { "text": "No.", "topic": "TALK_SECRO_FWEAVER_main" },
       {
@@ -31,7 +31,7 @@
           { "npc_cast_spell": { "id": "mon_fleshweaver_operate", "hit_self": true } },
           { "u_cast_spell": { "id": "mon_fleshweaver_operate", "hit_self": true } },
           {
-            "queue_eocs": [
+            "run_eocs": [
               {
                 "id": "eoc_secro_TALK_SECRO_FWEAVER_healed",
                 "effect": [ { "u_cast_spell": { "id": "mon_fleshweaver_operate_heal", "hit_self": true } } ]

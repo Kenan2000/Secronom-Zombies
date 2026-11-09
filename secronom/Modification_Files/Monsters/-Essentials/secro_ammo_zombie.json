@@ -7,7 +7,8 @@
   },
   {
     "id": "SSxgrenade",
-    "type": "AMMO",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
     "name": { "str": "SSx grenade" },
     "description": "A round, metallic X type grenade with digital 10 seconds timer.",
     "weight": "200 g",
@@ -21,13 +22,15 @@
     "range": 18,
     "damage": { "damage_type": "stab", "amount": 4, "armor_penetration": 8 },
     "recovery_chance": 89,
-    "effects": [ "NEVER_MISFIRES", "COOKOFF", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
+    "effects": [ "COOKOFF", "ACT_ON_RANGED_HIT" ],
+    "flags": [ "CUSTOM_EXPLOSION", "NO_MANUAL_ACTIVATION" ],
     "explode_in_fire": true,
-    "use_action": { "target": "SSxgrenadeact", "target_charges": 10, "active": true, "type": "transform" }
+    "use_action": { "type": "explosion", "explosion": { "power": 5, "distance_factor": 0.1, "shrapnel": 3 } }
   },
   {
     "id": "SSxgrenadeact",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "SSx grenade" },
     "description": "A round, metallic X type grenade with digital 10 seconds timer, currently ticking down.",
     "weight": "200 g",
@@ -39,11 +42,13 @@
     "initial_charges": 1,
     "max_charges": 1,
     "turns_per_charge": 1,
-    "use_action": { "type": "explosion", "explosion": { "power": 5, "distance_factor": 0.1, "shrapnel": 3 } }
+    "use_action": { "type": "explosion", "explosion": { "power": 5, "distance_factor": 0.1, "shrapnel": 3 } },
+    "flags": [ "SPAWN_ACTIVE" ]
   },
   {
     "id": "SSygrenade",
-    "type": "AMMO",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
     "name": { "str": "SSy grenade" },
     "description": "A round, metallic Y type grenade with digital 10 seconds timer.",
     "weight": "300 g",
@@ -57,13 +62,15 @@
     "range": 18,
     "damage": { "damage_type": "stab", "amount": 4, "armor_penetration": 8 },
     "recovery_chance": 89,
-    "effects": [ "NEVER_MISFIRES", "COOKOFF", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
+    "effects": [ "COOKOFF", "ACT_ON_RANGED_HIT" ],
+    "flags": [ "CUSTOM_EXPLOSION", "NO_MANUAL_ACTIVATION" ],
     "explode_in_fire": true,
-    "use_action": { "target": "SSygrenadeact", "target_charges": 10, "active": true, "type": "transform" }
+    "use_action": { "type": "explosion", "explosion": { "power": 10, "distance_factor": 0.3, "shrapnel": 5 } }
   },
   {
     "id": "SSygrenadeact",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "SSy grenade" },
     "description": "A round, metallic Y type grenade with digital 10 seconds timer, currently ticking down.",
     "weight": "300 g",
@@ -75,11 +82,13 @@
     "initial_charges": 1,
     "max_charges": 1,
     "turns_per_charge": 1,
-    "use_action": { "type": "explosion", "explosion": { "power": 10, "distance_factor": 0.3, "shrapnel": 5 } }
+    "use_action": { "type": "explosion", "explosion": { "power": 10, "distance_factor": 0.3, "shrapnel": 5 } },
+    "flags": [ "SPAWN_ACTIVE" ]
   },
   {
     "id": "SSzgrenade",
-    "type": "AMMO",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
     "name": { "str": "SSz grenade" },
     "description": "A round, metallic Z type grenade with digital 10 seconds timer.",
     "weight": "400 g",
@@ -93,13 +102,15 @@
     "range": 18,
     "damage": { "damage_type": "stab", "amount": 4, "armor_penetration": 8 },
     "recovery_chance": 89,
-    "effects": [ "NEVER_MISFIRES", "COOKOFF", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
+    "effects": [ "COOKOFF", "ACT_ON_RANGED_HIT" ],
+    "flags": [ "CUSTOM_EXPLOSION", "NO_MANUAL_ACTIVATION" ],
     "explode_in_fire": true,
-    "use_action": { "target": "SSzgrenadeact", "target_charges": 10, "active": true, "type": "transform" }
+    "use_action": { "type": "explosion", "explosion": { "power": 20, "distance_factor": 0.5, "shrapnel": 10 } }
   },
   {
     "id": "SSzgrenadeact",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "SSz grenade" },
     "description": "A round, metallic Z type grenade with digital 10 seconds timer, currently ticking down.",
     "weight": "400 g",
@@ -111,11 +122,13 @@
     "initial_charges": 1,
     "max_charges": 1,
     "turns_per_charge": 1,
-    "use_action": { "type": "explosion", "explosion": { "power": 20, "distance_factor": 0.5, "shrapnel": 10 } }
+    "use_action": { "type": "explosion", "explosion": { "power": 20, "distance_factor": 0.5, "shrapnel": 10 } },
+    "flags": [ "SPAWN_ACTIVE" ]
   },
   {
     "id": "SSimpactgrenade",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "weapons",
     "name": { "str": "SS grenade" },
     "description": "A round, metallic grenade.",
@@ -138,10 +151,11 @@
   },
   {
     "id": "SSimpactgrenadeact",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "weapons",
     "name": { "str": "SS grenade" },
-    "description": "A round, metallic grenade. It's about to explode.",
+    "description": "A round, metallic grenade.  It's about to explode.",
     "weight": "240 g",
     "volume": "500 ml",
     "melee_damage": { "bash": 6 },
@@ -153,8 +167,9 @@
   },
   {
     "id": "relinquish_revive",
-    "type": "TOOL",
-    "name": { "str": "relinquished zombie's body" },
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "name": { "str": "relinquished zombie's body", "str_pl": "relinquished zombies' bodies" },
     "description": "A dead body, about to rise again…",
     "volume": "1 ml",
     "weight": "1 g",
@@ -173,7 +188,8 @@
   },
   {
     "id": "shifter_shift",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "shadow" },
     "description": "A shadow forming into something… otherworldly.",
     "volume": "4000 ml",

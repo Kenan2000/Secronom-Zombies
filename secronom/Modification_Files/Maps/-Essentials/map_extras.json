@@ -49,7 +49,7 @@
     "generator": { "generator_method": "update_mapgen", "generator_id": "mx_secro_saddler_victims" },
     "sym": "S",
     "color": "green",
-    "autonote": true
+    "autonote_visibility": "same_tile"
   },
   {
     "id": "mx_secro_saddler_infest_spawn",
@@ -66,7 +66,7 @@
     "generator": { "generator_method": "update_mapgen", "generator_id": "mx_secro_fleshbuilding" },
     "sym": "&",
     "color": "light_red",
-    "autonote": true
+    "autonote_visibility": "same_tile"
   },
   {
     "id": "mx_secro_ssf_carrier",
@@ -90,7 +90,7 @@
     "generator": { "generator_method": "update_mapgen", "generator_id": "mx_flesh_core_extra" },
     "sym": "&",
     "color": "light_red",
-    "autonote": true
+    "autonote_visibility": "same_tile"
   },
   {
     "id": "mx_secro_flesh_random",

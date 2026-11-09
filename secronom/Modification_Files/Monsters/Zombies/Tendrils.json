@@ -17,7 +17,7 @@
     "morale": 100,
     "melee_skill": 4,
     "melee_dice": 2,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "melee_dice_sides": 4,
     "grab_strength": 2,
     "dodge": 1,
@@ -40,7 +40,7 @@
       [ "secro_tendril_pull", 40 ]
     ],
     "death_drops": "default_zombie_death_drops",
-    "upgrades": { "half_life": 12, "into_group": "GROUP_TENDRILS_UPGRADE" },
+    "upgrades": { "half_life": 48, "into_group": "GROUP_TENDRILS_UPGRADE" },
     "flags": [
       "SEES",
       "HEARS",
@@ -96,7 +96,7 @@
       [ "secro_tendrilslam", 29 ],
       [ "secro_tendril_pull", 55 ]
     ],
-    "upgrades": { "half_life": 16, "into_group": "GROUP_TENDRILS_UPGRADEX" }
+    "upgrades": { "half_life": 64, "into_group": "GROUP_TENDRILS_UPGRADEX" }
   },
   {
     "id": "mon_zombie_tendricles",
@@ -128,14 +128,14 @@
       { "id": "drag_followup" },
       [ "secro_tendril_pull", 20 ]
     ],
-    "upgrades": { "half_life": 16, "into_group": "GROUP_TENDRILS_UPGRADEX" }
+    "upgrades": { "half_life": 64, "into_group": "GROUP_TENDRILS_UPGRADEX" }
   },
   {
     "id": "mon_zombie_tentawraith",
     "copy-from": "mon_zombie_tendrils",
     "type": "MONSTER",
     "name": { "str": "wraith" },
-    "description": "Dreadful outgrowths of savage tentacles accompanies this corpse's crimson body, thrashing anything in its path. Within a closer look, one of its arm pulsates that burdens the body, dragging the heavily mutated portion into the ground.",
+    "description": "Dreadful outgrowths of savage tentacles accompanies this corpse's crimson body, thrashing anything in its path.  Within a closer look, one of its arm pulsates that burdens the body, dragging the heavily mutated portion into the ground.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "SECROZED_3" ],
     "proportional": { "hp": 7, "speed": 0.9, "volume": 1.8, "weight": 2 },
@@ -194,7 +194,7 @@
     "id": "mon_zombie_tentawraith_tent",
     "type": "MONSTER",
     "name": { "str": "tentacle" },
-    "description": "A fleshy tentacle, writhing violently in its surroundings. Immobile and short-lived, it stretches to strike from afar.",
+    "description": "A fleshy tentacle, writhing violently in its surroundings.  Immobile and short-lived, it stretches to strike from afar.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE" ],
     "volume": "30000 ml",
@@ -209,7 +209,7 @@
     "morale": 100,
     "melee_skill": 4,
     "melee_dice": 0,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "melee_dice_sides": 4,
     "dodge": 1,
     "melee_damage": [

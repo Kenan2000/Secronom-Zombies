@@ -4,7 +4,7 @@
     "id": "mon_ayenel",
     "type": "MONSTER",
     "name": { "str": "ayenel" },
-    "description": "A walking flesh sentinel, with huge, sharp blade hanging from its predominant eye. Its extra appendages hang without a certain function.",
+    "description": "A walking flesh sentinel, with huge, sharp blade hanging from its predominant eye.  Its extra appendages hang without a certain function.",
     "default_faction": "ayenel",
     "species": [ "ABERRATION", "SECROSPEC" ],
     "diff": 10,
@@ -22,23 +22,78 @@
     "melee_dice_sides": 8,
     "attack_cost": 200,
     "dodge": 2,
-    "harvest": "zombie",
-    "melee_damage": [ { "damage_type": "cut", "amount": 15 } ],
+    "harvest": "zombie_humanoid",
+    "melee_damage": [ { "damage_type": "cut", "amount": 18 } ],
     "armor": { "bash": 8, "cut": 13, "bullet": 13, "stab": 13, "acid": 1 },
     "vision_day": 42,
     "vision_night": 16,
+    "weakpoints": [
+      {
+        "name": "its joint",
+        "armor_mult": { "bash": 0.7, "cut": 0.7, "stab": 0.7, "bullet": 0.9 },
+        "difficulty": { "melee": 3, "cut": 6 },
+        "coverage": 4,
+        "condition": { "not": { "npc_has_any_effect": [ "secro_ayenel_detached_eff" ] } },
+        "effects": [
+          {
+            "effect": "secro_ayenel_detached_eff",
+            "duration": 100,
+            "permanent": true,
+            "intensity": [ 1, 1 ],
+            "damage_required": [ 15, 100 ],
+            "message": "The %s tumbles!"
+          }
+        ]
+      }
+    ],
     "special_attacks": [
       [ "secro_ayenel_swing", 18 ],
       [ "secro_ayenel_bitedown", 26 ],
       {
-		"id": "monspell_ayenel_lockon_check",
+        "id": "monspell_ayenel_lockon_check",
         "type": "spell",
         "spell_data": { "id": "mon_ayenel_lockon_check" },
         "cooldown": 80,
-		"condition": { "math": [ "distance('u', 'npc')", ">=", "5" ] },
+        "condition": { "and": [ "u_is_avatar", { "math": [ "distance('u', 'npc')", ">=", "5" ] } ] },
         "monster_message": "<color_yellow>%1$s glares at %3$s!</color>"
+      },
+      {
+        "id": "monspell_ayenel_spawn_check",
+        "type": "spell",
+        "spell_data": { "id": "mon_ayenel_spawn_check", "hit_self": true },
+        "condition": { "and": [ { "u_has_effect": "secro_ayenel_detached_eff" }, { "not": { "u_has_effect": "secro_ayenel_detached" } } ] },
+        "cooldown": 1,
+        "monster_message": "<color_yellow>%1$s writhes!</color>",
+        "allow_no_target": true
       }
     ],
+    "death_function": { "effect": { "id": "mon_ayenel_spawn_death", "hit_self": true } },
     "flags": [ "SEES", "WARM", "BASHES", "POISON", "ATTACKMON", "NO_BREATHE", "PUSH_MON" ]
+  },
+  {
+    "id": "mon_ayenel_spawn",
+    "type": "MONSTER",
+    "name": { "str": "ayenellid" },
+    "description": "A detached limb of an ayenel and is just as threatening as it's from.",
+    "copy-from": "mon_ayenel",
+    "looks_like": "mon_zombie_tentawraith_tent",
+    "diff": 5,
+    "volume": "187500 ml",
+    "weight": "244500 g",
+    "hp": 130,
+    "speed": 65,
+    "symbol": ")",
+    "melee_skill": 6,
+    "melee_dice": 3,
+    "melee_dice_sides": 4,
+    "attack_cost": 140,
+    "weakpoints": [  ],
+    "melee_damage": [ { "damage_type": "stab", "amount": 12 } ],
+    "armor": { "bash": 3, "cut": 5, "bullet": 5, "stab": 7, "acid": 1 },
+    "vision_day": 26,
+    "vision_night": 6,
+    "special_attacks": [ [ "secro_ayenel_bitedown", 40 ] ],
+    "death_function": {  },
+    "flags": [ "SEES", "WARM", "BASHES", "POISON", "NO_BREATHE", "PUSH_MON" ]
   }
 ]

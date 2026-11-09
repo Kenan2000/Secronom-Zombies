@@ -377,10 +377,10 @@
     "scaling_mods": { "speed_mod": [ 10 ] },
     "enchantments": [
       {
-        "values": [
-          { "value": "ARMOR_BASH", "multiply": -0.33 },
-          { "value": "ARMOR_CUT", "multiply": -0.33 },
-          { "value": "ARMOR_STAB", "multiply": -0.33 }
+        "incoming_damage_mod": [
+          { "type": "bash", "multiply": -0.33 },
+          { "type": "cut", "multiply": -0.33 },
+          { "type": "stab", "multiply": -0.33 }
         ]
       }
     ]
@@ -400,10 +400,10 @@
     "scaling_mods": { "speed_mod": [ -15 ] },
     "enchantments": [
       {
-        "values": [
-          { "value": "ARMOR_BASH", "multiply": -0.1 },
-          { "value": "ARMOR_CUT", "multiply": -0.1 },
-          { "value": "ARMOR_STAB", "multiply": -0.1 }
+        "incoming_damage_mod": [
+          { "type": "bash", "multiply": -0.1 },
+          { "type": "cut", "multiply": -0.1 },
+          { "type": "stab", "multiply": -0.1 }
         ]
       }
     ]
@@ -624,7 +624,7 @@
     "type": "effect_type",
     "id": "secro_resolute_grow",
     "name": [ "Developed" ],
-    "desc": [ "You are growing! Living for too much also increases you that amount!" ],
+    "desc": [ "You are growing!  Living for too much also increases you that amount!" ],
     "show_in_info": true,
     "int_add_val": 1,
     "int_dur_factor": "20 seconds",

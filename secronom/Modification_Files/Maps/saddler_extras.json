@@ -1,7 +1,6 @@
 [
   {
     "type": "mapgen",
-    "method": "json",
     "nested_mapgen_id": "saddler_usedbody",
     "object": {
       "mapgensize": [ 3, 3 ],
@@ -16,7 +15,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "update_mapgen_id": "mx_secro_saddler_victims",
     "object": {
       "place_monsters": [ { "monster": "GROUP_SADDLER_USED", "x": [ 8, 16 ], "y": [ 8, 16 ], "density": 0.03 } ],
@@ -25,7 +23,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "update_mapgen_id": "mx_secro_saddler_infest",
     "object": {
       "place_monsters": [

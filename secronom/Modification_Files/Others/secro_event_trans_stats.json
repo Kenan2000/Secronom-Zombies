@@ -1224,7 +1224,7 @@
     "type": "event_statistic",
     "stat_type": "count",
     "event_transformation": "avatar_secronom_efflost_blind",
-    "description": { "str": "times getting blinded", "str_pl": "times getting blinded" }
+    "description": { "str_sp": "times getting blinded" }
   },
   {
     "id": "avatar_secronom_effget_pedo_restraint",
@@ -1238,7 +1238,7 @@
     "type": "event_statistic",
     "stat_type": "count",
     "event_transformation": "avatar_secronom_effget_pedo_restraint",
-    "description": { "str": "times latched by nautilus torpedos", "str_pl": "times latched by nautilus torpedos" }
+    "description": { "str_sp": "times latched by nautilus torpedos" }
   },
   {
     "id": "avatar_secronom_effget_vector_infect",
@@ -1252,7 +1252,7 @@
     "type": "event_statistic",
     "stat_type": "count",
     "event_transformation": "avatar_secronom_effget_vector_infect",
-    "description": { "str": "times contracted a vector infection", "str_pl": "times contracted a vector infection" }
+    "description": { "str_sp": "times contracted a vector infection" }
   },
   {
     "id": "avatar_secronom_efflost_secro_akin_siphon_foe",
@@ -1266,7 +1266,7 @@
     "type": "event_statistic",
     "stat_type": "count",
     "event_transformation": "avatar_secronom_efflost_secro_akin_siphon_foe",
-    "description": { "str": "times getting drained by an akin", "str_pl": "times getting drained by an akin" }
+    "description": { "str_sp": "times getting drained by an akin" }
   },
   {
     "id": "avatar_secronom_efflost_secro_flesh_tree_grab",
@@ -1280,7 +1280,7 @@
     "type": "event_statistic",
     "stat_type": "count",
     "event_transformation": "avatar_secronom_efflost_secro_flesh_tree_grab",
-    "description": { "str": "times getting grabbed by something \"fleshy\"", "str_pl": "times getting grabbed by something \"fleshy\"" }
+    "description": { "str_sp": "times getting grabbed by something \"fleshy\"" }
   },
   {
     "id": "avatar_secronom_effget_secro_flesh_bio_limb",
@@ -1294,6 +1294,6 @@
     "type": "event_statistic",
     "stat_type": "count",
     "event_transformation": "avatar_secronom_effget_secro_flesh_bio_limb",
-    "description": { "str": "times eaten \"the flesh\"", "str_pl": "times eaten \"the flesh\"" }
+    "description": { "str_sp": "times eaten \"the flesh\"" }
   }
 ]

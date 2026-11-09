@@ -1,6 +1,5 @@
 [
   {
-    "method": "json",
     "object": {
       "predecessor_mapgen": "field",
       "rows": [
@@ -68,7 +67,6 @@
     "weight": 1000
   },
   {
-    "method": "json",
     "object": {
       "rows": [
         "........................",
@@ -109,7 +107,6 @@
     "weight": 1000
   },
   {
-    "method": "json",
     "object": {
       "rows": [
         "........................",
@@ -150,7 +147,6 @@
     "weight": 1000
   },
   {
-    "method": "json",
     "object": {
       "fill_ter": "t_secro_flesh",
       "rows": [

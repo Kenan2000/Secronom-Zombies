@@ -121,7 +121,7 @@
       "sound_fail": "clang!",
       "ter_set": "t_ladder_down",
       "items": [
-        { "item": "steel_chunk", "count": [ 1, 4 ] },
+        { "item": "lc_steel_chunk", "count": [ 1, 4 ] },
         { "item": "scrap", "count": [ 3, 12 ] },
         { "item": "hinge", "count": [ 1, 2 ] }
       ]
@@ -131,7 +131,7 @@
     "type": "terrain",
     "id": "t_secro_metal_hatch_o",
     "name": "open metal hatch",
-    "description": "An opened metal hatch connected to the structure below. It reveals a hollow set of ladders leading downwards.",
+    "description": "An opened metal hatch connected to the structure below.  It reveals a hollow set of ladders leading downwards.",
     "symbol": ">",
     "looks_like": "t_door_metal_o",
     "color": "cyan",
@@ -147,7 +147,7 @@
       "sound_fail": "clang!",
       "ter_set": "t_ladder_down",
       "items": [
-        { "item": "steel_chunk", "count": [ 1, 4 ] },
+        { "item": "lc_steel_chunk", "count": [ 1, 4 ] },
         { "item": "scrap", "count": [ 3, 12 ] },
         { "item": "hinge", "count": [ 1, 2 ] }
       ]

@@ -3,7 +3,7 @@
     "id": "mon_maneater",
     "type": "MONSTER",
     "name": { "str": "maneater" },
-    "description": "A triffid-looking creature, composed of staggering flesh and bones. Its \"flower petals\" are lined with razor-sharp teeth, with slender \"vines\" twitching incoherently. The need for \"nutrients\" drive it to face everything with voracious intent.",
+    "description": "A triffid-looking creature, composed of staggering flesh and bones.  Its \"flower petals\" are lined with razor-sharp teeth, with slender \"vines\" twitching incoherently.  The need for \"nutrients\" drive it to face everything with voracious intent.",
     "default_faction": "maneater",
     "species": [ "ABERRATION", "SECROSPEC" ],
     "volume": "92500 ml",
@@ -20,7 +20,7 @@
     "melee_dice_sides": 4,
     "melee_damage": [ { "damage_type": "cut", "amount": 8 }, { "damage_type": "stab", "amount": 6, "armor_penetration": 5 } ],
     "dodge": 1,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "armor": { "bash": 4, "cut": 10, "bullet": 18, "stab": 18, "acid": 1 },
     "vision_day": 24,
     "vision_night": 12,
@@ -117,7 +117,7 @@
         "allow_no_target": true
       }
     ],
-    "upgrades": { "half_life": 42, "into": "mon_maneater_evo" },
+    "upgrades": { "half_life": 168, "into": "mon_maneater_evo" },
     "looks_like": "mon_triffid",
     "flags": [
       "HEARS",

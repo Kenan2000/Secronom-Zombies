@@ -1,7 +1,6 @@
 [
   {
     "type": "mapgen",
-    "method": "json",
     "update_mapgen_id": "mx_secro_vector",
     "object": {
       "rows": [
@@ -39,7 +38,6 @@
     }
   },
   {
-    "method": "json",
     "type": "mapgen",
     "update_mapgen_id": "mx_secro_carrion",
     "object": {
@@ -52,7 +50,6 @@
     }
   },
   {
-    "method": "json",
     "type": "mapgen",
     "update_mapgen_id": "mx_secro_carrion_massacre",
     "object": {
@@ -72,7 +69,6 @@
     }
   },
   {
-    "method": "json",
     "type": "mapgen",
     "update_mapgen_id": "mx_secro_carrion_massacre_smol",
     "object": {
@@ -92,14 +88,12 @@
     }
   },
   {
-    "method": "json",
     "type": "mapgen",
     "update_mapgen_id": "mx_secro_fleshweaver",
     "object": { "place_monster": [ { "monster": "mon_fleshweaver", "x": [ 6, 17 ], "y": [ 6, 17 ], "friendly": true } ] }
   },
   {
     "type": "mapgen",
-    "method": "json",
     "update_mapgen_id": "mx_secro_fleshbuilding",
     "object": {
       "rows": [
@@ -138,7 +132,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "nested_mapgen_id": "mx_secro_ssf_nested",
     "object": {
       "mapgensize": [ 28, 28 ],
@@ -184,13 +177,11 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "update_mapgen_id": "mx_secro_ssf",
     "object": { "place_nested": [ { "chunks": [ "mx_secro_ssf_nested" ], "x": 0, "y": 0 } ] }
   },
   {
     "type": "mapgen",
-    "method": "json",
     "nested_mapgen_id": "mx_secro_ssb_nested",
     "object": {
       "mapgensize": [ 28, 28 ],
@@ -236,7 +227,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "update_mapgen_id": "mx_secro_ssb",
     "object": { "place_nested": [ { "chunks": [ "mx_secro_ssb_nested" ], "x": 0, "y": 0 } ] }
   }

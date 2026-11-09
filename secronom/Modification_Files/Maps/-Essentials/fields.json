@@ -445,7 +445,7 @@
     "type": "field_type",
     "intensity_levels": [
       {
-        "name": "...",
+        "name": "…",
         "color": "black",
         "effects": [ { "effect_id": "stunned", "body_part": "torso", "min_duration": "3 seconds", "max_duration": "6 seconds" } ]
       }
@@ -595,7 +595,7 @@
     "type": "field_type",
     "intensity_levels": [
       {
-        "name": "...",
+        "name": "…",
         "color": "black",
         "monster_spawn_chance": 1,
         "monster_spawn_count": 1,
@@ -614,7 +614,7 @@
     "type": "field_type",
     "intensity_levels": [
       {
-        "name": "...",
+        "name": "…",
         "color": "black",
         "effects": [
           { "effect_id": "secro_resolute_grow", "body_part": "torso", "min_duration": "1 seconds", "max_duration": "1 seconds" }
@@ -632,7 +632,7 @@
     "type": "field_type",
     "intensity_levels": [
       {
-        "name": "...",
+        "name": "…",
         "color": "black",
         "effects": [
           { "effect_id": "secro_flesh_tree_grab", "body_part": "torso", "min_duration": "1 seconds", "max_duration": "1 seconds" }
@@ -650,7 +650,7 @@
     "type": "field_type",
     "intensity_levels": [
       {
-        "name": "...",
+        "name": "…",
         "color": "black",
         "monster_spawn_chance": 100,
         "monster_spawn_count": 1,
@@ -669,7 +669,7 @@
     "type": "field_type",
     "intensity_levels": [
       {
-        "name": "...",
+        "name": "…",
         "color": "black",
         "monster_spawn_chance": 1,
         "monster_spawn_count": 1,
@@ -688,7 +688,7 @@
     "type": "field_type",
     "intensity_levels": [
       {
-        "name": "...",
+        "name": "…",
         "color": "black",
         "effects": [
           { "effect_id": "secro_flesh_bones", "body_part": "leg_r", "min_duration": "1 seconds", "max_duration": "1 seconds" },
@@ -713,7 +713,7 @@
     "type": "field_type",
     "intensity_levels": [
       {
-        "name": "...",
+        "name": "…",
         "color": "black",
         "effects": [
           { "effect_id": "secro_flesh_tendrils", "body_part": "leg_r", "min_duration": "1 seconds", "max_duration": "1 seconds" },
@@ -738,7 +738,7 @@
     "type": "field_type",
     "intensity_levels": [
       {
-        "name": "...",
+        "name": "…",
         "color": "black",
         "effects": [
           { "effect_id": "secro_flesh_biome", "body_part": "head", "min_duration": "1 seconds", "max_duration": "1 seconds" },
@@ -804,7 +804,7 @@
     "type": "field_type",
     "intensity_levels": [
       {
-        "name": "...",
+        "name": "…",
         "color": "black",
         "monster_spawn_chance": 100,
         "monster_spawn_count": 1,
@@ -865,7 +865,7 @@
     "type": "field_type",
     "intensity_levels": [
       {
-        "name": "...",
+        "name": "…",
         "color": "black",
         "monster_spawn_chance": 1,
         "monster_spawn_count": 1,
@@ -884,7 +884,7 @@
     "type": "field_type",
     "intensity_levels": [
       {
-        "name": "...",
+        "name": "…",
         "color": "black",
         "monster_spawn_chance": 2000,
         "monster_spawn_count": 1,
@@ -921,7 +921,7 @@
     "type": "field_type",
     "intensity_levels": [
       {
-        "name": "...",
+        "name": "…",
         "color": "black",
         "effects": [
           {
@@ -944,7 +944,7 @@
     "type": "field_type",
     "intensity_levels": [
       {
-        "name": "...",
+        "name": "…",
         "color": "black",
         "effects": [
           {
@@ -1222,7 +1222,7 @@
     "type": "field_type",
     "intensity_levels": [
       {
-        "name": "...",
+        "name": "…",
         "color": "black",
         "effects": [ { "effect_id": "secro_down_immune", "body_part": "torso", "min_duration": "1 seconds", "max_duration": "1 seconds" } ]
       }
@@ -1238,7 +1238,7 @@
     "type": "field_type",
     "intensity_levels": [
       {
-        "name": "...",
+        "name": "…",
         "color": "black",
         "effects": [ { "effect_id": "pet", "body_part": "torso", "min_duration": "1 seconds", "max_duration": "1 seconds" } ]
       }

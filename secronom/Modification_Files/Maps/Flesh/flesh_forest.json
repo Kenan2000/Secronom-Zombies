@@ -1,6 +1,5 @@
 [
   {
-    "method": "json",
     "object": {
       "predecessor_mapgen": "forest_thick",
       "place_monster": [ { "monster": "mon_sflesh_veinstalk_initial", "x": 11, "y": 11 } ],
@@ -11,44 +10,76 @@
     "type": "mapgen"
   },
   {
-    "method": "json",
     "object": {
       "predecessor_mapgen": "forest_thick",
-      "place_monster": [ { "monster": "mon_sflesh_veinstalk_initial", "x": 11, "y": 11 }, { "monster": "mon_sflesh_veinstalk_initial", "x": 12, "y": 12 } ],
-      "place_terrain": [ { "ter": "t_region_groundcover_forest", "x": 11, "y": 11 }, { "ter": "t_region_groundcover_forest", "x": 12, "y": 12 } ],
+      "place_monster": [
+        { "monster": "mon_sflesh_veinstalk_initial", "x": 11, "y": 11 },
+        { "monster": "mon_sflesh_veinstalk_initial", "x": 12, "y": 12 }
+      ],
+      "place_terrain": [
+        { "ter": "t_region_groundcover_forest", "x": 11, "y": 11 },
+        { "ter": "t_region_groundcover_forest", "x": 12, "y": 12 }
+      ],
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     },
     "om_terrain": [ "flesh_forest_vfar" ],
     "type": "mapgen"
   },
   {
-    "method": "json",
     "object": {
       "predecessor_mapgen": "forest_thick",
-      "place_monster": [ { "monster": "mon_sflesh_veinstalk_initial", "x": 11, "y": 11 }, { "monster": "mon_sflesh_veinstalk_initial", "x": 12, "y": 12 }, { "monster": "mon_sflesh_veinstalk_initial", "x": 12, "y": 11 } ],
-      "place_terrain": [ { "ter": "t_region_groundcover_forest", "x": 11, "y": 11 }, { "ter": "t_region_groundcover_forest", "x": 12, "y": 12 }, { "ter": "t_region_groundcover_forest", "x": 12, "y": 11 } ],
+      "place_monster": [
+        { "monster": "mon_sflesh_veinstalk_initial", "x": 11, "y": 11 },
+        { "monster": "mon_sflesh_veinstalk_initial", "x": 12, "y": 12 },
+        { "monster": "mon_sflesh_veinstalk_initial", "x": 12, "y": 11 }
+      ],
+      "place_terrain": [
+        { "ter": "t_region_groundcover_forest", "x": 11, "y": 11 },
+        { "ter": "t_region_groundcover_forest", "x": 12, "y": 12 },
+        { "ter": "t_region_groundcover_forest", "x": 12, "y": 11 }
+      ],
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     },
     "om_terrain": [ "flesh_forest_far" ],
     "type": "mapgen"
   },
   {
-    "method": "json",
     "object": {
       "predecessor_mapgen": "forest_thick",
-      "place_monster": [ { "monster": "mon_sflesh_veinstalk_initial", "x": 11, "y": 11 }, { "monster": "mon_sflesh_veinstalk_initial", "x": 12, "y": 12 }, { "monster": "mon_sflesh_veinstalk_initial", "x": 12, "y": 11 }, { "monster": "mon_sflesh_veinstalk_initial", "x": 11, "y": 12 } ],
-      "place_terrain": [ { "ter": "t_region_groundcover_forest", "x": 11, "y": 11 }, { "ter": "t_region_groundcover_forest", "x": 12, "y": 12 }, { "ter": "t_region_groundcover_forest", "x": 12, "y": 11 }, { "ter": "t_region_groundcover_forest", "x": 11, "y": 12 } ],
+      "place_monster": [
+        { "monster": "mon_sflesh_veinstalk_initial", "x": 11, "y": 11 },
+        { "monster": "mon_sflesh_veinstalk_initial", "x": 12, "y": 12 },
+        { "monster": "mon_sflesh_veinstalk_initial", "x": 12, "y": 11 },
+        { "monster": "mon_sflesh_veinstalk_initial", "x": 11, "y": 12 }
+      ],
+      "place_terrain": [
+        { "ter": "t_region_groundcover_forest", "x": 11, "y": 11 },
+        { "ter": "t_region_groundcover_forest", "x": 12, "y": 12 },
+        { "ter": "t_region_groundcover_forest", "x": 12, "y": 11 },
+        { "ter": "t_region_groundcover_forest", "x": 11, "y": 12 }
+      ],
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     },
     "om_terrain": [ "flesh_forest_mid" ],
     "type": "mapgen"
   },
   {
-    "method": "json",
     "object": {
       "predecessor_mapgen": "forest_thick",
-      "place_monster": [ { "monster": "mon_sflesh_veinstalk_initial", "x": 11, "y": 11 }, { "monster": "mon_sflesh_veinstalk_initial", "x": 12, "y": 12 }, { "monster": "mon_sflesh_veinstalk_initial", "x": 12, "y": 11 }, { "monster": "mon_sflesh_veinstalk_initial", "x": 11, "y": 12 }, { "monster": "mon_sflesh_veinstalk_initial", "x": 13, "y": 12 } ],
-      "place_terrain": [ { "ter": "t_region_groundcover_forest", "x": 11, "y": 11 }, { "ter": "t_region_groundcover_forest", "x": 12, "y": 12 }, { "ter": "t_region_groundcover_forest", "x": 12, "y": 11 }, { "ter": "t_region_groundcover_forest", "x": 11, "y": 12 }, { "ter": "t_region_groundcover_forest", "x": 13, "y": 12 } ],
+      "place_monster": [
+        { "monster": "mon_sflesh_veinstalk_initial", "x": 11, "y": 11 },
+        { "monster": "mon_sflesh_veinstalk_initial", "x": 12, "y": 12 },
+        { "monster": "mon_sflesh_veinstalk_initial", "x": 12, "y": 11 },
+        { "monster": "mon_sflesh_veinstalk_initial", "x": 11, "y": 12 },
+        { "monster": "mon_sflesh_veinstalk_initial", "x": 13, "y": 12 }
+      ],
+      "place_terrain": [
+        { "ter": "t_region_groundcover_forest", "x": 11, "y": 11 },
+        { "ter": "t_region_groundcover_forest", "x": 12, "y": 12 },
+        { "ter": "t_region_groundcover_forest", "x": 12, "y": 11 },
+        { "ter": "t_region_groundcover_forest", "x": 11, "y": 12 },
+        { "ter": "t_region_groundcover_forest", "x": 13, "y": 12 }
+      ],
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     },
     "om_terrain": [ "flesh_forest_near" ],
@@ -56,7 +87,6 @@
   },
   {
     "//": "This is the center part of the forest. All crimson horrors will appear MORE often at this area.",
-    "method": "json",
     "object": {
       "predecessor_mapgen": "forest_thick",
       "fill_ter": "t_secro_flesh",
@@ -236,7 +266,6 @@
   },
   {
     "//": "From this point, the flesh's internal structure is randomized: gaps, deadends and deathtraps are purely made with RNG, but there are paths which will lead you to the proper directions. The deeper the structure, the denser it becomes.",
-    "method": "json",
     "object": {
       "fill_ter": "t_secro_flesh",
       "rows": [
@@ -342,7 +371,6 @@
   },
   {
     "//": "The pathways are larger, incase of RNG messing it up.",
-    "method": "json",
     "object": {
       "fill_ter": "t_secro_flesh",
       "rows": [
@@ -447,7 +475,6 @@
     "weight": 1000
   },
   {
-    "method": "json",
     "object": {
       "fill_ter": "t_secro_flesh",
       "rows": [
@@ -552,7 +579,6 @@
     "weight": 1000
   },
   {
-    "method": "json",
     "object": {
       "fill_ter": "t_secro_flesh",
       "rows": [

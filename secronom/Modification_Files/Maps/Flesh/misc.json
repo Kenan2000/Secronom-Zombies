@@ -1,6 +1,5 @@
 [
   {
-    "method": "json",
     "object": {
       "rotation": [ 0, 3 ],
       "mapgensize": [ 24, 24 ],
@@ -49,7 +48,6 @@
     "type": "mapgen"
   },
   {
-    "method": "json",
     "object": {
       "rotation": [ 0, 3 ],
       "mapgensize": [ 24, 24 ],
@@ -99,12 +97,10 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "update_mapgen_id": "mx_flesh_biome_extra",
     "object": { "place_nested": [ { "chunks": [ "mx_flesh_biome_extra_nested" ], "x": 0, "y": 0 } ] }
   },
   {
-    "method": "json",
     "object": {
       "rotation": [ 0, 3 ],
       "mapgensize": [ 24, 24 ],
@@ -148,12 +144,10 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "update_mapgen_id": "mx_flesh_core_extra",
     "object": { "place_nested": [ { "chunks": [ "mx_flesh_city_core" ], "x": 0, "y": 0 } ] }
   },
   {
-    "method": "json",
     "object": {
       "rotation": [ 0, 3 ],
       "mapgensize": [ 24, 24 ],
@@ -204,7 +198,6 @@
     "type": "mapgen"
   },
   {
-    "method": "json",
     "object": {
       "rotation": [ 0, 3 ],
       "mapgensize": [ 24, 24 ],
@@ -256,7 +249,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "update_mapgen_id": "mx_flesh_random_extra",
     "object": { "place_nested": [ { "chunks": [ "mx_flesh_random" ], "x": 0, "y": 0 } ] }
   }

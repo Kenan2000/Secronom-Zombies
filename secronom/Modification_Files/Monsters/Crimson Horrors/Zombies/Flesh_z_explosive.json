@@ -21,16 +21,6 @@
     "extend": { "species": [ "SFLESH" ] }
   },
   {
-    "id": "mon_sflesh_gas_zombie",
-    "copy-from": "mon_gas_zombie",
-    "burn_into": "mon_gas_zombie",
-    "type": "MONSTER",
-    "default_faction": "secro_flesh3",
-    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
-    "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
-    "extend": { "species": [ "SFLESH" ] }
-  },
-  {
     "id": "mon_sflesh_zombie_gasbag",
     "copy-from": "mon_zombie_gasbag",
     "burn_into": "mon_zombie_gasbag",

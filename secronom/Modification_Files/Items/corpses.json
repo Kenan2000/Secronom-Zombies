@@ -1,14 +1,50 @@
 [
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "corpse_saddler_used",
     "copy-from": "corpse",
     "name": { "str": "corpse" },
-    "description": "A headless dead body of a person. Its wound looks deep and hollow...",
+    "description": "A headless dead body of a person.  Its wound looks deep and hollow…",
     "looks_like": "corpse_generic_human",
-    "volume": "33 L",
+    "volume": "43 L",
     "weight": "47 kg",
     "material": [ "hflesh" ],
     "delete": { "flags": [ "CORPSE" ] }
+  },
+  {
+    "type": "ITEM",
+    "id": "broken_bot_secroinforcer",
+    "copy-from": "broken_secubot",
+    "name": { "str": "broken reinforcer" },
+    "description": "The wreckage of a Secronom reinforcer drone.  Its deployment hardware is ruined, but the chassis still contains salvageable robotic components.",
+    "weight": "220 kg",
+    "volume": "145 L"
+  },
+  {
+    "type": "ITEM",
+    "id": "broken_bot_secroshocker",
+    "copy-from": "broken_secubot",
+    "name": { "str": "broken shocker" },
+    "description": "The wreckage of a Secronom shocker drone.  Its electrical systems are dead and its cutting assembly hangs loose.",
+    "weight": "30 kg",
+    "volume": "22 L"
+  },
+  {
+    "type": "ITEM",
+    "id": "broken_bot_secroriflewalker",
+    "copy-from": "broken_secubot",
+    "name": { "str": "broken walker" },
+    "description": "The wreckage of a Secronom rifle walker.  The weapon mount and locomotion systems are disabled beyond field repair.",
+    "weight": "30 kg",
+    "volume": "22 L"
+  },
+  {
+    "type": "ITEM",
+    "id": "broken_bot_secrolauncher",
+    "copy-from": "broken_secubot",
+    "name": { "str": "broken launcher" },
+    "description": "The wreckage of a Secronom launcher drone.  Its flight and missile systems are destroyed, leaving a salvageable robotic chassis.",
+    "weight": "30 kg",
+    "volume": "22 L"
   }
 ]

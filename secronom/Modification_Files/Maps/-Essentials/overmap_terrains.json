@@ -9,7 +9,7 @@
     "see_cost": "high",
     "extras": "build",
     "mondensity": 3,
-    "flags": [ "SIDEWALK", "GENERIC_LOOT" ]
+    "flags": [ "SIDEWALK", "GENERIC_LOOT", "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
@@ -18,7 +18,7 @@
     "sym": "O",
     "color": "dark_gray_red",
     "copy-from": "generic_city_building_no_sidewalk",
-    "flags": [ "KNOWN_UP", "NO_ROTATE", "GENERIC_LOOT" ],
+    "flags": [ "KNOWN_UP", "NO_ROTATE", "GENERIC_LOOT", "SHOULD_NOT_SPAWN" ],
     "see_cost": "high"
   },
   {
@@ -29,7 +29,7 @@
     "color": "brown",
     "see_cost": "high",
     "land_use_code": "secro_flesh_biome",
-    "flags": [ "NO_ROTATE", "SOURCE_SAFETY" ]
+    "flags": [ "NO_ROTATE", "SOURCE_SAFETY", "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
@@ -39,7 +39,7 @@
     "color": "light_red",
     "see_cost": "high",
     "land_use_code": "secro_flesh_biome",
-    "flags": [ "NO_ROTATE", "SOURCE_SAFETY" ]
+    "flags": [ "NO_ROTATE", "SOURCE_SAFETY", "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
@@ -49,10 +49,11 @@
     "color": "red",
     "see_cost": "high",
     "land_use_code": "secro_flesh_biome",
-    "flags": [ "NO_ROTATE", "SOURCE_SAFETY" ]
+    "flags": [ "NO_ROTATE", "SOURCE_SAFETY", "SHOULD_NOT_SPAWN" ]
   },
   {
     "id": "flesh_forest_1",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "forest",
     "sym": "F",
@@ -63,6 +64,7 @@
   },
   {
     "id": "flesh_forest_2",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "forest",
     "sym": "F",
@@ -73,6 +75,7 @@
   },
   {
     "id": "flesh_forest_3",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "forest",
     "sym": "F",
@@ -83,6 +86,7 @@
   },
   {
     "id": "flesh_forest_4",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "forest",
     "sym": "F",
@@ -93,6 +97,7 @@
   },
   {
     "id": "flesh_forest_5",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "forest",
     "sym": "F",
@@ -102,6 +107,7 @@
   },
   {
     "id": "flesh_forest_6",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "forest",
     "sym": "F",
@@ -112,6 +118,7 @@
   },
   {
     "id": "flesh_forest_7",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "forest",
     "sym": "F",
@@ -122,6 +129,7 @@
   },
   {
     "id": "flesh_forest_8",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "forest",
     "sym": "F",
@@ -132,6 +140,7 @@
   },
   {
     "id": "flesh_forest_9",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "forest",
     "sym": "F",
@@ -142,6 +151,7 @@
   },
   {
     "id": "flesh_island_vfaraway_straight",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "shore",
     "sym": "#",
@@ -152,6 +162,7 @@
   },
   {
     "id": "flesh_island_vfaraway_vortex",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "shore",
     "sym": "#",
@@ -162,6 +173,7 @@
   },
   {
     "id": "flesh_island_vfaraway_curve",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "shore",
     "sym": "#",
@@ -172,6 +184,7 @@
   },
   {
     "id": "flesh_forest_vfaraway",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "forest",
     "sym": "F",
@@ -182,6 +195,7 @@
   },
   {
     "id": "flesh_forest_vfar",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "forest",
     "sym": "F",
@@ -192,6 +206,7 @@
   },
   {
     "id": "flesh_forest_far",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "forest",
     "sym": "F",
@@ -202,6 +217,7 @@
   },
   {
     "id": "flesh_forest_mid",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "forest",
     "sym": "F",
@@ -213,6 +229,7 @@
   },
   {
     "id": "flesh_forest_near",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "forest",
     "sym": "F",
@@ -224,6 +241,7 @@
   },
   {
     "id": "flesh_forest_bot1_1",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -234,6 +252,7 @@
   },
   {
     "id": "flesh_forest_bot1_2",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -244,6 +263,7 @@
   },
   {
     "id": "flesh_forest_bot1_3",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -254,6 +274,7 @@
   },
   {
     "id": "flesh_forest_bot1_4",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -264,6 +285,7 @@
   },
   {
     "id": "flesh_forest_bot1_5",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -274,6 +296,7 @@
   },
   {
     "id": "flesh_forest_bot1_6",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -284,6 +307,7 @@
   },
   {
     "id": "flesh_forest_bot1_7",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -294,6 +318,7 @@
   },
   {
     "id": "flesh_forest_bot1_8",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -304,6 +329,7 @@
   },
   {
     "id": "flesh_forest_bot1_9",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -314,6 +340,7 @@
   },
   {
     "id": "flesh_forest_bot2_1",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -324,6 +351,7 @@
   },
   {
     "id": "flesh_forest_bot2_2",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -334,6 +362,7 @@
   },
   {
     "id": "flesh_forest_bot2_3",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -344,6 +373,7 @@
   },
   {
     "id": "flesh_forest_bot2_4",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -354,6 +384,7 @@
   },
   {
     "id": "flesh_forest_bot2_5",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -364,6 +395,7 @@
   },
   {
     "id": "flesh_forest_bot2_6",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -374,6 +406,7 @@
   },
   {
     "id": "flesh_forest_bot2_7",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -384,6 +417,7 @@
   },
   {
     "id": "flesh_forest_bot2_8",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -394,6 +428,7 @@
   },
   {
     "id": "flesh_forest_bot2_9",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -404,6 +439,7 @@
   },
   {
     "id": "flesh_forest_bot3_1",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -414,6 +450,7 @@
   },
   {
     "id": "flesh_forest_bot3_2",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -424,6 +461,7 @@
   },
   {
     "id": "flesh_forest_bot3_3",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -434,6 +472,7 @@
   },
   {
     "id": "flesh_forest_bot3_4",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -444,6 +483,7 @@
   },
   {
     "id": "flesh_forest_bot3_5",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -454,6 +494,7 @@
   },
   {
     "id": "flesh_forest_bot3_6",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -464,6 +505,7 @@
   },
   {
     "id": "flesh_forest_bot3_7",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -474,6 +516,7 @@
   },
   {
     "id": "flesh_forest_bot3_8",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -484,6 +527,7 @@
   },
   {
     "id": "flesh_forest_bot3_9",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -494,6 +538,7 @@
   },
   {
     "id": "flesh_forest_boss_1",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -504,6 +549,7 @@
   },
   {
     "id": "flesh_forest_boss_2",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -514,6 +560,7 @@
   },
   {
     "id": "flesh_forest_boss_3",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -524,6 +571,7 @@
   },
   {
     "id": "flesh_forest_boss_4",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -534,6 +582,7 @@
   },
   {
     "id": "flesh_forest_boss_5",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -544,6 +593,7 @@
   },
   {
     "id": "flesh_forest_boss_6",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -554,6 +604,7 @@
   },
   {
     "id": "flesh_forest_boss_7",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -564,6 +615,7 @@
   },
   {
     "id": "flesh_forest_boss_8",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -574,6 +626,7 @@
   },
   {
     "id": "flesh_forest_boss_9",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "flesh",
     "sym": "#",
@@ -585,7 +638,7 @@
   {
     "type": "overmap_terrain",
     "id": "secro_flesh_city_core",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "name": "flesh tower",
     "spawns": { "group": "GROUP_FLESH_CITY", "chance": 50, "population": [ 50, 100 ] },
     "sym": "┼",
@@ -596,7 +649,7 @@
   {
     "type": "overmap_terrain",
     "id": "secro_flesh_city_core_up",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "name": "flesh tower",
     "sym": "⨂",
     "color": "red",
@@ -606,7 +659,7 @@
   {
     "type": "overmap_terrain",
     "id": "secro_flesh_city_core_upper",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "name": "flesh tower",
     "sym": "⨂",
     "color": "red",
@@ -616,7 +669,7 @@
   {
     "type": "overmap_terrain",
     "id": "secro_flesh_city_core_uppest",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "name": "flesh tower",
     "sym": "⨀",
     "color": "light_red",
@@ -626,7 +679,7 @@
   {
     "type": "overmap_terrain",
     "id": "secro_flesh_city_core_uppest_roof",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "name": "flesh tower",
     "sym": "⨀",
     "color": "red",
@@ -635,7 +688,7 @@
   },
   {
     "id": "secro_flesh_city_edge",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "type": "overmap_terrain",
     "name": "field",
     "spawns": { "group": "GROUP_FLESH_CITY", "chance": 50, "population": [ 5, 10 ] },
@@ -648,7 +701,7 @@
     "type": "overmap_terrain",
     "id": "secro_rd_connect_flesh",
     "copy-from": "generic_transportation",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "name": "fleshed road",
     "spawns": { "group": "GROUP_FLESH_CITY", "chance": 50, "population": [ 25, 50 ] },
     "sym": "─",
@@ -668,7 +721,7 @@
     "land_use_code": "secro_flesh_biome",
     "extras": "build",
     "mondensity": 2,
-    "flags": [ "SIDEWALK", "GENERIC_LOOT" ]
+    "flags": [ "SIDEWALK", "GENERIC_LOOT", "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
@@ -681,7 +734,7 @@
     "land_use_code": "secro_flesh_biome",
     "extras": "build",
     "mondensity": 3,
-    "flags": [ "SIDEWALK", "GENERIC_LOOT" ]
+    "flags": [ "SIDEWALK", "GENERIC_LOOT", "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
@@ -694,13 +747,13 @@
     "land_use_code": "secro_flesh_biome",
     "extras": "build",
     "mondensity": 3,
-    "flags": [ "SIDEWALK", "GENERIC_LOOT" ]
+    "flags": [ "SIDEWALK", "GENERIC_LOOT", "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
     "id": "secro_rd_updown_flesh",
     "copy-from": "generic_transportation",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "name": "fleshed road",
     "spawns": { "group": "GROUP_FLESH_CITY", "chance": 50, "population": [ 25, 50 ] },
     "sym": "│",
@@ -712,7 +765,7 @@
     "type": "overmap_terrain",
     "id": "secro_rd_leftright_flesh",
     "copy-from": "generic_transportation",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "name": "fleshed road",
     "spawns": { "group": "GROUP_FLESH_CITY", "chance": 50, "population": [ 25, 50 ] },
     "sym": "─",
@@ -724,7 +777,7 @@
     "type": "overmap_terrain",
     "id": "secro_rd_4d_flesh",
     "copy-from": "generic_transportation",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "name": "fleshed road",
     "spawns": { "group": "GROUP_FLESH_CITY", "chance": 50, "population": [ 25, 50 ] },
     "sym": "┼",
@@ -736,7 +789,7 @@
     "type": "overmap_terrain",
     "id": "secro_rd_updown_sidewalk_flesh",
     "copy-from": "generic_transportation",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "name": "fleshed road",
     "spawns": { "group": "GROUP_FLESH_CITY", "chance": 50, "population": [ 25, 50 ] },
     "sym": "│",
@@ -748,7 +801,7 @@
     "type": "overmap_terrain",
     "id": "secro_rd_leftright_sidewalk_flesh",
     "copy-from": "generic_transportation",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "name": "fleshed road",
     "spawns": { "group": "GROUP_FLESH_CITY", "chance": 50, "population": [ 25, 50 ] },
     "sym": "─",
@@ -759,6 +812,7 @@
   {
     "type": "overmap_terrain",
     "id": "secro_rd_verti_end_flesh",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "copy-from": "generic_transportation",
     "name": "fleshed road",
     "spawns": { "group": "GROUP_FLESH_CITY", "chance": 50, "population": [ 25, 50 ] },
@@ -770,6 +824,7 @@
   {
     "type": "overmap_terrain",
     "id": "secro_rd_hori_end_flesh",
+    "flags": [ "SHOULD_NOT_SPAWN" ],
     "copy-from": "generic_transportation",
     "name": "fleshed road",
     "spawns": { "group": "GROUP_FLESH_CITY", "chance": 50, "population": [ 25, 50 ] },
@@ -782,7 +837,7 @@
     "type": "overmap_terrain",
     "id": "secro_rd_tee_lru_flesh",
     "copy-from": "generic_transportation",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "name": "fleshed road",
     "spawns": { "group": "GROUP_FLESH_CITY", "chance": 50, "population": [ 25, 50 ] },
     "sym": "┴",
@@ -794,7 +849,7 @@
     "type": "overmap_terrain",
     "id": "secro_rd_tee_lrd_flesh",
     "copy-from": "generic_transportation",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "name": "fleshed road",
     "spawns": { "group": "GROUP_FLESH_CITY", "chance": 50, "population": [ 25, 50 ] },
     "sym": "┬",
@@ -806,7 +861,7 @@
     "type": "overmap_terrain",
     "id": "secro_rd_tee_lud_flesh",
     "copy-from": "generic_transportation",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "name": "fleshed road",
     "spawns": { "group": "GROUP_FLESH_CITY", "chance": 50, "population": [ 25, 50 ] },
     "sym": "┤",
@@ -818,7 +873,7 @@
     "type": "overmap_terrain",
     "id": "secro_rd_tee_rud_flesh",
     "copy-from": "generic_transportation",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "name": "fleshed road",
     "spawns": { "group": "GROUP_FLESH_CITY", "chance": 50, "population": [ 25, 50 ] },
     "sym": "├",
@@ -830,7 +885,7 @@
     "type": "overmap_terrain",
     "id": "secro_rd_curve_ru_flesh",
     "copy-from": "generic_transportation",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "name": "fleshed road",
     "spawns": { "group": "GROUP_FLESH_CITY", "chance": 50, "population": [ 25, 50 ] },
     "sym": "└",
@@ -842,7 +897,7 @@
     "type": "overmap_terrain",
     "id": "secro_rd_curve_lu_flesh",
     "copy-from": "generic_transportation",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "name": "fleshed road",
     "spawns": { "group": "GROUP_FLESH_CITY", "chance": 50, "population": [ 25, 50 ] },
     "sym": "┘",
@@ -854,7 +909,7 @@
     "type": "overmap_terrain",
     "id": "secro_rd_curve_rd_flesh",
     "copy-from": "generic_transportation",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "name": "fleshed road",
     "spawns": { "group": "GROUP_FLESH_CITY", "chance": 50, "population": [ 25, 50 ] },
     "sym": "┌",
@@ -866,7 +921,7 @@
     "type": "overmap_terrain",
     "id": "secro_rd_curve_ld_flesh",
     "copy-from": "generic_transportation",
-    "flags": [ "NO_ROTATE" ],
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ],
     "name": "fleshed road",
     "spawns": { "group": "GROUP_FLESH_CITY", "chance": 50, "population": [ 25, 50 ] },
     "sym": "┐",

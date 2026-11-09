@@ -16,8 +16,23 @@
   },
   {
     "type": "effect_on_condition",
+    "id": "eoc_secro_zombie_titan_blockcharge_check",
+    "effect": [ { "npc_add_effect": "secro_zombie_titan_blockcharge", "duration": "20 seconds" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_zombie_blacktitan_blockcharge_check",
+    "effect": [ { "npc_add_effect": "secro_zombie_blacktitan_blockcharge", "duration": "20 seconds" } ]
+  },
+  {
+    "type": "effect_on_condition",
     "id": "eoc_secro_mon_zombie_tendrils_sprint_check",
     "effect": [ { "npc_add_effect": "secro_tendril_sprint", "duration": "22 seconds" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_zombie_xlick_alert_check",
+    "effect": [ { "npc_add_effect": "secro_zombie_xlick_alert", "duration": "30 seconds" } ]
   },
   {
     "type": "effect_on_condition",
@@ -61,7 +76,7 @@
       { "npc_add_effect": "controlled", "duration": "8 seconds" },
       { "npc_location_variable": { "global_val": "secro_leptiosa_noxiousgas" } },
       {
-        "queue_eocs": [
+        "run_eocs": [
           {
             "id": "eoc_secro_mon_zombie_leptiosa_ngas_checked",
             "effect": [
@@ -170,8 +185,7 @@
         "real_count": 1,
         "min_radius": 1,
         "max_radius": 4,
-        "lifespan": [ "60 seconds", "90 seconds" ],
-        "spawn_message": ""
+        "lifespan": [ "60 seconds", "90 seconds" ]
       }
     ]
   },
@@ -212,7 +226,7 @@
       },
       { "u_location_variable": { "global_val": "secro_gorepit_spawn" } },
       {
-        "queue_eocs": [
+        "run_eocs": [
           {
             "id": "eoc_secro_mon_zombie_gorepit_spawnfurther_check",
             "condition": { "not": { "u_has_effect": "eff_zombie_gorepit_spawnmore_stop" } },
@@ -246,7 +260,7 @@
         "outdoor_only": true
       },
       {
-        "queue_eocs": [
+        "run_eocs": [
           {
             "id": "eoc_secro_mon_zombie_gorepit_spawnfurthermore_check",
             "condition": { "not": { "u_has_effect": "eff_zombie_gorepit_spawnmore_stop" } },
@@ -381,7 +395,7 @@
       { "npc_add_effect": "controlled", "duration": "4 seconds" },
       { "npc_location_variable": { "global_val": "secro_nautilus_discent" } },
       {
-        "queue_eocs": [
+        "run_eocs": [
           {
             "id": "eoc_secro_mon_zombie_nautilus_disturbance_checked",
             "effect": [
@@ -495,7 +509,7 @@
     "false_effect": [
       { "npc_location_variable": { "global_val": "secro_nautilus_discent" } },
       {
-        "queue_eocs": [
+        "run_eocs": [
           "eoc_secro_mon_zombie_nautilus_pedo1_check",
           "eoc_secro_mon_zombie_nautilus_pedo2_check",
           "eoc_secro_mon_zombie_nautilus_pedo3_check",
@@ -516,6 +530,14 @@
     "type": "effect_on_condition",
     "id": "eoc_secro_mon_ayenel_lockon_check",
     "effect": [ { "u_add_effect": "blind", "duration": "6 seconds" }, { "u_add_effect": "glowing", "duration": "60 seconds" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_mon_ayenel_spawn_check",
+    "effect": [
+      { "u_spawn_monster": "mon_ayenel_spawn", "real_count": 1, "min_radius": 1, "max_radius": 2 },
+      { "u_add_effect": "secro_ayenel_detached", "duration": "PERMANENT" }
+    ]
   },
   {
     "type": "effect_on_condition",
@@ -656,7 +678,7 @@
       { "npc_add_effect": "controlled", "duration": "7 seconds" },
       { "u_location_variable": { "global_val": "secro_cyberdragon_dirsho" } },
       {
-        "queue_eocs": [
+        "run_eocs": [
           {
             "id": "eoc_secro_mon_secrodragon_woke_directshock_check",
             "effect": [
@@ -796,7 +818,7 @@
     "id": "eoc_secro_mon_sflesh_fleshling_huge_spawn",
     "effect": [
       {
-        "u_spawn_monster": "GROUP_FLESHLING_CHILDREN",
+        "npc_spawn_monster": "GROUP_FLESHLING_CHILDREN",
         "group": true,
         "real_count": 1,
         "min_radius": 1,
@@ -820,8 +842,7 @@
         "group": true,
         "real_count": 1,
         "min_radius": 1,
-        "max_radius": 1,
-        "spawn_message": ""
+        "max_radius": 1
       },
       { "npc_add_effect": "secro_veinstalk_limit", "duration": "7 seconds" }
     ]
@@ -829,44 +850,20 @@
   {
     "type": "effect_on_condition",
     "id": "eoc_secro_mon_sflesh_fleshling_smol_split",
-    "condition": { "not": { "u_has_effect": "eff_fleshling_splitcheck" } },
-    "effect": [
-      {
-        "u_spawn_monster": "mon_sflesh_fleshling_tiny",
-        "real_count": 2,
-        "min_radius": 1,
-        "max_radius": 1,
-        "spawn_message": ""
-      }
-    ]
+    "condition": { "and": [ "has_alpha", { "not": { "u_has_effect": "eff_fleshling_splitcheck" } } ] },
+    "effect": [ { "npc_spawn_monster": "mon_sflesh_fleshling_tiny", "real_count": 2, "min_radius": 1, "max_radius": 1 } ]
   },
   {
     "type": "effect_on_condition",
     "id": "eoc_secro_mon_sflesh_fleshling_med_split",
-    "condition": { "not": { "u_has_effect": "eff_fleshling_splitcheck" } },
-    "effect": [
-      {
-        "u_spawn_monster": "mon_sflesh_fleshling_smol",
-        "real_count": 2,
-        "min_radius": 1,
-        "max_radius": 1,
-        "spawn_message": ""
-      }
-    ]
+    "condition": { "and": [ "has_alpha", { "not": { "u_has_effect": "eff_fleshling_splitcheck" } } ] },
+    "effect": [ { "npc_spawn_monster": "mon_sflesh_fleshling_smol", "real_count": 2, "min_radius": 1, "max_radius": 1 } ]
   },
   {
     "type": "effect_on_condition",
     "id": "eoc_secro_mon_sflesh_fleshling_big_split",
-    "condition": { "not": { "u_has_effect": "eff_fleshling_splitcheck" } },
-    "effect": [
-      {
-        "u_spawn_monster": "mon_sflesh_fleshling_med",
-        "real_count": 2,
-        "min_radius": 1,
-        "max_radius": 1,
-        "spawn_message": ""
-      }
-    ]
+    "condition": { "and": [ "has_alpha", { "not": { "u_has_effect": "eff_fleshling_splitcheck" } } ] },
+    "effect": [ { "npc_spawn_monster": "mon_sflesh_fleshling_med", "real_count": 2, "min_radius": 1, "max_radius": 1 } ]
   },
   {
     "type": "effect_on_condition",

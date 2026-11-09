@@ -11,7 +11,7 @@
     "id": "mon_zedfail_seeker",
     "type": "MONSTER",
     "name": { "str": "seeker" },
-    "description": "Alluring large skin in shape of a starfish and mouth slits nibbles near every tip. Its abdomen is infused with gigantic lizard eye, eager to seek its prey.",
+    "description": "Alluring large skin in shape of a starfish and mouth slits nibbles near every tip.  Its abdomen is infused with gigantic lizard eye, eager to seek its prey.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "62500 ml",
@@ -32,7 +32,7 @@
     "armor": { "bash": 4, "cut": 2, "bullet": 2, "heat": 2 },
     "vision_day": 50,
     "vision_night": 10,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "special_attacks": [
       [ "LUNGE", 15 ],
       {
@@ -54,7 +54,7 @@
     "id": "mon_zedfail_floral",
     "type": "MONSTER",
     "name": { "str": "flora" },
-    "description": "A human body with its head mutated and deformed into a flowery petal mouth. It shows hundreds of teeth and a centered eye whenever it opens.",
+    "description": "A human body with its head mutated and deformed into a flowery petal mouth.  It shows hundreds of teeth and a centered eye whenever it opens.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "62500 ml",
@@ -73,7 +73,7 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
     "dodge": 1,
     "armor": { "bash": 5, "cut": 2, "bullet": 2 },
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "special_attacks": [
       [ "LUNGE", 20 ],
       {
@@ -93,7 +93,7 @@
     "id": "mon_zedfail_twistcrawl",
     "type": "MONSTER",
     "name": { "str": "distorted crawler" },
-    "description": "A twisted body with various attachments of human anatomy, resulting into a nightmarish agile crawler. Its head ruptured into a horrid mouth and a fiendish eye inside, constantly opens and close to survey its vicinity.",
+    "description": "A twisted body with various attachments of human anatomy, resulting into a nightmarish agile crawler.  Its head ruptured into a horrid mouth and a fiendish eye inside, constantly opens and close to survey its vicinity.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "30000 ml",
@@ -112,7 +112,7 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
     "dodge": 1,
     "armor": { "bash": 1, "cut": 4, "bullet": 3, "heat": 1 },
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "special_attacks": [
       [ "LUNGE", 12 ],
       {
@@ -132,7 +132,7 @@
     "id": "mon_zedfail_chomp",
     "type": "MONSTER",
     "name": { "str": "chomper" },
-    "description": "Headless humanoid monster, with its rib ruptured into a torsal eyed mouth. The arms are gone, yet it is a threat not to be misjudged.",
+    "description": "Headless humanoid monster, with its rib ruptured into a torsal eyed mouth.  The arms are gone, yet it is a threat not to be misjudged.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "62500 ml",
@@ -140,7 +140,7 @@
     "hp": 75,
     "speed": 90,
     "diff": 5,
-    "harvest": "zombie",
+    "harvest": "zombie_humanoid",
     "material": [ "flesh" ],
     "symbol": "⪝",
     "color": "green",

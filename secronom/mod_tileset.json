@@ -12,7 +12,9 @@
       "MshockXottoplus12",
       "MSX++DEAD_PEOPLE",
       "MXplus12_for_cosmetics",
-      "MSXotto+"
+      "MSXotto+",
+      "UndeadPeople_0J_Hybrid_v3",
+      "UndeadPeople v2"
     ],
     "tiles-new": [
       {
@@ -1090,7 +1092,7 @@
               }
             ]
           },
-          { "id": "t_secro_atm_flesh", "fg": 526 },
+          { "id": "f_secro_atm_flesh", "fg": 526 },
           { "id": "t_secro_bars_flesh", "fg": 527 },
           {
             "id": "t_secro_brick_wall_flesh",
@@ -2748,20 +2750,6 @@
           { "id": "mon_sflesh_reindeer", "fg": 1859, "bg": 1733 },
           { "id": "corpse_mon_sflesh_reindeer", "fg": 1860 },
           { "id": "mon_sflesh_boomer_huge", "fg": 1861 },
-          {
-            "id": "mon_sflesh_gas_zombie",
-            "fg": [
-              { "weight": 11, "sprite": 1862 },
-              { "weight": 11, "sprite": 1863 },
-              { "weight": 11, "sprite": 1864 },
-              { "weight": 11, "sprite": 1865 },
-              { "weight": 11, "sprite": 1866 },
-              { "weight": 11, "sprite": 1867 }
-            ],
-            "bg": 1730,
-            "rotates": false,
-            "animated": true
-          },
           { "id": "mon_sflesh_skeleton_hulk", "fg": 1868 },
           { "id": "corpse_mon_sflesh_skeleton_hulk", "fg": 1869 },
           { "id": "mon_sflesh_zombear", "fg": 1870, "bg": 1729, "rotates": false },

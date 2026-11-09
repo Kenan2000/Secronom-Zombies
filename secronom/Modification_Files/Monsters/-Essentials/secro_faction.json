@@ -17,25 +17,28 @@
     "name": "fleshweaver",
     "//": "Only befriends natural (those who are composed of pure flesh) lifeforms like you and wild animals.",
     "friendly": [ "human", "animal", "insect" ],
-    "neutral": [ "zombie", "zombie_aquatic", "blob", "nether", "bot", "plant" ]
+    "neutral": [ "zombie", "zombie_aquatic", "nether", "bot", "plant" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "human",
-    "friendly": [ "fleshweaver" ]
+    "copy-from": "human",
+    "extend": { "friendly": [ "fleshweaver", "secro_defense_bot" ] }
   },
   {
     "type": "MONSTER_FACTION",
     "name": "animal",
-    "friendly": [ "fleshweaver" ],
-    "neutral": [ "small_animal" ]
+    "copy-from": "animal",
+    "extend": { "friendly": [ "fleshweaver" ], "neutral": [ "secro_defense_bot" ] }
   },
   {
     "type": "MONSTER_FACTION",
     "name": "insect",
-    "friendly": [ "fleshweaver" ],
-    "neutral": [ "military", "defense_bot", "utility_bot", "zombie" ],
-    "by_mood": "insect"
+    "copy-from": "insect",
+    "extend": {
+      "friendly": [ "fleshweaver" ],
+      "neutral": [ "military", "defense_bot", "utility_bot", "zombie", "secro_defense_bot" ]
+    }
   },
   {
     "type": "MONSTER_FACTION",
@@ -43,7 +46,8 @@
   },
   {
     "type": "MONSTER_FACTION",
-    "name": "carrion"
+    "name": "carrion",
+    "friendly": [ "carrion2" ]
   },
   {
     "type": "MONSTER_FACTION",
@@ -63,8 +67,7 @@
     "//": "For crimson horrors like a fleshling, which are pacifists and only attack with abilities.",
     "type": "MONSTER_FACTION",
     "name": "secro_flesh2",
-    "by_mood": "secro_flesh",
-    "friendly": [ "secro_flesh3" ]
+    "friendly": [ "secro_flesh", "secro_flesh3" ]
   },
   {
     "//": "Given faction to a monster to prevent them from being attacked by #2.",
@@ -80,13 +83,49 @@
     "type": "MONSTER_FACTION",
     "name": "secro_defense_bot",
     "base_faction": "bot",
-    "neutral": [ "cop_bot", "defense_bot", "military", "utility_bot", "science", "small_animal" ],
+    "neutral": [ "bot", "science", "small_animal" ],
     "friendly": [ "human" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "zombie_weaver",
     "base_faction": "zombie",
-    "hate": [ "zombie", "zombie_aquatic" ]
+    "hate": [ "zombie", "zombie_aquatic", "cult" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "bot",
+    "copy-from": "bot",
+    "extend": { "neutral": [ "saddler", "fleshweaver", "secro_defense_bot" ] }
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "zombie",
+    "copy-from": "zombie",
+    "extend": { "neutral": [ "insect", "fleshweaver" ], "hate": [ "zombie_weaver" ] }
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "nether",
+    "copy-from": "nether",
+    "extend": { "neutral": [ "fleshweaver" ] }
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "plant",
+    "copy-from": "plant",
+    "extend": { "neutral": [ "fleshweaver" ] }
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "science",
+    "copy-from": "science",
+    "extend": { "neutral": [ "secro_defense_bot" ] }
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "small_animal",
+    "copy-from": "small_animal",
+    "extend": { "neutral": [ "secro_defense_bot" ] }
   }
 ]

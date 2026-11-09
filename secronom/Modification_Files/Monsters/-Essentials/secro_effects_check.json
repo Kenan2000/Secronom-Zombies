@@ -82,5 +82,9 @@
     "type": "effect_type",
     "id": "sflesh_fleshling_huge_spawned",
     "enchantments": [ { "values": [ { "value": "SPEED", "multiply": -0.25 } ] } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_ayenel_detached"
   }
 ]

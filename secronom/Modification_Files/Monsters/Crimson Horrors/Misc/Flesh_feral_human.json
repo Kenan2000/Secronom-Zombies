@@ -328,16 +328,5 @@
     "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
     "extend": { "species": [ "SFLESH" ] },
     "delete": { "flags": [ "HUMAN" ] }
-  },
-  {
-    "id": "mon_sflesh_feral_human_archaeologist",
-    "copy-from": "mon_feral_human_archaeologist",
-    "burn_into": "mon_zombie",
-    "type": "MONSTER",
-    "default_faction": "secro_flesh3",
-    "relative": { "melee_skill": 1, "armor": { "bash": 3 } },
-    "proportional": { "hp": 1.25, "speed": 0.85, "bleed_rate": 0.33 },
-    "extend": { "species": [ "SFLESH" ] },
-    "delete": { "flags": [ "HUMAN" ] }
   }
 ]

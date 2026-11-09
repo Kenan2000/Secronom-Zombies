@@ -1,7 +1,7 @@
 [
   {
     "type": "monstergroup",
-    "name": "GROUP_ZOMBIE_UPGRADE",
+    "id": "GROUP_ZOMBIE_UPGRADE",
     "monsters": [
       { "monster": "mon_secrozombie_tent", "weight": 8 },
       { "monster": "mon_secrozombie_blade", "weight": 8 },
@@ -10,7 +10,7 @@
     ]
   },
   {
-    "name": "GROUP_SWARMERSEGWAY_UPGRADE",
+    "id": "GROUP_SWARMERSEGWAY_UPGRADE",
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_zombie_mouth", "weight": 75 },
@@ -22,14 +22,14 @@
       { "monster": "mon_zombie_charger", "weight": 25 },
       { "monster": "mon_zombie_scourge", "weight": 25 },
       { "monster": "mon_zombie_grubby", "weight": 20 },
-      { "monster": "mon_zombie_lick", "weight": 10, "starts": "14 days" },
-      { "monster": "mon_zombie_unify", "weight": 10, "starts": "7 days" },
-      { "monster": "mon_zombie_bootlegsmoker", "weight": 5, "starts": "7 days" },
+      { "monster": "mon_zombie_lick", "weight": 10, "starts": "56 days" },
+      { "monster": "mon_zombie_unify", "weight": 10, "starts": "28 days" },
+      { "monster": "mon_zombie_bootlegsmoker", "weight": 5, "starts": "28 days" },
       { "monster": "mon_zombie_bone", "weight": 1 }
     ]
   },
   {
-    "name": "GROUP_EZTARVING_UPGRADE",
+    "id": "GROUP_EZTARVING_UPGRADE",
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_zombie_swarmer_evo_savage", "weight": 100 },
@@ -38,12 +38,12 @@
     ]
   },
   {
-    "name": "GROUP_TENDRILS_UPGRADE",
+    "id": "GROUP_TENDRILS_UPGRADE",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_zombie_tendricles", "weight": 500 }, { "monster": "mon_zombie_thicktendrils", "weight": 500 } ]
   },
   {
-    "name": "GROUP_TENDRILS_UPGRADEX",
+    "id": "GROUP_TENDRILS_UPGRADEX",
     "//": "Cycle the evolution until it hits the final upgrade.",
     "type": "monstergroup",
     "monsters": [
@@ -53,12 +53,12 @@
     ]
   },
   {
-    "name": "GROUP_BLADED_UPGRADE",
+    "id": "GROUP_BLADED_UPGRADE",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_zombie_serratedblade", "weight": 500 }, { "monster": "mon_zombie_sharpblade", "weight": 500 } ]
   },
   {
-    "name": "GROUP_BLADED_UPGRADEX",
+    "id": "GROUP_BLADED_UPGRADEX",
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_zombie_serratedblade", "weight": 500 },
@@ -67,12 +67,12 @@
     ]
   },
   {
-    "name": "GROUP_ZSPIDER_UPGRADE",
+    "id": "GROUP_ZSPIDER_UPGRADE",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_zombie_spodertickle", "weight": 500 }, { "monster": "mon_zombie_spoderhug", "weight": 500 } ]
   },
   {
-    "name": "GROUP_ZSPIDER_UPGRADEX",
+    "id": "GROUP_ZSPIDER_UPGRADEX",
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_zombie_spoderhug", "weight": 500 },
@@ -81,17 +81,17 @@
     ]
   },
   {
-    "name": "GROUP_MOUTH_UPGRADEX",
+    "id": "GROUP_MOUTH_UPGRADEX",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_zombie_suctionmouth", "weight": 70 }, { "monster": "mon_zombie_bellymouth", "weight": 1000 } ]
   },
   {
-    "name": "GROUP_LYING_UPGRADE",
+    "id": "GROUP_LYING_UPGRADE",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_zombie_zoth", "weight": 500 }, { "monster": "mon_zombie_zawk", "weight": 500 } ]
   },
   {
-    "name": "GROUP_LYING_UPGRADEX",
+    "id": "GROUP_LYING_UPGRADEX",
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_zombie_zoth", "weight": 500 },
@@ -100,12 +100,12 @@
     ]
   },
   {
-    "name": "GROUP_CHARGER_UPGRADE",
+    "id": "GROUP_CHARGER_UPGRADE",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_zombie_charger_plate", "weight": 500 }, { "monster": "mon_zombie_charger_spike", "weight": 500 } ]
   },
   {
-    "name": "GROUP_CHARGER_UPGRADEX",
+    "id": "GROUP_CHARGER_UPGRADEX",
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_zombie_charger_plate", "weight": 500 },
@@ -114,22 +114,22 @@
     ]
   },
   {
-    "name": "GROUP_SCOURGE_UPGRADEX",
+    "id": "GROUP_SCOURGE_UPGRADEX",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_zombie_leptiosa", "weight": 70 }, { "monster": "mon_zombie_defile", "weight": 1000 } ]
   },
   {
-    "name": "GROUP_UNIFIER_UPGRADEX",
+    "id": "GROUP_UNIFIER_UPGRADEX",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_zombie_hemo", "weight": 70 }, { "monster": "mon_zombie_unity", "weight": 1000 } ]
   },
   {
-    "name": "GROUP_GRUBBY_UPGRADEX",
+    "id": "GROUP_GRUBBY_UPGRADEX",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_zombie_glut", "weight": 70 }, { "monster": "mon_zombie_slimy", "weight": 1000 } ]
   },
   {
-    "name": "GROUP_SKITTYWEAVY_UPGRADE",
+    "id": "GROUP_SKITTYWEAVY_UPGRADE",
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_zombie_skittyweavy_sickly_idle", "weight": 500 },
@@ -137,7 +137,7 @@
     ]
   },
   {
-    "name": "GROUP_REVENANT_UPGRADE",
+    "id": "GROUP_REVENANT_UPGRADE",
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_zombie_revenant_allure", "weight": 500 },
@@ -145,7 +145,7 @@
     ]
   },
   {
-    "name": "GROUP_NOX_UPGRADE",
+    "id": "GROUP_NOX_UPGRADE",
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_zombieworm_wriggly", "weight": 250 },
@@ -154,37 +154,37 @@
     ]
   },
   {
-    "name": "GROUP_GRAVEDIGGER_UPGRADEX",
+    "id": "GROUP_GRAVEDIGGER_UPGRADEX",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_zombieworm_onger", "weight": 70 }, { "monster": "mon_zombieworm_gravedigger", "weight": 1000 } ]
   },
   {
-    "name": "GROUP_BOW_KAXIX",
+    "id": "GROUP_BOW_KAXIX",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_zedbow_kaxix_armed", "weight": 70 }, { "monster": "mon_zedbow_kaxix", "weight": 1000 } ]
   },
   {
-    "name": "GROUP_BOW_AXXUROS",
+    "id": "GROUP_BOW_AXXUROS",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_zedbow_axxuros_armed", "weight": 70 }, { "monster": "mon_zedbow_axxuros", "weight": 1000 } ]
   },
   {
-    "name": "GROUP_BOW_EXIOS",
+    "id": "GROUP_BOW_EXIOS",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_zedbow_exios_armed", "weight": 70 }, { "monster": "mon_zedbow_exios", "weight": 1000 } ]
   },
   {
-    "name": "GROUP_BOW_DREXX",
+    "id": "GROUP_BOW_DREXX",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_zedbow_drexx_armed", "weight": 70 }, { "monster": "mon_zedbow_drexx", "weight": 1000 } ]
   },
   {
-    "name": "GROUP_BOW_EPIXO",
+    "id": "GROUP_BOW_EPIXO",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_zedbow_epixo_armed", "weight": 70 }, { "monster": "mon_zedbow_epixo", "weight": 1000 } ]
   },
   {
-    "name": "GROUP_STRAY_ELEMENT",
+    "id": "GROUP_STRAY_ELEMENT",
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_zombie_stray_w_leaf_weak", "weight": 100 },
@@ -193,7 +193,7 @@
     ]
   },
   {
-    "name": "GROUP_VECTOR_GROW",
+    "id": "GROUP_VECTOR_GROW",
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_vector_seedler", "weight": 40 },
@@ -203,12 +203,12 @@
   },
   {
     "type": "monstergroup",
-    "name": "GROUP_VECTOR_GROW1",
+    "id": "GROUP_VECTOR_GROW1",
     "monsters": [ { "monster": "mon_vector" } ]
   },
   {
     "type": "monstergroup",
-    "name": "GROUP_VECTOR_GROW2",
+    "id": "GROUP_VECTOR_GROW2",
     "monsters": [ { "monster": "mon_vector_sprout" } ]
   }
 ]
