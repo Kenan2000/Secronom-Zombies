@@ -1,6 +1,6 @@
 # Secronom-Zombies
 **This mod is being continued using Erin105's maintained version**
-*https://github.com/Erin105/Secronom-Zombie*
+*https://github.com/Erin105/Secronom-Zombies*
 ###### Made it easier to get back to so thanks!
 
 This is being developed with the latest experimental version of CDDA. It may have problems with stable or outdated experimental versions.

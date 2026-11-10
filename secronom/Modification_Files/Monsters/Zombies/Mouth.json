@@ -1,63 +1,50 @@
 [
   {
-    "aggression": 100,
-    "armor": { "acid": 1, "bash": 3, "cut": 2, "bullet": 2, "heat": 1 },
-    "attack_cost": 125,
-    "color": "light_green",
-    "death_drops": "default_zombie_death_drops",
-    "default_faction": "zombie",
-    "description": "A human body, distinct to its big, thick and morbidly deformed jaws, dribbling in black ooze.",
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ],
-    "harvest": "zombie_humanoid",
-    "hp": 70,
-    "diff": 1,
+    "type": "MONSTER",
     "id": "mon_zombie_mouth",
-    "material": [ "flesh" ],
-    "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
-    "melee_dice": 1,
-    "melee_dice_sides": 3,
-    "melee_skill": 4,
-    "morale": 100,
+    "copy-from": "mon_zombie_base",
     "name": { "str": "mouthswell zombie" },
+    "description": "A human body distinct to its big, thick and morbidly deformed jaws dribbling in black ooze.",
+    "species": [ "ZOMBIE", "SECROZED_1", "HUMAN" ],
+    "symbol": "<",
+    "color": "light_green",
+    "relative": { "diff": 1, "hp": 10, "melee_dice": 1, "attack_cost": 25 },
+    "melee_damage": [ { "damage_type": "cut", "amount": 3, "armor_penetration": 3 } ],
+    "armor": { "bash": 3, "cut": 2, "stab": 2, "bullet": 2 },
     "special_attacks": [
       {
         "cooldown": 10,
-        "damage_max_instance": [ { "amount": 8, "armor_multiplier": 0.7, "damage_type": "stab" } ],
+        "damage_max_instance": [ { "amount": 8, "armor_multiplier": 0.6, "damage_type": "stab" } ],
         "type": "bite"
       }
     ],
-    "species": [ "ZOMBIE", "SECROZED_1", "HUMAN" ],
-    "speed": 80,
-    "symbol": "<",
-    "type": "MONSTER",
-    "upgrades": { "half_life": 48, "into": "mon_zombie_bellymouth" },
-    "volume": "62500 ml",
-    "weight": "81500 g"
+    "upgrades": { "half_life": 48, "into": "mon_zombie_bellymouth" }
   },
   {
-    "aggression": 100,
-    "armor": { "acid": 1, "bash": 7, "cut": 3, "bullet": 3, "heat": 1 },
-    "attack_cost": 150,
-    "color": "light_green",
-    "death_drops": "default_zombie_death_drops",
-    "default_faction": "zombie",
-    "description": "A fat zombie distinct to its gaping mouth on its ruptured belly as rows of sharp, irregular teeth protrude from it.",
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ],
-    "grab_strength": 2,
-    "harvest": "zombie_humanoid",
-    "hp": 125,
-    "diff": 5,
+    "type": "MONSTER",
     "id": "mon_zombie_bellymouth",
-    "material": [ "flesh" ],
-    "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
-    "melee_dice": 3,
-    "melee_dice_sides": 4,
-    "melee_skill": 4,
-    "morale": 100,
+    "copy-from": "mon_zombie_mouth",
     "name": { "str": "bellymouth zombie" },
+    "description": "A fat zombie distinct to its gaping mouth on its ruptured belly as rows of sharp, irregular teeth protrude from it.",
+    "symbol": "⪕",
+    "color": "light_green",
+    "relative": {
+      "hp": 35,
+      "diff": 4,
+      "speed": 5,
+      "melee_skill": 1,
+      "melee_dice": 2,
+      "attack_cost": 25,
+      "grab_strength": 2,
+      "armor": { "bash": 4, "cut": 1, "bullet": 1, "stab": 2, "acid": 1 }
+    },
+    "melee_damage": [
+      { "damage_type": "cut", "amount": 6, "armor_penetration": 3 },
+      { "damage_type": "stab", "amount": 2, "armor_multiplier": 0.5 }
+    ],
     "special_attacks": [
       {
-        "cooldown": 3,
+        "cooldown": 5,
         "damage_max_instance": [
           { "amount": 4, "armor_multiplier": 0.4, "damage_type": "cut" },
           { "amount": 6, "armor_multiplier": 0.6, "damage_type": "stab" }
@@ -66,54 +53,50 @@
         "type": "bite"
       }
     ],
-    "species": [ "ZOMBIE", "SECROZED_1", "HUMAN" ],
-    "speed": 85,
-    "symbol": "⪕",
-    "type": "MONSTER",
-    "upgrades": { "half_life": 64, "into_group": "GROUP_MOUTH_UPGRADEX" },
-    "volume": "62500 ml",
-    "weight": "81500 g"
+    "upgrades": { "half_life": 64, "into_group": "GROUP_MOUTH_UPGRADEX" }
   },
   {
     "//": "Perfectly strong biter!",
-    "aggression": 100,
-    "armor": { "acid": 2, "bash": 8, "cut": 12, "bullet": 8, "heat": 2 },
-    "attack_cost": 200,
-    "color": "red_green",
-    "death_drops": "default_zombie_death_drops",
-    "default_faction": "zombie",
-    "description": "A large, ravenous zed with a thick skin and an elongated mouth viciously altered similar to lamprey's.",
-    "dodge": 1,
-    "flags": [ "HEARS", "KEENNOSE", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ],
-    "grab_strength": 4,
-    "harvest": "zombie_humanoid",
-    "hp": 405,
-    "diff": 15,
+    "type": "MONSTER",
     "id": "mon_zombie_suctionmouth",
-    "material": [ "flesh" ],
-    "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
-    "melee_dice": 3,
-    "melee_dice_sides": 5,
-    "melee_skill": 6,
-    "morale": 100,
+    "copy-from": "mon_zombie_bellymouth",
     "name": { "str": "sucker" },
+    "description": "A large, ravenous zed with a thick skin and an elongated mouth viciously altered similar to a lamprey's.",
+    "species": [ "ZOMBIE", "SECROZED_3", "HUMAN" ],
+    "symbol": "⪃",
+    "color": "red_green",
+    "relative": {
+      "hp": 215,
+      "diff": 5,
+      "speed": -10,
+      "melee_skill": 3,
+      "melee_dice": 2,
+      "melee_dice_sides": 2,
+      "attack_cost": 50,
+      "grab_strength": 2,
+      "armor": { "bash": 10, "cut": 4, "bullet": 4, "stab": 7, "acid": 1, "heat": 1 }
+    },
+    "melee_damage": [
+      { "damage_type": "bash", "amount": 10 },
+      { "damage_type": "cut", "amount": 9, "armor_penetration": 3 },
+      { "damage_type": "stab", "amount": 5, "armor_multiplier": 0.5 }
+    ],
     "special_attacks": [
       {
-        "cooldown": 30,
+        "cooldown": 10,
         "damage_max_instance": [
           { "amount": 20, "armor_multiplier": 0.8, "damage_type": "bash" },
           { "amount": 20, "armor_multiplier": 0.4, "damage_type": "cut" },
-          { "amount": 20, "armor_multiplier": 0.6, "damage_type": "stab" }
+          { "amount": 20, "armor_multiplier": 0.6, "damage_type": "stab" },
+          { "amount": 1, "armor_penetration": 10, "damage_type": "bullet" }
         ],
         "effects": [ { "bp": "torso", "duration": 1000, "id": "grabbed" } ],
         "type": "bite"
       }
     ],
-    "species": [ "ZOMBIE", "SECROZED_3", "HUMAN" ],
-    "speed": 80,
-    "symbol": "⪃",
-    "type": "MONSTER",
     "volume": "92500 ml",
-    "weight": "120000 g"
+    "weight": "120000 g",
+    "upgrades": false,
+    "extend": { "flags": [ "KEENNOSE" ] }
   }
 ]

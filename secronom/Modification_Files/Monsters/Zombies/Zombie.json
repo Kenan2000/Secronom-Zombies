@@ -1,6 +1,6 @@
 [
   {
-    "//": "Normal zombies but with modified attributes/abilities. Some shares similarities to other secronom zed mutants.",
+    "//": "Normal zombies but with modified attributes/abilities. These share similarities to other secronom zed mutants and will evolve into them later on, bypassing an evolution step.",
     "id": "mon_secrozombie_rot",
     "copy-from": "mon_zombie",
     "looks_like": "mon_zombie",
@@ -12,7 +12,7 @@
     "symbol": "Ƶ",
     "color": "light_green_yellow",
     "harvest": "zombie_humanoid",
-    "upgrades": {  }
+    "upgrades": { "half_life": 66, "into_group": "GROUP_SCOURGE_UPGRADEX" }
   },
   {
     "id": "mon_secrozombie_armored",
@@ -25,7 +25,7 @@
     "symbol": "Ƶ",
     "color": "light_green_white",
     "harvest": "zombie_humanoid",
-    "upgrades": {  }
+    "upgrades": { "half_life": 66, "into_group": "GROUP_CHARGER_UPGRADEX" }
   },
   {
     "id": "mon_secrozombie_tent",
@@ -39,7 +39,7 @@
     "color": "green",
     "harvest": "zombie_humanoid",
     "special_attacks": [ { "type": "bite", "cooldown": 5 }, { "id": "grab", "cooldown": 3 }, [ "scratch", 20 ] ],
-    "upgrades": {  }
+    "upgrades": { "half_life": 66, "into_group": "GROUP_TENDRILS_UPGRADEX" }
   },
   {
     "id": "mon_secrozombie_blade",
@@ -54,7 +54,7 @@
     "harvest": "zombie_humanoid",
     "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
     "special_attacks": [ [ "scratch", 3 ] ],
-    "upgrades": {  }
+    "upgrades": { "half_life": 66, "into_group": "GROUP_BLADED_UPGRADEX" }
   },
   {
     "id": "mon_secrozombie_potent",
@@ -63,7 +63,7 @@
     "type": "MONSTER",
     "name": { "str": "zombie" },
     "description": "A human body, swaying as it moves, an unstoppable rage visible in its oily black eyes.  Its veins oddly pulsates in constant beats.",
-    "relative": { "hp": 3 },
+    "relative": { "hp": 3, "speed": 3 },
     "symbol": "Ƶ",
     "color": "light_green",
     "harvest": "zombie_humanoid",
