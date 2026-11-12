@@ -110,6 +110,7 @@
     "name": { "str": "blood vessel" },
     "description": "An animate substance completely made out of blood. It throbs erratically.",
     "default_faction": "zombie",
+    "bodytype": "human",
     "species": [ "ZOMBIE" ],
     "volume": "62500 ml",
     "weight": "81500 g",
