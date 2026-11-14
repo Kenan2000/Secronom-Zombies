@@ -3,9 +3,12 @@
     "//": "Reminder that these appears in the debug spellcasting. Disable the mod if you're testing spell-related stuff!",
     "id": "sacrifice_spell",
     "type": "SPELL",
-    "name": { "str": "Sacrifice" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster deals an instant death damage, sacrificing itself upon casting a spell that's been combined with.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "name": { "str": "Sacrifice", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster deals an instant death damage, sacrificing itself upon casting a spell that's been combined with.'"
+    },
+    "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "message": "",
     "effect": "attack",
@@ -20,10 +23,10 @@
   {
     "type": "SPELL",
     "id": "secro_spell_null",
-    "name": { "str": "null" },
-    "description": "null… just ignore this.",
+    "name": { "str": "null", "//~": "NO_I18N" },
+    "description": { "//~": "NO_I18N", "str": "null… just ignore this." },
     "valid_targets": [ "none" ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
+    "flags": [ "SILENT", "NO_PROJECTILE" ],
     "message": "",
     "effect": "attack",
     "shape": "blast"
@@ -31,8 +34,11 @@
   {
     "id": "mon_secro_eoc_spell_base",
     "type": "SPELL",
-    "name": { "str": "EOC base" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Base spell for EOCs.'",
+    "name": { "str": "EOC base", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Base spell for EOCs.'"
+    },
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "shape": "blast",
@@ -43,8 +49,11 @@
   {
     "id": "mon_zombie_disser_shrieks",
     "type": "SPELL",
-    "name": { "str": "Disser Shriek Sound" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster shrieks.'",
+    "name": { "str": "Disser Shriek Sound", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster shrieks.'"
+    },
     "valid_targets": [ "self" ],
     "flags": [ "NO_EXPLOSION_SFX" ],
     "effect": "noise",
@@ -60,9 +69,12 @@
   {
     "id": "mon_fleshweaver_vexpl",
     "type": "SPELL",
-    "name": { "str": "Vein Explosion" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'The torn up ligament explodes internally, dealing an extra bio damage to the target.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "name": { "str": "Vein Explosion", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'The torn up ligament explodes internally, dealing an extra bio damage to the target.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "hostile" ],
     "message": "",
     "effect": "attack",
@@ -78,9 +90,12 @@
   {
     "id": "mon_fleshweaver_vscratch",
     "type": "SPELL",
-    "name": { "str": "Volatile Scratch" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster scratches the target with a claw imbued in volatile bodily fluid, dealing moderate cutting damage that lingers for few turns.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_DURATION", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "name": { "str": "Volatile Scratch", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster scratches the target with a claw imbued in volatile bodily fluid, dealing moderate cutting damage that lingers for few turns.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_DURATION", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "hostile" ],
     "message": "",
     "effect": "attack",
@@ -99,9 +114,12 @@
   {
     "id": "mon_zombie_stray_w_leaf_stro1_lace",
     "type": "SPELL",
-    "name": { "str": "Lacerate" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'If the target is nearby, caster slashes with a vine, dealing moderate cutting damage.  This is casted 2 times.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
+    "name": { "str": "Lacerate", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'If the target is nearby, caster slashes with a vine, dealing moderate cutting damage.  This is casted 2 times.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE" ],
     "valid_targets": [ "hostile" ],
     "message": "",
     "effect": "attack",
@@ -115,9 +133,12 @@
   {
     "id": "mon_zombie_stray_w_leaf_stro1_razorl",
     "type": "SPELL",
-    "name": { "str": "Razor Leaf" },
-    "description": "(Combo) spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster sends its sharp leaves to mince the targets in a line, dealing moderate cutting damage.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_AOE" ],
+    "name": { "str": "Razor Leaf", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "(Combo) spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster sends its sharp leaves to mince the targets in a line, dealing moderate cutting damage.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_AOE" ],
     "valid_targets": [ "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -134,9 +155,12 @@
   {
     "id": "mon_zombie_stray_w_leaf_stro2_sscent",
     "type": "SPELL",
-    "name": { "str": "Sweet Scent" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Floral bloom accompanies the wild outburst, spreading sleep-inducing pollens in the same area.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_AOE" ],
+    "name": { "str": "Sweet Scent", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Floral bloom accompanies the wild outburst, spreading sleep-inducing pollens in the same area.'"
+    },
+    "flags": [ "SILENT", "RANDOM_AOE" ],
     "valid_targets": [ "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -153,9 +177,12 @@
   {
     "id": "mon_zombie_stray_w_leaf_stro2_wildo",
     "type": "SPELL",
-    "name": { "str": "Wild Outgrowth" },
-    "description": "(Combo) spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster channels its body to create an outburst of twisted roots and vines under the target, dealing moderate stabbing damage and ensnares all affected creatures.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_AOE", "RANDOM_DURATION" ],
+    "name": { "str": "Wild Outgrowth", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "(Combo) spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster channels its body to create an outburst of twisted roots and vines under the target, dealing moderate stabbing damage and ensnares all affected creatures.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_AOE", "RANDOM_DURATION" ],
     "valid_targets": [ "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -176,9 +203,12 @@
   {
     "type": "SPELL",
     "id": "mon_summon_stray_w_leaf_stro3_triffid",
-    "name": { "str": "Summon 2 Triffids" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster channels its hand to create and send forth 2 triffids, along with the wild outgrowth.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "HOSTILE_SUMMON", "RANDOM_DURATION", "NO_PROJECTILE" ],
+    "name": { "str": "Summon 2 Triffids", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster channels its hand to create and send forth 2 triffids, along with the wild outgrowth.'"
+    },
+    "flags": [ "SILENT", "HOSTILE_SUMMON", "RANDOM_DURATION", "NO_PROJECTILE" ],
     "valid_targets": [ "ground" ],
     "extra_effects": [ { "id": "mon_zombie_stray_w_leaf_stro2_wildo" } ],
     "min_damage": 2,
@@ -197,9 +227,12 @@
   {
     "id": "mon_zombie_stray_w_acid_stro2_atouch",
     "type": "SPELL",
-    "name": { "str": "Acid Touch" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'When upclose, caster then scratches the target with its excess blood, dealing acid damage.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
+    "name": { "str": "Acid Touch", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'When upclose, caster then scratches the target with its excess blood, dealing acid damage.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
     "valid_targets": [ "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -213,9 +246,12 @@
   {
     "id": "mon_zombie_stray_w_acid_stro2_acoat",
     "type": "SPELL",
-    "name": { "str": "Acid Coat" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster channels its hands to extract a large amount of acidic fluid from its body, then sends it to the target in a short but wide line, dealing moderate acid damage that lingers overtime.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_AOE", "RANDOM_DURATION" ],
+    "name": { "str": "Acid Coat", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster channels its hands to extract a large amount of acidic fluid from its body, then sends it to the target in a short but wide line, dealing moderate acid damage that lingers overtime.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_AOE", "RANDOM_DURATION" ],
     "valid_targets": [ "ally", "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -240,9 +276,12 @@
   {
     "id": "mon_zombie_stray_w_acid_stro3_asweep",
     "type": "SPELL",
-    "name": { "str": "Sweepidic" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'If the target is nearby, caster sweeps some of the excess fluids in a small cone, dealing small damage to all creatures.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_AOE" ],
+    "name": { "str": "Sweepidic", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'If the target is nearby, caster sweeps some of the excess fluids in a small cone, dealing small damage to all creatures.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_AOE" ],
     "valid_targets": [ "ally", "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -262,9 +301,12 @@
   {
     "id": "mon_zombie_stray_w_acid_stro3_arain",
     "type": "SPELL",
-    "name": { "str": "Acid Rain" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster channels its whole body for a very long time to produce an extremely vast amount of corrosive bodily fluids and sends it up above the target then explodes, dealing tremendous acid damage to all creatures in the vicinity, which lingers within time.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_AOE", "RANDOM_DURATION" ],
+    "name": { "str": "Acid Rain", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster channels its whole body for a very long time to produce an extremely vast amount of corrosive bodily fluids and sends it up above the target then explodes, dealing tremendous acid damage to all creatures in the vicinity, which lingers within time.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_AOE", "RANDOM_DURATION" ],
     "valid_targets": [ "ally", "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -289,9 +331,12 @@
   {
     "id": "mon_unknown_unknown_portal_carrion",
     "type": "SPELL",
-    "name": { "str": "Portal" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'A multi-dimensional portal is made from the collapse.  This portal leads the carrion race into the world.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
+    "name": { "str": "Portal", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'A multi-dimensional portal is made from the collapse.  This portal leads the carrion race into the world.'"
+    },
+    "flags": [ "SILENT", "NO_PROJECTILE" ],
     "valid_targets": [ "ally", "self", "ground" ],
     "message": "",
     "effect": "attack",
@@ -306,9 +351,12 @@
   {
     "id": "mon_unknown_unknown_gcollapse_carrion",
     "type": "SPELL",
-    "name": { "str": "Gravitational Collapse" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'After channeling for a massive amount of time, caster's gravitational force field collapses, creating a supernova, dealing tremendous bash damage to all creatures.  Sparkling objects are scattered, which enlightens the area.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_AOE" ],
+    "name": { "str": "Gravitational Collapse", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'After channeling for a massive amount of time, caster's gravitational force field collapses, creating a supernova, dealing tremendous bash damage to all creatures.  Sparkling objects are scattered, which enlightens the area.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_AOE" ],
     "valid_targets": [ "ally", "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -329,14 +377,17 @@
   {
     "type": "SPELL",
     "id": "mon_unknown_unknown_carrion_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_unknown_unknown_gcollapse_carrion", "hit_self": true },
       { "id": "mon_unknown_unknown_portal_carrion", "hit_self": true },
       { "id": "sacrifice_spell", "hit_self": true }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "message": "",
     "effect": "attack",
@@ -347,9 +398,12 @@
   {
     "id": "mon_unknown_unknown_portal_vector",
     "type": "SPELL",
-    "name": { "str": "Portal" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'A multi-dimensional portal is made from the collapse.  This portal leads the vector race into the world.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
+    "name": { "str": "Portal", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'A multi-dimensional portal is made from the collapse.  This portal leads the vector race into the world.'"
+    },
+    "flags": [ "SILENT", "NO_PROJECTILE" ],
     "valid_targets": [ "ally", "self", "ground" ],
     "message": "",
     "effect": "attack",
@@ -367,9 +421,12 @@
   {
     "id": "mon_unknown_unknown_gcollapse_vector",
     "type": "SPELL",
-    "name": { "str": "Gravitational Collapse" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'After channeling for a massive amount of time, caster's gravitational force field collapses, creating a supernova, dealing tremendous bash damage to all creatures.  Sparkling objects are scattered, which enlightens the area.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_AOE" ],
+    "name": { "str": "Gravitational Collapse", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'After channeling for a massive amount of time, caster's gravitational force field collapses, creating a supernova, dealing tremendous bash damage to all creatures.  Sparkling objects are scattered, which enlightens the area.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_AOE" ],
     "valid_targets": [ "ally", "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -391,14 +448,17 @@
   {
     "type": "SPELL",
     "id": "mon_unknown_unknown_vector_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_unknown_unknown_gcollapse_vector", "hit_self": true },
       { "id": "mon_unknown_unknown_portal_vector", "hit_self": true },
       { "id": "sacrifice_spell", "hit_self": true }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "hostile" ],
     "message": "",
     "effect": "attack",
@@ -409,8 +469,11 @@
   {
     "id": "mon_zombie_uruxis_spawn_passive",
     "type": "SPELL",
-    "name": { "str": "Spawn" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns in a zombie.'",
+    "name": { "str": "Spawn", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns in a zombie.'"
+    },
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "shape": "blast",
@@ -421,9 +484,12 @@
   {
     "type": "SPELL",
     "id": "mon_insect_saddler_baby_potent_grow_scout",
-    "name": { "str": "Morph" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster becomes a saddler scout.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
+    "name": { "str": "Morph", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster becomes a saddler scout.'"
+    },
+    "flags": [ "SILENT", "NO_PROJECTILE" ],
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
@@ -435,9 +501,12 @@
   {
     "type": "SPELL",
     "id": "mon_insect_saddler_baby_potent_grow_brute",
-    "name": { "str": "Morph" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster becomes a saddler brute.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
+    "name": { "str": "Morph", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster becomes a saddler brute.'"
+    },
+    "flags": [ "SILENT", "NO_PROJECTILE" ],
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
@@ -449,9 +518,12 @@
   {
     "type": "SPELL",
     "id": "mon_insect_saddler_baby_potent_grow",
-    "name": { "str": "Morph" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster becomes a saddler.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
+    "name": { "str": "Morph", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster becomes a saddler.'"
+    },
+    "flags": [ "SILENT", "NO_PROJECTILE" ],
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
@@ -463,8 +535,11 @@
   {
     "type": "SPELL",
     "id": "mon_insect_saddler_baby_potent_target_random",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_insect_saddler_baby_potent_grow_scout" },
       { "id": "mon_insect_saddler_baby_potent_grow_scout" },
@@ -476,7 +551,7 @@
       { "id": "mon_insect_saddler_baby_potent_grow" },
       { "id": "mon_insect_saddler_baby_potent_grow" }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "WONDER", "NO_PROJECTILE" ],
+    "flags": [ "SILENT", "WONDER", "NO_PROJECTILE" ],
     "valid_targets": [ "none" ],
     "message": "",
     "effect": "attack",
@@ -489,10 +564,13 @@
   {
     "type": "SPELL",
     "id": "mon_insect_saddler_baby_potent_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [ { "id": "mon_insect_saddler_baby_potent_target_random" } ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "message": "",
     "effect": "attack",
@@ -503,10 +581,13 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [ { "id": "sacrifice_spell", "hit_self": true } ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "message": "",
     "effect": "attack",
@@ -517,9 +598,12 @@
   {
     "id": "mon_sflesh_wall_ing",
     "type": "SPELL",
-    "name": { "str": "Fortify" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster creates a wall on its position.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "IGNORE_WALLS", "NO_PROJECTILE" ],
+    "name": { "str": "Fortify", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster creates a wall on its position.'"
+    },
+    "flags": [ "SILENT", "IGNORE_WALLS", "NO_PROJECTILE" ],
     "valid_targets": [ "ally", "hostile", "ground" ],
     "message": "",
     "effect": "ter_transform",
@@ -529,10 +613,13 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_wall_ing_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [ { "id": "mon_sflesh_wall_ing", "hit_self": true } ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "message": "",
     "effect": "attack",
@@ -543,10 +630,13 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_wall_city_ing_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [ { "id": "sacrifice_spell", "hit_self": true }, { "id": "mon_sflesh_wall_ing", "hit_self": true } ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "message": "",
     "effect": "attack",
@@ -557,9 +647,12 @@
   {
     "id": "mon_sflesh_zombie_turret_aspit",
     "type": "SPELL",
-    "name": { "str": "Acid Spit" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spews out a glob of acid onto the target, dealing acid damage and creates a blood acid underneath.  Casted randomly between 2 to 4 times.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
+    "name": { "str": "Acid Spit", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spews out a glob of acid onto the target, dealing acid damage and creates a blood acid underneath.  Casted randomly between 2 to 4 times.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE" ],
     "valid_targets": [ "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -576,10 +669,13 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_zombie_turret_aspit_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [ { "id": "mon_sflesh_zombie_turret_aspit" } ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "WONDER", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "WONDER", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "min_damage": 2,
     "max_damage": 4,
@@ -592,9 +688,12 @@
   {
     "id": "mon_sflesh_zombie_turret_adischarge",
     "type": "SPELL",
-    "name": { "str": "Acid Discharge" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster channels its core, producing large amounts of acid and eventually discharges, dealing acid damage to all affected creatures and creating blood acid in its surroundings.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
+    "name": { "str": "Acid Discharge", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster channels its core, producing large amounts of acid and eventually discharges, dealing acid damage to all affected creatures and creating blood acid in its surroundings.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE" ],
     "valid_targets": [ "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -612,14 +711,17 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_zombie_turret_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_sflesh_zombie_turret_adischarge" },
       { "id": "mon_sflesh_zombie_turret_aspit_target" },
       { "id": "mon_sflesh_zombie_turret_aspit_target" }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "WONDER", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "WONDER", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "min_damage": 1,
     "max_damage": 1,
@@ -632,9 +734,12 @@
   {
     "id": "mon_secro_turret_hpdown",
     "type": "SPELL",
-    "name": { "str": "Energy Consumption" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's shot drains their health.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
+    "name": { "str": "Energy Consumption", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's shot drains their health.'"
+    },
+    "flags": [ "SILENT", "NO_PROJECTILE" ],
     "valid_targets": [ "self" ],
     "message": "",
     "effect": "attack",
@@ -645,9 +750,12 @@
   {
     "id": "mon_secro_electurret_elecshock",
     "type": "SPELL",
-    "name": { "str": "Electroshock" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster discharges a high electric current, shocking all nearby creatures.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
+    "name": { "str": "Electroshock", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster discharges a high electric current, shocking all nearby creatures.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE" ],
     "valid_targets": [ "hostile", "ally" ],
     "message": "",
     "effect": "attack",
@@ -664,10 +772,13 @@
   {
     "type": "SPELL",
     "id": "mon_secro_electurret_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [ { "id": "mon_secro_electurret_elecshock", "hit_self": true } ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "message": "",
     "effect": "attack",
@@ -678,9 +789,12 @@
   {
     "id": "mon_secro_gravturret_energize",
     "type": "SPELL",
-    "name": { "str": "Energize" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster shoots the target with its fully-accumulated magnetic field, forming an energized area that magnetizes any creature, which completely immobilizes them in its aoe for 10 turns.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
+    "name": { "str": "Energize", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster shoots the target with its fully-accumulated magnetic field, forming an energized area that magnetizes any creature, which completely immobilizes them in its aoe for 10 turns.'"
+    },
+    "flags": [ "SILENT", "NO_PROJECTILE" ],
     "valid_targets": [ "hostile", "ally", "ground" ],
     "message": "",
     "effect": "attack",
@@ -696,9 +810,12 @@
   {
     "id": "mon_secro_laserturret_heatray",
     "type": "SPELL",
-    "name": { "str": "Heat Ray" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster shoots with its concentrated ray of heat, which pierces through the targets.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
+    "name": { "str": "Heat Ray", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster shoots with its concentrated ray of heat, which pierces through the targets.'"
+    },
+    "flags": [ "SILENT", "NO_PROJECTILE" ],
     "valid_targets": [ "hostile", "ally", "ground" ],
     "message": "",
     "effect": "attack",
@@ -712,9 +829,12 @@
   {
     "id": "mon_secro_laserturret_mod_heatray",
     "type": "SPELL",
-    "name": { "str": "Heat Ray" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster shoots with its concentrated ray of heat, which pierces through the targets.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
+    "name": { "str": "Heat Ray", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster shoots with its concentrated ray of heat, which pierces through the targets.'"
+    },
+    "flags": [ "SILENT", "NO_PROJECTILE" ],
     "valid_targets": [ "hostile", "ally", "ground" ],
     "extra_effects": [ { "id": "mon_secro_turret_hpdown", "hit_self": true } ],
     "message": "",
@@ -729,9 +849,12 @@
   {
     "id": "mon_sflesh_fleshling_tiny_devour",
     "type": "SPELL",
-    "name": { "str": "Devour" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster devours its target, dealing biological damage.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX" ],
+    "name": { "str": "Devour", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster devours its target, dealing biological damage.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "message": "",
     "effect": "attack",
@@ -745,8 +868,11 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_tiny_check",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ally", "hostile" ],
     "shape": "blast",
@@ -759,9 +885,12 @@
   {
     "id": "mon_sflesh_fleshling_smol_devour",
     "type": "SPELL",
-    "name": { "str": "Devour" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster devours its target, dealing biological damage.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX" ],
+    "name": { "str": "Devour", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster devours its target, dealing biological damage.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "message": "",
     "effect": "attack",
@@ -775,8 +904,11 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_smol_check",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ally", "hostile" ],
     "shape": "blast",
@@ -789,9 +921,12 @@
   {
     "id": "mon_sflesh_fleshling_med_devour",
     "type": "SPELL",
-    "name": { "str": "Devour" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster devours its target, dealing biological damage.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX" ],
+    "name": { "str": "Devour", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster devours its target, dealing biological damage.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "message": "",
     "effect": "attack",
@@ -805,8 +940,11 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_med_check",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ally", "hostile" ],
     "shape": "blast",
@@ -819,9 +957,12 @@
   {
     "id": "mon_sflesh_fleshling_big_devour",
     "type": "SPELL",
-    "name": { "str": "Devour" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster devours its target, dealing biological damage.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX" ],
+    "name": { "str": "Devour", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster devours its target, dealing biological damage.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "message": "",
     "effect": "attack",
@@ -835,8 +976,11 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_big_check",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ally", "hostile" ],
     "shape": "blast",
@@ -849,9 +993,12 @@
   {
     "id": "mon_sflesh_fleshling_huge_devour",
     "type": "SPELL",
-    "name": { "str": "Devour" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster devours its target, dealing biological damage.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX" ],
+    "name": { "str": "Devour", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster devours its target, dealing biological damage.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "message": "",
     "effect": "attack",
@@ -865,8 +1012,11 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_huge_check",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ally", "hostile" ],
     "shape": "blast",
@@ -879,8 +1029,11 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_huge_limit",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ally", "hostile", "self" ],
     "shape": "blast",
@@ -893,8 +1046,11 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_huge_spawn",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ally", "hostile", "self" ],
     "shape": "blast",
@@ -907,9 +1063,12 @@
   {
     "id": "mon_sflesh_fleshling_stingy_bb",
     "type": "SPELL",
-    "name": { "str": "Blood Bile" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster pops a bulbous wart that spreads blood acid fields around the target and deals small acid damage.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_AOE" ],
+    "name": { "str": "Blood Bile", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster pops a bulbous wart that spreads blood acid fields around the target and deals small acid damage.'"
+    },
+    "flags": [ "SILENT", "RANDOM_AOE" ],
     "valid_targets": [ "hostile", "ally", "ground" ],
     "message": "",
     "effect": "attack",
@@ -929,9 +1088,12 @@
   {
     "id": "mon_sflesh_fleshling_stingy_whiplash",
     "type": "SPELL",
-    "name": { "str": "Whiplash" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster swings a horizontal slash, dealing cutting damage to all affected targets in a wide cone.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_AOE", "RANDOM_DAMAGE" ],
+    "name": { "str": "Whiplash", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster swings a horizontal slash, dealing cutting damage to all affected targets in a wide cone.'"
+    },
+    "flags": [ "SILENT", "RANDOM_AOE", "RANDOM_DAMAGE" ],
     "valid_targets": [ "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -947,9 +1109,12 @@
   {
     "id": "mon_sflesh_fleshling_stingy_sting",
     "type": "SPELL",
-    "name": { "str": "Sting" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster thrusts its stinger at its target, dealing stabbing damage.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_AOE", "RANDOM_DAMAGE" ],
+    "name": { "str": "Sting", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster thrusts its stinger at its target, dealing stabbing damage.'"
+    },
+    "flags": [ "SILENT", "RANDOM_AOE", "RANDOM_DAMAGE" ],
     "valid_targets": [ "hostile" ],
     "message": "",
     "effect": "attack",
@@ -963,15 +1128,18 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_stingy_target_random",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_sflesh_fleshling_stingy_sting" },
       { "id": "mon_sflesh_fleshling_stingy_sting" },
       { "id": "mon_sflesh_fleshling_stingy_whiplash" },
       { "id": "mon_sflesh_fleshling_stingy_bb" }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "WONDER", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
+    "flags": [ "SILENT", "WONDER", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
     "valid_targets": [ "none" ],
     "message": "",
     "effect": "attack",
@@ -984,8 +1152,11 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_scavengy_spawn",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ally", "hostile", "self" ],
     "shape": "blast",
@@ -998,9 +1169,12 @@
   {
     "id": "mon_sflesh_fleshling_scavengy_explosive_pop",
     "type": "SPELL",
-    "name": { "str": "Pop" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster explodes, dealing acid damage and spreads blood acid.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
+    "name": { "str": "Pop", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster explodes, dealing acid damage and spreads blood acid.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE" ],
     "valid_targets": [ "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -1018,13 +1192,16 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_scavengy_explosive_pop_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_sflesh_fleshling_scavengy_explosive_pop", "hit_self": true },
       { "id": "sacrifice_spell", "hit_self": true }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "message": "",
     "effect": "attack",
@@ -1035,9 +1212,12 @@
   {
     "id": "mon_sflesh_fleshling_scavengy_tent_tentsurprise",
     "type": "SPELL",
-    "name": { "str": "Tentacle Surprise" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster bursts into a small heap of membranous veins tipped with sharpened bone blades, then quickly slashes its target, dealing cutting damage.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
+    "name": { "str": "Tentacle Surprise", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster bursts into a small heap of membranous veins tipped with sharpened bone blades, then quickly slashes its target, dealing cutting damage.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE" ],
     "valid_targets": [ "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -1052,10 +1232,13 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_scavengy_sticky_sg",
-    "name": { "str": "Sticky Grasp" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster sticks to the target.'",
+    "name": { "str": "Sticky Grasp", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster sticks to the target.'"
+    },
     "extra_effects": [ { "id": "sacrifice_spell", "hit_self": true } ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DURATION", "NO_PROJECTILE" ],
+    "flags": [ "SILENT", "RANDOM_DURATION", "NO_PROJECTILE" ],
     "valid_targets": [ "hostile" ],
     "message": "",
     "effect": "attack",
@@ -1069,9 +1252,12 @@
   {
     "id": "mon_sflesh_fleshling_ravagy_outb_cost",
     "type": "SPELL",
-    "name": { "str": "Cost" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster pays the price.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
+    "name": { "str": "Cost", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster pays the price.'"
+    },
+    "flags": [ "SILENT", "NO_PROJECTILE" ],
     "valid_targets": [ "self" ],
     "message": "",
     "effect": "attack",
@@ -1081,9 +1267,12 @@
   {
     "id": "mon_sflesh_fleshling_ravagy_outb",
     "type": "SPELL",
-    "name": { "str": "Outburst" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster channels its body to send its fused limbs to wildly fling themselves in every direction.  Targets hit are dealt with high bashing damage.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_TARGET" ],
+    "name": { "str": "Outburst", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster channels its body to send its fused limbs to wildly fling themselves in every direction.  Targets hit are dealt with high bashing damage.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_TARGET" ],
     "valid_targets": [ "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -1101,10 +1290,13 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_ravagy_outb_target_random",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'"
+    },
     "extra_effects": [ { "id": "mon_sflesh_fleshling_ravagy_outb" } ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "WONDER", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
+    "flags": [ "SILENT", "WONDER", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
     "valid_targets": [ "none" ],
     "message": "",
     "effect": "attack",
@@ -1117,9 +1309,12 @@
   {
     "id": "mon_sflesh_fleshling_ravagy_fburst_cost",
     "type": "SPELL",
-    "name": { "str": "Cost" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster pays the price.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
+    "name": { "str": "Cost", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster pays the price.'"
+    },
+    "flags": [ "SILENT", "NO_PROJECTILE" ],
     "valid_targets": [ "self" ],
     "message": "",
     "effect": "attack",
@@ -1129,9 +1324,12 @@
   {
     "id": "mon_sflesh_fleshling_ravagy_fburst",
     "type": "SPELL",
-    "name": { "str": "Flesh Burst" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Part of the caster's body explodes, shooting a large chunk of flesh towards the target, dealing bashing damage.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
+    "name": { "str": "Flesh Burst", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Part of the caster's body explodes, shooting a large chunk of flesh towards the target, dealing bashing damage.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE" ],
     "valid_targets": [ "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -1146,8 +1344,11 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_ravagy_target_random",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_sflesh_fleshling_ravagy_outb" },
       { "id": "mon_sflesh_fleshling_ravagy_fburst" },
@@ -1166,7 +1367,7 @@
       { "id": "secro_spell_null" },
       { "id": "secro_spell_null" }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "WONDER", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
+    "flags": [ "SILENT", "WONDER", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
     "valid_targets": [ "none" ],
     "message": "",
     "effect": "attack",
@@ -1179,9 +1380,12 @@
   {
     "id": "mon_sflesh_fleshling_ravagy_shred",
     "type": "SPELL",
-    "name": { "str": "Shred" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's bone outgrowth stretches towards adjacent targets, dealing cutting damage.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_TARGET" ],
+    "name": { "str": "Shred", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's bone outgrowth stretches towards adjacent targets, dealing cutting damage.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_TARGET" ],
     "valid_targets": [ "hostile" ],
     "message": "",
     "effect": "attack",
@@ -1195,15 +1399,18 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_ravagy_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_sflesh_fleshling_ravagy_shred" },
       { "id": "mon_sflesh_fleshling_ravagy_shred" },
       { "id": "mon_sflesh_fleshling_ravagy_shred" },
       { "id": "mon_sflesh_fleshling_ravagy_target_random" }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "message": "",
     "effect": "attack",
@@ -1214,8 +1421,11 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_scavengy_limit",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ally", "hostile", "self" ],
     "shape": "blast",
@@ -1228,9 +1438,12 @@
   {
     "id": "mon_sflesh_camp_turret_aspit",
     "type": "SPELL",
-    "name": { "str": "Acid Spit" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spews out a glob of acid onto the target, dealing acid damage and creates a blood acid underneath.  Casted randomly between 2 to 4 times.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
+    "name": { "str": "Acid Spit", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spews out a glob of acid onto the target, dealing acid damage and creates a blood acid underneath.  Casted randomly between 2 to 4 times.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE" ],
     "valid_targets": [ "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -1247,10 +1460,13 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_aspit_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [ { "id": "mon_sflesh_camp_turret_aspit" } ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "WONDER", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "WONDER", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "min_damage": 2,
     "max_damage": 4,
@@ -1263,9 +1479,12 @@
   {
     "id": "mon_sflesh_camp_turret_adischarge",
     "type": "SPELL",
-    "name": { "str": "Acid Discharge" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster channels its core, producing large amounts of acid and eventually discharges, dealing acid damage to all affected creatures and creating blood acid in its surroundings.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
+    "name": { "str": "Acid Discharge", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster channels its core, producing large amounts of acid and eventually discharges, dealing acid damage to all affected creatures and creating blood acid in its surroundings.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE" ],
     "valid_targets": [ "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -1283,14 +1502,17 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_sflesh_camp_turret_adischarge" },
       { "id": "mon_sflesh_camp_turret_aspit_target" },
       { "id": "mon_sflesh_camp_turret_aspit_target" }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "WONDER", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "WONDER", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "min_damage": 1,
     "max_damage": 1,
@@ -1303,9 +1525,12 @@
   {
     "id": "mon_sflesh_camp_turret_blade_swirl",
     "type": "SPELL",
-    "name": { "str": "Swirl" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster swirls, shooting several bone spikes in every direction, dealing stabbing damage to those that are hit.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_TARGET" ],
+    "name": { "str": "Swirl", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster swirls, shooting several bone spikes in every direction, dealing stabbing damage to those that are hit.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_TARGET" ],
     "valid_targets": [ "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -1319,10 +1544,13 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_blade_swirl_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [ { "id": "mon_sflesh_camp_turret_blade_swirl" } ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "WONDER", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "WONDER", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "min_damage": 5,
     "max_damage": 10,
@@ -1335,9 +1563,12 @@
   {
     "id": "mon_sflesh_camp_turret_blade_slice",
     "type": "SPELL",
-    "name": { "str": "Slice" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster swings its blades at the target, dealing cutting damage to all affected creatures in a cone.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_AOE" ],
+    "name": { "str": "Slice", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster swings its blades at the target, dealing cutting damage to all affected creatures in a cone.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_AOE" ],
     "valid_targets": [ "hostile", "ground" ],
     "message": "",
     "effect": "attack",
@@ -1353,8 +1584,11 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_blade_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_sflesh_camp_turret_blade_slice" },
       { "id": "mon_sflesh_camp_turret_blade_slice" },
@@ -1362,7 +1596,7 @@
       { "id": "mon_sflesh_camp_turret_blade_slice" },
       { "id": "mon_sflesh_camp_turret_blade_swirl_target" }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "WONDER", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "WONDER", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "min_damage": 1,
     "max_damage": 1,
@@ -1375,9 +1609,12 @@
   {
     "id": "mon_sflesh_camp_turret_tendril_thrust",
     "type": "SPELL",
-    "name": { "str": "Tendril Thrust" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster thrusts a tendril into a target, dealing stabbing damage and applies stun for several turns.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_TARGET" ],
+    "name": { "str": "Tendril Thrust", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster thrusts a tendril into a target, dealing stabbing damage and applies stun for several turns.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_TARGET" ],
     "valid_targets": [ "hostile" ],
     "message": "",
     "effect": "attack",
@@ -1394,9 +1631,12 @@
   {
     "id": "mon_sflesh_camp_turret_tendril_slam",
     "type": "SPELL",
-    "name": { "str": "Tendril Slam" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster slams at the target, dealing high bashing damage and applying stun to all affected creatures in a small radius.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_TARGET" ],
+    "name": { "str": "Tendril Slam", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster slams at the target, dealing high bashing damage and applying stun to all affected creatures in a small radius.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_TARGET" ],
     "valid_targets": [ "hostile" ],
     "message": "",
     "effect": "attack",
@@ -1415,9 +1655,12 @@
   {
     "id": "mon_sflesh_camp_turret_tendril_swing",
     "type": "SPELL",
-    "name": { "str": "Tendril Swing" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster swings its tendril at the target, dealing bashing damage and applying unstable footing to all affected creatures in a cone.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_AOE", "RANDOM_TARGET" ],
+    "name": { "str": "Tendril Swing", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster swings its tendril at the target, dealing bashing damage and applying unstable footing to all affected creatures in a cone.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_AOE", "RANDOM_TARGET" ],
     "valid_targets": [ "hostile" ],
     "message": "",
     "effect": "attack",
@@ -1436,8 +1679,11 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_tendril_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_sflesh_camp_turret_tendril_swing" },
       { "id": "mon_sflesh_camp_turret_tendril_swing" },
@@ -1446,7 +1692,7 @@
       { "id": "mon_sflesh_camp_turret_tendril_slam" },
       { "id": "mon_sflesh_camp_turret_tendril_thrust" }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "WONDER", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "WONDER", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "min_damage": 1,
     "max_damage": 3,
@@ -1459,9 +1705,12 @@
   {
     "id": "mon_sflesh_camp_turret_mouth_crunch",
     "type": "SPELL",
-    "name": { "str": "Crunch" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster bites at the target with its strong jaws, dealing high stabbing damage.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
+    "name": { "str": "Crunch", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster bites at the target with its strong jaws, dealing high stabbing damage.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE" ],
     "valid_targets": [ "hostile" ],
     "message": "",
     "effect": "attack",
@@ -1475,10 +1724,13 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_mouth_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [ { "id": "mon_sflesh_camp_turret_mouth_crunch" } ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "WONDER", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "WONDER", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "min_damage": 1,
     "max_damage": 2,
@@ -1491,9 +1743,12 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_unify_form_bv",
-    "name": { "str": "Form Blood Vessel" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster forms blood vessel(s).'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_TARGET", "NO_PROJECTILE" ],
+    "name": { "str": "Form Blood Vessel", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster forms blood vessel(s).'"
+    },
+    "flags": [ "SILENT", "RANDOM_TARGET", "NO_PROJECTILE" ],
     "valid_targets": [ "ground" ],
     "min_damage": 1,
     "max_damage": 1,
@@ -1509,9 +1764,12 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_unify_form_bf",
-    "name": { "str": "Form Blood Fiend" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster forms blood fiend(s).'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_TARGET", "NO_PROJECTILE" ],
+    "name": { "str": "Form Blood Fiend", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster forms blood fiend(s).'"
+    },
+    "flags": [ "SILENT", "RANDOM_TARGET", "NO_PROJECTILE" ],
     "valid_targets": [ "ground" ],
     "min_damage": 1,
     "max_damage": 1,
@@ -1527,8 +1785,11 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_unify_form_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_sflesh_camp_turret_unify_form_bv", "hit_self": true },
       { "id": "mon_sflesh_camp_turret_unify_form_bv", "hit_self": true },
@@ -1537,7 +1798,7 @@
       { "id": "mon_sflesh_camp_turret_unify_form_bv", "hit_self": true },
       { "id": "mon_sflesh_camp_turret_unify_form_bf", "hit_self": true }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "WONDER", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "WONDER", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "message": "",
     "effect": "attack",
@@ -1550,10 +1811,13 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_unify_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [ { "id": "mon_sflesh_camp_turret_unify_form_target" } ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "message": "",
     "effect": "attack",
@@ -1564,9 +1828,12 @@
   {
     "id": "mon_sflesh_camp_turret_hravager_thrust",
     "type": "SPELL",
-    "name": { "str": "Decimate" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster performs a fatal blow, dealing massive cutting damage to the target.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_TARGET" ],
+    "name": { "str": "Decimate", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster performs a fatal blow, dealing massive cutting damage to the target.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_TARGET" ],
     "valid_targets": [ "hostile" ],
     "message": "",
     "effect": "attack",
@@ -1580,9 +1847,12 @@
   {
     "id": "mon_sflesh_camp_turret_hravager_slam",
     "type": "SPELL",
-    "name": { "str": "Tendril Slash" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster slices its target, dealing cutting damage.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_TARGET" ],
+    "name": { "str": "Tendril Slash", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster slices its target, dealing cutting damage.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_TARGET" ],
     "valid_targets": [ "hostile" ],
     "message": "",
     "effect": "attack",
@@ -1596,9 +1866,12 @@
   {
     "id": "mon_sflesh_camp_turret_hravager_swing",
     "type": "SPELL",
-    "name": { "str": "Tendril Swing" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster swings a bladed tendril at the target, dealing cutting damage and applying unstable footing to all affected creatures in a cone.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_AOE", "RANDOM_TARGET" ],
+    "name": { "str": "Tendril Swing", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster swings a bladed tendril at the target, dealing cutting damage and applying unstable footing to all affected creatures in a cone.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_AOE", "RANDOM_TARGET" ],
     "valid_targets": [ "hostile" ],
     "message": "",
     "effect": "attack",
@@ -1617,8 +1890,11 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_hravager_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_sflesh_camp_turret_hravager_swing" },
       { "id": "mon_sflesh_camp_turret_hravager_swing" },
@@ -1635,7 +1911,7 @@
       { "id": "mon_sflesh_camp_turret_hravager_slam" },
       { "id": "mon_sflesh_camp_turret_hravager_thrust" }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "WONDER", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "WONDER", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "min_damage": 1,
     "max_damage": 3,
@@ -1648,8 +1924,11 @@
   {
     "id": "mon_secrodragon_woke_armed_deploy_spread",
     "type": "SPELL",
-    "name": { "str": "Spread" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster commands all reinforcer bots to take distance.'",
+    "name": { "str": "Spread", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster commands all reinforcer bots to take distance.'"
+    },
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "ally", "hostile" ],
     "targeted_monster_ids": [ "mon_bot_secroinforcer" ],
@@ -1665,8 +1944,11 @@
   {
     "id": "mon_secrodragon_woke_armed_deploy_spread_fast",
     "type": "SPELL",
-    "name": { "str": "Quick!" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\nThey also take increased speed.'",
+    "name": { "str": "Quick!", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\nThey also take increased speed.'"
+    },
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "ally", "hostile" ],
     "targeted_monster_ids": [ "mon_bot_secroinforcer" ],
@@ -1682,9 +1964,12 @@
   {
     "type": "SPELL",
     "id": "mon_secrodragon_woke_armed_deploy_bots",
-    "name": { "str": "Deploy: Reinforcer Bots" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Two large bots flies from the caster.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "HOSTILE_SUMMON", "PERMANENT", "NO_PROJECTILE" ],
+    "name": { "str": "Deploy: Reinforcer Bots", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Two large bots flies from the caster.'"
+    },
+    "flags": [ "SILENT", "HOSTILE_SUMMON", "PERMANENT", "NO_PROJECTILE" ],
     "valid_targets": [ "ground" ],
     "min_damage": 1,
     "max_damage": 1,
@@ -1698,9 +1983,12 @@
   {
     "type": "SPELL",
     "id": "mon_secrodragon_woke_armed_deploy",
-    "name": { "str": "Deploy" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster deploys its reinforcer bots into the field, which will support them in combat.  One time use.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
+    "name": { "str": "Deploy", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster deploys its reinforcer bots into the field, which will support them in combat.  One time use.'"
+    },
+    "flags": [ "SILENT", "NO_PROJECTILE" ],
     "valid_targets": [ "self" ],
     "min_damage": 999999,
     "max_damage": 999999,
@@ -1712,8 +2000,11 @@
   {
     "type": "SPELL",
     "id": "mon_secrodragon_woke_armed_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "message": "The sight of <npcname> locks onto its target…",
     "extra_effects": [
       { "id": "mon_secrodragon_woke_armed_deploy_bots", "hit_self": true },
@@ -1722,7 +2013,7 @@
       { "id": "mon_secrodragon_woke_armed_deploy_spread_fast", "hit_self": true },
       { "id": "mon_secrodragon_woke_armed_deploy", "hit_self": true }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "effect": "attack",
     "shape": "blast",
@@ -1732,8 +2023,11 @@
   {
     "type": "SPELL",
     "id": "mon_bot_secroinforcer_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_bot_secroinforcer_deploy_push", "hit_self": true },
       { "id": "mon_bot_secroinforcer_deploy_push", "hit_self": true },
@@ -1742,7 +2036,7 @@
       { "id": "mon_bot_secroinforcer_deploy_cost", "hit_self": true },
       { "id": "mon_bot_secroinforcer_deploy_flee", "hit_self": true }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "message": "",
     "effect": "attack",
@@ -1753,12 +2047,15 @@
   {
     "id": "mon_bot_secroinforcer_deploy_push",
     "type": "SPELL",
-    "name": { "str": "Deployment Zone" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster tries to push away nearby creatures before deploying its robots.'",
+    "name": { "str": "Deployment Zone", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster tries to push away nearby creatures before deploying its robots.'"
+    },
     "message": "",
     "effect": "area_push",
     "shape": "blast",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
+    "flags": [ "SILENT", "NO_PROJECTILE" ],
     "valid_targets": [ "ally", "hostile", "ground" ],
     "min_aoe": 4,
     "max_aoe": 4
@@ -1766,8 +2063,11 @@
   {
     "id": "mon_bot_secroinforcer_deploy_flee",
     "type": "SPELL",
-    "name": { "str": "Flee" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster then takes distance for half of the cooldown duration.'",
+    "name": { "str": "Flee", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster then takes distance for half of the cooldown duration.'"
+    },
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "self" ],
     "message": "",
@@ -1780,8 +2080,11 @@
   {
     "id": "mon_bot_secroinforcer_deploy_flee_fast",
     "type": "SPELL",
-    "name": { "str": "Quick!" },
-    "description": "Spell casted by an item.  If you're seeing this, then read this one instead:\n'If target's very near, caster gains bonus speed.'",
+    "name": { "str": "Quick!", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by an item.  If you're seeing this, then read this one instead:\n'If target's very near, caster gains bonus speed.'"
+    },
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "self" ],
     "message": "",
@@ -1796,9 +2099,12 @@
   {
     "id": "mon_bot_secroinforcer_deploy_cost",
     "type": "SPELL",
-    "name": { "str": "Cost" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster takes damage as the cost.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
+    "name": { "str": "Cost", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster takes damage as the cost.'"
+    },
+    "flags": [ "SILENT", "NO_PROJECTILE" ],
     "valid_targets": [ "self" ],
     "message": "",
     "effect": "attack",
@@ -1808,9 +2114,12 @@
   {
     "type": "SPELL",
     "id": "mon_bot_secroinforcer_deploy_shocker",
-    "name": { "str": "Deploy: Shocker Bot" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster sends out a shocker bot.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "HOSTILE_SUMMON", "PERMANENT", "NO_PROJECTILE" ],
+    "name": { "str": "Deploy: Shocker Bot", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster sends out a shocker bot.'"
+    },
+    "flags": [ "SILENT", "HOSTILE_SUMMON", "PERMANENT", "NO_PROJECTILE" ],
     "valid_targets": [ "ground" ],
     "min_damage": 1,
     "max_damage": 1,
@@ -1824,9 +2133,12 @@
   {
     "type": "SPELL",
     "id": "mon_bot_secroinforcer_deploy_walker",
-    "name": { "str": "Deploy: Walker Bot" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster sends out a walker bot.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "HOSTILE_SUMMON", "PERMANENT", "NO_PROJECTILE" ],
+    "name": { "str": "Deploy: Walker Bot", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster sends out a walker bot.'"
+    },
+    "flags": [ "SILENT", "HOSTILE_SUMMON", "PERMANENT", "NO_PROJECTILE" ],
     "valid_targets": [ "ground" ],
     "min_damage": 1,
     "max_damage": 1,
@@ -1840,9 +2152,12 @@
   {
     "type": "SPELL",
     "id": "mon_bot_secroinforcer_deploy_launcher",
-    "name": { "str": "Deploy: Launcher Bot" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster sends out a launcher bot.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "HOSTILE_SUMMON", "PERMANENT", "NO_PROJECTILE" ],
+    "name": { "str": "Deploy: Launcher Bot", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster sends out a launcher bot.'"
+    },
+    "flags": [ "SILENT", "HOSTILE_SUMMON", "PERMANENT", "NO_PROJECTILE" ],
     "valid_targets": [ "ground" ],
     "min_damage": 1,
     "max_damage": 1,
@@ -1856,8 +2171,11 @@
   {
     "type": "SPELL",
     "id": "mon_bot_secroinforcer_target_random",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_bot_secroinforcer_deploy_shocker", "hit_self": true },
       { "id": "mon_bot_secroinforcer_deploy_shocker", "hit_self": true },
@@ -1874,7 +2192,7 @@
       { "id": "mon_bot_secroinforcer_deploy_launcher", "hit_self": true },
       { "id": "mon_bot_secroinforcer_deploy_walker", "hit_self": true }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "WONDER", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
+    "flags": [ "SILENT", "WONDER", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
     "valid_targets": [ "none" ],
     "message": "",
     "effect": "attack",
@@ -1885,8 +2203,11 @@
   {
     "id": "mon_bot_secrolauncher_deploy_flee",
     "type": "SPELL",
-    "name": { "str": "Flee" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster then takes distance for most of the cooldown duration.'",
+    "name": { "str": "Flee", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster then takes distance for most of the cooldown duration.'"
+    },
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "self" ],
     "message": "",
@@ -1899,8 +2220,11 @@
   {
     "id": "mon_bot_secrolauncher_deploy_flee_replenish",
     "type": "SPELL",
-    "name": { "str": "Replenish!" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster readies another missile…'",
+    "name": { "str": "Replenish!", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster readies another missile…'"
+    },
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "self" ],
     "message": "",
@@ -1913,9 +2237,12 @@
   {
     "id": "mon_bot_secrolauncher_deploy_stop",
     "type": "SPELL",
-    "name": { "str": "Stop" },
-    "description": "Spell casted by an item.  If you're seeing this, then read this one instead:\n'Caster stops the missiles.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DURATION" ],
+    "name": { "str": "Stop", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by an item.  If you're seeing this, then read this one instead:\n'Caster stops the missiles.'"
+    },
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
     "valid_targets": [ "ally", "hostile" ],
     "targeted_monster_ids": [ "mon_bot_secromissile" ],
     "message": "",
@@ -1930,8 +2257,11 @@
   {
     "id": "mon_bot_secrolauncher_deploy_limit",
     "type": "SPELL",
-    "name": { "str": "Limit" },
-    "description": "Spell casted by an item.  If you're seeing this, then read this one instead:\n'Caster also gives them a health draining effect.'",
+    "name": { "str": "Limit", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by an item.  If you're seeing this, then read this one instead:\n'Caster also gives them a health draining effect.'"
+    },
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "ally", "hostile" ],
     "targeted_monster_ids": [ "mon_bot_secromissile" ],
@@ -1947,9 +2277,12 @@
   {
     "type": "SPELL",
     "id": "mon_bot_secrolauncher_deploy",
-    "name": { "str": "Deploy" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster deploys missiles, These missiles will seek its target after 10-30 turns.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "HOSTILE_SUMMON", "PERMANENT", "NO_PROJECTILE" ],
+    "name": { "str": "Deploy", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster deploys missiles, These missiles will seek its target after 10-30 turns.'"
+    },
+    "flags": [ "SILENT", "HOSTILE_SUMMON", "PERMANENT", "NO_PROJECTILE" ],
     "valid_targets": [ "ground" ],
     "min_damage": 1,
     "max_damage": 1,
@@ -1963,10 +2296,13 @@
   {
     "type": "SPELL",
     "id": "mon_bot_secrolauncher_deploy_random",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'"
+    },
     "extra_effects": [ { "id": "mon_bot_secrolauncher_deploy", "hit_self": true } ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "WONDER", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
+    "flags": [ "SILENT", "WONDER", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
     "valid_targets": [ "none" ],
     "message": "",
     "effect": "attack",
@@ -1977,8 +2313,11 @@
   {
     "type": "SPELL",
     "id": "mon_bot_secrolauncher_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_bot_secrolauncher_deploy_random", "hit_self": true },
       { "id": "mon_bot_secrolauncher_deploy_stop", "hit_self": true },
@@ -1987,7 +2326,7 @@
       { "id": "mon_bot_secrolauncher_deploy_flee", "hit_self": true },
       { "id": "mon_bot_secrolauncher_deploy_flee_replenish", "hit_self": true }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
     "message": "",
     "effect": "attack",
@@ -1998,8 +2337,11 @@
   {
     "id": "mon_fleshweaver_operate",
     "type": "SPELL",
-    "name": { "str": "Operate" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Both caster and the target become unable to act.'",
+    "name": { "str": "Operate", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Both caster and the target become unable to act.'"
+    },
     "valid_targets": [ "self", "ally", "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_damage": -18000,
@@ -2011,8 +2353,11 @@
   {
     "id": "mon_fleshweaver_operate_heal",
     "type": "SPELL",
-    "name": { "str": "Operate Heal" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster heals the target.'",
+    "name": { "str": "Operate Heal", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster heals the target.'"
+    },
     "valid_targets": [ "self", "ally", "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_damage": -25,
@@ -2025,8 +2370,11 @@
   {
     "type": "SPELL",
     "id": "secro_veinstalk_initial",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ally", "hostile", "self" ],
     "shape": "blast",
@@ -2039,8 +2387,11 @@
   {
     "type": "SPELL",
     "id": "secro_flesh_wall_initial",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "flags": [ "SILENT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ally", "hostile", "self" ],
     "shape": "blast",

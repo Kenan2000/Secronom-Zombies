@@ -188,7 +188,8 @@
       "corpse_type": "NORMAL",
       "message": "The %s dies!",
       "effect": { "id": "mon_zombie_tentawraith_death", "hit_self": true }
-    }
+    },
+    "upgrades": false
   },
   {
     "id": "mon_zombie_tentawraith_tent",
@@ -196,6 +197,7 @@
     "name": { "str": "tentacle" },
     "description": "A fleshy tentacle, writhing violently in its surroundings.  Immobile and short-lived, it stretches to strike from afar.",
     "default_faction": "zombie",
+    "bodytype": "worm",
     "species": [ "ZOMBIE" ],
     "volume": "30000 ml",
     "weight": "40750 g",

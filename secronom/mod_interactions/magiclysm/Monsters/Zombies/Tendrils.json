@@ -1,0 +1,41 @@
+[
+  {
+    "id": "mon_zombie_arctendrils",
+    "copy-from": "mon_zombie_tendrils",
+    "looks_like": "mon_zombie_tendrils",
+    "type": "MONSTER",
+    "name": { "str": "tendril zombie" },
+    "description": "With both its tentacle limbs radiating in arcane energy, this tendril zombie is quite capable of hurling spells at you.",
+    "proportional": { "hp": 1.1 },
+    "relative": { "speed": -5, "melee_dice_sides": 1, "armor": { "bash": 2, "bullet": 1, "nether": 4 } },
+    "symbol": "⨏",
+    "color": "light_blue",
+    "melee_damage": [ { "damage_type": "bash", "amount": 1 }, { "damage_type": "stab", "amount": 3 } ],
+    "special_attacks": [
+      {
+        "id": "monspell_zombie_arctendrils_mana_beam",
+        "type": "spell",
+        "spell_data": { "id": "secro_magus_mana_beam" },
+        "cooldown": 29,
+        "monster_message": "%1$s sways its limbs and fires a beam of light!",
+        "condition": { "math": [ "distance('u', 'npc')", ">=", "3" ] }
+      },
+      {
+        "id": "monspell_zombie_arctendrils_mana_bolt",
+        "type": "spell",
+        "spell_data": { "id": "secro_magus_mana_bolt" },
+        "cooldown": 39,
+        "monster_message": "%1$s's limbs curl up then casts a mana bolt!",
+        "condition": { "math": [ "distance('u', 'npc')", ">=", "3" ] }
+      },
+      {
+        "type": "bite",
+        "cooldown": 10,
+        "damage_max_instance": [ { "damage_type": "stab", "armor_multiplier": 0.6 } ]
+      },
+      [ "secro_tendrilswing", 8 ],
+      [ "secro_tendrilgrip", 13 ]
+    ],
+    "upgrades": { "half_life": 64, "into_group": "GROUP_TENDRILS_UPGRADEX" }
+  }
+]

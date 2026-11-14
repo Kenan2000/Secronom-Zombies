@@ -1,0 +1,40 @@
+[
+  {
+    "id": "secro_magus_mana_beam",
+    "type": "SPELL",
+    "name": { "str": "Mana Beam", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'A beam of focused magical power that damages any foes in its path.'"
+    },
+    "valid_targets": [ "hostile", "ground" ],
+    "flags": [ "RANDOM_DAMAGE", "LOUD", "SPLIT_DAMAGE" ],
+    "effect": "attack",
+    "shape": "line",
+    "min_damage": 10,
+    "max_damage": 15,
+    "damage_type": "nether",
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "min_range": 10,
+    "max_range": 10
+  },
+  {
+    "id": "secro_magus_mana_bolt",
+    "type": "SPELL",
+    "name": { "str": "Mana Bolt", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'A bolt of magical power that only damages your foes.'"
+    },
+    "valid_targets": [ "hostile" ],
+    "flags": [ "RANDOM_DAMAGE" ],
+    "effect": "attack",
+    "shape": "blast",
+    "min_damage": 5,
+    "max_damage": 10,
+    "damage_type": "nether",
+    "min_range": 12,
+    "max_range": 12
+  }
+]

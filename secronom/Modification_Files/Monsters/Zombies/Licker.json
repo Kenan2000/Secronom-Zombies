@@ -4,7 +4,7 @@
     "copy-from": "mon_zombie_hunter",
     "type": "MONSTER",
     "name": { "str": "licker zombie" },
-    "description": "A small and agile zombie with slender long tongue twitching violently, and incessantly.  The way it moves in four feet makes it more fearsome in a chase.",
+    "description": "A small and agile zombie with slender long tongue twitching violently, and incessantly.  The way it moves in fours make it more fearsome in a chase.",
     "species": [ "ZOMBIE", "SECROZED_2" ],
     "volume": "30000 ml",
     "weight": "40750 g",

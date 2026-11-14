@@ -2,8 +2,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_grubby_death",
-    "name": { "str": "Spawn Parasite Swarms" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns parasitic swarms on-death.'",
+    "name": { "str": "Spawn Parasite Swarms", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns parasitic swarms on-death.'"
+    },
     "flags": [ "SILENT", "NO_EXPLOSION_SFX", "HOSTILE_SUMMON", "PERMANENT", "RANDOM_DAMAGE", "SPAWN_GROUP" ],
     "valid_targets": [ "ground", "self" ],
     "min_damage": 2,
@@ -18,8 +21,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_glut_death",
-    "name": { "str": "Spawn Parasite Swarms (Glut)" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns alot of parasitic swarms on-death, followed by a gas explosion.'",
+    "name": { "str": "Spawn Parasite Swarms (Glut)", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns alot of parasitic swarms on-death, followed by a gas explosion.'"
+    },
     "flags": [ "SILENT", "NO_EXPLOSION_SFX", "HOSTILE_SUMMON", "PERMANENT", "RANDOM_DAMAGE", "SPAWN_GROUP" ],
     "valid_targets": [ "ground", "self" ],
     "min_damage": 5,
@@ -35,8 +41,11 @@
   {
     "id": "mon_zombie_bloodvessel_explo",
     "type": "SPELL",
-    "name": { "str": "Explode" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster explodes, applying bloodbath to all affected creatures.'",
+    "name": { "str": "Explode", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster explodes, applying bloodbath to all affected creatures.'"
+    },
     "flags": [ "SILENT" ],
     "valid_targets": [ "self", "hostile", "ally", "ground" ],
     "message": "",
@@ -55,8 +64,11 @@
   {
     "id": "mon_zombie_bloodfiend_explo",
     "type": "SPELL",
-    "name": { "str": "Explode" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster violently explodes, applying bloodbath to all affected creatures.'",
+    "name": { "str": "Explode", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster violently explodes, applying bloodbath to all affected creatures.'"
+    },
     "flags": [ "SILENT" ],
     "valid_targets": [ "self", "hostile", "ally", "ground" ],
     "message": "",
@@ -75,8 +87,11 @@
   {
     "id": "mon_zombie_leptiosa_death",
     "type": "SPELL",
-    "name": { "str": "Lepotitsa Death" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's accumulated noxious gas explodes violently.'",
+    "name": { "str": "Lepotitsa Death", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's accumulated noxious gas explodes violently.'"
+    },
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self", "hostile", "ally", "ground" ],
     "extra_effects": [ { "id": "death_explosion", "hit_self": true } ],
@@ -92,8 +107,11 @@
   {
     "id": "mon_zombie_tentawraith_death",
     "type": "SPELL",
-    "name": { "str": "Wraith Death" },
-    "description": "Spell casted by an item.  If you're seeing this, then read this one instead:\n'Caster's death removes their minions in the field.'",
+    "name": { "str": "Wraith Death", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by an item.  If you're seeing this, then read this one instead:\n'Caster's death removes their minions in the field.'"
+    },
     "flags": [ "SILENT", "NO_EXPLOSION_SFX", "IGNORE_WALLS" ],
     "valid_targets": [ "ally", "hostile" ],
     "targeted_monster_ids": [ "mon_zombie_tentawraith_tent" ],
@@ -109,8 +127,11 @@
   {
     "type": "SPELL",
     "id": "mon_saddler_infected_death",
-    "name": { "str": "Abandon" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster disconnects itself from the dead body.'",
+    "name": { "str": "Abandon", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster disconnects itself from the dead body.'"
+    },
     "flags": [ "SILENT", "HOSTILE_SUMMON", "PERMANENT", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self", "ground" ],
     "min_damage": 1,
@@ -123,8 +144,11 @@
   {
     "type": "SPELL",
     "id": "mon_saddler_brute_infected_death",
-    "name": { "str": "Abandon" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster disconnects itself from the dead body.'",
+    "name": { "str": "Abandon", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster disconnects itself from the dead body.'"
+    },
     "flags": [ "SILENT", "HOSTILE_SUMMON", "PERMANENT", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self", "ground" ],
     "min_damage": 1,
@@ -137,8 +161,11 @@
   {
     "type": "SPELL",
     "id": "mon_saddler_scout_infected_death",
-    "name": { "str": "Abandon" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster disconnects itself from the dead body.'",
+    "name": { "str": "Abandon", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster disconnects itself from the dead body.'"
+    },
     "flags": [ "SILENT", "HOSTILE_SUMMON", "PERMANENT", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self", "ground" ],
     "min_damage": 1,
@@ -151,8 +178,11 @@
   {
     "id": "mon_ayenel_spawn_death",
     "type": "SPELL",
-    "name": { "str": "Ayenel Death Spawn" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's limb gets loose!'",
+    "name": { "str": "Ayenel Death Spawn", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's limb gets loose!'"
+    },
     "valid_targets": [ "ground", "self" ],
     "min_damage": 1,
     "max_damage": 1,
@@ -166,8 +196,11 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_death",
-    "name": { "str": "Spawn Takens" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns a crimson horror on-death.'",
+    "name": { "str": "Spawn Takens", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns a crimson horror on-death.'"
+    },
     "flags": [ "SILENT", "HOSTILE_SUMMON", "PERMANENT", "SPAWN_GROUP", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ground" ],
     "min_damage": 1,
@@ -182,8 +215,11 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_sack_death",
-    "name": { "str": "Spawn Parasytes" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns a crimson horror on-death.'",
+    "name": { "str": "Spawn Parasytes", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns a crimson horror on-death.'"
+    },
     "flags": [ "SILENT", "HOSTILE_SUMMON", "PERMANENT", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ground" ],
     "min_damage": 1,
@@ -198,8 +234,11 @@
   {
     "id": "death_mon_zombie_nightwail",
     "type": "SPELL",
-    "name": { "str": "Disperse" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's death removes all remaining shadows.'",
+    "name": { "str": "Disperse", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's death removes all remaining shadows.'"
+    },
     "valid_targets": [ "hostile", "ally" ],
     "message": "",
     "effect": "attack",
@@ -213,8 +252,11 @@
   {
     "id": "mon_zombie_gorepit_deathmore",
     "type": "SPELL",
-    "name": { "str": "Tendril Collapse" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster removes all tendrils.'",
+    "name": { "str": "Tendril Collapse", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster removes all tendrils.'"
+    },
     "valid_targets": [ "hostile", "ally" ],
     "message": "",
     "effect": "attack",
@@ -230,8 +272,11 @@
   {
     "id": "mon_zombie_gorepit_death",
     "type": "SPELL",
-    "name": { "str": "Collapse" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's death removes all of its minions on the fields, and stops further spawning.'",
+    "name": { "str": "Collapse", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's death removes all of its minions on the fields, and stops further spawning.'"
+    },
     "flags": [ "SILENT", "IGNORE_WALLS", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "hostile" ],
     "message": "",
@@ -247,8 +292,11 @@
   {
     "id": "mon_zombie_akin_death",
     "type": "SPELL",
-    "name": { "str": "Visceral Collapse" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's death removes its debuffs from the targets.'",
+    "name": { "str": "Visceral Collapse", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's death removes its debuffs from the targets.'"
+    },
     "flags": [ "SILENT", "IGNORE_WALLS", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "hostile" ],
     "message": "",
@@ -263,8 +311,11 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_zombie_turret_death",
-    "name": { "str": "Spawn Fleshlings" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns parasitic swarms on-death.'",
+    "name": { "str": "Spawn Fleshlings", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns parasitic swarms on-death.'"
+    },
     "flags": [ "SILENT", "HOSTILE_SUMMON", "PERMANENT", "RANDOM_DAMAGE", "SPAWN_GROUP", "NO_EXPLOSION_SFX" ],
     "extra_effects": [ { "id": "mon_sflesh_zombie_turret_death_extra", "hit_self": true } ],
     "valid_targets": [ "ground", "self" ],
@@ -280,8 +331,11 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_zombie_turret_death_extra",
-    "name": { "str": "Spawn Flesh Zombies" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns parasitic swarms on-death.'",
+    "name": { "str": "Spawn Flesh Zombies", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns parasitic swarms on-death.'"
+    },
     "flags": [ "SILENT", "HOSTILE_SUMMON", "PERMANENT", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ground", "self" ],
     "min_damage": 1,
@@ -296,8 +350,11 @@
   {
     "id": "mon_sflesh_entrance_open",
     "type": "SPELL",
-    "name": { "str": "Veinhole Death" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's death leaves a hole that serves as an entrance to the innards of the flesh.'",
+    "name": { "str": "Veinhole Death", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's death leaves a hole that serves as an entrance to the innards of the flesh.'"
+    },
     "flags": [ "SILENT", "IGNORE_WALLS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "message": "<color_light_green>The veinhole leaves a gap upon its death.</color>",
     "valid_targets": [ "ally", "hostile", "ground", "self" ],
@@ -310,8 +367,11 @@
   {
     "id": "mon_sflesh_flesh_bio_death",
     "type": "SPELL",
-    "name": { "str": "Fleshed Collapse" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's death causes all traps to neutralize, becoming inactive and out of view.'",
+    "name": { "str": "Fleshed Collapse", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's death causes all traps to neutralize, becoming inactive and out of view.'"
+    },
     "message": "<color_light_green>As the flesh melts away, the surrounding has reverted back to normal…</color>\n<color_dark_gray>The flesh is alive, but its prevalent domination hampers to a great extent.</color>",
     "flags": [ "SILENT", "IGNORE_WALLS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ally", "hostile", "ground" ],

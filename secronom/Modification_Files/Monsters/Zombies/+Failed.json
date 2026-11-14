@@ -11,7 +11,7 @@
     "id": "mon_zedfail_seeker",
     "type": "MONSTER",
     "name": { "str": "seeker" },
-    "description": "Alluring large skin in shape of a starfish and mouth slits nibbles near every tip.  Its abdomen is infused with gigantic lizard eye, eager to seek its prey.",
+    "description": "Alluring large skin in shape of a starfish and mouth slits nibbles near every tip.  Its abdomen is infused with a gigantic lizard eye, eager to seek its prey.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "62500 ml",

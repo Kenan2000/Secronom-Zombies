@@ -1,0 +1,7 @@
+[
+  {
+    "id": "GROUP_TENDRILS_UPGRADE",
+    "type": "monstergroup",
+    "monsters": [ { "monster": "mon_zombie_arctendrils", "weight": 200 } ]
+  }
+]

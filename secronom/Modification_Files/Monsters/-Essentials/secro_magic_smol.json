@@ -2,8 +2,11 @@
   {
     "id": "mon_zombie_titan_blockcharge_check",
     "type": "SPELL",
-    "name": { "str": "Titan - Block Charge" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster gains increased movement speed and take reduced damage.'",
+    "name": { "str": "Titan - Block Charge", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster gains increased movement speed and take reduced damage.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_range": 20,
@@ -16,8 +19,11 @@
   {
     "id": "mon_zombie_blacktitan_blockcharge_check",
     "type": "SPELL",
-    "name": { "str": "Black Titan - Block Charge" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster gains increased movement speed and take heavily reduced damage.'",
+    "name": { "str": "Black Titan - Block Charge", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster gains increased movement speed and take heavily reduced damage.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_range": 20,
@@ -30,8 +36,11 @@
   {
     "id": "mon_zombie_xlick_alert_check",
     "type": "SPELL",
-    "name": { "str": "Licker Zombie - Alert" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster becomes alert which reduces their speed but adds a chance to dodge ranged attacks.'",
+    "name": { "str": "Licker Zombie - Alert", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster becomes alert which reduces their speed but adds a chance to dodge ranged attacks.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_range": 20,
@@ -44,8 +53,11 @@
   {
     "id": "mon_zombie_tendrils_sprint_check",
     "type": "SPELL",
-    "name": { "str": "Tendril Zombie - Sprint" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster gains massive movement speed temporarily.  Duration is increased based on the target's distance.'",
+    "name": { "str": "Tendril Zombie - Sprint", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster gains massive movement speed temporarily.  Duration is increased based on the target's distance.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_range": 20,
@@ -58,8 +70,11 @@
   {
     "id": "mon_zombie_leptiosa_ngas_check",
     "type": "SPELL",
-    "name": { "str": "Lepotitsa - Noxious Gas" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster channels its body for a few turns, then unleashes a noxious gas that lingers over its vicinity.'",
+    "name": { "str": "Lepotitsa - Noxious Gas", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster channels its body for a few turns, then unleashes a noxious gas that lingers over its vicinity.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_damage": 10000,
@@ -74,8 +89,11 @@
   {
     "id": "mon_zombie_unify_bv_check",
     "type": "SPELL",
-    "name": { "str": "Unifier - Blood Vessel" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster creates a blood vessel.'",
+    "name": { "str": "Unifier - Blood Vessel", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster creates a blood vessel.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_damage": 10000,
@@ -90,8 +108,11 @@
   {
     "id": "mon_zombie_unity_bv_check",
     "type": "SPELL",
-    "name": { "str": "Unity - Blood Vessel" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster creates 2 blood vessels.'",
+    "name": { "str": "Unity - Blood Vessel", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster creates 2 blood vessels.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_damage": 10000,
@@ -106,8 +127,11 @@
   {
     "id": "mon_zombie_hemo_bf_check",
     "type": "SPELL",
-    "name": { "str": "Hemofiend - Blood Fiend" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns a blood fiend.'",
+    "name": { "str": "Hemofiend - Blood Fiend", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns a blood fiend.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_damage": 10000,
@@ -122,8 +146,11 @@
   {
     "id": "mon_zombie_hemo_bcurl_check",
     "type": "SPELL",
-    "name": { "str": "Hemofiend - Blood Curl" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster enslows target with surrounding blood.'",
+    "name": { "str": "Hemofiend - Blood Curl", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster enslows target with surrounding blood.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_damage": 10000,
@@ -138,8 +165,11 @@
   {
     "id": "mon_zombie_hemo_bspit",
     "type": "SPELL",
-    "name": { "str": "Blood Spit" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spits a glob of sticky blood onto the target, dealing low bash damage.'",
+    "name": { "str": "Blood Spit", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spits a glob of sticky blood onto the target, dealing low bash damage.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "RANDOM_DAMAGE", "RANDOM_DURATION" ],
     "valid_targets": [ "hostile", "ground" ],
     "message": "",
@@ -161,8 +191,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_idle_support",
-    "name": { "str": "Support!" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster starts healing nearby zeds, or attack its enemies.'",
+    "name": { "str": "Support!", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster starts healing nearby zeds, or attack its enemies.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "min_damage": 999999,
@@ -175,8 +208,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_idle_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [ { "id": "mon_zombie_skittyweavy_idle_support", "hit_self": true } ],
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
@@ -189,8 +225,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_repleshy_idle_support",
-    "name": { "str": "Support!" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster starts healing nearby zeds, or attack its enemies.'",
+    "name": { "str": "Support!", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster starts healing nearby zeds, or attack its enemies.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "min_damage": 999999,
@@ -203,8 +242,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_repleshy_idle_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [ { "id": "mon_zombie_skittyweavy_repleshy_idle_support", "hit_self": true } ],
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
@@ -217,8 +259,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_sickly_idle_support",
-    "name": { "str": "Support!" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster starts healing nearby zeds, or attack its enemies.'",
+    "name": { "str": "Support!", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster starts healing nearby zeds, or attack its enemies.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "min_damage": 999999,
@@ -231,8 +276,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_sickly_idle_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [ { "id": "mon_zombie_skittyweavy_sickly_idle_support", "hit_self": true } ],
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
@@ -245,8 +293,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_stop",
-    "name": { "str": "Stop" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster stops from healing allies/attacking enemies.  They will try to get closer to the target and continue.'",
+    "name": { "str": "Stop", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster stops from healing allies/attacking enemies.  They will try to get closer to the target and continue.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "min_damage": 999999,
@@ -259,8 +310,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_stop_random",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_zombie_skittyweavy_stop", "hit_self": true },
       { "id": "secro_spell_null" },
@@ -280,8 +334,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_repleshy_stop",
-    "name": { "str": "Stop" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster stops from healing allies/attacking enemies.  They will try to get closer to the target and continue.'",
+    "name": { "str": "Stop", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster stops from healing allies/attacking enemies.  They will try to get closer to the target and continue.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "min_damage": 999999,
@@ -294,8 +351,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_repleshy_stop_random",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_zombie_skittyweavy_repleshy_stop", "hit_self": true },
       { "id": "secro_spell_null" },
@@ -315,8 +375,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_sickly_stop",
-    "name": { "str": "Stop" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster stops from healing allies/attacking enemies.  They will try to get closer to the target and continue.'",
+    "name": { "str": "Stop", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster stops from healing allies/attacking enemies.  They will try to get closer to the target and continue.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "min_damage": 999999,
@@ -329,8 +392,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_sickly_stop_random",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_zombie_skittyweavy_sickly_stop", "hit_self": true },
       { "id": "secro_spell_null" },
@@ -350,8 +416,11 @@
   {
     "id": "mon_zombie_skittyweavy_flee",
     "type": "SPELL",
-    "name": { "str": "Flee" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster then runs away, for no reason ofc.'",
+    "name": { "str": "Flee", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster then runs away, for no reason ofc.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "RANDOM_DURATION", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "message": "",
@@ -364,8 +433,11 @@
   {
     "id": "mon_zombie_skittyweavy_heal",
     "type": "SPELL",
-    "name": { "str": "Heal" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'If the injected target is a zombie type, heal them afterwards.",
+    "name": { "str": "Heal", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'If the injected target is a zombie type, heal them afterwards."
+    },
     "flags": [ "SILENT", "NO_FAIL", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
     "valid_targets": [ "hostile", "ally" ],
     "targeted_monster_species": [ "ZOMBIE", "ABERRATION", "INSECT" ],
@@ -381,8 +453,11 @@
   {
     "id": "mon_zombie_skittyweavy_dmg",
     "type": "SPELL",
-    "name": { "str": "Inject" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster injects the target, dealing minor stabbing damage.",
+    "name": { "str": "Inject", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster injects the target, dealing minor stabbing damage."
+    },
     "flags": [ "SILENT", "NO_FAIL", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
     "valid_targets": [ "hostile", "ally" ],
     "message": "",
@@ -397,8 +472,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_zombie_skittyweavy_dmg" },
       { "id": "mon_zombie_skittyweavy_heal" },
@@ -416,8 +494,11 @@
   {
     "id": "mon_zombie_skittyweavy_repleshy_heal",
     "type": "SPELL",
-    "name": { "str": "Heal" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'If the injected target is a zombie type, heal them afterwards.",
+    "name": { "str": "Heal", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'If the injected target is a zombie type, heal them afterwards."
+    },
     "flags": [ "SILENT", "NO_FAIL", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
     "valid_targets": [ "hostile", "ally" ],
     "targeted_monster_species": [ "ZOMBIE", "ABERRATION", "INSECT" ],
@@ -433,8 +514,11 @@
   {
     "id": "mon_zombie_skittyweavy_repleshy_dmg",
     "type": "SPELL",
-    "name": { "str": "Inject" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster injects the target, dealing minor stabbing damage.",
+    "name": { "str": "Inject", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster injects the target, dealing minor stabbing damage."
+    },
     "flags": [ "SILENT", "NO_FAIL", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
     "valid_targets": [ "hostile", "ally" ],
     "message": "",
@@ -449,8 +533,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_repleshy_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_zombie_skittyweavy_repleshy_dmg" },
       { "id": "mon_zombie_skittyweavy_repleshy_heal" },
@@ -468,8 +555,11 @@
   {
     "id": "mon_zombie_skittyweavy_sickly_heal",
     "type": "SPELL",
-    "name": { "str": "Heal" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'If the injected target is a zombie type, heal them afterwards.  Also provides a buff.",
+    "name": { "str": "Heal", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'If the injected target is a zombie type, heal them afterwards.  Also provides a buff."
+    },
     "flags": [ "SILENT", "NO_FAIL", "RANDOM_TARGET", "RANDOM_DAMAGE", "RANDOM_DURATION", "NO_PROJECTILE" ],
     "valid_targets": [ "hostile", "ally" ],
     "targeted_monster_species": [ "ZOMBIE", "ABERRATION", "INSECT" ],
@@ -485,8 +575,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_sickly_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_zombie_skittyweavy_dmg" },
       { "id": "mon_zombie_skittyweavy_heal" },
@@ -505,8 +598,11 @@
   {
     "id": "mon_zombie_revenant_trigger_immune",
     "type": "SPELL",
-    "name": { "str": "Trigger Immune" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Prevent caater from gaining this buff.'",
+    "name": { "str": "Trigger Immune", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Prevent caater from gaining this buff.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "message": "",
@@ -519,8 +615,11 @@
   {
     "id": "mon_zombie_revenant_trigger",
     "type": "SPELL",
-    "name": { "str": "Trigger" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster unlocks the potential prowess of an ally and everyone nearby it, increasing their combat abilities.'",
+    "name": { "str": "Trigger", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster unlocks the potential prowess of an ally and everyone nearby it, increasing their combat abilities.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE" ],
     "valid_targets": [ "self", "ally" ],
     "message": "",
@@ -537,8 +636,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_revenant_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_zombie_revenant_trigger_immune", "hit_self": true },
       { "id": "mon_zombie_revenant_trigger", "hit_self": true }
@@ -554,8 +656,11 @@
   {
     "id": "mon_zombie_revenant_forsaken_dilute",
     "type": "SPELL",
-    "name": { "str": "Dilute" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster stares submissively at the target, inflicting negative combat bonuses.'",
+    "name": { "str": "Dilute", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster stares submissively at the target, inflicting negative combat bonuses.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE" ],
     "valid_targets": [ "hostile" ],
     "message": "",
@@ -570,8 +675,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_revenant_forsaken_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [ { "id": "mon_zombie_revenant_forsaken_dilute" } ],
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
@@ -584,8 +692,11 @@
   {
     "id": "mon_zombie_revenant_allure_incite_immune",
     "type": "SPELL",
-    "name": { "str": "Incite Immune" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Prevent caater from gaining this buff.'",
+    "name": { "str": "Incite Immune", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Prevent caater from gaining this buff.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "message": "",
@@ -598,8 +709,11 @@
   {
     "id": "mon_zombie_revenant_allure_incite",
     "type": "SPELL",
-    "name": { "str": "Incite" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spreads its blob-stimulating goo through its fingers, causing the infected creature's blob to grow rapidly which increases the host's body mass, gaining combat bonuses, but makes them suffer from excessive growth.'",
+    "name": { "str": "Incite", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spreads its blob-stimulating goo through its fingers, causing the infected creature's blob to grow rapidly which increases the host's body mass, gaining combat bonuses, but makes them suffer from excessive growth.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE" ],
     "valid_targets": [ "self", "ally" ],
     "message": "",
@@ -616,8 +730,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_revenant_allure_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_zombie_revenant_allure_incite_immune", "hit_self": true },
       { "id": "mon_zombie_revenant_allure_incite", "hit_self": true }
@@ -633,8 +750,11 @@
   {
     "type": "SPELL",
     "id": "mon_insect_saddler_brood_birth_limit",
-    "name": { "str": "Limit" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster stops using its ability to spawn minions.'",
+    "name": { "str": "Limit", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster stops using its ability to spawn minions.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE" ],
     "valid_targets": [ "self" ],
     "min_damage": 999999,
@@ -647,8 +767,11 @@
   {
     "type": "SPELL",
     "id": "mon_insect_saddler_brood_birth",
-    "name": { "str": "Birth" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster gives a live birth to 2-5 baby saddlers.  These saddlers are filled with hidden potentials, providing them the ability to grow so much faster into a full grown combat saddler once they sense danger around them.'",
+    "name": { "str": "Birth", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster gives a live birth to 2-5 baby saddlers.  These saddlers are filled with hidden potentials, providing them the ability to grow so much faster into a full grown combat saddler once they sense danger around them.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "HOSTILE_SUMMON", "RANDOM_DAMAGE", "PERMANENT", "NO_PROJECTILE" ],
     "valid_targets": [ "ground" ],
     "min_damage": 2,
@@ -663,8 +786,11 @@
   {
     "type": "SPELL",
     "id": "mon_insect_saddler_brood_birth_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_insect_saddler_brood_birth", "hit_self": true },
       { "id": "mon_insect_saddler_brood_birth", "hit_self": true },
@@ -688,8 +814,11 @@
   {
     "id": "mon_zombie_nightwail_shroud",
     "type": "SPELL",
-    "name": { "str": "Enshroud" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster sends off thich shadows towards the target.'",
+    "name": { "str": "Enshroud", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster sends off thich shadows towards the target.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "RANDOM_DAMAGE", "RANDOM_DURATION", "NO_PROJECTILE" ],
     "valid_targets": [ "hostile", "ground" ],
     "message": "",
@@ -705,8 +834,11 @@
   {
     "type": "SPELL",
     "id": "mon_summon_nightwail_shadow",
-    "name": { "str": "Summon Shadow" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster then split chunks of its shadow that chases down targets.'",
+    "name": { "str": "Summon Shadow", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster then split chunks of its shadow that chases down targets.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "HOSTILE_SUMMON", "RANDOM_DURATION", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
     "valid_targets": [ "ground" ],
     "min_damage": 2,
@@ -723,8 +855,11 @@
   {
     "id": "mon_zombie_nightwail_shadow_enshroud",
     "type": "SPELL",
-    "name": { "str": "Shadow Enshroud" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'The caster splits in every direction, covering nearby hostile targets with thicc shadows.'",
+    "name": { "str": "Shadow Enshroud", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'The caster splits in every direction, covering nearby hostile targets with thicc shadows.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "RANDOM_DURATION", "NO_PROJECTILE" ],
     "valid_targets": [ "hostile" ],
     "message": "",
@@ -740,8 +875,11 @@
   {
     "id": "mon_zombie_nightwail_shadow_enshroud_blind",
     "type": "SPELL",
-    "name": { "str": "Shadow Enshroud: Blind" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Blinds target for few turns as well.'",
+    "name": { "str": "Shadow Enshroud: Blind", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Blinds target for few turns as well.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "RANDOM_DURATION", "NO_PROJECTILE" ],
     "valid_targets": [ "hostile" ],
     "message": "",
@@ -756,8 +894,11 @@
   {
     "id": "mon_zombie_nightwail_shadow_split",
     "type": "SPELL",
-    "name": { "str": "Split" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster splits.'",
+    "name": { "str": "Split", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster splits.'"
+    },
     "flags": [ "SILENT", "NO_FAIL" ],
     "valid_targets": [ "self" ],
     "message": "",
@@ -770,8 +911,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_nightwail_shadow_enshroud_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_zombie_nightwail_shadow_split", "hit_self": true },
       { "id": "mon_zombie_nightwail_shadow_enshroud", "hit_self": true }
@@ -787,8 +931,11 @@
   {
     "id": "mon_zombie_bootlegsmoker_snatch_cost",
     "type": "SPELL",
-    "name": { "str": "Snatch Movecost" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster cannot act for set period of time.'",
+    "name": { "str": "Snatch Movecost", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster cannot act for set period of time.'"
+    },
     "valid_targets": [ "self" ],
     "flags": [ "SILENT" ],
     "min_damage": -800,
@@ -800,8 +947,11 @@
   {
     "id": "mon_zombie_bootlegsmoker_snatchtrail",
     "type": "SPELL",
-    "name": { "str": "Snatch Trail" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Visual effect for snatch monsterspell.'",
+    "name": { "str": "Snatch Trail", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Visual effect for snatch monsterspell.'"
+    },
     "flags": [ "SILENT" ],
     "valid_targets": [ "hostile", "ground" ],
     "message": "",
@@ -817,8 +967,11 @@
   {
     "id": "mon_zombie_bootlegsmoker_snatch_check",
     "type": "SPELL",
-    "name": { "str": "Snatcher Zombie - Snatch" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster constricts the target.  If condition fails, target is afflicted with slowness and stun.'",
+    "name": { "str": "Snatcher Zombie - Snatch", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster constricts the target.  If condition fails, target is afflicted with slowness and stun.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "extra_effects": [ { "id": "mon_zombie_bootlegsmoker_snatchtrail" }, { "id": "mon_zombie_bootlegsmoker_snatch_cost", "hit_self": true } ],
@@ -832,8 +985,11 @@
   {
     "id": "mon_zombie_nautilus_disturbance_check",
     "type": "SPELL",
-    "name": { "str": "Nautilus - Disturbance" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster submerges then creates a disturbance around its area, enslowing nearby creatures except for itself.'",
+    "name": { "str": "Nautilus - Disturbance", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster submerges then creates a disturbance around its area, enslowing nearby creatures except for itself.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_damage": 10000,
@@ -848,8 +1004,11 @@
   {
     "id": "mon_zombie_nautilus_pedo_restraint_check",
     "type": "SPELL",
-    "name": { "str": "Nautilus Torpedo - Restraint" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster latches at the target.'",
+    "name": { "str": "Nautilus Torpedo - Restraint", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster latches at the target.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_damage": 10000,
@@ -864,8 +1023,11 @@
   {
     "id": "mon_zombieworm_destroy_check",
     "type": "SPELL",
-    "name": { "str": "Zombieworm - Destroy" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster ravages, destroying nearby terrain.'",
+    "name": { "str": "Zombieworm - Destroy", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster ravages, destroying nearby terrain.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_damage": 10000,
@@ -880,8 +1042,11 @@
   {
     "id": "mon_zombieworm_onger_destroy_check",
     "type": "SPELL",
-    "name": { "str": "Zombieworm - Destroy" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster ravages, destroying nearby terrain.'",
+    "name": { "str": "Zombieworm - Destroy", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster ravages, destroying nearby terrain.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_damage": 10000,
@@ -896,8 +1061,11 @@
   {
     "id": "mon_zombie_equinox_summon_check",
     "type": "SPELL",
-    "name": { "str": "Equinox - Summon" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster summons a necros type.  Repeats 2-5 times.'",
+    "name": { "str": "Equinox - Summon", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster summons a necros type.  Repeats 2-5 times.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_damage": 10000,
@@ -912,8 +1080,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_equinox_summon_check_target_random",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'"
+    },
     "extra_effects": [ { "id": "mon_zombie_equinox_summon_check" } ],
     "flags": [ "SILENT", "NO_FAIL", "WONDER", "RANDOM_DAMAGE", "NO_PROJECTILE" ],
     "valid_targets": [ "none" ],
@@ -928,8 +1099,11 @@
   {
     "id": "mon_zombie_fleshysnaky_devastate_movecost",
     "type": "SPELL",
-    "name": { "str": "Devastate Movecost" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster cannot act for set period of time.'",
+    "name": { "str": "Devastate Movecost", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster cannot act for set period of time.'"
+    },
     "valid_targets": [ "self" ],
     "flags": [ "SILENT" ],
     "min_damage": -400,
@@ -941,8 +1115,11 @@
   {
     "id": "mon_zombie_fleshysnaky_devastate",
     "type": "SPELL",
-    "name": { "str": "Devastate" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster slams the target.'",
+    "name": { "str": "Devastate", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster slams the target.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "RANDOM_DAMAGE", "LOUD" ],
     "valid_targets": [ "hostile", "ground", "ally", "field", "item" ],
     "extra_effects": [ { "id": "mon_zombie_fleshysnaky_devastate_movecost", "hit_self": true } ],
@@ -963,8 +1140,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_fleshysnaky_bsbombard",
-    "name": { "str": "Bony Spike Bombardment" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster volleys bone needles up in the sky, dealing moderate stab damage to anything caught on them.'",
+    "name": { "str": "Bony Spike Bombardment", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster volleys bone needles up in the sky, dealing moderate stab damage to anything caught on them.'"
+    },
     "valid_targets": [ "hostile", "ground", "ally", "field", "item" ],
     "extra_effects": [ { "id": "mon_zombie_fleshysnaky_devastate_movecost", "hit_self": true } ],
     "effect": "attack",
@@ -981,8 +1161,11 @@
   {
     "id": "mon_ayenel_lockon_check",
     "type": "SPELL",
-    "name": { "str": "Ayenel - Lock On" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster glares at the target, inflicting debuffs.'",
+    "name": { "str": "Ayenel - Lock On", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster glares at the target, inflicting debuffs.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "shape": "blast",
@@ -992,8 +1175,11 @@
   {
     "id": "mon_ayenel_spawn_check",
     "type": "SPELL",
-    "name": { "str": "Ayenel - Spawn" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster gets their limb detached.'",
+    "name": { "str": "Ayenel - Spawn", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster gets their limb detached.'"
+    },
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "shape": "blast",
@@ -1003,8 +1189,11 @@
   {
     "id": "mon_maneater_bloodconsume",
     "type": "SPELL",
-    "name": { "str": "Consume" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster consumes the blood.'",
+    "name": { "str": "Consume", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster consumes the blood.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self", "field", "ground", "ally", "hostile", "item" ],
     "effect": "remove_field",
@@ -1018,32 +1207,44 @@
     "type": "SPELL",
     "id": "mon_maneater_bloodconsume_veggy",
     "copy-from": "mon_maneater_bloodconsume",
-    "name": { "str": "Consume" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster consumes the blood.'",
+    "name": { "str": "Consume", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster consumes the blood.'"
+    },
     "effect_str": "fd_blood_veggy"
   },
   {
     "type": "SPELL",
     "id": "mon_maneater_bloodconsume_insect",
     "copy-from": "mon_maneater_bloodconsume",
-    "name": { "str": "Consume" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster consumes the blood.'",
+    "name": { "str": "Consume", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster consumes the blood.'"
+    },
     "effect_str": "fd_blood_insect"
   },
   {
     "type": "SPELL",
     "id": "mon_maneater_bloodconsume_invertebrate",
     "copy-from": "mon_maneater_bloodconsume",
-    "name": { "str": "Consume" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster consumes the blood.'",
+    "name": { "str": "Consume", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster consumes the blood.'"
+    },
     "effect_str": "fd_blood_invertebrate"
   },
   {
     "type": "SPELL",
     "id": "mon_maneater_healcheck",
     "copy-from": "mon_secro_eoc_spell_base",
-    "name": { "str": "Heal Check" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster heals by an amount based on their current health.'",
+    "name": { "str": "Heal Check", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster heals by an amount based on their current health.'"
+    },
     "effect_str": "eoc_secro_mon_maneater_heal",
     "base_casting_time": 0
   },
@@ -1051,8 +1252,11 @@
     "type": "SPELL",
     "id": "mon_maneater_evo_healcheck",
     "copy-from": "mon_secro_eoc_spell_base",
-    "name": { "str": "Heal Check EVO" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster heals by an amount based on their current health.'",
+    "name": { "str": "Heal Check EVO", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster heals by an amount based on their current health.'"
+    },
     "effect_str": "eoc_secro_mon_maneater_evo_heal",
     "base_casting_time": 0
   },
@@ -1060,8 +1264,11 @@
     "type": "SPELL",
     "id": "mon_maneater_bloodcheck",
     "copy-from": "mon_secro_eoc_spell_base",
-    "name": { "str": "Blood Check" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster consumes the blood underneath, and heals based on its intensity.'",
+    "name": { "str": "Blood Check", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster consumes the blood underneath, and heals based on its intensity.'"
+    },
     "effect_str": "eoc_secro_mon_maneater_bloodcheck",
     "base_casting_time": 0
   },
@@ -1069,8 +1276,11 @@
     "type": "SPELL",
     "id": "mon_maneater_bloodcheck_target",
     "copy-from": "mon_secro_eoc_spell_base",
-    "name": { "str": "Blood Check" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster consumes the blood underneath, and heals based on its intensity.'",
+    "name": { "str": "Blood Check", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster consumes the blood underneath, and heals based on its intensity.'"
+    },
     "effect_str": "eoc_secro_mon_maneater_bloodcheck_target",
     "valid_targets": [ "hostile" ],
     "base_casting_time": 0,
@@ -1081,15 +1291,21 @@
     "type": "SPELL",
     "id": "mon_maneater_bloodspray_cost",
     "copy-from": "mon_secro_eoc_spell_base",
-    "name": { "str": "Blood Spray - Cost" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster loses 40 stack after using this ability.'",
+    "name": { "str": "Blood Spray - Cost", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster loses 40 stack after using this ability.'"
+    },
     "effect_str": "eoc_secro_mon_maneater_bloodspray_cost"
   },
   {
     "id": "mon_maneater_bloodspray",
     "type": "SPELL",
-    "name": { "str": "Blood Spray" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster sprays blood at their target.'",
+    "name": { "str": "Blood Spray", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster sprays blood at their target.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "RANDOM_DAMAGE", "RANDOM_DURATION" ],
     "valid_targets": [ "ally", "hostile", "ground" ],
     "message": "",
@@ -1127,8 +1343,11 @@
   {
     "type": "SPELL",
     "id": "mon_maneater_bloodspray_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [ { "id": "mon_maneater_bloodspray" }, { "id": "mon_maneater_bloodspray_cost", "hit_self": true } ],
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "none" ],
@@ -1150,15 +1369,21 @@
     "type": "SPELL",
     "id": "mon_maneater_bloodexp_cost",
     "copy-from": "mon_secro_eoc_spell_base",
-    "name": { "str": "Blood Spray - Cost" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster loses 120 stack after using this ability.'",
+    "name": { "str": "Blood Spray - Cost", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster loses 120 stack after using this ability.'"
+    },
     "effect_str": "eoc_secro_mon_maneater_bloodexp_cost"
   },
   {
     "id": "mon_maneater_bloodexp_effcheck",
     "type": "SPELL",
-    "name": { "str": "Blood Spray" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster gains an effect that greatly increases armor.'",
+    "name": { "str": "Blood Spray", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster gains an effect that greatly increases armor.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "message": "",
@@ -1171,8 +1396,11 @@
   {
     "id": "mon_maneater_bloodexp_stun",
     "type": "SPELL",
-    "name": { "str": "Blood Explosion Stun" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster cannot act for set period of time.'",
+    "name": { "str": "Blood Explosion Stun", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster cannot act for set period of time.'"
+    },
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_damage": -400,
@@ -1191,8 +1419,11 @@
   {
     "type": "SPELL",
     "id": "mon_maneater_bloodexp_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_maneater_bloodexp_stun", "hit_self": true },
       { "id": "mon_maneater_bloodexp_effcheck", "hit_self": true },
@@ -1220,15 +1451,21 @@
     "type": "SPELL",
     "id": "mon_maneater_bloodexp_loseeff",
     "copy-from": "mon_secro_eoc_spell_base",
-    "name": { "str": "Blood Spray - Cost" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster loses 120 stack after using this ability.'",
+    "name": { "str": "Blood Spray - Cost", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster loses 120 stack after using this ability.'"
+    },
     "effect_str": "eoc_secro_mon_maneater_bloodexp_loseeff"
   },
   {
     "id": "mon_maneater_bloodexp",
     "type": "SPELL",
-    "name": { "str": "Blood Explosion" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster explodes into a shower of blood, dealing damage to anyone caught in it.'",
+    "name": { "str": "Blood Explosion", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster explodes into a shower of blood, dealing damage to anyone caught in it.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "RANDOM_DAMAGE", "RANDOM_DURATION" ],
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
     "extra_effects": [ { "id": "mon_maneater_bloodexp_loseeff", "hit_self": true } ],
@@ -1264,8 +1501,11 @@
   {
     "id": "mon_sflesh_surface_spawner_tent_check",
     "type": "SPELL",
-    "name": { "str": "Eye Sprout - Summon Tentacle" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns a flesh tendril nearby.'",
+    "name": { "str": "Eye Sprout - Summon Tentacle", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns a flesh tendril nearby.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_damage": 10000,
@@ -1280,8 +1520,11 @@
   {
     "id": "mon_sflesh_surface_spawner_jaw_check",
     "type": "SPELL",
-    "name": { "str": "Eye Sprout - Summon Jaw" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns a jawed flesh nearby.'",
+    "name": { "str": "Eye Sprout - Summon Jaw", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns a jawed flesh nearby.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_damage": 10000,
@@ -1296,8 +1539,11 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_surface_spawner_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "name": { "str": "a spell", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Target spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'"
+    },
     "extra_effects": [
       { "id": "mon_sflesh_surface_spawner_jaw_check", "hit_self": true },
       { "id": "mon_sflesh_surface_spawner_jaw_check", "hit_self": true },
@@ -1316,8 +1562,11 @@
   {
     "id": "mon_sflesh_sack_birth_check",
     "type": "SPELL",
-    "name": { "str": "Flesh Sack - Birth" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns several parasytes.'",
+    "name": { "str": "Flesh Sack - Birth", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spawns several parasytes.'"
+    },
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "shape": "blast",
@@ -1328,8 +1577,11 @@
   {
     "id": "mon_sflesh_veinstalk_spread_check",
     "type": "SPELL",
-    "name": { "str": "Veinstalk - Spread" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster converts nearby terrain into flesh variant.'",
+    "name": { "str": "Veinstalk - Spread", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster converts nearby terrain into flesh variant.'"
+    },
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_damage": 10000,
@@ -1344,8 +1596,11 @@
   {
     "id": "mon_sflesh_veinstalk_initial_convert",
     "type": "SPELL",
-    "name": { "str": "Flesh Conversion" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster converts the surrounding terrain into flesh.'",
+    "name": { "str": "Flesh Conversion", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster converts the surrounding terrain into flesh.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "IGNORE_WALLS", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "ally", "hostile", "ground", "self" ],
     "extra_effects": [ { "id": "secro_flesh_infect_large_target", "hit_self": true }, { "id": "sacrifice_spell", "hit_self": true } ],
@@ -1361,8 +1616,11 @@
   {
     "id": "mon_vector_rize_smol_check",
     "type": "SPELL",
-    "name": { "str": "Vector - Small Spread" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spreads vector to nearby tiles.'",
+    "name": { "str": "Vector - Small Spread", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spreads vector to nearby tiles.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_damage": 10000,
@@ -1377,8 +1635,11 @@
   {
     "id": "mon_vector_rize_big_check",
     "type": "SPELL",
-    "name": { "str": "Vector - Big Spread" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spreads vector to nearby tiles.'",
+    "name": { "str": "Vector - Big Spread", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster spreads vector to nearby tiles.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_damage": 10000,
@@ -1393,8 +1654,11 @@
   {
     "id": "mon_zombie_akin_lsattach_ally",
     "type": "SPELL",
-    "name": { "str": "Empowering Attachtment" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's visceral tendril latches onto its surrounding allies, applying buffs that intensifies for as long as it is attached.'",
+    "name": { "str": "Empowering Attachtment", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster's visceral tendril latches onto its surrounding allies, applying buffs that intensifies for as long as it is attached.'"
+    },
     "flags": [ "SILENT", "NO_FAIL" ],
     "valid_targets": [ "ally" ],
     "message": "",
@@ -1409,8 +1673,11 @@
   {
     "id": "mon_zombie_akin_sattach_check",
     "type": "SPELL",
-    "name": { "str": "Akin - Siphon" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster attaches its visceral tendrils to the target.  If condition fails, the target is afflicted with debuffs and its nearby allies gain buffs.'",
+    "name": { "str": "Akin - Siphon", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster attaches its visceral tendrils to the target.  If condition fails, the target is afflicted with debuffs and its nearby allies gain buffs.'"
+    },
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
     "min_range": 9,
@@ -1423,8 +1690,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_fake_ichorus_poly",
-    "name": { "str": "Morph" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Target is converted into its flesh variant'",
+    "name": { "str": "Morph", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Target is converted into its flesh variant'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "secro_flesh_infect_success_heal", "hit_self": true } ],
@@ -1438,8 +1708,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_fake_psyrus_poly",
-    "name": { "str": "Morph" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Target is converted into its flesh variant'",
+    "name": { "str": "Morph", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Target is converted into its flesh variant'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "secro_flesh_infect_success_heal", "hit_self": true } ],
@@ -1453,8 +1726,11 @@
   {
     "id": "mon_insect_parasiteworm_limit_initial",
     "type": "SPELL",
-    "name": { "str": "Parasitic Swarm Limit" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster applies the effect on its own upon spawning.'",
+    "name": { "str": "Parasitic Swarm Limit", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster applies the effect on its own upon spawning.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "PERMANENT", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "message": "",
@@ -1465,8 +1741,11 @@
   {
     "id": "mon_zombie_swarmer_alphadeath",
     "type": "SPELL",
-    "name": { "str": "Alpha Swarmer Death" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Nearby swarmers gain an effect, preventing them from becoming a new alpha after some moments.'",
+    "name": { "str": "Alpha Swarmer Death", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Nearby swarmers gain an effect, preventing them from becoming a new alpha after some moments.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "RANDOM_DURATION", "NO_EXPLOSION_SFX", "IGNORE_WALLS" ],
     "valid_targets": [ "hostile", "ally", "self" ],
     "targeted_monster_species": [ "SECROSWARMER" ],
@@ -1482,8 +1761,11 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_swarmer_alphaform",
-    "name": { "str": "Alpha Swarmer Form" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster turns into an alpha swarmer.'",
+    "name": { "str": "Alpha Swarmer Form", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster turns into an alpha swarmer.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "self" ],
     "min_damage": 999999,
@@ -1509,8 +1791,11 @@
     "type": "SPELL",
     "id": "mon_zombie_swarmer_alphaform_check",
     "copy-from": "mon_secro_eoc_spell_base",
-    "name": { "str": "Alpha Swarmer Form Check" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Checks if this swarmer can become an alpha.'",
+    "name": { "str": "Alpha Swarmer Form Check", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Checks if this swarmer can become an alpha.'"
+    },
     "effect_str": "eoc_secro_mon_zombie_swarmer_alphaform_check",
     "base_casting_time": 0
   },
@@ -1529,8 +1814,11 @@
   {
     "id": "mon_zombie_swarmer_alphasive",
     "type": "SPELL",
-    "name": { "str": "Alpha Swarmer Passive" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Nearby swarmers gain extra speed.'",
+    "name": { "str": "Alpha Swarmer Passive", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Nearby swarmers gain extra speed.'"
+    },
     "flags": [ "SILENT", "NO_FAIL", "NO_EXPLOSION_SFX", "IGNORE_WALLS" ],
     "valid_targets": [ "ally", "self" ],
     "targeted_monster_species": [ "SECROSWARMER" ],
@@ -1548,8 +1836,11 @@
     "type": "SPELL",
     "id": "mon_zombie_jolt_passive",
     "copy-from": "mon_secro_eoc_spell_base",
-    "name": { "str": "Jolt Passive Spawning" },
-    "description": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster passively spawns a bolt.'",
+    "name": { "str": "Jolt Passive Spawning", "//~": "NO_I18N" },
+    "description": {
+      "//~": "NO_I18N",
+      "str": "Spell casted by a monster.  If you're seeing this, then read this one instead:\n'Caster passively spawns a bolt.'"
+    },
     "effect_str": "eoc_secro_mon_zombie_jolt_passive",
     "base_casting_time": 0
   }
