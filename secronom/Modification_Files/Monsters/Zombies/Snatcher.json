@@ -46,6 +46,7 @@
     ],
     "upgrades": { "half_life": 56, "into": "mon_zombie_bootlegsmoker_mode" },
     "anger_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED", "HURT", "PLAYER_CLOSE", "PLAYER_WEAK", "HOSTILE_SEEN" ],
+    "delete": { "flags": [ "UNBREAKABLE_MORALE" ] },
     "extend": { "flags": [ "PATH_AVOID_DANGER", "KEEP_DISTANCE", "RANGED_ATTACKER" ] }
   },
   {

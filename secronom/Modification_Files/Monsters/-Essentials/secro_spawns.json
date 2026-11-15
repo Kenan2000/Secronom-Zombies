@@ -8,11 +8,27 @@
       { "group": "GROUP_SECRO_SWARMERS", "weight": 750 },
       { "monster": "mon_secrozombie_potent", "weight": 100, "pack_size": [ 2, 4 ], "ends": "120 days" },
       { "monster": "mon_secrozombie_potent", "weight": 300, "pack_size": [ 2, 4 ], "starts": "120 days" },
-      { "group": "GROUP_SECROZEDS", "weight": 500, "ends": "12 days" },
-      { "group": "GROUP_SECROZEDS", "weight": 750, "starts": "12 days", "ends": "28 days" },
-      { "group": "GROUP_SECROZEDS", "weight": 1000, "starts": "28 days", "ends": "56 days" },
-      { "group": "GROUP_SECROZEDS", "weight": 1250, "starts": "56 days", "ends": "120 days" },
-      { "group": "GROUP_SECROZEDS", "weight": 1500, "pack_size": [ 1, 2 ], "starts": "120 days" }
+      { "group": "GROUP_SECROZEDS", "weight": 1000, "ends": "12 days" },
+      { "group": "GROUP_SECROZEDS", "weight": 1250, "starts": "12 days", "ends": "28 days" },
+      { "group": "GROUP_SECROZEDS", "weight": 1500, "starts": "28 days", "ends": "56 days" },
+      { "group": "GROUP_SECROZEDS", "weight": 1750, "starts": "56 days", "ends": "120 days" },
+      { "group": "GROUP_SECROZEDS", "weight": 2000, "pack_size": [ 1, 2 ], "starts": "120 days" }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "id": "GROUP_ZOMBIE_HORDE",
+    "override": false,
+    "auto_total": true,
+    "monsters": [
+      { "group": "GROUP_SECRO_SWARMERS", "weight": 750 },
+      { "monster": "mon_secrozombie_potent", "weight": 100, "pack_size": [ 2, 4 ], "ends": "120 days" },
+      { "monster": "mon_secrozombie_potent", "weight": 300, "pack_size": [ 2, 4 ], "starts": "120 days" },
+      { "group": "GROUP_SECROZEDS", "weight": 1000, "ends": "12 days" },
+      { "group": "GROUP_SECROZEDS", "weight": 1250, "starts": "12 days", "ends": "28 days" },
+      { "group": "GROUP_SECROZEDS", "weight": 1500, "starts": "28 days", "ends": "56 days" },
+      { "group": "GROUP_SECROZEDS", "weight": 1750, "starts": "56 days", "ends": "120 days" },
+      { "group": "GROUP_SECROZEDS", "weight": 2000, "pack_size": [ 1, 2 ], "starts": "120 days" }
     ]
   },
   {
@@ -158,7 +174,7 @@
     "id": "DUMP_ZOMBIES",
     "override": false,
     "auto_total": true,
-    "monsters": [ { "monster": "mon_zombie_fleshmonger", "weight": 1, "cost_multiplier": 30, "ends": "12 days" } ]
+    "monsters": [ { "monster": "mon_zombie_fleshmonger", "weight": 1, "cost_multiplier": 30 } ]
   },
   {
     "type": "monstergroup",
