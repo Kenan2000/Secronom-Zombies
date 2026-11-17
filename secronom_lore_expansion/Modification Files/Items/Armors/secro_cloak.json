@@ -1,7 +1,8 @@
 [
   {
     "id": "secro_flesh_cloak",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "cloak" },
     "description": "A heavy cloak meant to be thrown over your body.",
     "weight": "1469 g",

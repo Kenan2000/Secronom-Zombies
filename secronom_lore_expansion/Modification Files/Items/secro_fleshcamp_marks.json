@@ -1,7 +1,8 @@
 [
   {
     "id": "secro_flesh_camp_bed_mark",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "<color_pink>[MARK]</color> flesh bed" },
     "description": "Activate to set a mark and the hivemind will build the furniture on that spot. Marked spot must be near the hivemind's core.",
     "weight": "3 g",
@@ -15,7 +16,8 @@
   },
   {
     "id": "secro_flesh_camp_floorstorage_mark",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "<color_pink>[MARK]</color> floor residue" },
     "description": "Activate to set a mark and the flesh will build the furniture on that spot. Marked spot must be near the hivemind's core.",
     "weight": "3 g",
@@ -29,7 +31,8 @@
   },
   {
     "id": "secro_flesh_camp_storage_mark",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "<color_pink>[MARK]</color> residue" },
     "description": "Activate to set a mark and the flesh will build the furniture on that spot. Marked spot must be near the hivemind's core.",
     "weight": "3 g",
@@ -43,7 +46,8 @@
   },
   {
     "id": "secro_flesh_camp_displaystorage_mark",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "<color_pink>[MARK]</color> flesh rack" },
     "description": "Activate to set a mark and the flesh will build the furniture on that spot. Marked spot must be near the hivemind's core.",
     "weight": "3 g",
@@ -57,7 +61,8 @@
   },
   {
     "id": "secro_flesh_camp_liquidstorage_mark",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "<color_pink>[MARK]</color> flesh container" },
     "description": "Activate to set a mark and the flesh will build the furniture on that spot. Marked spot must be near the hivemind's core.",
     "weight": "3 g",
@@ -71,7 +76,8 @@
   },
   {
     "id": "secro_flesh_camp_light_mark",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "<color_pink>[MARK]</color> bioluminescent wart" },
     "description": "Activate to set a mark and the flesh will build the furniture on that spot. Marked spot must be near the hivemind's core.",
     "weight": "3 g",

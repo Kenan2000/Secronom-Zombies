@@ -1,6 +1,5 @@
 [
   {
-    "method": "json",
     "object": {
       "fill_ter": "t_metal_floor",
       "rows": [
@@ -36,7 +35,6 @@
     "type": "mapgen"
   },
   {
-    "method": "json",
     "object": {
       "fill_ter": "t_metal_floor",
       "rows": [
@@ -72,7 +70,6 @@
     "type": "mapgen"
   },
   {
-    "method": "json",
     "object": {
       "fill_ter": "t_metal_floor",
       "rows": [

@@ -1,7 +1,8 @@
 [
   {
     "id": "secro_recipe_flesh",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "name": {
       "str": "Secronom Project \"Flesh\": Research Results",
       "str_pl": "copies of Secronom Project \"Flesh\": Research Results"
@@ -15,16 +16,17 @@
     "material": [ "paper", "plastic" ],
     "symbol": "?",
     "color": "light_red",
-    "skill": "chemistry",
+    "read_skill": "chemistry",
     "required_level": 6,
     "max_level": 7,
     "intelligence": 13,
     "time": "25 m",
-    "fun": -1
+    "read_fun": -1
   },
   {
     "id": "secro_recipe_flesh_field",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "name": {
       "str": "Secronom Project \"Flesh\": Field Research",
       "str_pl": "copies of Secronom Project \"Flesh\": Field Research"
@@ -38,11 +40,11 @@
     "material": [ "paper", "plastic" ],
     "symbol": "?",
     "color": "light_red",
-    "skill": "chemistry",
+    "read_skill": "chemistry",
     "required_level": 0,
     "max_level": 1,
     "intelligence": 10,
     "time": "10 m",
-    "fun": -1
+    "read_fun": -1
   }
 ]

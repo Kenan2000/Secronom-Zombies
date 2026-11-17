@@ -12,7 +12,7 @@
     "symbol": "Ƶ",
     "color": "light_green_yellow",
     "harvest": "zombie_humanoid",
-    "upgrades": { "half_life": 66, "into_group": "GROUP_SCOURGE_UPGRADEX" }
+    "upgrades": { "half_life": 120, "into_group": "GROUP_SCOURGE_UPGRADEX" }
   },
   {
     "id": "mon_secrozombie_armored",
@@ -25,7 +25,7 @@
     "symbol": "Ƶ",
     "color": "light_green_white",
     "harvest": "zombie_humanoid",
-    "upgrades": { "half_life": 66, "into_group": "GROUP_CHARGER_UPGRADEX" }
+    "upgrades": { "half_life": 120, "into_group": "GROUP_CHARGER_UPGRADEX" }
   },
   {
     "id": "mon_secrozombie_tent",
@@ -39,7 +39,7 @@
     "color": "green",
     "harvest": "zombie_humanoid",
     "special_attacks": [ { "type": "bite", "cooldown": 5 }, { "id": "grab", "cooldown": 3 }, [ "scratch", 20 ] ],
-    "upgrades": { "half_life": 66, "into_group": "GROUP_TENDRILS_UPGRADEX" }
+    "upgrades": { "half_life": 120, "into_group": "GROUP_TENDRILS_UPGRADEX" }
   },
   {
     "id": "mon_secrozombie_blade",
@@ -54,7 +54,7 @@
     "harvest": "zombie_humanoid",
     "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
     "special_attacks": [ [ "scratch", 3 ] ],
-    "upgrades": { "half_life": 66, "into_group": "GROUP_BLADED_UPGRADEX" }
+    "upgrades": { "half_life": 120, "into_group": "GROUP_BLADED_UPGRADEX" }
   },
   {
     "id": "mon_secrozombie_potent",
@@ -67,6 +67,6 @@
     "symbol": "Ƶ",
     "color": "light_green",
     "harvest": "zombie_humanoid",
-    "upgrades": { "half_life": 12, "into_group": "GROUP_SWARMERSEGWAY_UPGRADE" }
+    "upgrades": { "half_life": 40, "into_group": "GROUP_SWARMERSEGWAY_UPGRADE" }
   }
 ]

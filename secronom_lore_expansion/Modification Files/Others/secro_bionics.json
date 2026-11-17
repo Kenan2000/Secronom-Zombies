@@ -210,7 +210,7 @@
   },
   {
     "id": "internal_secro_fv_core",
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "container",
     "name": { "str": "flesh core" },
     "description": "Internal storage for articifial flesh.",

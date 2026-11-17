@@ -1,7 +1,8 @@
 [
   {
     "id": "bot_secro_laserturret_mod",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "inactive laser beam turret" },
     "description": "An inactive SDP-L1 turret. Use to place it.",
     "volume": "60000 ml",
@@ -22,7 +23,7 @@
     }
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_bot_secroinforcer",
     "symbol": ",",
     "color": "green",
@@ -38,7 +39,7 @@
     "flags": [ "TRADER_AVOID", "NO_REPAIR" ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_bot_secroshocker",
     "symbol": ",",
     "color": "white",
@@ -54,7 +55,7 @@
     "flags": [ "TRADER_AVOID", "NO_REPAIR" ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_bot_secroriflewalker",
     "symbol": ",",
     "color": "white",
@@ -70,7 +71,7 @@
     "flags": [ "TRADER_AVOID", "NO_REPAIR" ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_bot_secrolauncher",
     "symbol": ",",
     "color": "white",
@@ -86,7 +87,7 @@
     "flags": [ "TRADER_AVOID", "NO_REPAIR" ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_secro_fleshmech_unlink",
     "name": { "str": "broken flesh mech" },
     "description": "This is a broken flesh exoskeleton suit, it looks beyond repair.",
@@ -99,7 +100,7 @@
     "flags": [ "TRADER_AVOID", "NO_REPAIR" ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_secro_fleshmech",
     "name": { "str": "broken flesh mech" },
     "description": "This is a broken flesh exoskeleton suit, it looks beyond repair.",

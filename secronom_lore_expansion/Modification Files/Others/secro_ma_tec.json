@@ -9,7 +9,7 @@
     "skill_requirements": [ { "name": "secro_flesh_combat", "level": 1 } ],
     "mult_bonuses": [ { "stat": "movecost", "scale": 1.03 }, { "stat": "damage", "type": "cut", "scale": 1.1 } ],
     "description": "+10% cut, +3% movecost",
-    "attack_vectors": [ "HAND" ]
+    "attack_vectors": [ "vector_null" ]
   },
   {
     "type": "technique",
@@ -23,7 +23,7 @@
     "skill_requirements": [ { "name": "secro_flesh_combat", "level": 2 } ],
     "mult_bonuses": [ { "stat": "movecost", "scale": 1.1 }, { "stat": "damage", "type": "cut", "scale": 1.15 } ],
     "description": "+15% cut, +10% movecost, crit only, wide",
-    "attack_vectors": [ "HAND" ]
+    "attack_vectors": [ "vector_null" ]
   },
   {
     "type": "technique",
@@ -38,7 +38,7 @@
     "mult_bonuses": [ { "stat": "movecost", "scale": 1.33 }, { "stat": "damage", "type": "cut", "scale": 1.5 } ],
     "flat_bonuses": [ { "stat": "arpen", "type": "cut", "scaling-stat": "str", "scale": 1.0 } ],
     "description": "+50% cut, +33% movecost, stun 2 turns, crit only",
-    "attack_vectors": [ "HAND" ]
+    "attack_vectors": [ "vector_null" ]
   },
   {
     "type": "technique",
@@ -51,7 +51,7 @@
     "skill_requirements": [ { "name": "secro_flesh_combat", "level": 5 } ],
     "mult_bonuses": [ { "stat": "movecost", "scale": 1.66 }, { "stat": "damage", "type": "cut", "scale": 1.99 } ],
     "description": "+66% movecost, +99% cut, crit only",
-    "attack_vectors": [ "HAND" ]
+    "attack_vectors": [ "vector_null" ]
   },
   {
     "type": "technique",
@@ -69,7 +69,7 @@
     "melee_allowed": true,
     "mult_bonuses": [ { "stat": "movecost", "scale": 0.9 }, { "stat": "damage", "type": "bash", "scale": 0.9 } ],
     "description": "-10% bash, -10% movecost",
-    "attack_vectors": [ "HAND" ]
+    "attack_vectors": [ "vector_null" ]
   },
   {
     "type": "technique",
@@ -87,7 +87,7 @@
     "skill_requirements": [ { "name": "secro_flesh_combat", "level": 1 } ],
     "mult_bonuses": [ { "stat": "movecost", "scale": 0.5 }, { "stat": "damage", "type": "bash", "scale": 0.8 } ],
     "description": "-33% bash, -33% movecost",
-    "attack_vectors": [ "HAND" ]
+    "attack_vectors": [ "vector_null" ]
   },
   {
     "type": "technique",
@@ -101,7 +101,7 @@
     "skill_requirements": [ { "name": "secro_flesh_combat", "level": 3 } ],
     "mult_bonuses": [ { "stat": "movecost", "scale": 1.66 }, { "stat": "damage", "type": "bash", "scale": 2.0 } ],
     "description": "+100% bash, +66% movecost, down 2 turns, crit only",
-    "attack_vectors": [ "HAND" ]
+    "attack_vectors": [ "vector_null" ]
   },
   {
     "type": "technique",
@@ -115,7 +115,7 @@
     "skill_requirements": [ { "name": "secro_flesh_combat", "level": 5 } ],
     "mult_bonuses": [ { "stat": "movecost", "scale": 1.8 }, { "stat": "damage", "type": "bash", "scale": 3.0 } ],
     "description": "+200% bash, +80% movecost, stun 2 turns, crit only",
-    "attack_vectors": [ "HAND" ]
+    "attack_vectors": [ "vector_null" ]
   },
   {
     "type": "technique",
@@ -129,7 +129,7 @@
     "skill_requirements": [ { "name": "secro_flesh_combat", "level": 1 } ],
     "mult_bonuses": [ { "stat": "movecost", "scale": 1.4 }, { "stat": "damage", "type": "bash", "scale": 1.3 } ],
     "description": "+30% bash, +40% movecost, stun 1 turn, crit only",
-    "attack_vectors": [ "HAND" ]
+    "attack_vectors": [ "vector_null" ]
   },
   {
     "type": "technique",
@@ -143,7 +143,7 @@
     "skill_requirements": [ { "name": "secro_flesh_combat", "level": 3 } ],
     "mult_bonuses": [ { "stat": "movecost", "scale": 1.9 }, { "stat": "damage", "type": "bash", "scale": 1.7 } ],
     "description": "+70% bash, +90% movecost, stun 2 turns, crit only",
-    "attack_vectors": [ "HAND" ]
+    "attack_vectors": [ "vector_null" ]
   },
   {
     "type": "technique",
@@ -158,7 +158,7 @@
     "skill_requirements": [ { "name": "secro_flesh_combat", "level": 4 } ],
     "mult_bonuses": [ { "stat": "movecost", "scale": 2.25 }, { "stat": "damage", "type": "bash", "scale": 2.0 } ],
     "description": "+100% bash, +125% movecost, stun 3 turns, knock 2 tiles, crit only",
-    "attack_vectors": [ "HAND" ]
+    "attack_vectors": [ "vector_null" ]
   },
   {
     "type": "technique",
@@ -184,7 +184,7 @@
       }
     ],
     "description": "+266% bash, +199% movecost, down 6 turns, knocks adjacent, crit only",
-    "attack_vectors": [ "HAND" ]
+    "attack_vectors": [ "vector_null" ]
   },
   {
     "type": "technique",
@@ -205,7 +205,7 @@
       { "stat": "damage", "type": "cut", "scale": 1.2 }
     ],
     "description": "+20% bash/cut, +10% movecost",
-    "attack_vectors": [ "HAND" ]
+    "attack_vectors": [ "vector_null" ]
   },
   {
     "type": "technique",
@@ -223,7 +223,7 @@
       { "stat": "damage", "type": "cut", "scale": 1.45 }
     ],
     "description": "+45% bash/cut, +35% movecost, stun 1 turn, crit only",
-    "attack_vectors": [ "HAND" ]
+    "attack_vectors": [ "vector_null" ]
   },
   {
     "type": "technique",
@@ -242,7 +242,7 @@
       { "stat": "damage", "type": "cut", "scale": 1.9 }
     ],
     "description": "+90% bash/cut, +66% movecost, stun 1 turn, down 2 turns, crit only",
-    "attack_vectors": [ "HAND" ]
+    "attack_vectors": [ "vector_null" ]
   },
   {
     "type": "martial_art",

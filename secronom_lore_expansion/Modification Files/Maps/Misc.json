@@ -1,6 +1,5 @@
 [
   {
-    "method": "json",
     "type": "mapgen",
     "update_mapgen_id": "mx_secro_vesselexp",
     "object": {

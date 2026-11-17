@@ -1,7 +1,8 @@
 [
   {
     "id": "secro_flesh_splicer",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "bio-organic splicer" },
     "description": "A disk-shaped bio-organic device used in DNA extraction suitable on living (or undead) subjects.",
     "weight": "1330 g",
@@ -16,7 +17,7 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "secro_flesh": 10 } } ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "secro_flesh_splicer_zombie_blade_dna",
     "category": "secro_dna",
     "material": [ "flesh" ],
@@ -30,7 +31,7 @@
     "volume": "40 ml"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "secro_flesh_splicer_zombie_WALKINGPOTATO_dna",
     "category": "secro_dna",
     "material": [ "flesh" ],
@@ -44,7 +45,7 @@
     "volume": "40 ml"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "secro_flesh_splicer_zombie_mouth_dna",
     "category": "secro_dna",
     "material": [ "flesh" ],
@@ -61,7 +62,7 @@
     "volume": "40 ml"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "secro_flesh_splicer_zombie_tendril_dna",
     "category": "secro_dna",
     "material": [ "flesh" ],
@@ -78,7 +79,7 @@
     "volume": "40 ml"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "secro_flesh_splicer_zombie_titan_dna",
     "category": "secro_dna",
     "material": [ "flesh" ],
@@ -92,7 +93,7 @@
     "volume": "40 ml"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "secro_flesh_splicer_zombie_unify_dna",
     "category": "secro_dna",
     "material": [ "flesh" ],
@@ -109,7 +110,7 @@
     "volume": "40 ml"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "secro_flesh_splicer_zombie_blade_ccore",
     "category": "secro_ccore",
     "material": [ "flesh" ],
@@ -123,7 +124,7 @@
     "volume": "120 ml"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "secro_flesh_splicer_zombie_WALKINGPOTATO_ccore",
     "category": "secro_ccore",
     "material": [ "flesh" ],
@@ -137,7 +138,7 @@
     "volume": "120 ml"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "secro_flesh_splicer_zombie_mouth_ccore",
     "category": "secro_ccore",
     "material": [ "flesh" ],
@@ -154,7 +155,7 @@
     "volume": "120 ml"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "secro_flesh_splicer_zombie_tendril_ccore",
     "category": "secro_ccore",
     "material": [ "flesh" ],
@@ -171,7 +172,7 @@
     "volume": "120 ml"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "secro_flesh_splicer_zombie_titan_ccore",
     "category": "secro_ccore",
     "material": [ "flesh" ],
@@ -185,7 +186,7 @@
     "volume": "120 ml"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "secro_flesh_splicer_zombie_unify_ccore",
     "category": "secro_ccore",
     "material": [ "flesh" ],

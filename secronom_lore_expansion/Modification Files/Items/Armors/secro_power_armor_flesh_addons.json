@@ -1,7 +1,8 @@
 [
   {
     "id": "secro_power_armor_flesh_check",
-    "type": "TOOL_ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR" ],
     "category": "armor",
     "name": { "str": "vessel interface port" },
     "description": "A series of intricate outlets located on your chest and back, which are still wide open after merging with the exoskeleton. Perhaps there's a certain CBM that must be installed in them.",
@@ -12,12 +13,22 @@
     "material": [ "secro_flesh_reinforced" ],
     "symbol": "%",
     "color": "white",
-    "flags": [ "PERSONAL", "TRADER_KEEP", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "NO_TAKEOFF" ],
-    "armor": [ { "covers": [ "torso" ], "encumbrance": 0, "coverage": 0, "material": [ "secro_flesh_reinforced" ], "material_thickness": 1 } ]
+    "flags": [ "INTEGRATED", "PERSONAL", "TRADER_KEEP", "SEMITANGIBLE", "OVERSIZE", "TRADER_AVOID" ],
+    "max_worn": 1,
+    "armor": [
+      {
+        "covers": [ "torso" ],
+        "encumbrance": 0,
+        "coverage": 0,
+        "material": [ "secro_flesh_reinforced" ],
+        "material_thickness": 1
+      }
+    ]
   },
   {
     "id": "secro_power_armor_flesh_bor",
-    "type": "TOOL_ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR" ],
     "category": "armor",
     "name": { "str": "bio-organic reconstructors" },
     "description": "Located on your hands are flesh weavers allowing you to manipulate organic materials at will.",
@@ -48,8 +59,9 @@
       }
     ],
     "material_thickness": 0.02,
-    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "NO_TAKEOFF" ],
+    "flags": [ "INTEGRATED", "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "TRADER_AVOID" ],
+    "max_worn": 1,
     "qualities": [ [ "SECRO_FLESH_WEAVING", 1 ], [ "SECRO_FLESH_RECONSTRUCTION", 1 ] ],
-    "armor": [ { "covers": [ "torso" ], "encumbrance": 0, "coverage": 0, "material": [ "secro_flesh_reinforced" ] } ]
+    "armor": [ { "covers": [ "hand_l", "hand_r" ], "encumbrance": 0, "coverage": 0, "material": [ "secro_flesh_reinforced" ] } ]
   }
 ]

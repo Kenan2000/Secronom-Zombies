@@ -1,6 +1,5 @@
 [
   {
-    "method": "json",
     "object": {
       "fill_ter": "t_thconc_floor",
       "rows": [
@@ -35,7 +34,6 @@
     "type": "mapgen"
   },
   {
-    "method": "json",
     "object": {
       "fill_ter": "t_thconc_floor",
       "rows": [

@@ -1,0 +1,33 @@
+[
+  {
+    "id": "mon_zombie_devilhound",
+    "copy-from": "mon_zombie_dog",
+    "looks_like": "mon_dog_zombie_brute",
+    "type": "MONSTER",
+    "name": { "str": "devil hound" },
+    "description": "A massive wolf-like creature with an exposed ribcage and long bony spikes running across its back down to its tail. Its movement seem streamlined for its size, making it an incredibly fearsome predator.",
+    "species": [ "ZOMBIE", "SECROZED_ULTIMATE" ],
+    "volume": "92500 ml",
+    "weight": "120000 g",
+    "hp": 666,
+    "speed": 140,
+    "material": [ "flesh" ],
+    "symbol": "★",
+    "color": "red",
+    "melee_skill": 8,
+    "melee_dice": 6,
+    "melee_dice_sides": 6,
+    "melee_damage": [
+      { "damage_type": "cut", "amount": 12, "armor_multiplier": 0.8 },
+      { "damage_type": "stab", "amount": 12, "armor_multiplier": 0.2 }
+    ],
+    "relative": { "vision_night": 3, "grab_strength": 6 },
+    "dodge": 4,
+    "armor": { "bash": 5, "cut": 10, "stab": 10, "bullet": 10, "electric": 4 },
+    "harvest": "secro_devil_hound",
+    "special_attacks": [ { "id": "bite_grab", "cooldown": 5 } ],
+    "death_drops": "",
+    "burn_into": "mon_dog_scorched_hulk",
+    "upgrades": false
+  }
+]

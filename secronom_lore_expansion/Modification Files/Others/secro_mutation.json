@@ -20,7 +20,8 @@
   {
     "id": "mutagen_secronom_ex",
     "copy-from": "mutagen_flavor",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "experimental mutagen" },
     "description": "Mutagen developed by the secronom team. Unstable.",
     "//": "Priceless and unknown."
@@ -28,7 +29,8 @@
   {
     "id": "iv_mutagen_secronom_ex",
     "copy-from": "iv_mutagen_flavor",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "experimental serum" },
     "description": "Super-concentrated mutagen developed by the secronom team. Highly unstable. ",
     "color": "green"
@@ -61,7 +63,7 @@
     ],
     "encumbrance_always": [ [ "hand_l", 20 ], [ "hand_r", 20 ] ],
     "encumbrance_covered": [ [ "hand_l", 30 ], [ "hand_r", 30 ] ],
-    "enchantments": [ { "values": [ { "value": "ITEM_DAMAGE_BASH", "add": 2 }]}],
+    "enchantments": [ { "melee_damage_bonus": [ { "type": "bash", "add": 2 } ] } ],
     "attacks": [
       {
         "attack_text_u": "You slap %s with your tendrils",
@@ -114,14 +116,7 @@
       }
     ],
     "armor": [ { "parts": [ "arm_l", "arm_r" ], "bash": 6 } ],
-    "enchantments": [
-      {
-        "values": [
-          { "value": "DEXTERITY", "add": -2 },
-          { "value": "ITEM_DAMAGE_BASH", "add": 5.5}
-        ]
-      }
-    ],
+    "enchantments": [ { "values": [ { "value": "DEXTERITY", "add": -2 } ], "melee_damage_bonus": [ { "type": "bash", "add": 5.5 } ] } ],
     "category": [ "SECRONOM_EX" ]
   },
   {
@@ -195,11 +190,8 @@
     "armor": [ { "parts": [ "arm_l", "arm_r" ], "bash": 1 }, { "parts": "ALL", "bash": 2 } ],
     "enchantments": [
       {
-        "values": [
-          { "value": "DEXTERITY", "add": 1 },
-          { "value": "ATTACK_SPEED", "multiply": 0.05 },
-          { "value": "ITEM_DAMAGE_BASH", "add": 1.5 }
-        ]
+        "values": [ { "value": "DEXTERITY", "add": 1 }, { "value": "ATTACK_SPEED", "multiply": 0.05 } ],
+        "melee_damage_bonus": [ { "type": "bash", "add": 1.5 } ]
       }
     ],
     "category": [ "SECRONOM_EX" ]
@@ -217,14 +209,7 @@
     "threshreq": [ "THRESH_SECRONOM_EX" ],
     "cancels": [ "SECRO_BLADE_SHARP_THRESHOLD", "SECRO_BLADE_SERRATED_THRESHOLD", "SECRO_TENDRIL_TENT_THRESHOLD" ],
     "armor": [ { "parts": [ "arm_l", "arm_r" ], "bash": 4 } ],
-    "enchantments": [
-      {
-        "values": [
-          { "value": "STRENGTH", "add": 2 },
-          { "value": "ITEM_DAMAGE_BASH", "add": 4 }
-        ]
-      }
-    ],
+    "enchantments": [ { "values": [ { "value": "STRENGTH", "add": 2 } ], "melee_damage_bonus": [ { "type": "bash", "add": 4 } ] } ],
     "category": [ "SECRONOM_EX" ]
   },
   {
@@ -269,7 +254,7 @@
       "SECRO_BLADE_SERRATED_THRESHOLD"
     ],
     "encumbrance_always": [ [ "hand_l", 100 ] ],
-    "enchantments": [ { "values": [ { "value": "ITEM_DAMAGE_BASH", "add": 6 } ] } ],
+    "enchantments": [ { "melee_damage_bonus": [ { "type": "stab", "add": 6 } ] } ],
     "armor": [ { "parts": "arm_l", "bash": 10, "cut": 10, "stab": 10 } ],
     "category": [ "SECRONOM_EX" ]
   },
@@ -290,12 +275,7 @@
     "encumbrance_always": [ [ "hand_l", 100 ] ],
     "armor": [ { "parts": "arm_l", "bash": 6, "cut": 6, "stab": 6 } ],
     "enchantments": [
-      {
-        "values": [
-          { "value": "ATTACK_SPEED", "multiply": 0.1 },
-          { "value": "ITEM_DAMAGE_CUT", "add": 8 }
-        ]
-      }
+      { "values": [ { "value": "ATTACK_SPEED", "multiply": 0.1 } ], "melee_damage_bonus": [ { "type": "cut", "add": 8 } ] }
     ],
     "category": [ "SECRONOM_EX" ]
   },
@@ -317,11 +297,8 @@
     "armor": [ { "parts": "arm_l", "bash": 14, "cut": 14, "stab": 14 } ],
     "enchantments": [
       {
-        "values": [
-          { "value": "ATTACK_SPEED", "multiply": -0.05 },
-          { "value": "ITEM_DAMAGE_BASH", "add": 5.5 },
-          { "value": "ITEM_DAMAGE_CUT", "add": 5.5 }
-        ]
+        "values": [ { "value": "ATTACK_SPEED", "multiply": -0.05 } ],
+        "melee_damage_bonus": [ { "type": "bash", "add": 5.5 }, { "type": "cut", "add": 5.5 } ]
       }
     ],
     "category": [ "SECRONOM_EX" ]
@@ -394,7 +371,17 @@
       [ "arm_r", 7 ]
     ],
     "armor": [ { "parts": "ALL", "cut": 4, "bash": 4, "stab": 4 } ],
-    "enchantments": [ "SECRO_TITAN_spike_ench", { "values": [ { "value": "BONUS_DODGE", "multiply": -0.1 }, { "value": "MOVECOST_SWIM_MOD", "multiply": 0.025 }, { "value": "MOVE_COST", "multiply": 0.025 }, { "value": "ATTACK_SPEED", "multiply": -0.025 } ] } ],
+    "enchantments": [
+      "SECRO_TITAN_spike_ench",
+      {
+        "values": [
+          { "value": "BONUS_DODGE", "multiply": -0.1 },
+          { "value": "MOVECOST_SWIM_MOD", "multiply": 0.025 },
+          { "value": "MOVE_COST", "multiply": 0.025 },
+          { "value": "ATTACK_SPEED", "multiply": -0.025 }
+        ]
+      }
+    ],
     "category": [ "SECRONOM_EX" ]
   },
   {
@@ -435,7 +422,17 @@
       [ "arm_r", 10 ]
     ],
     "armor": [ { "parts": "ALL", "cut": 6, "bash": 6, "stab": 6 } ],
-    "enchantments": [ "SECRO_TITAN_spike_ench", { "values": [ { "value": "BONUS_DODGE", "multiply": -0.125 }, { "value": "MOVECOST_SWIM_MOD", "multiply": 0.075 }, { "value": "MOVE_COST", "multiply": 0.075 }, { "value": "ATTACK_SPEED", "multiply": -0.075 } ] } ],
+    "enchantments": [
+      "SECRO_TITAN_spike_ench",
+      {
+        "values": [
+          { "value": "BONUS_DODGE", "multiply": -0.125 },
+          { "value": "MOVECOST_SWIM_MOD", "multiply": 0.075 },
+          { "value": "MOVE_COST", "multiply": 0.075 },
+          { "value": "ATTACK_SPEED", "multiply": -0.075 }
+        ]
+      }
+    ],
     "category": [ "SECRONOM_EX" ]
   },
   {
@@ -474,7 +471,16 @@
       [ "arm_r", 5 ]
     ],
     "armor": [ { "parts": "ALL", "cut": 9, "bash": 9, "stab": 9 } ],
-    "enchantments": [ { "values": [ { "value": "BONUS_DODGE", "multiply": -0.075 }, { "value": "MOVECOST_SWIM_MOD", "multiply": 0.05 }, { "value": "MOVE_COST", "multiply": 0.05 }, { "value": "ATTACK_SPEED", "multiply": -0.05 } ] } ],
+    "enchantments": [
+      {
+        "values": [
+          { "value": "BONUS_DODGE", "multiply": -0.075 },
+          { "value": "MOVECOST_SWIM_MOD", "multiply": 0.05 },
+          { "value": "MOVE_COST", "multiply": 0.05 },
+          { "value": "ATTACK_SPEED", "multiply": -0.05 }
+        ]
+      }
+    ],
     "category": [ "SECRONOM_EX" ]
   },
   {
@@ -513,7 +519,17 @@
       [ "arm_r", 10 ]
     ],
     "armor": [ { "parts": "ALL", "cut": 12, "bash": 12, "stab": 12 } ],
-    "enchantments": [ "SECRO_TITAN_NOTOK_spike_ench", { "values": [ { "value": "BONUS_DODGE", "multiply": -0.2 }, { "value": "MOVECOST_SWIM_MOD", "multiply": 0.15 }, { "value": "MOVE_COST", "multiply": 0.15 }, { "value": "ATTACK_SPEED", "multiply": -0.15 } ] } ],
+    "enchantments": [
+      "SECRO_TITAN_NOTOK_spike_ench",
+      {
+        "values": [
+          { "value": "BONUS_DODGE", "multiply": -0.2 },
+          { "value": "MOVECOST_SWIM_MOD", "multiply": 0.15 },
+          { "value": "MOVE_COST", "multiply": 0.15 },
+          { "value": "ATTACK_SPEED", "multiply": -0.15 }
+        ]
+      }
+    ],
     "category": [ "SECRONOM_EX" ]
   },
   {
@@ -543,7 +559,15 @@
     ],
     "encumbrance_always": [ [ "torso", 10 ] ],
     "encumbrance_covered": [ [ "torso", 30 ] ],
-    "enchantments": [ { "values": [ { "value": "ATTACK_SPEED", "multiply": 0.05 }, { "value": "MOVECOST_OBSTACLE_MOD", "multiply": -0.05 }, { "value": "DEXTERITY", "add": 1 } ] } ],
+    "enchantments": [
+      {
+        "values": [
+          { "value": "ATTACK_SPEED", "multiply": 0.05 },
+          { "value": "MOVECOST_OBSTACLE_MOD", "multiply": -0.05 },
+          { "value": "DEXTERITY", "add": 1 }
+        ]
+      }
+    ],
     "craft_skill_bonus": [
       [ "electronics", 1 ],
       [ "tailor", 1 ],
@@ -571,7 +595,15 @@
     "changes_to": [ "SECRO_SPIDER_VERYOK", "SECRO_SPIDER_NOTOK" ],
     "encumbrance_always": [ [ "torso", 10 ] ],
     "encumbrance_covered": [ [ "torso", 30 ] ],
-    "enchantments": [ { "values": [ { "value": "ATTACK_SPEED", "multiply": 0.075 }, { "value": "MOVECOST_OBSTACLE_MOD", "multiply": -0.075 }, { "value": "DEXTERITY", "add": 2 } ] } ],
+    "enchantments": [
+      {
+        "values": [
+          { "value": "ATTACK_SPEED", "multiply": 0.075 },
+          { "value": "MOVECOST_OBSTACLE_MOD", "multiply": -0.075 },
+          { "value": "DEXTERITY", "add": 2 }
+        ]
+      }
+    ],
     "craft_skill_bonus": [
       [ "electronics", 1 ],
       [ "tailor", 1 ],
@@ -598,7 +630,11 @@
     "prereqs": [ "SECRO_SPIDER_OK" ],
     "encumbrance_always": [ [ "torso", 15 ] ],
     "encumbrance_covered": [ [ "torso", 45 ] ],
-    "enchantments": [ { "values": [ { "value": "ATTACK_SPEED", "multiply": 0.025 }, { "value": "MOVECOST_OBSTACLE_MOD", "multiply": 0.025 } ] } ],
+    "enchantments": [
+      {
+        "values": [ { "value": "ATTACK_SPEED", "multiply": 0.025 }, { "value": "MOVECOST_OBSTACLE_MOD", "multiply": 0.025 } ]
+      }
+    ],
     "category": [ "SECRONOM_EX" ]
   },
   {
@@ -614,7 +650,15 @@
     "prereqs": [ "SECRO_SPIDER_OK" ],
     "encumbrance_always": [ [ "torso", 10 ] ],
     "encumbrance_covered": [ [ "torso", 30 ] ],
-    "enchantments": [ { "values": [ { "value": "ATTACK_SPEED", "multiply": 0.125 }, { "value": "MOVECOST_OBSTACLE_MOD", "multiply": -0.125 }, { "value": "DEXTERITY", "add": 3 } ] } ],
+    "enchantments": [
+      {
+        "values": [
+          { "value": "ATTACK_SPEED", "multiply": 0.125 },
+          { "value": "MOVECOST_OBSTACLE_MOD", "multiply": -0.125 },
+          { "value": "DEXTERITY", "add": 3 }
+        ]
+      }
+    ],
     "craft_skill_bonus": [
       [ "electronics", 2 ],
       [ "tailor", 2 ],
@@ -843,7 +887,17 @@
     "types": [ "WINGS" ],
     "prereqs": [ "SECRO_UNKNOWN_WING_START" ],
     "encumbrance_always": [ [ "torso", 15 ] ],
-    "enchantments": [ { "values": [ { "value": "CARRY_WEIGHT", "multiply": 0.15 }, { "value": "BONUS_DODGE", "add": -1 }, { "value": "MOVE_COST", "multiply": 0.1 }, { "value": "MOVECOST_OBSTACLE_MOD", "multiply": -0.075 }, { "value": "STRENGTH", "add": 2 } ] } ],
+    "enchantments": [
+      {
+        "values": [
+          { "value": "CARRY_WEIGHT", "multiply": 0.15 },
+          { "value": "BONUS_DODGE", "add": -1 },
+          { "value": "MOVE_COST", "multiply": 0.1 },
+          { "value": "MOVECOST_OBSTACLE_MOD", "multiply": -0.075 },
+          { "value": "STRENGTH", "add": 2 }
+        ]
+      }
+    ],
     "attacks": [
       {
         "attack_text_u": "You rake %s",
@@ -866,7 +920,16 @@
     "types": [ "WINGS" ],
     "prereqs": [ "SECRO_UNKNOWN_WING_START" ],
     "encumbrance_always": [ [ "torso", 10 ] ],
-    "enchantments": [ { "values": [ { "value": "CARRY_WEIGHT", "multiply": 0.075 }, { "value": "BONUS_DODGE", "multiply": 0.25 }, { "value": "MOVE_COST", "multiply": -0.075 }, { "value": "MOVECOST_OBSTACLE_MOD", "multiply": -0.05 } ] } ],
+    "enchantments": [
+      {
+        "values": [
+          { "value": "CARRY_WEIGHT", "multiply": 0.075 },
+          { "value": "BONUS_DODGE", "multiply": 0.25 },
+          { "value": "MOVE_COST", "multiply": -0.075 },
+          { "value": "MOVECOST_OBSTACLE_MOD", "multiply": -0.05 }
+        ]
+      }
+    ],
     "craft_skill_bonus": [ [ "mechanics", 1 ], [ "traps", 1 ], [ "fabrication", 1 ] ],
     "attacks": [
       {
@@ -891,7 +954,18 @@
     "prereqs": [ "SECRO_UNKNOWN_WING_START" ],
     "armor": [ { "parts": "torso", "bash": 5, "cut": 5, "stab": 5 } ],
     "encumbrance_always": [ [ "torso", 25 ] ],
-    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "SPEED", "multiply": 0.1 }, { "value": "BONUS_DODGE", "add": -6 }, { "value": "MOVE_COST", "multiply": 0.15 }, { "value": "MOVECOST_OBSTACLE_MOD", "multiply": 0.25 }, { "value": "ATTACK_SPEED", "multiply": -0.1 } ] } ],
+    "enchantments": [
+      {
+        "condition": "ALWAYS",
+        "values": [
+          { "value": "SPEED", "multiply": 0.1 },
+          { "value": "BONUS_DODGE", "add": -6 },
+          { "value": "MOVE_COST", "multiply": 0.15 },
+          { "value": "MOVECOST_OBSTACLE_MOD", "multiply": 0.25 },
+          { "value": "ATTACK_SPEED", "multiply": -0.1 }
+        ]
+      }
+    ],
     "attacks": [
       {
         "attack_text_u": "You slam %s with your mantle",
@@ -972,7 +1046,18 @@
     "description": "You might be immobile, but you have the power to dominate the world!",
     "valid": false,
     "purifiable": false,
-    "enchantments": [ "SECRONOM_FLESH_BIO_ench", { "values": [ { "value": "MOVE_COST", "multiply": 100 }, { "value": "MOVECOST_FLATGROUND_MOD", "multiply": 100 }, { "value": "MOVECOST_OBSTACLE_MOD", "multiply": 100 }, { "value": "ATTACK_SPEED", "multiply": -100 }, { "value": "HEARING_MULT", "multiply": -100 } ] } ]
+    "enchantments": [
+      "SECRONOM_FLESH_BIO_ench",
+      {
+        "values": [
+          { "value": "MOVE_COST", "multiply": 100 },
+          { "value": "MOVECOST_FLATGROUND_MOD", "multiply": 100 },
+          { "value": "MOVECOST_OBSTACLE_MOD", "multiply": 100 },
+          { "value": "ATTACK_SPEED", "multiply": -100 },
+          { "value": "HEARING_MULT", "multiply": -100 }
+        ]
+      }
+    ]
   },
   {
     "type": "mutation",
@@ -982,7 +1067,18 @@
     "description": "Your tentacles has detached from the ground! This causes you to take damage until you reattach to a terrain.",
     "valid": false,
     "purifiable": false,
-    "enchantments": [ "SECRONOM_FLESH_BIO_ench", "SECRONOM_FLESH_BIO_mobile_ench", { "values": [ { "value": "MOVE_COST", "multiply": -0.75 }, { "value": "MOVECOST_FLATGROUND_MOD", "multiply": -0.75 }, { "value": "MOVECOST_OBSTACLE_MOD", "multiply": -0.75 }, { "value": "HEARING_MULT", "multiply": -100 } ] } ]
+    "enchantments": [
+      "SECRONOM_FLESH_BIO_ench",
+      "SECRONOM_FLESH_BIO_mobile_ench",
+      {
+        "values": [
+          { "value": "MOVE_COST", "multiply": -0.75 },
+          { "value": "MOVECOST_FLATGROUND_MOD", "multiply": -0.75 },
+          { "value": "MOVECOST_OBSTACLE_MOD", "multiply": -0.75 },
+          { "value": "HEARING_MULT", "multiply": -100 }
+        ]
+      }
+    ]
   },
   {
     "type": "mutation",
@@ -1098,7 +1194,17 @@
     "description": "You're like the hivemind, but limited to actions!",
     "valid": false,
     "purifiable": false,
-    "enchantments": [ { "values": [ { "value": "MOVE_COST", "multiply": 100 }, { "value": "MOVECOST_FLATGROUND_MOD", "multiply": 100 }, { "value": "MOVECOST_OBSTACLE_MOD", "multiply": 100 }, { "value": "ATTACK_SPEED", "multiply": -100 }, { "value": "HEARING_MULT", "multiply": -100 } ] } ]
+    "enchantments": [
+      {
+        "values": [
+          { "value": "MOVE_COST", "multiply": 100 },
+          { "value": "MOVECOST_FLATGROUND_MOD", "multiply": 100 },
+          { "value": "MOVECOST_OBSTACLE_MOD", "multiply": 100 },
+          { "value": "ATTACK_SPEED", "multiply": -100 },
+          { "value": "HEARING_MULT", "multiply": -100 }
+        ]
+      }
+    ]
   },
   {
     "type": "mutation",
@@ -1136,11 +1242,16 @@
     "points": 0,
     "description": "Your body have merged with the experimental exoskeleton \"flesh vessel\". Crimson horrors are less likely to provoke you.",
     "anger_relations": [ [ "SFLESH", -90 ] ],
-    "enchantments": [ { "values": [ { "value": "MAX_HP", "multiply": 0.2 }, { "value": "CARRY_WEIGHT", "multiply": 0.4 }, { "value": "STAMINA_REGEN_MOD", "add": 0.3 } ] } ],
+    "enchantments": [
+      {
+        "values": [
+          { "value": "MAX_HP", "multiply": 0.2 },
+          { "value": "CARRY_WEIGHT", "multiply": 0.4 },
+          { "value": "STAMINA_REGEN_MOD", "add": 0.3 }
+        ]
+      }
+    ],
     "initial_ma_styles": [ "secro_style_biomorph" ],
-    "spells_learned": [
-      [ "secro_power_armor_mechlink", 1 ],
-      [ "secro_power_armor_fleshmend", 1 ]
-    ]
+    "spells_learned": [ [ "secro_power_armor_mechlink", 1 ], [ "secro_power_armor_fleshmend", 1 ] ]
   }
 ]

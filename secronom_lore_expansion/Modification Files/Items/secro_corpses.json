@@ -1,6 +1,6 @@
 [
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_secro_laserturret",
     "symbol": ",",
     "color": "light_red",
@@ -9,7 +9,7 @@
     "copy-from": "broken_turret"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_secro_electurret",
     "symbol": ",",
     "color": "cyan",
@@ -18,7 +18,7 @@
     "copy-from": "broken_turret"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_secro_gravturret",
     "symbol": ",",
     "color": "magenta",
@@ -26,7 +26,7 @@
     "copy-from": "broken_turret"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_secro_laserturret_mod",
     "symbol": ",",
     "color": "light_red",

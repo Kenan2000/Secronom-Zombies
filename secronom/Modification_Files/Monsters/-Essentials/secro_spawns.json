@@ -111,6 +111,8 @@
   {
     "id": "GROUP_MALL",
     "type": "monstergroup",
+    "override": false,
+    "auto_total": true,
     "monsters": [ { "monster": "mon_zombie_disser", "weight": 1, "cost_multiplier": 8 } ]
   },
   {
@@ -147,6 +149,8 @@
   {
     "id": "GROUP_PANICROOM",
     "type": "monstergroup",
+    "override": false,
+    "auto_total": true,
     "monsters": [
       { "monster": "mon_zombie_fake_ichorus", "weight": 1, "cost_multiplier": 35 },
       { "monster": "mon_zombie_fake_psyrus", "weight": 1, "cost_multiplier": 35 }
@@ -617,6 +621,8 @@
   {
     "type": "monstergroup",
     "id": "GROUP_ROOF_ZOMBIE",
+    "override": false,
+    "auto_total": true,
     "monsters": [ { "monster": "mon_zombie_bootlegsmoker", "weight": 65, "cost_multiplier": 3, "starts": "12 days" } ]
   }
 ]

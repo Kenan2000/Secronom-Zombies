@@ -4,16 +4,12 @@
     "id": "eoc_secro_pafv_fleshconsumption",
     "recurrence": [ "5 hours", "6 hours" ],
     "condition": { "and": [ { "u_has_trait": "SECRO_WEARING_FLESH_VESSEL" }, { "u_has_items": { "item": "secro_flesh", "count": 5 } } ] },
-	"deactivate_condition": { "not": { "u_has_trait": "SECRO_WEARING_FLESH_VESSEL" } },
+    "deactivate_condition": { "not": { "u_has_trait": "SECRO_WEARING_FLESH_VESSEL" } },
     "effect": [
       { "u_message": "The vessel consumes your flesh.", "type": "good" },
       { "u_consume_item": "secro_flesh", "count": 5 },
-      {
-        "math": [ "u_consumption_result_secro_fleshvessel", "=", "0" ]
-      },
-	  {
-        "math": [ "u_consumption_penalty_secro_fleshvessel", "=", "0" ]
-      }
+      { "math": [ "u_consumption_result_secro_fleshvessel", "=", "0" ] },
+      { "math": [ "u_consumption_penalty_secro_fleshvessel", "=", "0" ] }
     ],
     "false_effect": [
       {
@@ -25,60 +21,50 @@
             },
             "effect": [
               { "u_message": "The vessel consumes your flesh.", "type": "bad" },
-			  {
-                "math": [ "u_consumption_penalty_secro_fleshvessel", "+=", "5" ]
-              },
-              {
-                "math": [ "u_consumption_result_secro_fleshvessel", "++" ]
-              },
-              {
-                "math": [ "u_consumption_penalty_secro_fleshvessel", "++" ]
-              },
-              { 
-                "math": [ "u_consumption_bonus_secro_fleshvessel", "++" ]
-              },
-              {
-                "math": [ "u_consumption_result_secro_fleshvessel", "/=", "3" ]
-              },
+              { "math": [ "u_consumption_penalty_secro_fleshvessel", "+=", "5" ] },
+              { "math": [ "u_consumption_result_secro_fleshvessel", "++" ] },
+              { "math": [ "u_consumption_penalty_secro_fleshvessel", "++" ] },
+              { "math": [ "u_consumption_bonus_secro_fleshvessel", "++" ] },
+              { "math": [ "u_consumption_result_secro_fleshvessel", "/=", "3" ] },
               {
                 "u_add_effect": "secro_power_armor_flesh_devouring_note",
                 "intensity": 1,
-                "duration": { "u_val": "secro_fleshvessel", "type": "consumption", "context": "result", "default": "10 seconds" }
+                "duration": { "u_val": "consumption_result_secro_fleshvessel", "default": "10 seconds" }
               },
               {
                 "u_add_effect": "secro_power_armor_flesh_devouring",
                 "intensity": 1,
-                "duration": { "u_val": "secro_fleshvessel", "type": "consumption", "context": "result", "default": "10 seconds" },
+                "duration": { "u_val": "consumption_result_secro_fleshvessel", "default": "10 seconds" },
                 "target_part": "torso"
               },
               {
                 "u_add_effect": "secro_power_armor_flesh_devouring",
                 "intensity": 1,
-                "duration": { "u_val": "secro_fleshvessel", "type": "consumption", "context": "result", "default": "10 seconds" },
+                "duration": { "u_val": "consumption_result_secro_fleshvessel", "default": "10 seconds" },
                 "target_part": "head"
               },
               {
                 "u_add_effect": "secro_power_armor_flesh_devouring",
                 "intensity": 1,
-                "duration": { "u_val": "secro_fleshvessel", "type": "consumption", "context": "result", "default": "10 seconds" },
+                "duration": { "u_val": "consumption_result_secro_fleshvessel", "default": "10 seconds" },
                 "target_part": "arm_r"
               },
               {
                 "u_add_effect": "secro_power_armor_flesh_devouring",
                 "intensity": 1,
-                "duration": { "u_val": "secro_fleshvessel", "type": "consumption", "context": "result", "default": "10 seconds" },
+                "duration": { "u_val": "consumption_result_secro_fleshvessel", "default": "10 seconds" },
                 "target_part": "arm_l"
               },
               {
                 "u_add_effect": "secro_power_armor_flesh_devouring",
                 "intensity": 1,
-                "duration": { "u_val": "secro_fleshvessel", "type": "consumption", "context": "result", "default": "10 seconds" },
+                "duration": { "u_val": "consumption_result_secro_fleshvessel", "default": "10 seconds" },
                 "target_part": "leg_r"
               },
               {
                 "u_add_effect": "secro_power_armor_flesh_devouring",
                 "intensity": 1,
-                "duration": { "u_val": "secro_fleshvessel", "type": "consumption", "context": "result", "default": "10 seconds" },
+                "duration": { "u_val": "consumption_result_secro_fleshvessel", "default": "10 seconds" },
                 "target_part": "leg_l"
               }
             ]
@@ -108,12 +94,8 @@
     },
     "deactivate_condition": { "not": { "u_has_trait": "SECRO_WEARING_FLESH_VESSEL" } },
     "effect": [
-      {
-        "math": [ "u_growth_time_secro_fleshvessel", "++" ]
-      },
-      {
-        "math": [ "u_consumption_bonus_secro_fleshvessel", "++" ]
-      }
+      { "math": [ "u_growth_time_secro_fleshvessel", "++" ] },
+      { "math": [ "u_consumption_bonus_secro_fleshvessel", "++" ] }
     ]
   },
   {
@@ -155,7 +137,7 @@
     "condition": {
       "and": [
         { "u_has_trait": "SECRO_WEARING_FLESH_VESSEL" },
-        { "u_has_item": "secro_power_armor_flesh" },
+        { "or": [ { "u_has_item": "secro_power_armor_flesh" }, { "u_has_item": "secro_power_armor_flesh_act" } ] },
         { "math": [ "u_growth_time_secro_fleshvessel", ">=", "7" ] },
         { "not": { "u_has_item": "secro_power_armor_flesh2" } },
         { "u_has_items": { "item": "secro_flesh_core", "count": 2 } }
@@ -164,23 +146,30 @@
     "deactivate_condition": { "u_has_item": "secro_power_armor_flesh2" },
     "effect": [
       { "u_message": "The flesh vessel absorbed the flesh core.", "type": "warning" },
-      { "u_consume_item": "secro_power_armor_flesh" },
+      {
+        "run_eocs": [
+          {
+            "id": "eoc_secro_pafv_grow2_check",
+            "condition": { "u_has_item": "secro_power_armor_flesh" },
+            "effect": [ { "u_consume_item": "secro_power_armor_flesh" } ],
+            "false_effect": [ { "u_consume_item": "secro_power_armor_flesh_act" } ]
+          }
+        ]
+      },
       { "u_consume_item": "secro_flesh_core", "count": 2 },
       { "u_cast_spell": { "id": "secro_pafv_grow2", "hit_self": true } },
       { "u_message": "The flesh vessel has increased in mass.", "type": "good" },
-      {
-        "math": [ "u_consumption_bonus_secro_fleshvessel", "+=", "10" ]
-      }
+      { "math": [ "u_consumption_bonus_secro_fleshvessel", "+=", "10" ] }
     ]
   },
   {
     "type": "effect_on_condition",
     "id": "eoc_secro_pafv_grow3",
-    "recurrence": [ "3 hours", "3 hours" ],
+    "recurrence": [ "3 hours", "4 hours" ],
     "condition": {
       "and": [
         { "u_has_trait": "SECRO_WEARING_FLESH_VESSEL" },
-        { "u_has_item": "secro_power_armor_flesh2" },
+        { "or": [ { "u_has_item": "secro_power_armor_flesh2" }, { "u_has_item": "secro_power_armor_flesh2_act" } ] },
         { "math": [ "u_growth_time_secro_fleshvessel", ">=", "35" ] },
         { "not": { "u_has_item": "secro_power_armor_flesh3" } },
         { "u_has_items": { "item": "secro_flesh_core", "count": 5 } }
@@ -189,13 +178,20 @@
     "deactivate_condition": { "u_has_item": "secro_power_armor_flesh3" },
     "effect": [
       { "u_message": "The flesh vessel absorbed the flesh core.", "type": "warning" },
-      { "u_consume_item": "secro_power_armor_flesh2" },
+      {
+        "run_eocs": [
+          {
+            "id": "eoc_secro_pafv_grow3_check",
+            "condition": { "u_has_item": "secro_power_armor_flesh2" },
+            "effect": [ { "u_consume_item": "secro_power_armor_flesh2" } ],
+            "false_effect": [ { "u_consume_item": "secro_power_armor_flesh2_act" } ]
+          }
+        ]
+      },
       { "u_consume_item": "secro_flesh_core", "count": 5 },
       { "u_cast_spell": { "id": "secro_pafv_grow3", "hit_self": true } },
       { "u_message": "The flesh vessel has increased in mass.", "type": "good" },
-      {
-        "math": [ "u_consumption_bonus_secro_fleshvessel", "+=", "20" ]
-      }
+      { "math": [ "u_consumption_bonus_secro_fleshvessel", "+=", "20" ] }
     ]
   }
 ]

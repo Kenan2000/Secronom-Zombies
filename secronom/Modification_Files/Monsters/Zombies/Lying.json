@@ -25,7 +25,7 @@
     "vision_day": 0,
     "vision_night": 0,
     "harvest": "zombie_humanoid",
-    "upgrades": { "half_life": 48, "into_group": "GROUP_LYING_UPGRADE" },
+    "upgrades": { "half_life": 120, "into_group": "GROUP_LYING_UPGRADE" },
     "flags": [ "STUMBLES", "WARM", "POISON", "NO_BREATHE", "FILTHY", "REVIVES" ]
   },
   {

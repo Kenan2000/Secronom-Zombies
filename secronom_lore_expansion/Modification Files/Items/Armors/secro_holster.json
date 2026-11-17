@@ -1,7 +1,8 @@
 [
   {
     "id": "secro_flesh_back_holster",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "back holster" },
     "description": "A holster, big enough for a rifle or other large gun.  Designed to be strapped to the back.  Whilst initially cumbersome it becomes much easier to use with practice.  Activate to holster/draw a gun.",
     "weight": "300 g",
@@ -36,7 +37,8 @@
   },
   {
     "id": "secro_flesh_baldric_holster",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "baldric holster" },
     "description": "A harness which can hold up to six pistol-sized guns in total, available for quick drawing.  Historically similar harnesses were used by pirates to carry multiple loaded flintlock pistols at once, as reloading them is a lengthy process.  Activate to holster/draw a gun.",
     "weight": "1650 g",
@@ -118,7 +120,8 @@
   },
   {
     "id": "secro_flesh_bootstrap",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "ankle holster" },
     "description": "A small concealed holster worn on the ankle.  It is awkward to use without practice.  Activate to holster/draw a small pistol.",
     "weight": "250 g",
@@ -158,7 +161,8 @@
   },
   {
     "id": "secro_flesh_holster",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "holster" },
     "description": "A fleshy strap worn on the hip for holding pistol sized guns.  Activate to holster/draw a gun.",
     "weight": "275 g",
@@ -197,7 +201,8 @@
   },
   {
     "id": "secro_flesh_survivor_vest",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "survivor harness", "str_pl": "survivor harnesses" },
     "description": "A custom-built light harness covered with pouches and including an integral tactical sling for a small rifle or other such weapon.  Durable and carefully crafted to be comfortable to wear.  Activate to holster/draw your weapon.",
     "weight": "400 g",
@@ -253,7 +258,8 @@
   },
   {
     "id": "secro_flesh_xl_survivor_vest",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "secro_flesh_survivor_vest",
     "name": { "str": "XL survivor harness", "str_pl": "XL survivor harnesses" },
     "description": "A custom-built light harness covered with pouches and including an integral tactical sling for a small rifle or other such weapon.  Durable and carefully crafted to be comfortable to wear and fitting the largest forms.  Activate to holster/draw your weapon.",
@@ -262,7 +268,8 @@
   },
   {
     "id": "secro_flesh_XL_holster",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "XL holster" },
     "description": "A belt holster consisting of a loop and strap intended for use with larger firearms.  Slightly more cumbersome than a standard holster due to the straps that hold it flat against your leg, Activate to holster/draw a gun.",
     "weight": "400 g",

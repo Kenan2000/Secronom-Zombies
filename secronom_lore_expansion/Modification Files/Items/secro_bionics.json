@@ -2,7 +2,8 @@
   {
     "id": "bio_secro_fv",
     "copy-from": "bionic_general_npc_usable",
-    "type": "BIONIC_ITEM",
+    "type": "ITEM",
+    "subtypes": [ "BIONIC_ITEM" ],
     "name": { "str": "Bio-organic Exoskeleton Interface CBM" },
     "looks_like": "bio_int_enhancer",
     "description": "A set of bionics necessary to operate (or reduce the risk from wearing) bio-organic exoskeletons.",
@@ -13,7 +14,8 @@
   {
     "id": "bio_secro_fv_core",
     "copy-from": "bionic_general_npc_usable",
-    "type": "BIONIC_ITEM",
+    "type": "ITEM",
+    "subtypes": [ "BIONIC_ITEM" ],
     "name": { "str": "Artificial Flesh Core CBM" },
     "looks_like": "bio_int_enhancer",
     "description": "An articial flesh core ready to be installed in its pack, but it'll need an extreme care to properly do so.",

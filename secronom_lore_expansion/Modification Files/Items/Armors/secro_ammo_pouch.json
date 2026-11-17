@@ -1,7 +1,8 @@
 [
   {
     "id": "secro_flesh_ammo_pouch",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "ammo pouch", "str_pl": "ammo pouches" },
     "description": "A small pouch that can be used to store most types of small ammunition; rockets, however, will not fit.  Use insert to store ammunition.",
     "weight": "613 g",
@@ -32,7 +33,6 @@
           "10mm": 60,
           "44": 60,
           "45": 60,
-          "460": 60,
           "454": 60,
           "45colt": 60,
           "500": 60,
@@ -42,11 +42,16 @@
           "545x39": 60,
           "223": 60,
           "3006": 60,
+          "123ln": 60,
+          "50beowulf": 60,
+          "450": 60,
+          "338lapua": 60,
+          "303": 60,
+          "77mm_arisaka": 60,
           "270win": 60,
           "308": 60,
           "12mm": 60,
           "8x40mm": 60,
-          "20x66mm": 60,
           "stimpack_ammo": 60,
           "ampoule": 60,
           "300": 60,
@@ -58,13 +63,14 @@
           "762R": 60,
           "paintball": 60
         },
-        "moves": 35
+        "moves": 35,
+        "volume_encumber_modifier": 0.1
       }
     ],
     "flags": [ "BELTED", "OVERSIZE", "WATER_FRIENDLY" ],
     "armor": [
       {
-        "encumbrance": 5,
+        "encumbrance": 2,
         "coverage": 10,
         "covers": [ "torso" ],
         "specifically_covers": [ "torso_waist" ],
@@ -75,7 +81,8 @@
   },
   {
     "id": "secro_flesh_ammo_satchel",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "ammo satchel" },
     "description": "A fleshy ammo bag worn at the waist.  It is capable of holding a single large magazine close at hand.",
     "weight": "225 g",
@@ -110,7 +117,8 @@
   },
   {
     "id": "secro_flesh_chestpouch",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "chest ammo pouch", "str_pl": "chest ammo pouches" },
     "description": "A fleshy ammo pouch that can be strapped to your chest and hold a single magazine close at hand.",
     "weight": "175 g",
@@ -136,7 +144,8 @@
   },
   {
     "id": "secro_flesh_chestrig",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str_sp": "chest rig" },
     "description": "Popularized during the Vietnam War, chest rigs like these are typically plain, barebones affairs consisting of three or more pouches in a row, with straps to secure them on your chest.  This one can hold four magazines in its pouches.",
     "weight": "531 g",
@@ -182,11 +191,20 @@
     ],
     "use_action": { "type": "holster", "holster_prompt": "Stash ammo", "holster_msg": "You stash your %s." },
     "flags": [ "WATER_FRIENDLY", "BELTED" ],
-    "armor": [ { "coverage": 15, "covers": [ "torso" ], "specifically_covers": [ "torso_waist" ], "material": [ "secro_flesh_artificial" ], "material_thickness": 1 } ]
+    "armor": [
+      {
+        "coverage": 15,
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_waist" ],
+        "material": [ "secro_flesh_artificial" ],
+        "material_thickness": 1
+      }
+    ]
   },
   {
     "id": "secro_flesh_xl_chestrig",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "secro_flesh_chestrig",
     "name": { "str": "XL chest rig" },
     "description": "Popularized during the Vietnam War, chest rigs like these are typically plain, barebones affairs consisting of three or more pouches in a row, with straps to secure them on your chest.  This one can hold four magazines in its pouches and fits larger-than-human forms.",
@@ -195,7 +213,8 @@
   },
   {
     "id": "secro_flesh_javelin_bag",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "javelin bag" },
     "description": "An open medieval-looking bag, designed to store javelins within easy reach.",
     "weight": "750 g",
@@ -266,7 +285,8 @@
   },
   {
     "id": "secro_flesh_legpouch",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "ankle ammo pouch", "str_pl": "ankle ammo pouches" },
     "description": "A small fleshy ammo pouch that can be strapped to your ankle and hold a single small magazine close at hand.",
     "volume": "250 ml",
@@ -302,7 +322,8 @@
     ]
   },
   {
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "id": "secro_flesh_legpouch_large",
     "name": { "str": "leg ammo pouch", "str_pl": "leg ammo pouches" },
     "description": "A fleshy ammo pouch that can be strapped to your leg and hold two magazines close at hand.",
@@ -340,7 +361,8 @@
   },
   {
     "id": "secro_flesh_quiver",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "quiver" },
     "description": "A fleshy quiver worn at the waist that can hold 20 arrows or bolts.  Use insert to store arrows or bolts.",
     "weight": "325 g",
@@ -367,7 +389,8 @@
   },
   {
     "id": "secro_flesh_quiver_large",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "large quiver" },
     "description": "A large fleshy quiver worn on the back, that can hold 60 arrows or bolts.  Historically used by horse archers, rather than foot archers, but neither of THEM had to fight zombies.  Use insert to store arrows or bolts.",
     "weight": "1150 g",
@@ -392,7 +415,8 @@
   },
   {
     "id": "secro_flesh_tacvest",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "tac vest" },
     "description": "This light vest is meant to carry your gear and ammunition comfortably distributed about your torso.  They are popular amongst law enforcement, but less so than combination tactical vests incorporating Kevlar.  Lightweight and easy to don, this vest can hold four magazines close at hand in its many pouches.",
     "weight": "750 g",
@@ -454,7 +478,8 @@
   },
   {
     "id": "secro_flesh_xl_tacvest",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "secro_flesh_tacvest",
     "name": { "str": "XL tac vest" },
     "description": "This light vest is meant to carry your gear and ammunition comfortably distributed about your torso.  They are popular amongst law enforcement, but less so than combination tactical vests incorporating Kevlar.  Oversized and easy to don, this vest can hold four magazines close at hand in its many pouches.",

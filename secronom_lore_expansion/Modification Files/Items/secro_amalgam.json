@@ -1,7 +1,8 @@
 [
   {
     "id": "secro_flesh_amalgam_transmitter",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "bio-organic transmitter" },
     "description": "A tiny glob of flesh, with several tendrils hanging from the sides. Activate to select available commands for amalgams.",
     "weight": "330 g",
@@ -14,7 +15,8 @@
   },
   {
     "id": "secro_flesh_amalgam_transmitter_stop",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "secro_amalgam_command",
     "name": { "str": "<color_light_green>[COMMAND]</color> Stop" },
     "description": "Activate to transmit this command to a single amalgam.",
@@ -28,7 +30,8 @@
   },
   {
     "id": "secro_flesh_amalgam_transmitter_stopall",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "secro_amalgam_command",
     "name": { "str": "<color_light_green>[COMMAND]</color> All Stop" },
     "description": "Activate to transmit this command to all nearby amalgams.",
@@ -42,7 +45,8 @@
   },
   {
     "id": "secro_flesh_amalgam_transmitter_attack",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "secro_amalgam_command",
     "name": { "str": "<color_light_green>[COMMAND]</color> Attack" },
     "description": "Activate to transmit this command to a single amalgam.",
@@ -56,7 +60,8 @@
   },
   {
     "id": "secro_flesh_amalgam_transmitter_attackall",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "secro_amalgam_command",
     "name": { "str": "<color_light_green>[COMMAND]</color> All Attack" },
     "description": "Activate to transmit this command to all nearby amalgams.",

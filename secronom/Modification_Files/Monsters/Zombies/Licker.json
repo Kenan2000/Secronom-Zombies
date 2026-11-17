@@ -23,7 +23,7 @@
       { "type": "leap", "allow_no_target": false, "cooldown": 10, "max_range": 5 }
     ],
     "death_drops": {  },
-    "upgrades": { "half_life": 56, "into": "mon_zombie_mlick" },
+    "upgrades": { "half_life": 120, "into": "mon_zombie_mlick" },
     "extend": { "flags": [ "HARDTOSHOOT" ] }
   },
   {

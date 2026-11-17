@@ -3,5 +3,10 @@
     "id": "GROUP_TENDRILS_UPGRADE",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_zombie_arctendrils", "weight": 200 } ]
+  },
+  {
+    "id": "GROUP_TENDRILS_UPGRADEX",
+    "type": "monstergroup",
+    "monsters": [ { "monster": "mon_zombie_arctendrils", "weight": 500 } ]
   }
 ]

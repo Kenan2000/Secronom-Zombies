@@ -12,7 +12,7 @@
     "relative": { "hp": -20, "speed": -10, "melee_skill": 1, "melee_dice": -1, "melee_dice_sides": 1, "vision_day": -4 },
     "armor": { "bash": 2, "cut": 2, "stab": 1, "bullet": 2, "acid": 4 },
     "special_attacks": [ { "id": "grab", "cooldown": 10 }, { "type": "bite", "infection_chance": 5, "cooldown": 18 } ],
-    "upgrades": { "half_life": 48, "into": "mon_zombie_defile" }
+    "upgrades": { "half_life": 120, "into": "mon_zombie_defile" }
   },
   {
     "id": "mon_zombie_defile",

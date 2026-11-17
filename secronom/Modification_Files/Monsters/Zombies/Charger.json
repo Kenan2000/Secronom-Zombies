@@ -36,7 +36,7 @@
       },
       [ "secro_charger_tackle", 6 ]
     ],
-    "upgrades": { "half_life": 48, "into_group": "GROUP_CHARGER_UPGRADE" },
+    "upgrades": { "half_life": 120, "into_group": "GROUP_CHARGER_UPGRADE" },
     "extend": { "flags": [ "STUN_IMMUNE" ] },
     "delete": { "flags": [ "STUMBLES" ] }
   },

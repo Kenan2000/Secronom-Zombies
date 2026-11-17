@@ -34,7 +34,7 @@
       }
     ],
     "special_attacks": [ { "type": "leap", "cooldown": 14, "min_range": 2, "max_range": 5 }, { "type": "bite", "cooldown": 10 } ],
-    "upgrades": { "half_life": 48, "into_group": "GROUP_ZSPIDER_UPGRADE" },
+    "upgrades": { "half_life": 120, "into_group": "GROUP_ZSPIDER_UPGRADE" },
     "extend": { "flags": [ "CLIMBS" ] }
   },
   {

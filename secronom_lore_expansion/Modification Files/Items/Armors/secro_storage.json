@@ -2,7 +2,8 @@
   {
     "//": "Flesh gear are similar to normal counterparts, except they are 25% more heavier and are easier to break.",
     "id": "secro_flesh_backpack",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "backpack" },
     "description": "A small backpack.  Good storage for a little encumbrance.",
     "weight": "791 g",
@@ -28,7 +29,8 @@
   },
   {
     "id": "secro_flesh_rucksack",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "rucksack" },
     "description": "A huge rucksack, provides a lot of storage.",
     "weight": "1425 g",
@@ -79,7 +81,8 @@
   },
   {
     "id": "secro_flesh_bigback",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "high-volume rucksack" },
     "description": "Also known as a \"bigpack\", this rucksack is prized by pack rats but may lead to a bad back.",
     "weight": "4424 g",
@@ -124,7 +127,8 @@
       }
     ],
     "warmth": 10,
-    "flags": [ "BELTED", "WATERPROOF", "ONLY_ONE", "OVERSIZE" ],
+    "flags": [ "BELTED", "WATERPROOF", "OVERSIZE" ],
+    "max_worn": 1,
     "material_thickness": 1,
     "armor": [ { "encumbrance": [ 16, 65 ], "coverage": 50, "covers": [ "torso" ] } ]
   }

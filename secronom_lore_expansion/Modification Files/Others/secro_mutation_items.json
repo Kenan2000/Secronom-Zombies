@@ -1,7 +1,8 @@
 [
   {
     "id": "SECRO_TENDRIL_TENT_THRESHOLD_weapon",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARTIFACT", "ARMOR" ],
     "symbol": "?",
     "color": "red",
     "name": { "str": "tendril whip" },
@@ -13,24 +14,23 @@
     "flags": [ "REACH_ATTACK", "UNBREAKABLE_MELEE", "NO_DROP", "NO_UNWIELD" ],
     "armor": [ { "encumbrance": 5, "coverage": 100, "covers": [ "hand_r" ] } ],
     "melee_damage": { "bash": 12 },
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-          "values": [
-            { "value": "STRENGTH", "add": 1, "//": "Multiply by 2, and we'll get the result." },
-            { "value": "BONUS_BLOCK", "add": 1 },
-            { "value": "ATTACK_SPEED", "multiply": -0.025 }
-          ]
-        }
-      ]
-    },
-    "category": "secro_cores"
+    "category": "secro_cores",
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          { "value": "STRENGTH", "add": 1, "//": "Multiply by 2, and we'll get the result." },
+          { "value": "BONUS_BLOCK", "add": 1 },
+          { "value": "ATTACK_SPEED", "multiply": -0.025 }
+        ]
+      }
+    ]
   },
   {
     "id": "SECRO_BLADE_SHARP_THRESHOLD_item",
-    "type": "GENERIC",
+    "type": "ITEM",
+    "subtypes": [ "ARTIFACT" ],
     "category": "secro_cores",
     "name": { "str": "<color_light_green>blade core</color>" },
     "description": "This core provides temporary passive effects. Stacks with other cores.\n<color_white>Attack speed: <color_light_green>+3%</color>\nDamage: <color_light_green>+2%</color></color>",
@@ -40,24 +40,19 @@
     "material": [ "flesh" ],
     "symbol": "Q",
     "color": "red",
-    "relic_data": {
-      "passive_effects": [
-        {
-          "condition": "ALWAYS",
-          "values": [
-            { "value": "ATTACK_SPEED", "multiply": 0.015 },
-            { "value": "ITEM_DAMAGE_CUT", "multiply": 0.003 },
-            { "value": "ITEM_DAMAGE_STAB", "multiply": 0.003 },
-            { "value": "ITEM_DAMAGE_BASH", "multiply": 0.003 }
-          ]
-        }
-      ]
-    },
-    "flags": [ "NO_DROP" ]
+    "flags": [ "NO_DROP" ],
+    "passive_effects": [
+      {
+        "condition": "ALWAYS",
+        "values": [ { "value": "ATTACK_SPEED", "multiply": 0.015 } ],
+        "melee_damage_bonus": [ { "type": "cut", "multiply": 0.003 }, { "type": "stab", "multiply": 0.003 }, { "type": "bash", "multiply": 0.003 } ]
+      }
+    ]
   },
   {
     "id": "SECRO_BLADE_SERRATED_THRESHOLD_item",
-    "type": "GENERIC",
+    "type": "ITEM",
+    "subtypes": [ "ARTIFACT" ],
     "category": "secro_cores",
     "name": { "str": "<color_light_green>blade core</color>" },
     "description": "This core provides temporary passive effects. Stacks with other cores.\n<color_white>Attack speed: <color_red>-3%</color>\nSpeed: <color_red>-2%</color>\nDodge: <color_red>-2</color>\nBlock: <color_light_green>2</color></color>",
@@ -67,19 +62,17 @@
     "material": [ "flesh" ],
     "symbol": "Q",
     "color": "red",
-    "relic_data": {
-      "passive_effects": [
-        {
-          "condition": "ALWAYS",
-          "values": [
-            { "value": "SPEED", "multiply": -0.01 },
-            { "value": "ATTACK_SPEED", "multiply": -0.015 },
-            { "value": "BONUS_DODGE", "add": -1 },
-            { "value": "BONUS_BLOCK", "add": 1 }
-          ]
-        }
-      ]
-    },
-    "flags": [ "NO_DROP" ]
+    "flags": [ "NO_DROP" ],
+    "passive_effects": [
+      {
+        "condition": "ALWAYS",
+        "values": [
+          { "value": "SPEED", "multiply": -0.01 },
+          { "value": "ATTACK_SPEED", "multiply": -0.015 },
+          { "value": "BONUS_DODGE", "add": -1 },
+          { "value": "BONUS_BLOCK", "add": 1 }
+        ]
+      }
+    ]
   }
 ]

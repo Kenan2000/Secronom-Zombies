@@ -156,8 +156,8 @@
       "B": { "item": "army_bed", "chance": 50 },
       "L": [ { "item": "army_personal_locker", "chance": 75, "repeat": [ 5, 10 ] }, { "item": "mil_base_coats", "chance": 10 } ],
       "n": { "item": "guns_rifle_common_display", "chance": 80 },
-      "N": { "item": "ammo_rifle_common", "chance": 50, "repeat": [ 1, 2 ] },
-      "j": { "item": "mags_rifle_common", "chance": 35, "repeat": [ 1, 2 ] },
+      "N": { "item": "ammo_hunting", "chance": 50, "repeat": [ 1, 2 ] },
+      "j": { "item": "mags_rifle_hunting", "chance": 35, "repeat": [ 1, 2 ] },
       "l": [
         { "item": "SUS_dresser_mens", "chance": 50, "repeat": [ 1, 2 ] },
         { "item": "SUS_dresser_womens", "chance": 50, "repeat": [ 1, 2 ] }

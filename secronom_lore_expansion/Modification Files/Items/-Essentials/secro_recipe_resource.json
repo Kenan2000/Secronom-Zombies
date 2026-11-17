@@ -20,6 +20,7 @@
     "subcategory": "CSC_OTHER_MATERIALS",
     "skill_used": "secro_flesh_craft",
     "difficulty": 4,
+    "charges": 10,
     "time": "5 m",
     "autolearn": true,
     "using": [ [ "fleshreconstruction", 5 ] ],

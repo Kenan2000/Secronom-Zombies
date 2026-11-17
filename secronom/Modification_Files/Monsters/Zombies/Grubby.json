@@ -1,27 +1,16 @@
 [
   {
     "id": "mon_zombie_grubby",
+    "copy-from": "mon_zombie_base",
     "type": "MONSTER",
     "name": { "str": "grubby zombie" },
     "description": "A bloated creature seeping pus covered larvae and emitting gut wrenching stenches wobbles around.  \"Defiled\" would be a compliment to this grotesque almost-human monstrosity that fumbles with each step, almost falling to its own weight.",
-    "default_faction": "zombie",
     "species": [ "ZOMBIE", "SECROZED_1" ],
-    "volume": "62500 ml",
-    "weight": "81500 g",
-    "harvest": "zombie_humanoid",
-    "hp": 70,
-    "speed": 55,
-    "diff": 1,
-    "material": [ "flesh" ],
     "emit_fields": [ { "emit_id": "emit_grubbyzed_goo_smol", "delay": "1 s" } ],
     "symbol": "⚆",
     "color": "yellow",
-    "aggression": 50,
-    "morale": 50,
-    "melee_skill": 4,
-    "melee_dice": 2,
-    "melee_dice_sides": 2,
     "armor": { "bash": 4, "cut": 2, "bullet": 2, "stab": 4 },
+    "relative": { "hp": -5, "speed": -15 },
     "vision_day": 20,
     "path_settings": { "max_dist": 20 },
     "special_attacks": [
@@ -38,52 +27,23 @@
         "description": "The grubby zombie spits globs of tainted goo!"
       }
     ],
-    "death_drops": "default_zombie_death_drops",
     "death_function": {
       "corpse_type": "NO_CORPSE",
       "message": "The %s dies!",
       "effect": { "id": "mon_zombie_grubby_death", "hit_self": true }
     },
-    "upgrades": { "half_life": 40, "into": "mon_zombie_slimy" },
-    "flags": [
-      "SEES",
-      "HEARS",
-      "SMELLS",
-      "WARM",
-      "BASHES",
-      "GROUP_BASH",
-      "FILTHY",
-      "POISON",
-      "NO_BREATHE",
-      "REVIVES",
-      "GROUP_MORALE"
-    ]
+    "upgrades": { "half_life": 120, "into": "mon_zombie_slimy" }
   },
   {
     "id": "mon_zombie_slimy",
+    "copy-from": "mon_zombie_grubby",
     "type": "MONSTER",
     "name": { "str": "slimy zombie" },
     "description": "Fortified by blobs and worms infused inside its skinless body, this zombie can barely walk on its feet.  With slimy liquid dripping from its holes, the parasites can \"swim\" faster through it.",
-    "default_faction": "zombie",
-    "species": [ "ZOMBIE", "SECROZED_1" ],
-    "harvest": "zombie_humanoid",
-    "volume": "62500 ml",
-    "weight": "81500 g",
-    "hp": 75,
-    "speed": 40,
-    "diff": 15,
-    "material": [ "flesh" ],
     "emit_fields": [ { "emit_id": "emit_grubbyzed_goo_smol", "delay": "1 s" }, { "emit_id": "emit_grubbyzed_goo_med", "delay": "1 s" } ],
-    "symbol": "Q",
     "color": "cyan_yellow",
-    "aggression": 50,
-    "morale": 50,
-    "melee_skill": 6,
-    "melee_dice": 4,
-    "melee_dice_sides": 2,
+    "relative": { "hp": 10, "speed": -15, "melee_skill": 1, "vision_day": 2 },
     "armor": { "bash": 5, "cut": 3, "bullet": 3, "stab": 4 },
-    "vision_day": 22,
-    "path_settings": { "max_dist": 20 },
     "special_attacks": [
       {
         "type": "gun",
@@ -98,44 +58,31 @@
         "description": "The slimy zombie spits globs of tainted goo!"
       }
     ],
-    "upgrades": { "half_life": 48, "into_group": "GROUP_GRUBBY_UPGRADEX" },
+    "upgrades": { "half_life": 40, "into_group": "GROUP_GRUBBY_UPGRADEX" },
     "death_function": {
       "corpse_type": "NO_CORPSE",
       "message": "The %s dies!",
       "effect": { "id": "mon_zombie_grubby_death", "hit_self": true }
-    },
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "FILTHY" ]
+    }
   },
   {
     "//": "Like a bloated zombie, but with its speed and a unique ability, it may explode before it even gets close.",
     "id": "mon_zombie_glut",
+    "copy-from": "mon_zombie_slimy",
     "type": "MONSTER",
     "name": { "str": "glut" },
-    "description": "A swollen degenerate corpse, severely infested by worms that has taken all over its body, causing it to bloat excessively.  These bloated portions are volatile, and its sudden explosion can cause widespread explosions.",
-    "default_faction": "zombie",
+    "description": "A swollen degenerate corpse, severely infested by worms that has taken all over its body and causing it to bloat excessively.  These bloated portions are seemingly volatile.",
     "species": [ "ZOMBIE", "SECROZED_2" ],
-    "harvest": "zombie_humanoid",
     "volume": "92500 ml",
     "weight": "120000 g",
-    "hp": 310,
-    "speed": 10,
-    "diff": 15,
-    "material": [ "flesh" ],
     "emit_fields": [
       { "emit_id": "emit_grubbyzed_goo_smol", "delay": "1 s" },
       { "emit_id": "emit_grubbyzed_goo_med", "delay": "1 s" },
       { "emit_id": "emit_grubbyzed_goo_big", "delay": "1 s" }
     ],
-    "symbol": "Q",
     "color": "red_cyan",
-    "aggression": 50,
-    "morale": 50,
-    "melee_skill": 8,
-    "melee_dice": 6,
-    "melee_dice_sides": 2,
-    "armor": { "bash": 12 },
-    "vision_day": 25,
-    "path_settings": { "max_dist": 20 },
+    "relative": { "hp": 235, "speed": -30, "melee_skill": -1, "vision_day": 3 },
+    "armor": { "bash": 12, "cut": 6, "stab": 6, "bullet": 6, "acid": 2 },
     "special_attacks": [
       {
         "type": "gun",
@@ -155,6 +102,6 @@
       "corpse_type": "NO_CORPSE",
       "message": "A %s explodes!"
     },
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE" ]
+    "upgrades": false
   }
 ]

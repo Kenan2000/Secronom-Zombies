@@ -289,7 +289,7 @@
     "required_str": -1,
     "flags": [ "CONTAINER", "LIQUIDCONT", "NOITEM", "SEALED", "TRANSPARENT", "S_FLESH" ],
     "examine_action": "keg",
-    "keg_capacity": 750,
+    "keg_capacity": "187500 ml",
     "bash": {
       "str_min": 20,
       "str_max": 60,

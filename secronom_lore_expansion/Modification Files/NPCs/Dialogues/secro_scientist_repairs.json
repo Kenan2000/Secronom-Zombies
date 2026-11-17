@@ -70,14 +70,14 @@
   {
     "type": "talk_topic",
     "id": "TALK_SECRO_SCIENTIST_repair_laserturret_needs",
-    "dynamic_line": "To repair the SDP-L1 turret, I need the following resources:\n\n4 chunks of steel\n18 scrap metals\n9 electronic scraps\n9 power converters\n5 copper wires\n\nIt takes more than an hour to complete the process.",
+    "dynamic_line": "To repair the SDP-L1 turret, I need the following resources:\n\n4 chunks of mild steel\n18 scrap metals\n9 electronic scraps\n9 power converters\n5 copper wires\n\nIt takes more than an hour to complete the process.",
     "responses": [
       {
         "text": "[REPAIR]",
         "topic": "TALK_SECRO_SCIENTIST_repair",
         "condition": {
           "and": [
-            { "u_has_items": { "item": "steel_chunk", "count": 4 } },
+            { "u_has_items": { "item": "lc_steel_chunk", "count": 4 } },
             { "u_has_items": { "item": "scrap", "count": 18 } },
             { "u_has_items": { "item": "e_scrap", "count": 9 } },
             { "u_has_items": { "item": "power_supply", "count": 9 } },
@@ -85,13 +85,13 @@
           ]
         },
         "effect": [
-          { "u_sell_item": "steel_chunk", "count": 4 },
+          { "u_sell_item": "lc_steel_chunk", "count": 4 },
           { "u_sell_item": "scrap", "count": 18 },
           { "u_sell_item": "e_scrap", "count": 9 },
           { "u_sell_item": "power_supply", "count": 9 },
           { "u_sell_item": "cable", "count": 5 },
           { "u_sell_item": "broken_secro_laserturret" },
-          { "npc_consume_item": "steel_chunk", "count": 4 },
+          { "npc_consume_item": "lc_steel_chunk", "count": 4 },
           { "npc_consume_item": "scrap", "count": 18 },
           { "npc_consume_item": "e_scrap", "count": 9 },
           { "npc_consume_item": "power_supply", "count": 9 },
@@ -106,7 +106,7 @@
         "truefalsetext": {
           "condition": {
             "and": [
-              { "u_has_items": { "item": "steel_chunk", "count": 4 } },
+              { "u_has_items": { "item": "lc_steel_chunk", "count": 4 } },
               { "u_has_items": { "item": "scrap", "count": 18 } },
               { "u_has_items": { "item": "e_scrap", "count": 9 } },
               { "u_has_items": { "item": "power_supply", "count": 9 } },

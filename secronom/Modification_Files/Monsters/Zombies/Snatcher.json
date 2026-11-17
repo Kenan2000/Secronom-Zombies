@@ -44,7 +44,7 @@
         "monster_message": "<color_yellow>The snatcher zombie launches its tongue at %3$s!</color>"
       }
     ],
-    "upgrades": { "half_life": 56, "into": "mon_zombie_bootlegsmoker_mode" },
+    "upgrades": { "half_life": 120, "into": "mon_zombie_bootlegsmoker_mode" },
     "anger_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED", "HURT", "PLAYER_CLOSE", "PLAYER_WEAK", "HOSTILE_SEEN" ],
     "delete": { "flags": [ "UNBREAKABLE_MORALE" ] },
     "extend": { "flags": [ "PATH_AVOID_DANGER", "KEEP_DISTANCE", "RANGED_ATTACKER" ] }

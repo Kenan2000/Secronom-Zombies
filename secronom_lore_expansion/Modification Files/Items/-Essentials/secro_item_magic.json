@@ -129,7 +129,6 @@
       "mon_sflesh_zombie_scientist",
       "mon_sflesh_boomer",
       "mon_sflesh_boomer_huge",
-      "mon_sflesh_gas_zombie",
       "mon_sflesh_zombie_gasbag",
       "mon_sflesh_zombie_soldier",
       "mon_sflesh_zombie_soldier_blackops_1",
@@ -259,6 +258,30 @@
     "flags": [ "SILENT", "MUTATE_TRAIT" ]
   },
   {
+    "id": "secro_power_armor_flesh_starter_remove",
+    "type": "SPELL",
+    "name": { "str": "Flesh Vessel Starter Remove" },
+    "description": "Spell casted by an item. If you're seeing this, then read this one instead:\n'The starter flesh vesel is then removed.'",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "message": "",
+    "shape": "blast",
+    "effect": "effect_on_condition",
+    "effect_str": "eoc_secro_power_armor_flesh_starter_remove_check"
+  },
+  {
+    "id": "secro_power_armor_flesh_starter_biocheck",
+    "type": "SPELL",
+    "name": { "str": "Merge - Flesh Vessel" },
+    "description": "Merge with the flesh vessel",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "message": "",
+    "shape": "blast",
+    "effect": "effect_on_condition",
+    "effect_str": "eoc_secro_power_armor_flesh_starter_biocheck_check"
+  },
+  {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_give_target",
     "name": { "str": "a spell" },
@@ -268,7 +291,8 @@
       { "id": "secro_power_armor_flesh_give", "hit_self": true },
       { "id": "secro_power_armor_flesh_bor_give", "hit_self": true },
       { "id": "secro_power_armor_flesh_check_give", "hit_self": true },
-      { "id": "secro_power_armor_flesh_proof_give", "hit_self": true }
+      { "id": "secro_power_armor_flesh_proof_give", "hit_self": true },
+      { "id": "secro_power_armor_flesh_starter_remove", "hit_self": true }
     ],
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE" ],
     "valid_targets": [ "none" ],
@@ -1168,7 +1192,7 @@
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "message": "",
-	"extra_effects": [ { "id": "secro_pafv_morphed_cost", "hit_self": true } ],
+    "extra_effects": [ { "id": "secro_pafv_morphed_cost", "hit_self": true } ],
     "shape": "blast",
     "effect": "effect_on_condition",
     "effect_str": "eoc_secro_pafv_morphed_gun_spit_check"
@@ -1255,9 +1279,7 @@
     "condition": {
       "and": [
         { "math": [ "u_skill('secro_flesh_combat')", ">=", "3" ] },
-        {
-          "not": { "math": [ "u_skill('secro_flesh_combat')", ">=", "6" ] }
-        }
+        { "not": { "math": [ "u_skill('secro_flesh_combat')", ">=", "6" ] } }
       ]
     },
     "effect": [
@@ -1295,7 +1317,7 @@
     "effect": [
       { "u_consume_item": "secro_flesh", "count": 3 },
       {
-        "queue_eocs": [ "eoc_secro_pafv_morphed_gun_spit_1", "eoc_secro_pafv_morphed_gun_spit_2", "eoc_secro_pafv_morphed_gun_spit_3" ]
+        "run_eocs": [ "eoc_secro_pafv_morphed_gun_spit_1", "eoc_secro_pafv_morphed_gun_spit_2", "eoc_secro_pafv_morphed_gun_spit_3" ]
       }
     ],
     "false_effect": [ { "u_message": "You don't have enough flesh to fire your spitter armament.", "type": "bad" } ]
@@ -1323,7 +1345,7 @@
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "message": "",
-	"extra_effects": [ { "id": "secro_pafv_morphed_cost", "hit_self": true } ],
+    "extra_effects": [ { "id": "secro_pafv_morphed_cost", "hit_self": true } ],
     "shape": "blast",
     "effect": "effect_on_condition",
     "effect_str": "eoc_secro_pafv_morphed_gun_bonelance_shoot_check"
@@ -1383,14 +1405,14 @@
       { "u_cast_spell": { "id": "secro_pafv_morphed_cost", "message": "" } },
       { "u_consume_item": "secro_flesh", "count": 15 },
       {
-        "queue_eocs": [
+        "run_eocs": [
           {
             "id": "eoc_secro_pafv_morphed_gun_bonelance_shot_1",
             "condition": { "math": [ "u_skill('secro_flesh_combat')", "<=", "4" ] },
             "effect": [
               { "u_add_effect": "eff_secro_pafv_morphed_gun_bonelance_shot_prepare", "duration": 8 },
               {
-                "queue_eocs": [
+                "run_eocs": [
                   {
                     "id": "eoc_secro_pafv_morphed_gun_bonelance_shot_1_ready",
                     "effect": [
@@ -1409,7 +1431,7 @@
             "effect": [
               { "u_add_effect": "eff_secro_pafv_morphed_gun_bonelance_shot_prepare", "duration": 6 },
               {
-                "queue_eocs": [
+                "run_eocs": [
                   {
                     "id": "eoc_secro_pafv_morphed_gun_bonelance_shot_2_ready",
                     "effect": [
@@ -1428,7 +1450,7 @@
     "false_effect": [
       { "u_cast_spell": { "id": "secro_pafv_morphed_cost", "message": "" } },
       {
-        "queue_eocs": [
+        "run_eocs": [
           {
             "id": "eoc_secro_pafv_morphed_gun_bonelance_shot_check_fail",
             "condition": { "u_has_effect": "eff_secro_pafv_morphed_gun_bonelance_shot_prepare" },
@@ -1455,14 +1477,14 @@
     },
     "effect": [
       {
-        "queue_eocs": [
+        "run_eocs": [
           {
             "id": "eoc_secro_pafv_morphed_gun_bonelance_shoot_power_check",
             "condition": { "math": [ "u_val('power')", ">=", "energy('100 kJ')" ] },
             "effect": [
               { "math": [ "u_val('power')", "-=", "energy('100 kJ')" ] },
               {
-                "queue_eocs": [
+                "run_eocs": [
                   {
                     "id": "eoc_secro_pafv_morphed_gun_bonelance_shoot",
                     "condition": { "u_has_effect": "eff_secro_pafv_morphed_gun_bonelance_shot_prepared_1" },
@@ -1491,6 +1513,18 @@
         ]
       }
     ],
-    "false_effect": [ { "queue_eocs": [ "eoc_secro_pafv_morphed_gun_bonelance_shot_check" ] } ]
+    "false_effect": [ { "run_eocs": [ "eoc_secro_pafv_morphed_gun_bonelance_shot_check" ] } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_power_armor_flesh_starter_remove_check",
+    "effect": [ { "u_consume_item": "secro_power_armor_flesh_starter" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_secro_power_armor_flesh_starter_biocheck_check",
+    "condition": { "u_has_bionics": "bio_secro_fv_core" },
+    "effect": [ { "u_cast_spell": { "id": "secro_power_armor_flesh_give_target", "message": "The flesh vessel envelops you." } } ],
+    "false_effect": [ { "u_message": "The flesh vessel isn't responding.", "type": "bad" } ]
   }
 ]

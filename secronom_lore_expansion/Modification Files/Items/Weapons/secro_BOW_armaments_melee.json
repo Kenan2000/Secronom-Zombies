@@ -1,11 +1,8 @@
 [
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "secro_power_armor_flesh_morphed_fite_blades",
-    "name": {
-      "str": "<color_light_red>fighter armament</color> - bone blades",
-      "str_pl": "<color_light_red>fighter armament</color> - bone blades"
-    },
+    "name": { "str": "bone blades", "str_pl": "bone blades" },
     "description": "Protruding on your joints are sharp and deadly curved blades composed of flesh and bones.",
     "weight": "600 g",
     "color": "white",
@@ -26,12 +23,9 @@
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 22 ] ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "secro_power_armor_flesh_morphed_fite_tentacles",
-    "name": {
-      "str": "<color_light_red>fighter armament</color> - twisted veins",
-      "str_pl": "<color_light_red>fighter armament</color> - twisted veins"
-    },
+    "name": { "str": "twisted veins", "str_pl": "twisted veins" },
     "description": "Your hands have bursted into several slender tentacle outgrowths, each tipped with a barbed stinger.",
     "weight": "175 g",
     "color": "light_red",
@@ -51,9 +45,9 @@
     "weapon_category": [ "SECRO_BOW", "SECRO_BOW_MELEE_TV" ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "secro_power_armor_flesh_morphed_fite_fleshpound",
-    "name": { "str": "<color_light_red>fighter armament</color> - fleshpound" },
+    "name": { "str": "fleshpound" },
     "description": "With compact mass of flesh covering your arms, every whack packs a wallop!",
     "weight": "1750 g",
     "color": "light_red",
@@ -73,12 +67,9 @@
     "weapon_category": [ "SECRO_BOW", "SECRO_BOW_MELEE_FP" ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "secro_power_armor_flesh_morphed_fite_jawarms",
-    "name": {
-      "str": "<color_light_red>fighter armament</color> - jawed biters",
-      "str_pl": "<color_light_red>fighter armament</color> - jawed biters"
-    },
+    "name": { "str": "jawed biters", "str_pl": "jawed biters" },
     "description": "Large gaping orifices emerge from both of your hands, eager to nibble on anything.",
     "weight": "1000 g",
     "color": "light_red",
@@ -92,12 +83,10 @@
     "weapon_category": [ "SECRO_BOW", "SECRO_BOW_MELEE_JB" ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
+    "subtypes": [ "ARTIFACT" ],
     "id": "secro_power_armor_flesh_morphed_jugg_shield",
-    "name": {
-      "str": "<color_yellow>juggernaut armament</color> - meat shield",
-      "str_pl": "<color_yellow>juggernaut armament</color> - meat shield"
-    },
+    "name": { "str": "meat shield", "str_pl": "meat shield" },
     "description": "Your hands have fused together to form a meaty shield. It significantly hampers your movement, but has great blocking ability.",
     "weight": "3000 g",
     "color": "red",
@@ -107,21 +96,19 @@
     "volume": "2000 ml",
     "longest_side": "70 cm",
     "melee_damage": { "bash": 14 },
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WIELD",
-          "condition": "ALWAYS",
-          "values": [
-            { "value": "SPEED", "multiply": -0.5 },
-            { "value": "ARMOR_BASH", "add": -10 },
-            { "value": "ARMOR_CUT", "add": -10 },
-            { "value": "ARMOR_STAB", "add": -10 },
-            { "value": "ARMOR_BULLET", "add": -10 }
-          ]
-        }
-      ]
-    },
-    "flags": [ "NO_UNWIELD", "NO_DROP", "UNBREAKABLE_MELEE", "TRADER_AVOID" ]
+    "flags": [ "NO_UNWIELD", "NO_DROP", "UNBREAKABLE_MELEE", "TRADER_AVOID" ],
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "values": [ { "value": "SPEED", "multiply": -0.5 } ],
+        "incoming_damage_mod": [
+          { "type": "bash", "add": -10 },
+          { "type": "cut", "add": -10 },
+          { "type": "stab", "add": -10 },
+          { "type": "bullet", "add": -10 }
+        ]
+      }
+    ]
   }
 ]

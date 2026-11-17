@@ -1415,7 +1415,7 @@
         "monster_message": "%1$s strikes the ground, then a wild outgrowth of vines and branches erupts under %3$s!"
       }
     ],
-    "upgrades": { "half_life": 56, "into": "mon_zombie_stray_w_leaf_stro3" },
+    "upgrades": { "half_life": 120, "into": "mon_zombie_stray_w_leaf_stro3" },
     "flags": [
       "SEES",
       "HEARS",
@@ -1670,7 +1670,7 @@
       }
     ],
     "death_drops": "default_zombie_death_drops",
-    "upgrades": { "half_life": 56, "into": "mon_zombie_stray_w_acid_stro3" },
+    "upgrades": { "half_life": 120, "into": "mon_zombie_stray_w_acid_stro3" },
     "flags": [
       "SEES",
       "HEARS",

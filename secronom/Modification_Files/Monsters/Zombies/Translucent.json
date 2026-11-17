@@ -14,7 +14,7 @@
     "melee_skill": 2,
     "melee_damage": [ { "damage_type": "cut", "amount": 1 }, { "damage_type": "acid", "amount": 2 } ],
     "armor": { "bash": 2, "cut": 1, "heat": 1 },
-    "upgrades": { "half_life": 56, "into": "mon_zombie_pellucid" },
+    "upgrades": { "half_life": 120, "into": "mon_zombie_pellucid" },
     "delete": { "flags": [ "CLUMSY_ATTACKS" ] }
   },
   {

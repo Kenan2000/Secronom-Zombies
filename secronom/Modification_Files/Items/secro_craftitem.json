@@ -1,0 +1,16 @@
+[
+  {
+    "type": "ITEM",
+    "id": "secro_devil_hound_heart",
+    "looks_like": "secro_flesh",
+    "symbol": "o",
+    "color": "red",
+    "name": { "str": "devil heart" },
+    "description": "A heart carved from a devil hound. Somehow it's still beating.",
+    "material": [ "flesh" ],
+    "flags": [ "NO_SALVAGE" ],
+    "weight": "1000 g",
+    "volume": "1 L",
+    "category": "spare_parts"
+  }
+]

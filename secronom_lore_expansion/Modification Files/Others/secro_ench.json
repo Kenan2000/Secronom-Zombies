@@ -1,0 +1,53 @@
+[
+  {
+    "id": "secro_flesh_vessel_inactive",
+    "type": "enchantment",
+    "name": { "str": "Inactive flesh vessel" },
+    "description": "The flesh vessel is inactive and makes moving in it difficult and exhausting.",
+    "has": "WORN",
+    "condition": "INACTIVE",
+    "values": [ { "value": "MOVEMENT_EXERTION_MODIFIER", "multiply": 0.5 } ]
+  },
+  {
+    "id": "secro_flesh_vessel_active",
+    "type": "enchantment",
+    "name": { "str": "Active flesh vessel" },
+    "description": "The flesh vessel is active and granting you full control over it, which increases your overall carry weight capacity.",
+    "has": "WORN",
+    "condition": "ACTIVE",
+    "values": [
+      { "value": "MOVEMENT_EXERTION_MODIFIER", "multiply": -0.33 },
+      { "value": "CARRY_WEIGHT", "multiply": 0.4 },
+      { "value": "CLIMATE_CONTROL_HEAT", "add": 50 },
+      { "value": "CLIMATE_CONTROL_CHILL", "add": 50 }
+    ]
+  },
+  {
+    "id": "secro_flesh_vessel2_active",
+    "type": "enchantment",
+    "name": { "str": "Active flesh vessel" },
+    "description": "The flesh vessel is active and granting you full control over it, which increases your overall carry weight capacity.",
+    "has": "WORN",
+    "condition": "ACTIVE",
+    "values": [
+      { "value": "MOVEMENT_EXERTION_MODIFIER", "multiply": -0.5 },
+      { "value": "CARRY_WEIGHT", "multiply": 0.5 },
+      { "value": "CLIMATE_CONTROL_HEAT", "add": 50 },
+      { "value": "CLIMATE_CONTROL_CHILL", "add": 50 }
+    ]
+  },
+  {
+    "id": "secro_flesh_vessel3_active",
+    "type": "enchantment",
+    "name": { "str": "Active flesh vessel" },
+    "description": "The flesh vessel is active and granting you full control over it, which increases your overall carry weight capacity.",
+    "has": "WORN",
+    "condition": "ACTIVE",
+    "values": [
+      { "value": "MOVEMENT_EXERTION_MODIFIER", "multiply": -0.66 },
+      { "value": "CARRY_WEIGHT", "multiply": 0.6 },
+      { "value": "CLIMATE_CONTROL_HEAT", "add": 50 },
+      { "value": "CLIMATE_CONTROL_CHILL", "add": 50 }
+    ]
+  }
+]

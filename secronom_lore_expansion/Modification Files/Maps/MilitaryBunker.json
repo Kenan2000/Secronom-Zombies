@@ -2,7 +2,6 @@
   {
     "//": "Vanilla bunker, but fleshy. We don't use the 'box-y' mapgen.",
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "secro_bunker_flesh" ],
     "object": {
       "rows": [
@@ -49,7 +48,7 @@
         "*": [ "t_door_c", "t_secro_door_flesh" ],
         "+": [ "t_chaingate_l", "t_secro_chaingate_l_flesh" ],
         ",": [ "t_floor", "t_secro_floor_flesh" ],
-        "-": [ "t_chainfence_h", "t_secro_chainfence_flesh" ],
+        "-": [ "t_chainfence", "t_secro_chainfence_flesh" ],
         "/": [ "t_concrete_wall", "t_secro_concrete_wall_flesh" ],
         "0": [ "t_window", "t_secro_window_flesh" ],
         "6": "t_card_military",
@@ -57,7 +56,7 @@
         "D": "t_door_metal_locked",
         "I": [ "t_ballistic_glass", "t_secro_ballistic_glass_flesh" ],
         "M": [ "t_wall_metal", "t_secro_wall_metal_flesh" ],
-        "|": [ "t_chainfence_v", "t_secro_chainfence_flesh" ]
+        "|": [ "t_chainfence", "t_secro_chainfence_flesh" ]
       },
       "furniture": { "#": "f_table" },
       "place_monster": [
@@ -72,7 +71,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "secro_bunker_basement_flesh" ],
     "weight": 250,
     "object": {
@@ -126,14 +124,14 @@
         "g": "f_glass_fridge",
         "{": "f_bookcase",
         "}": "f_pinball_machine",
-        "%": "f_floor_canvas",
+        "%": "f_punching_bag",
         "2": "f_air_conditioner",
         "3": "f_speaker_cabinet"
       },
       "items": {
         "b": { "item": "bed", "chance": 60 },
         "{": { "item": "bunker_basement_books", "chance": 70 },
-        "T": { "item": "trash_cart", "chance": 50 },
+        "T": { "item": "SUS_trash_floor_light", "chance": 50 },
         "l": { "item": "bunker_basement_clothing", "chance": 50 },
         "t": { "item": "dining", "chance": 45 }
       },
@@ -149,10 +147,10 @@
         { "group": "guns_rifle_milspec", "x": 5, "y": [ 19, 20 ], "chance": 80, "repeat": [ 1, 3 ] },
         { "group": "guns_launcher_milspec", "x": [ 2, 6 ], "y": 6, "chance": 80, "repeat": [ 1, 3 ] },
         { "group": "gear_soldier_sidearm", "x": [ 2, 6 ], "y": 6, "chance": 90, "repeat": [ 1, 3 ] },
-        { "group": "fridge", "x": 7, "y": 15, "chance": 70, "repeat": 3 },
+        { "group": "SUS_fridge", "x": 7, "y": 15, "chance": 70, "repeat": 3 },
         { "group": "bunker_basement_food", "x": [ 5, 6 ], "y": 15, "chance": 75, "repeat": [ 1, 10 ] },
         { "group": "dining", "x": [ 8, 9 ], "y": 15, "chance": 75, "repeat": [ 1, 2 ] },
-        { "group": "oven", "x": 4, "y": 15, "chance": 70 },
+        { "group": "SUS_oven", "x": 4, "y": 15, "chance": 70 },
         { "group": "cleaning", "x": 2, "y": 17, "chance": 70 },
         { "group": "bionics_mil", "x": 16, "y": 4, "chance": 65 },
         { "group": "bunker_basement_suicide", "x": 3, "y": 3 },
@@ -169,7 +167,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "secro_bunker_basement_flesh" ],
     "weight": 500,
     "object": {
@@ -223,14 +220,14 @@
         "g": "f_glass_fridge",
         "{": "f_bookcase",
         "}": "f_pinball_machine",
-        "%": "f_floor_canvas",
+        "%": "f_punching_bag",
         "2": "f_air_conditioner",
         "3": "f_speaker_cabinet"
       },
       "items": {
         "b": { "item": "bed", "chance": 60 },
         "{": { "item": "bunker_basement_books", "chance": 80 },
-        "T": { "item": "trash_cart", "chance": 50 },
+        "T": { "item": "SUS_trash_floor_light", "chance": 50 },
         "l": { "item": "bunker_basement_clothing", "chance": 50 },
         "t": { "item": "dining", "chance": 45 }
       },
@@ -245,10 +242,10 @@
         { "group": "guns_rifle_milspec", "x": 5, "y": [ 19, 20 ], "chance": 80, "repeat": [ 1, 2 ] },
         { "group": "guns_launcher_milspec", "x": [ 2, 6 ], "y": 6, "chance": 90, "repeat": [ 1, 2 ] },
         { "group": "gear_soldier_sidearm", "x": [ 2, 6 ], "y": 6, "chance": 90, "repeat": [ 1, 2 ] },
-        { "group": "fridge", "x": 7, "y": 15, "chance": 70, "repeat": 3 },
+        { "group": "SUS_fridge", "x": 7, "y": 15, "chance": 70, "repeat": 3 },
         { "group": "bunker_basement_food", "x": [ 5, 6 ], "y": 15, "chance": 75, "repeat": [ 1, 2 ] },
         { "group": "dining", "x": [ 8, 9 ], "y": 15, "chance": 75, "repeat": [ 1, 2 ] },
-        { "group": "oven", "x": 4, "y": 15, "chance": 70 },
+        { "group": "SUS_oven", "x": 4, "y": 15, "chance": 70 },
         { "group": "cleaning", "x": 2, "y": 17, "chance": 70 },
         { "group": "bionics_mil", "x": 16, "y": 4, "chance": 65 },
         { "group": "alcohol", "x": 5, "y": 3 },
@@ -263,7 +260,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "secro_bunker_basement_fvvault_flesh" ],
     "weight": 250,
     "object": {

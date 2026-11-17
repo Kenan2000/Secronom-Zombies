@@ -15,7 +15,7 @@
     "attack_cost": 200,
     "melee_damage": [ { "damage_type": "stab", "amount": 1 }, { "damage_type": "bash", "amount": 9 } ],
     "armor": { "bash": 6, "cut": 9, "stab": 7, "bullet": 6, "electric": 3, "acid": 3, "heat": 3 },
-    "upgrades": { "half_life": 88, "into": "mon_zombie_titan" }
+    "upgrades": { "half_life": 120, "into": "mon_zombie_titan" }
   },
   {
     "id": "mon_zombie_titan",

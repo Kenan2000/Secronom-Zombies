@@ -1,7 +1,7 @@
 [
   {
     "id": "secro_flesh_bow_sword",
-    "type": "GENERIC",
+    "type": "ITEM",
     "symbol": "/",
     "color": "red",
     "name": { "str": "bio-organic sword" },
@@ -20,7 +20,7 @@
   {
     "id": "secro_flesh_bow_sword_mod_blade",
     "copy-from": "secro_flesh_bow_sword",
-    "type": "GENERIC",
+    "type": "ITEM",
     "symbol": "/",
     "color": "light_red_white",
     "name": { "str": "bio-organic sword<color_light_green>+</color>", "str_pl": "bio-organic swords<color_light_green>+</color>" },
@@ -38,7 +38,8 @@
   },
   {
     "id": "secro_flesh_bow_sword_mod_tendril",
-    "type": "GENERIC",
+    "type": "ITEM",
+    "subtypes": [ "ARTIFACT" ],
     "symbol": "/",
     "color": "light_red_green",
     "name": { "str": "bio-organic sword<color_light_green>+</color>", "str_pl": "bio-organic swords<color_light_green>+</color>" },
@@ -53,36 +54,34 @@
     "volume": "2965 ml",
     "melee_damage": { "bash": 6, "cut": 28 },
     "qualities": [ [ "COOK", 1 ], [ "BUTCHER", 10 ] ],
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WIELD",
-          "condition": "ALWAYS",
-          "hit_you_effect": [
-            {
-              "id": "secro_flesh_mod_tendril_ench_target",
-              "hit_self": false,
-              "once_in": 10,
-              "message": "Your weapon's tendrils sweep into the vicinity!",
-              "npc_message": "%1$s's weapon sweeps its tendrils!"
-            },
-            {
-              "id": "secro_flesh_mod_tendril_ench_slam",
-              "hit_self": false,
-              "once_in": 20,
-              "message": "Your weapon's tendrils slams into %2$s!",
-              "npc_message": "%1$s's weapon slams its tendrils!"
-            },
-            {
-              "id": "secro_flesh_mod_tendril_ench_thrust",
-              "hit_self": false,
-              "once_in": 40,
-              "message": "Your weapon's tendrils pierced through %2$s!",
-              "npc_message": "%1$s's weapon pierced its tendrils!"
-            }
-          ]
-        }
-      ]
-    }
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "secro_flesh_mod_tendril_ench_target",
+            "hit_self": false,
+            "once_in": 10,
+            "message": "Your weapon's tendrils sweep into the vicinity!",
+            "npc_message": "%1$s's weapon sweeps its tendrils!"
+          },
+          {
+            "id": "secro_flesh_mod_tendril_ench_slam",
+            "hit_self": false,
+            "once_in": 20,
+            "message": "Your weapon's tendrils slams into %2$s!",
+            "npc_message": "%1$s's weapon slams its tendrils!"
+          },
+          {
+            "id": "secro_flesh_mod_tendril_ench_thrust",
+            "hit_self": false,
+            "once_in": 40,
+            "message": "Your weapon's tendrils pierced through %2$s!",
+            "npc_message": "%1$s's weapon pierced its tendrils!"
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -26,7 +26,7 @@
     "valid_targets": [ "self" ],
     "effect": "attack",
     "shape": "blast",
-    "spell_class": "SECRO_BIONIC_FLESH_CORE",
+    "spell_class": "NONE",
     "effect_str": "secro_power_armor_fleshmend_ing",
     "affected_body_parts": [ "head", "torso", "arm_r", "arm_l", "leg_r", "leg_l" ],
     "energy_source": "BIONIC",

@@ -29,7 +29,7 @@
       }
     ],
     "regenerates": 1,
-    "upgrades": { "half_life": 56, "into": "mon_zombie_unity" },
+    "upgrades": { "half_life": 120, "into": "mon_zombie_unity" },
     "delete": { "flags": [ "STUMBLES" ] }
   },
   {

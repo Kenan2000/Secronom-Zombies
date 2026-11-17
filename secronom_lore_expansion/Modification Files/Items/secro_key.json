@@ -42,7 +42,7 @@
     "base_casting_time": 1
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "secro_id_fvvault",
     "looks_like": "id_science",
     "symbol": ",",
@@ -57,7 +57,7 @@
     "use_action": { "type": "cast_spell", "spell_id": "secro_id_fvvault_open", "no_fail": true, "level": 0 }
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "secro_id_frrom",
     "looks_like": "id_science",
     "symbol": ",",

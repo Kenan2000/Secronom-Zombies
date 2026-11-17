@@ -10,7 +10,7 @@
       { "u_transform_radius": 3, "ter_furn_transform": "flesh_spread" },
       { "u_transform_radius": 2, "ter_furn_transform": "flesh_spread" },
       { "u_transform_radius": 1, "ter_furn_transform": "flesh_spread" },
-      { "u_transform_radius": 1, "ter_furn_transform": "flesh_spread" }
+      { "u_transform_radius": 1, "ter_furn_transform": "flesh_spread_always" }
     ]
   }
 ]
