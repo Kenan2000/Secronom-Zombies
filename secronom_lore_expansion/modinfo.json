@@ -6,7 +6,7 @@
     "authors": [ "Axema Vales", "SzQ" ],
     "maintainers": [ "Erin105" ],
     "description": "An expansion mod for secronom. (WIP)",
-    "version": "<color_light_green>Update 11/17/2026</color>",
+    "version": "<color_light_green>Update 11/19/2026</color>",
     "category": "content",
     "dependencies": [ "dda", "secronom" ]
   }

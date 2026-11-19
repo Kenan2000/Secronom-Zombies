@@ -18,7 +18,7 @@
     "warmth": 30,
     "use_action": { "type": "cast_spell", "spell_id": "secro_power_armor_flesh_starter_biocheck", "no_fail": true, "level": 0 },
     "qualities": [ [ "GLARE", 1 ] ],
-    "flags": [ "TRADER_KEEP", "WATERPROOF", "STURDY", "NO_UNLOAD", "OVERSIZE", "SKINTIGHT" ],
+    "flags": [ "TRADER_KEEP", "WATERPROOF", "STURDY", "NO_UNLOAD", "OVERSIZE", "SKINTIGHT", "UNBREAKABLE" ],
     "material_thickness": 9,
     "environmental_protection": 5,
     "armor": [
@@ -51,8 +51,9 @@
       "TRADER_AVOID",
       "TRADER_KEEP",
       "INTEGRATED",
+      "ALLOWS_NATURAL_ATTACKS",
+      "UNBREAKABLE",
       "WATERPROOF",
-      "STURDY",
       "PARTIAL_DEAF",
       "FIX_FARSIGHT",
       "FIX_NEARSIGHT",
@@ -214,42 +215,10 @@
     "extend": { "flags": [ "GAS_PROOF", "PARTIAL_DEAF", "SPAWN_ACTIVE" ] }
   },
   {
-    "//": "Removed complicated mechanics, cuz they're stupid af. Also they won't drop this on-death.",
+    "//": "Removed complicated mechanics, cuz they're stupid af..",
     "id": "secro_power_armor_flesh_npc",
+    "copy-from": "secro_power_armor_flesh_abstract",
     "type": "ITEM",
-    "subtypes": [ "ARTIFACT", "TOOL", "ARMOR" ],
-    "category": "armor",
-    "name": { "str": "flesh vessel" },
-    "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
-    "weight": "18400 g",
-    "volume": "21 L",
-    "price": "323000 USD",
-    "price_postapoc": "3000 USD",
-    "melee_damage": { "bash": 1 },
-    "material": [ "secro_flesh_reinforced" ],
-    "symbol": "[",
-    "looks_like": "power_armor_heavy",
-    "color": "red",
-    "warmth": 30,
-    "qualities": [ [ "GLARE", 1 ] ],
-    "flags": [
-      "TRADER_AVOID",
-      "TRADER_KEEP",
-      "NO_TAKEOFF",
-      "NO_DROP",
-      "WATERPROOF",
-      "STURDY",
-      "NO_UNLOAD",
-      "PARTIAL_DEAF",
-      "FIX_FARSIGHT",
-      "FIX_NEARSIGHT",
-      "SUN_GLASSES",
-      "OVERSIZE",
-      "SKINTIGHT",
-      "SECRO_FVMERGED"
-    ],
-    "material_thickness": 9,
-    "environmental_protection": 16,
     "armor": [
       {
         "encumbrance": 0,
@@ -260,7 +229,7 @@
     "passive_effects": [
       {
         "has": "WORN",
-        "condition": "ACTIVE",
+        "condition": "ALWAYS",
         "values": [
           { "value": "MOVEMENT_EXERTION_MODIFIER", "multiply": -0.5 },
           { "value": "CARRY_WEIGHT", "multiply": 1 },
