@@ -219,6 +219,7 @@
     "id": "secro_power_armor_flesh_npc",
     "copy-from": "secro_power_armor_flesh_abstract",
     "type": "ITEM",
+    "subtypes": [ "ARTIFACT", "TOOL", "ARMOR" ],
     "armor": [
       {
         "encumbrance": 0,
